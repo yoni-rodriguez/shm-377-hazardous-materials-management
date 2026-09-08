@@ -3,7 +3,7 @@
 Course materials for **SHM 377: Hazardous Materials Management** at
 Central Washington University.
 
-**Instructor:** Yoni Rodriguez, M.S.  
+**Professor:** Yoni Rodriguez, M.S.  
 **Program:** Occupational Safety and Health Management  
 **Department:** Engineering Technologies, Safety, and Construction  
 **Institution:** Central Washington University
@@ -185,18 +185,50 @@ questions.
 ## Laboratories
 
 Laboratory activities connect hazardous-material concepts with measurement,
-data analysis, regulatory research, and management decisions.
+data analysis, regulatory research, quantitative reasoning, and management
+decisions.
 
-A typical laboratory may ask students to:
+The course includes **four major graded laboratories**.
+
+Each graded laboratory is worth **25 points**, for a total of **100 laboratory
+points**.
+
+The four graded laboratories collectively account for **50% of the total
+course grade**.
+
+The graded laboratories are intentionally selected based on the strength of the
+hazardous-material problem, dataset, analytical opportunity, and professional
+application.
+
+Not every laboratory activity or Wednesday meeting will result in a formal
+graded report.
+
+Other class meetings may include formative activities such as:
+
+- R practice
+- Dataset exploration
+- Applied calculations
+- Safety Data Sheet interpretation
+- Regulatory navigation
+- Hazard classification
+- Storage and compatibility exercises
+- Transportation decisions
+- Environmental release scenarios
+- Emergency-response scenarios
+- Waste-characterization exercises
+- Case studies
+- Final-project development
+
+A typical major laboratory may ask students to:
 
 ```text
 Observe a problem
         ↓
-Understand how measurements were collected
+Understand how measurements or information were obtained
         ↓
-Work with a dataset
+Work with a dataset or technical problem
         ↓
-Analyze the data
+Analyze the evidence
         ↓
 Interpret the results
         ↓
@@ -208,17 +240,108 @@ Communicate and defend the decision
 ```
 
 Laboratories may use photographs, videos, process diagrams, public datasets,
-and instructor-created scenarios to approximate the reasoning involved in
-real hazardous-material investigations.
+technical documents, regulatory resources, and professor-created scenarios to
+approximate the reasoning involved in real hazardous-material investigations.
 
 When simulated datasets are used, they will be identified as simulated.
 
 ---
 
+## Assessment Structure
+
+SHM 377 uses a **200-point grading system**.
+
+| Assessment | Points | Percent of Course Grade |
+|---|---:|---:|
+| Graded Lab 1 | 25 | 12.5% |
+| Graded Lab 2 | 25 | 12.5% |
+| Graded Lab 3 | 25 | 12.5% |
+| Graded Lab 4 | 25 | 12.5% |
+| **Laboratory Total** | **100** | **50%** |
+| Final Project | 100 | 50% |
+| **Course Total** | **200** | **100%** |
+
+The grading structure is intentionally focused on a small number of substantial
+applied assessments rather than frequent graded assignments.
+
+Regular class activities may be used for practice, feedback, and preparation
+without necessarily carrying course points.
+
+The four graded laboratories progressively prepare students for the level of
+independence expected in the final project:
+
+```text
+Lab 1
+Highly Guided
+    ↓
+Lab 2
+Guided
+    ↓
+Lab 3
+Semi-Structured
+    ↓
+Lab 4
+Increasingly Independent
+    ↓
+Final Project
+Independent Integration
+```
+
+---
+
+## Laboratory Reports
+
+The four graded laboratories are intended to provide students with sufficient
+time to investigate a hazardous-material problem, work with relevant data or
+technical resources, troubleshoot analytical methods, interpret findings, and
+produce a thoughtful professional report.
+
+Students are not expected to complete a formal graded laboratory report every
+week.
+
+Laboratory reports should generally:
+
+- Use complete sentences where interpretation or explanation is required
+- Clearly label tables and figures
+- Include informative axis labels and appropriate units
+- Include units in calculations and final answers
+- Document calculations clearly enough for the reasoning to be followed
+- Interpret numerical results in the context of the hazardous-material problem
+- Cite data sources, technical references, and regulatory resources when
+  appropriate
+- Distinguish results from interpretation and management recommendations
+- Preserve enough of the analytical workflow to make results reproducible when
+  R is used
+
+Students should not submit unexplained computer output in place of written
+interpretation.
+
+When R and Quarto are used, the guiding principle is that the analytical
+reasoning should be traceable:
+
+```text
+Correct Calculation / Analysis
+            ↓
+       Correct Units
+            ↓
+    Clear Table / Figure
+            ↓
+       Interpretation
+            ↓
+ Hazardous-Material Significance
+            ↓
+     Management Decision
+```
+
+---
+
 ## Final Project
 
-The final project will provide students with an opportunity to integrate the
-major skills developed throughout SHM 377.
+The final project is worth **100 points** and accounts for **50% of the total
+course grade**.
+
+It serves as the culminating application of the major skills developed
+throughout SHM 377.
 
 Students will investigate a hazardous-material problem or case and develop an
 evidence-based analysis that may incorporate:
@@ -228,13 +351,17 @@ evidence-based analysis that may incorporate:
 - Measurement data
 - Quantitative analysis
 - R-generated figures and tables
+- Applied calculations
 - Technical resources
 - Regulatory interpretation
 - Management recommendations
 - Professional communication
 
-The final project structure and requirements will be provided separately as
-the course progresses.
+The four graded laboratories are intended to progressively prepare students for
+the level of independence expected in the final project.
+
+The exact final-project format, rubric, and internal point distribution will be
+provided separately.
 
 ---
 
@@ -260,7 +387,7 @@ shm-377-hazardous-materials-management/
 
 ### `lectures/`
 
-Quarto lecture materials and associated instructional content.
+Quarto lecture materials and associated educational content.
 
 ### `labs/`
 
@@ -283,7 +410,7 @@ course repository.
 
 ### `images/`
 
-Shared images and instructor-created visual assets used across course
+Shared images and professor-created visual assets used across course
 materials.
 
 ### `resources/`
@@ -322,11 +449,14 @@ The blueprint includes:
 
 - Course purpose and philosophy
 - Hazardous-material reasoning framework
+- Module-based course design
 - Lecture–laboratory integration
 - Role of chemistry and quantitative reasoning
 - Role of regulations
 - R and RStudio progression
 - Laboratory philosophy
+- Four-major-laboratory structure
+- Laboratory-report expectations
 - Quarter architecture
 - Assessment architecture
 - Final-project design
@@ -349,18 +479,6 @@ See `LICENSE.md` for complete licensing information.
 
 Third-party materials remain subject to their respective copyright, licensing,
 and terms of use.
-
----
-
-## Instructor
-
-**Yoni Rodriguez, M.S.**  
-Assistant Professor  
-Occupational Safety and Health Management  
-Engineering Technologies, Safety, and Construction  
-Central Washington University
-
-**Email:** Yoni.Rodriguez@cwu.edu
 
 ---
 

@@ -1,0 +1,1726 @@
+---
+title: "SHM 377 Course Blueprint"
+author: "Yoni Rodriguez"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    number-sections: false
+    smooth-scroll: true
+    embed-resources: true
+---
+
+# Course Purpose
+
+SHM 377 develops the scientific, quantitative, regulatory, and professional
+reasoning needed to manage hazardous materials in workplace settings.
+
+The course examines the management of hazardous materials across their
+lifecycle, including transportation, storage, use, exposure, release,
+emergency response, and disposal.
+
+Students learn to characterize hazardous materials, understand how their
+physical and chemical properties influence their behavior, evaluate
+measurement and monitoring data, locate and apply regulatory and technical
+resources, and develop practical strategies for managing hazardous-material
+risks.
+
+Rather than treating chemistry, regulations, exposure assessment, and data
+analysis as separate topics, SHM 377 integrates these tools through workplace
+problems and case studies.
+
+By the end of the course, students should be able to recognize a hazardous
+materials problem, determine what information is needed, analyze relevant
+evidence and data, locate and apply appropriate technical and regulatory
+resources, and communicate a defensible management decision.
+
+# Catalog Description
+
+Management of hazardous materials, including best practices and federal
+regulations associated with transportation, storage, use, and disposal of
+hazardous materials in the workplace.
+
+**Credits:** 4
+
+**Contact Hours:** 3 lecture, 2 laboratory
+
+**Prerequisites:** CHEM 101 or CHEM 111/111LAB or CHEM 181/181LAB
+
+# Course Learning Outcomes
+
+Students completing SHM 377 should be able to:
+
+1. Anticipate, recognize, evaluate, and develop control strategies associated
+   with hazardous materials.
+2. Utilize federal regulations related to hazardous materials to assess
+   compliance.
+3. Utilize Department of Transportation regulations related to hazardous
+   materials to assess compliance.
+
+# Fall 2026 Course Offering
+
+SHM 377 is offered during Fall Quarter 2026 in Ellensburg.
+
+## Scheduled Meetings
+
+### Monday
+
+- **Time:** 1:00 PM–3:20 PM
+- **Location:** HOGU 226
+
+### Wednesday
+
+- **Time:** 1:00 PM–3:20 PM
+- **Location:** HOGU 226
+
+The course will use these scheduled meetings to establish a recurring
+lecture–laboratory rhythm:
+
+```text
+Monday
+Concepts / Case Framing / Preparation
+                ↓
+Wednesday
+Laboratory / Data / Application / Decision-Making
+```
+
+Where possible, Monday meetings should introduce the concepts, case context,
+technical tools, quantitative methods, or regulatory resources needed for the
+associated Wednesday laboratory or application.
+
+Wednesday meetings should provide opportunities for students to apply those
+concepts through hazardous-material scenarios, quantitative analysis,
+measurement data, regulatory research, interpretation, and management
+decisions.
+
+The Monday and Wednesday components should therefore function as an integrated
+instructional sequence rather than as separate courses.
+
+Not every Wednesday meeting needs to produce a graded laboratory report.
+
+Many class meetings may involve formative exercises, guided practice,
+calculations, regulatory navigation, data exploration, case studies, or
+project development without creating an additional graded assignment.
+
+## Enrollment
+
+Fall 2026 enrollment should be monitored as registration changes.
+
+The university course schedule currently lists a maximum enrollment of
+36 students for SHM 377.
+
+# Course Philosophy
+
+Hazardous-material management requires more than identifying a chemical or
+memorizing a regulation.
+
+Professionals must be able to determine what material is present, understand
+how it behaves, determine where it may move, evaluate how it can be measured,
+interpret available data, identify applicable requirements, and decide how
+the material should be managed.
+
+SHM 377 therefore uses an applied, case-based approach that integrates
+chemistry, exposure assessment, data analysis, regulations, and management
+decisions.
+
+The course repeatedly asks students to move through a common reasoning process:
+
+```text
+Material
+   ↓
+Phase / Form
+   ↓
+Medium
+   ↓
+Movement
+   ↓
+Properties
+   ↓
+Measurement
+   ↓
+Data
+   ↓
+Decision
+```
+
+The goal is not simply to memorize chemical properties, formulas, regulatory
+citations, labels, or tables.
+
+The goal is to develop the ability to determine:
+
+```text
+What is the problem?
+        ↓
+What information do I need?
+        ↓
+Where can I find that information?
+        ↓
+What does the evidence tell me?
+        ↓
+What requirements apply?
+        ↓
+What should we do?
+        ↓
+How can I defend and communicate that decision?
+```
+
+# Hazardous Materials Reasoning Framework
+
+Throughout the course, hazardous-material problems will repeatedly be examined
+using the following framework:
+
+```text
+Material → Phase → Medium → Movement → Properties → Measurement → Data → Decision
+```
+
+## Material
+
+What material or materials are involved?
+
+Students should learn to identify the substance, mixture, product, waste, or
+other hazardous material involved in a problem and determine what information
+is needed to characterize it.
+
+## Phase and Form
+
+What physical form is the material in?
+
+Relevant forms may include:
+
+- Solid
+- Liquid
+- Gas
+- Vapor
+- Dust
+- Fume
+- Mist
+- Aerosol
+
+Understanding physical form helps determine how a material may move, how
+workers or the environment may encounter it, and how it should be measured or
+controlled.
+
+## Medium
+
+Where is the hazardous material?
+
+Potential media or compartments may include:
+
+- Air
+- Water
+- Soil
+- Surfaces
+- Products
+- Containers
+- Waste streams
+
+A hazardous material may move between multiple media during its lifecycle.
+
+## Movement
+
+How can the material move or change?
+
+Students should consider processes such as:
+
+- Evaporation
+- Dispersion
+- Deposition
+- Dissolution
+- Leakage
+- Spillage
+- Transfer between containers
+- Release to the environment
+
+## Properties
+
+Which physical or chemical properties explain the material's behavior?
+
+Chemistry and quantitative concepts should be introduced when they help
+students explain or solve a hazardous-material management problem.
+
+Relevant concepts may include:
+
+- Density
+- Specific gravity
+- Concentration
+- Mass and volume
+- Volatility
+- Solubility
+- Vapor pressure
+- Chemical compatibility
+- Reactivity
+
+Calculations should support decision-making rather than exist as isolated
+mathematical exercises.
+
+## Measurement
+
+How do we know how much material is present?
+
+Students should learn how hazardous materials and exposures are measured and
+how measurement methods influence the data available for interpretation.
+
+Laboratory activities may use videos, photographs, diagrams, demonstrations,
+and other resources to show how measurements are collected when physical
+sampling equipment is not available.
+
+## Data
+
+What do the measurements tell us?
+
+Students will use R and RStudio to work with hazardous-material and exposure
+datasets.
+
+Students may:
+
+- Import data
+- Inspect datasets
+- Clean and organize variables
+- Calculate descriptive statistics
+- Perform relevant calculations
+- Create tables
+- Visualize measurements
+- Compare observations
+- Identify patterns
+- Evaluate evidence
+
+R is a tool for hazardous-material analysis rather than the primary subject of
+the course.
+
+## Decision
+
+What should be done?
+
+Students integrate scientific evidence, measurement data, technical guidance,
+regulatory requirements, and professional judgment to develop a hazardous
+materials management decision.
+
+Potential decisions may involve:
+
+- Storage
+- Handling
+- Transportation
+- Exposure controls
+- Compatibility
+- Inventory
+- Spill prevention
+- Emergency response
+- Waste management
+- Regulatory compliance
+
+# Module-Based Course Design
+
+SHM 377 should be organized around integrated hazardous-material modules rather
+than treating scientific concepts, regulations, calculations, and laboratory
+activities as isolated course topics.
+
+Each module should develop a hazardous-material problem through a recurring
+sequence:
+
+```text
+HAZARDOUS MATERIAL / PROBLEM
+            ↓
+       FUNDAMENTALS
+What is it?
+What phase or form is it in?
+Where is it?
+How does it behave?
+            ↓
+        ASSESSMENT
+How do we recognize or measure it?
+What information or data do we need?
+            ↓
+        MANAGEMENT
+How should it be stored, used, transported,
+controlled, or otherwise managed?
+What requirements apply?
+            ↓
+        APPLICATION
+Scenario + technical resources + calculations
+and/or data analysis
+            ↓
+           LAB
+Apply the appropriate professional tools
+            ↓
+         DECISION
+Interpret → Manage → Communicate
+```
+
+The amount of instructional time devoted to a module should depend on the
+complexity of the hazardous-material problem rather than requiring every
+module to occupy exactly one week.
+
+Some modules may require only two class meetings, while more complex modules
+may span multiple weeks.
+
+## Integrated Module Components
+
+Modules should integrate three major sources of evidence and reasoning:
+
+```text
+                  MODULE
+                     │
+        ┌────────────┼────────────┐
+        ↓            ↓            ↓
+     SCIENCE      REGULATIONS    DATA
+        │            │            │
+        └────────────┼────────────┘
+                     ↓
+                APPLICATION
+                     ↓
+                   LAB
+                     ↓
+             MANAGEMENT DECISION
+```
+
+The relative emphasis may change between modules.
+
+A chemical-behavior module may emphasize physical and chemical properties and
+quantitative calculations.
+
+A transportation module may emphasize classification and navigation of
+Department of Transportation resources.
+
+An exposure or measurement module may emphasize sampling, measurement, and
+data analysis.
+
+A storage module may emphasize compatibility, inventory, facility conditions,
+and applicable requirements.
+
+An environmental-release module may emphasize movement between media,
+quantitative reasoning, reporting requirements, and environmental data.
+
+An emergency-response module may emphasize rapidly integrating incomplete
+information to support a defensible decision.
+
+Students should nevertheless encounter the same underlying hazardous-material
+reasoning process repeatedly across these different problems.
+
+# Lecture–Laboratory Integration
+
+SHM 377 combines lecture and laboratory activities into a common
+problem-solving sequence.
+
+A typical instructional sequence may follow:
+
+```text
+Workplace / Hazardous Material Scenario
+              ↓
+        FUNDAMENTALS
+Scientific concepts + material behavior
+              ↓
+        ASSESSMENT
+How can the problem be evaluated?
+              ↓
+        MEASUREMENT
+How was the material or exposure measured?
+              ↓
+        APPLICATION
+Calculation / regulatory research / dataset
+              ↓
+      INTERPRETATION
+What does the evidence mean?
+              ↓
+ TECHNICAL / REGULATORY RESOURCES
+What requirements or guidance apply?
+              ↓
+        MANAGEMENT
+What should be done?
+              ↓
+       COMMUNICATION
+How do we explain and defend the decision?
+```
+
+Lectures and laboratories should therefore reinforce one another rather than
+operate as separate components of the course.
+
+# Role of Chemistry
+
+Chemistry provides tools for understanding hazardous-material behavior.
+
+SHM 377 should build upon students' prerequisite chemistry knowledge without
+becoming a second general chemistry course.
+
+Chemical concepts should be introduced in the context of questions such as:
+
+- What is this material?
+- What form is it in?
+- Where is it?
+- How might it move?
+- What property explains that behavior?
+- What calculation would help us understand the problem?
+- What does that information mean for management?
+
+Quantitative work should remain at an applied level appropriate for hazardous
+materials management.
+
+Potential calculations include:
+
+- Density
+- Specific gravity
+- Mass-volume relationships
+- Concentration
+- Unit conversions
+- ppm
+- Molarity
+- Chemical quantities in containers
+- Regulatory or reporting quantities
+
+Students should learn to determine which calculation is appropriate based on
+the hazardous-material problem rather than simply selecting an equation from a
+list.
+
+# Role of Regulations
+
+Regulations are professional resources rather than lists of facts to memorize.
+
+Students should practice locating, navigating, interpreting, and applying
+regulatory requirements to hazardous-material problems.
+
+Relevant regulatory frameworks may include requirements administered by:
+
+- Occupational Safety and Health Administration
+- U.S. Department of Transportation
+- U.S. Environmental Protection Agency
+- Other applicable federal or state agencies
+
+Students should increasingly become responsible for determining:
+
+```text
+What agency has authority?
+        ↓
+What regulation or technical resource applies?
+        ↓
+Where is the relevant requirement?
+        ↓
+What does it require?
+        ↓
+Does the scenario comply?
+        ↓
+What action is needed?
+```
+
+Regulatory navigation should be integrated into hazardous-material problems
+when the regulation becomes necessary for making or evaluating a management
+decision.
+
+# Role of R and RStudio
+
+R and RStudio provide a reproducible environment for working with
+hazardous-material and exposure data.
+
+Students are not expected to become programmers.
+
+Instead, students should develop enough familiarity with R to use data as
+evidence when solving hazardous-material problems.
+
+R should be introduced early and then developed progressively through repeated
+use rather than taught as an isolated programming unit.
+
+## Initial R Workflow
+
+The initial introduction should allow students to achieve a useful analytical
+result quickly:
+
+```text
+Hazardous-Material Question
+            ↓
+       Obtain Dataset
+            ↓
+        Import into R
+            ↓
+        Inspect Data
+            ↓
+    Describe / Summarize
+            ↓
+        Visualize
+            ↓
+        Interpret
+            ↓
+Connect Results to the Hazardous-Material Problem
+```
+
+Students should learn R commands in the context of answering questions about a
+dataset rather than learning programming syntax in isolation.
+
+## R Skill Progression
+
+The four graded laboratories should progressively develop student independence
+with quantitative analysis and R where appropriate.
+
+```text
+LAB 1
+Highly Guided
+Provided dataset + code + analytical steps
+        ↓
+LAB 2
+Guided
+Reuse and modify existing code
+        ↓
+LAB 3
+Semi-Structured
+Determine some appropriate analytical approaches
+        ↓
+LAB 4
+Increasingly Independent
+Select methods and defend analytical decisions
+        ↓
+FINAL PROJECT
+Independent Integration
+Build, interpret, and communicate a reproducible analysis
+```
+
+Not every graded laboratory must use R to the same extent.
+
+The analytical method should be determined by the hazardous-material problem.
+
+Students should be evaluated primarily on their hazardous-material reasoning,
+technical accuracy, interpretation, and communication rather than programming
+sophistication.
+
+# Laboratory Philosophy
+
+SHM 377 laboratories should approximate the reasoning involved in real
+hazardous-material investigations even when physical sampling equipment is not
+available.
+
+Where appropriate, laboratory activities should allow students to:
+
+1. Observe a workplace, process, or hazardous-material problem.
+2. Determine what information is needed.
+3. Understand how measurements or samples were collected.
+4. Work with relevant scientific, technical, regulatory, or quantitative
+   information.
+5. Analyze available evidence.
+6. Interpret the results.
+7. Develop a management recommendation.
+8. Communicate the analysis in a professional format.
+
+Datasets may include authentic public or open datasets when appropriate.
+
+Instructor-created or simulated datasets may also be used when they provide a
+clear instructional advantage. Simulated data should be clearly identified as
+such.
+
+# Four Major Graded Laboratories
+
+SHM 377 will include **four major graded laboratories** during the quarter.
+
+Each graded laboratory is worth **25 points**, for a total of **100 laboratory
+points**.
+
+The four laboratories collectively account for **50% of the total course
+grade**.
+
+```text
+Lab 1     25 points
+Lab 2     25 points
+Lab 3     25 points
+Lab 4     25 points
+          ─────────
+Total    100 points
+```
+
+The four graded laboratories should be intentionally selected based on the
+strength of the available hazardous-material problem, dataset, analytical
+opportunity, and professional application.
+
+The course should not require a formal graded laboratory report every week.
+
+Instead, the four major laboratories should provide students with sufficient
+time to investigate the problem, work with the relevant data or technical
+resources, practice the analytical methods, troubleshoot their work, interpret
+their findings, and produce a thoughtful final report.
+
+## Selecting the Four Laboratories
+
+Potential graded laboratories should be evaluated based on:
+
+1. Importance to SHM 377 learning outcomes.
+2. Quality of the available dataset or technical problem.
+3. Opportunity for meaningful quantitative or R-based analysis.
+4. Opportunity to integrate scientific and regulatory reasoning.
+5. Professional relevance.
+6. Ability to support a defensible management decision.
+7. Contribution to skills needed for the final project.
+8. Appropriate level of challenge for an upper-division course.
+
+The four laboratory topics should therefore be selected after candidate
+datasets, cases, and course modules have been evaluated.
+
+A topic should not become a graded laboratory merely because it occurs during
+a Wednesday meeting.
+
+## Laboratory Development Time
+
+Students should receive meaningful time between the primary laboratory
+activity and the final report deadline.
+
+A typical graded laboratory may follow:
+
+```text
+MODULE / TOPIC
+      ↓
+Fundamentals
+      ↓
+Measurement / Assessment
+      ↓
+Guided Practice
+      ↓
+LAB INTRODUCED
+      ↓
+Explore Dataset / Problem in Class
+      ↓
+R + Calculations + Regulatory Resources
+      ↓
+Interpretation
+      ↓
+Troubleshooting / Revision
+      ↓
+LAB REPORT DUE
+```
+
+Where practical, laboratory reports may be due approximately one week after
+the primary laboratory activity.
+
+The exact due date should depend on the complexity of the assignment and the
+course calendar.
+
+The purpose of this structure is to give students enough time to work with the
+material and analytical tools rather than requiring them to rush through a
+laboratory report immediately after encountering a new method or dataset.
+
+## Formative Laboratory and Class Activities
+
+The four graded laboratories do not limit the amount of applied work completed
+during the course.
+
+Other class meetings may include:
+
+- R practice
+- Dataset exploration
+- Applied calculations
+- Safety Data Sheet interpretation
+- Regulatory navigation
+- Hazard classification
+- Storage and compatibility exercises
+- Transportation decisions
+- Environmental release scenarios
+- Emergency-response scenarios
+- Waste-characterization exercises
+- Case studies
+- Final-project development
+
+These activities may be used for practice, feedback, preparation, and
+discussion without becoming additional major graded assignments.
+
+This allows students to practice frequently while keeping the formal grading
+structure focused on a small number of substantial demonstrations of learning.
+
+# Laboratory Report Expectations
+
+SHM 377 laboratory reports should be independently produced unless an
+assignment explicitly states otherwise.
+
+Students may discuss concepts, methods, and troubleshooting with classmates,
+but each submitted report should reflect the student's own analysis,
+interpretation, calculations, and written work.
+
+Laboratory reports should meet the following expectations:
+
+- Written responses should use complete sentences where interpretation or
+  explanation is required.
+- Tables and figures should be clearly labeled.
+- Graphs should include informative axis labels and appropriate units.
+- Units should be included in calculations and final answers.
+- Calculations should be shown or documented clearly enough that the reasoning
+  can be followed.
+- Numerical results should be interpreted in the context of the
+  hazardous-material problem rather than reported without explanation.
+- Data sources, technical references, and regulatory resources should be cited
+  when appropriate.
+- Reports should distinguish results from interpretation and management
+  recommendations.
+- Reports should identify the student and laboratory.
+- Files should be submitted through Canvas using the required naming
+  convention.
+
+Where R is used, the submitted report should preserve enough of the analytical
+workflow to make the results reproducible.
+
+Students should not submit unexplained computer output in place of written
+interpretation.
+
+## Quarto Report Standards
+
+When a laboratory uses R and Quarto, reports should:
+
+- Render successfully before submission.
+- Include the student's name and laboratory title.
+- Include relevant code and analytical output as directed.
+- Present figures and tables near the text that interprets them.
+- Include units in tables, figures, calculations, and written results.
+- Use clear section headings.
+- Explain what the analysis means for the hazardous-material problem.
+- Conclude with a defensible management or compliance recommendation where
+  appropriate.
+
+The guiding principle is that the analytical reasoning should be traceable.
+
+If a calculation is completed manually, students should show the appropriate
+setup and units.
+
+If R performs the calculation or analysis, the analytical workflow should be
+documented sufficiently for the result to be understood and reproduced.
+
+A laboratory report should progress beyond producing a correct number or graph:
+
+```text
+Correct Calculation / Analysis
+            ↓
+       Correct Units
+            ↓
+    Clear Table / Figure
+            ↓
+       Interpretation
+            ↓
+ Hazardous-Material Significance
+            ↓
+     Management Decision
+```
+
+# Laboratory Methods
+
+Not every SHM 377 laboratory needs to use the same analytical method.
+
+The laboratory method should be selected according to the hazardous-material
+problem and the professional task students need to practice.
+
+Laboratory activities may involve:
+
+- R and quantitative data analysis
+- Measurement-data interpretation
+- Applied chemistry calculations
+- Safety Data Sheet interpretation
+- Regulatory navigation
+- Hazard classification
+- Storage and compatibility evaluation
+- Transportation and shipping decisions
+- Facility or inventory assessment
+- Environmental release analysis
+- Emergency-response scenarios
+- Waste-characterization problems
+- Technical communication
+- Combinations of these approaches
+
+The purpose of the laboratory is not to practice a particular tool for its own
+sake.
+
+The purpose is to select and use appropriate tools to investigate and manage a
+hazardous-material problem.
+
+# Provisional Module Architecture
+
+The following module structure is a planning framework rather than a finalized
+course schedule.
+
+Potential modules include:
+
+| Module | Scientific / Technical Focus | Potential Application |
+|---|---|---|
+| Course & Analytical Foundations | Hazardous-material reasoning, R/RStudio, data | First guided dataset |
+| Chemical Behavior | Phase, form, medium, properties, calculations | Chemical case |
+| Measurement & Exposure | Sampling, measurement, exposure data | Monitoring dataset |
+| Radiation | Fundamentals, units, behavior, protection | Radiation case/data |
+| Storage & Use | Compatibility, inventory, controls | Facility scenario |
+| Transportation | Classification, DOT resources, shipping | Transportation case |
+| Environmental Release | Release, movement, environmental data | Release analysis |
+| Emergency Response | Spill/release assessment and response | Incident scenario |
+| Hazardous Waste | Characterization, management, disposal | Waste case |
+| Integration | Multi-hazard decision-making | Final project |
+
+This sequence is intentionally provisional.
+
+The final module order should be evaluated against:
+
+1. SHM 377 catalog learning outcomes.
+2. Required hazardous-material management content.
+3. The strengths and limitations of inherited SHM 377 materials.
+4. Availability of appropriate cases, datasets, and laboratory activities.
+5. Logical progression of scientific and quantitative concepts.
+6. Regulatory progression.
+7. Student workload.
+8. Final-project skill requirements.
+
+Topics do not need to receive equal amounts of instructional time.
+
+More complex modules may span multiple weeks, while narrower topics may
+require fewer class meetings.
+
+# Fall 2026 Course Architecture
+
+The Fall 2026 course schedule is organized around the Central Washington
+University academic calendar and the Monday–Wednesday meeting pattern.
+
+Course modules, four major graded laboratories, formative activities, and
+final-project milestones will be mapped onto this calendar as the course is
+developed.
+
+The detailed topic sequence remains provisional.
+
+## Week 1 — September 23
+
+Because Fall Quarter instruction begins on Wednesday, SHM 377 begins with a
+single scheduled meeting during the first partial week.
+
+**Lecture 01: Introduction to Hazardous Materials Management**
+
+Lecture 01 establishes the conceptual foundation for the course and introduces
+students to hazardous materials management as a systems problem.
+
+Lecture 01 is complete and locked for Fall 2026.
+
+## Week 2 — September 28 & 30
+
+**Initial focus under development:**
+
+- R and RStudio orientation
+- Course technology and analytical workflow
+- Material identification
+- Phase and physical form
+- Environmental and workplace media
+- Movement between media
+- Applied chemistry foundations
+- Initial quantitative analysis
+
+## Week 3 — October 5 & 7
+
+**Under development**
+
+## Week 4 — October 12 & 14
+
+**Under development**
+
+## Week 5 — October 19 & 21
+
+**Under development**
+
+## Week 6 — October 26 & 28
+
+**Under development**
+
+## Week 7 — November 2 & 4
+
+**Under development**
+
+## Week 8 — November 9
+
+**Veterans Day:** Wednesday, November 11 — No class
+
+Only the Monday meeting is scheduled during this week.
+
+## Week 9 — November 16 & 18
+
+**Under development**
+
+## Week 10 — November 23
+
+**Thanksgiving Recess:** November 25–27 — No class
+
+Only the Monday meeting is scheduled during this week.
+
+## Week 11 — November 30 & December 2
+
+**Final-project presentations and course synthesis — provisional**
+
+## End-of-Quarter Period — December 4–11
+
+**December 4:** Last day of instruction
+
+**December 7:** Study Day
+
+**December 8–11:** Final examination period
+
+Final examination-period activities will be determined as the final-project
+schedule is developed.
+
+# Assessment Architecture
+
+SHM 377 uses a **200-point course grading system**.
+
+The course grade is divided equally between four major applied laboratories
+and the final project.
+
+| Assessment | Points | Percent of Course Grade |
+|---|---:|---:|
+| Graded Lab 1 | 25 | 12.5% |
+| Graded Lab 2 | 25 | 12.5% |
+| Graded Lab 3 | 25 | 12.5% |
+| Graded Lab 4 | 25 | 12.5% |
+| **Laboratory Total** | **100** | **50%** |
+| Final Project | 100 | 50% |
+| **Course Total** | **200** | **100%** |
+
+The assessment architecture is intentionally simple:
+
+```text
+FOUR MAJOR LABS
+4 × 25 points
+      ↓
+100 points
+50% of course grade
+
+        +
+
+FINAL PROJECT
+100 points
+50% of course grade
+
+        ↓
+TOTAL
+200 points
+```
+
+The four laboratories provide structured opportunities for students to
+practice and demonstrate the scientific, quantitative, regulatory, analytical,
+and professional reasoning developed throughout the course.
+
+The final project asks students to integrate those capabilities in a more
+independent hazardous-material investigation.
+
+## Assessment Progression
+
+The graded assessments should progressively move from structured to
+independent work:
+
+```text
+Lab 1
+Highly Structured
+      ↓
+Lab 2
+Guided
+      ↓
+Lab 3
+Semi-Structured
+      ↓
+Lab 4
+Increasing Independence
+      ↓
+Final Project
+Independent Integration
+```
+
+The four laboratories should therefore function as preparation for the final
+project rather than as four unrelated assignments.
+
+## Formative Work
+
+Regular class activities do not need to carry course points in order to
+contribute meaningfully to learning.
+
+Students may regularly complete:
+
+- Practice calculations
+- R exercises
+- Regulatory searches
+- Data interpretation
+- Case-study questions
+- Group problem solving
+- Technical-resource navigation
+- Draft analyses
+- Final-project development
+
+These activities should provide opportunities to practice, receive feedback,
+ask questions, and prepare for the four graded laboratories and final project.
+
+The course should avoid creating unnecessary graded work merely to generate
+points.
+
+# Final Project
+
+The final project is worth **100 points** and accounts for **50% of the total
+course grade**.
+
+It should serve as the culminating application of the SHM 377 reasoning
+framework.
+
+Students will investigate a hazardous-material problem or case and develop a
+professional, evidence-based analysis.
+
+The project may include:
+
+```text
+Problem / Case
+      ↓
+Hazard Characterization
+      ↓
+Material Behavior
+      ↓
+Measurement / Evidence
+      ↓
+Quantitative or R Analysis
+      ↓
+Results
+      ↓
+Technical & Regulatory Interpretation
+      ↓
+Management Recommendations
+      ↓
+Professional Communication
+```
+
+Potential deliverables may include:
+
+- Reproducible Quarto report
+- R analysis where appropriate
+- Figures and tables
+- Applied calculations
+- Regulatory analysis
+- Management recommendations
+- Oral presentation
+
+The exact internal distribution of the 100 final-project points will be
+developed with the final-project rubric.
+
+The final project should require students to determine which tools are
+appropriate for their particular hazardous-material problem rather than
+requiring identical analytical methods for every project.
+
+The final-project structure, case-study options, grading rubric, and
+peer-review process should be developed before students begin substantial
+project work.
+
+# Final Project Skill Progression
+
+The four graded laboratories and other course modules should progressively
+develop capabilities students will eventually need for the final project.
+
+A general progression may follow:
+
+```text
+Recognize the Problem
+        ↓
+Characterize the Material
+        ↓
+Understand Material Behavior
+        ↓
+Determine What Information Is Needed
+        ↓
+Locate Technical / Regulatory Resources
+        ↓
+Evaluate Measurements or Data
+        ↓
+Perform Appropriate Analysis
+        ↓
+Interpret the Evidence
+        ↓
+Develop Management Recommendations
+        ↓
+Communicate and Defend the Decision
+```
+
+Final-project development should therefore be integrated with course modules
+rather than treated as an unrelated end-of-quarter assignment.
+
+# Case Study Bank
+
+Potential case studies should allow students to integrate multiple components
+of hazardous-material management rather than solve isolated problems.
+
+Cases may involve:
+
+- Workplace chemical use
+- Storage and compatibility
+- Transportation
+- Worker exposure
+- Environmental releases
+- Emergency response
+- Hazardous waste
+- Radiological materials
+- Biological materials
+- Multi-hazard facilities
+
+Where possible, cases should include enough information for students to
+practice the full reasoning framework.
+
+Cases should vary in the tools required to solve them.
+
+Some may primarily require quantitative analysis.
+
+Others may primarily require regulatory research, material classification,
+compatibility assessment, technical interpretation, or professional judgment.
+
+# Dataset Bank
+
+Datasets should support authentic or realistic hazardous-material management
+questions.
+
+Potential dataset categories include:
+
+- Air monitoring
+- Surface contamination
+- Environmental releases
+- Chemical inventory
+- Storage
+- Waste generation
+- Transportation
+- Incident or spill data
+- Exposure measurements
+- Environmental monitoring
+
+Each dataset should document:
+
+- Source
+- Whether the data are authentic or simulated
+- Variable definitions
+- Units
+- Measurement context
+- Intended learning objectives
+- Applicable limitations
+
+Datasets should be selected because they support a meaningful
+hazardous-material question rather than simply because they provide an
+opportunity to use R.
+
+The quality and instructional usefulness of candidate datasets should be one
+of the primary considerations when selecting the four graded laboratory
+topics.
+
+# Student Onboarding
+
+## Welcome to SHM 377
+
+A student-facing orientation should introduce students to:
+
+- Course purpose
+- Monday–Wednesday course structure
+- Module-based course organization
+- Lecture and laboratory integration
+- Hazardous-material reasoning framework
+- Four-laboratory assessment structure
+- Final project
+- Course repository
+- R and RStudio
+- Quarto
+- Expectations for quantitative work
+- Expectations for regulatory research
+
+Students should understand that the course contains only four major graded
+laboratories, but applied work and laboratory-style activities will occur
+throughout the quarter.
+
+The first weeks should also establish that students are not expected to enter
+the course already knowing R.
+
+Students should understand that R is one of several professional tools they
+will use throughout the course.
+
+## R and RStudio Setup
+
+Students should receive clear instructions for:
+
+1. Installing or accessing R.
+2. Installing RStudio.
+3. Opening course files.
+4. Running provided code.
+5. Accessing course datasets.
+6. Inspecting a dataset.
+7. Performing basic descriptive analysis.
+8. Creating a basic visualization.
+9. Rendering a basic Quarto document.
+
+Early activities should emphasize successful use of the tools rather than
+programming syntax.
+
+# Interactive Learning
+
+Interactive activities should be incorporated where they advance the learning
+objectives.
+
+Potential activities include:
+
+- Case-study questions
+- Material identification
+- Phase/form classification
+- Selecting appropriate measurements
+- Interpreting Safety Data Sheets
+- Regulatory navigation
+- Calculation problems
+- Data interpretation
+- Small-group decision-making
+- Management recommendations
+- Facility scenarios
+- Transportation decisions
+- Emergency-response decisions
+
+Activities should increasingly move from recognition toward application and
+decision-making.
+
+A useful pattern is:
+
+```text
+Observe
+   ↓
+Ask
+   ↓
+Investigate
+   ↓
+Analyze
+   ↓
+Interpret
+   ↓
+Decide
+   ↓
+Defend
+```
+
+# Standard Module Components
+
+To maintain consistency across SHM 377 while allowing different topics to
+receive different amounts of instructional time, modules should generally
+consider the following components.
+
+## Hazardous-Material Problem
+
+What problem, material, facility, process, or decision anchors the module?
+
+## Fundamentals
+
+What scientific or technical concepts are needed to understand the problem?
+
+## Assessment
+
+What information would a professional need to evaluate the problem?
+
+## Measurement and Evidence
+
+How can relevant information be measured, observed, calculated, or otherwise
+obtained?
+
+## Technical and Regulatory Resources
+
+What professional resources are needed?
+
+## Application
+
+What should students do with the information they have gathered?
+
+## Laboratory
+
+What professional task or tool should students practice?
+
+Does this module provide a sufficiently strong problem, dataset, and
+professional application to justify being selected as one of the four major
+graded laboratories?
+
+## Management Decision
+
+What should be done and why?
+
+## Communication
+
+How should the analysis and recommendation be documented or defended?
+
+# Standard Lecture Components
+
+To maintain consistency across SHM 377, lectures should use a common set of
+structural elements where appropriate.
+
+## Course Identification
+
+Lecture materials should identify:
+
+- **SHM 377: Hazardous Materials Management**
+- Occupational Safety and Health Management
+- Yoni Rodriguez
+- Engineering Technologies, Safety, and Construction
+- Central Washington University
+- Yoni.Rodriguez@cwu.edu
+
+## Instructional Structure
+
+Because SHM 377 meets in extended instructional periods, meetings should not
+assume continuous instructor presentation.
+
+A meeting may combine multiple instructional segments:
+
+```text
+Opening Problem / Case
+        ↓
+Short Instructional Segment
+        ↓
+Student Thinking / Discussion
+        ↓
+Scientific / Technical Evidence
+        ↓
+Calculation / Regulation / Data
+        ↓
+Application
+        ↓
+Synthesis
+```
+
+The exact structure should remain flexible based on the instructional purpose
+of the meeting and the module.
+
+## Hazardous Materials Reasoning
+
+Where appropriate, lectures should return to the common reasoning framework:
+
+```text
+Material → Phase → Medium → Movement → Properties → Measurement → Data → Decision
+```
+
+Students should progressively become responsible for applying more of this
+framework themselves as the quarter progresses.
+
+## Lecture–Laboratory Connection
+
+Lectures should clearly identify connections to laboratory activities where
+appropriate.
+
+Students should understand why a scientific concept, calculation, regulation,
+measurement method, or technical resource introduced during lecture is needed
+for the associated application or laboratory problem.
+
+## Lecture Closing
+
+Where appropriate, lectures should conclude by reinforcing major connections
+among:
+
+- Material behavior
+- Measurement
+- Evidence
+- Data
+- Regulations
+- Management decisions
+
+A closing may:
+
+- Return to the opening hazardous-material problem
+- Revisit the reasoning framework
+- Ask students what information is still missing
+- Ask students what regulation or technical resource they would need
+- Ask students what management decision they would make
+- Preview the laboratory or next stage of the module
+- Identify key vocabulary
+- Provide a synthesis question
+
+Lecture materials should also contain the standard copyright and use statement.
+
+# Standard Laboratory Components
+
+Where appropriate, SHM 377 laboratories should contain the following
+components.
+
+## Problem or Scenario
+
+What hazardous-material problem are we investigating?
+
+## Purpose
+
+What professional question or decision is the laboratory intended to address?
+
+## Measurement or Information Context
+
+How were the data generated, measurements collected, or technical information
+obtained?
+
+## Evidence
+
+What information is available?
+
+This may include:
+
+- Dataset
+- Measurements
+- Safety Data Sheet
+- Facility information
+- Inventory
+- Shipping information
+- Regulatory text
+- Photographs
+- Process diagrams
+- Incident information
+- Technical guidance
+
+## Analysis
+
+What calculations, comparisons, classifications, summaries, visualizations, or
+other analyses are needed?
+
+## Interpretation
+
+What does the evidence mean?
+
+## Technical and Regulatory Context
+
+What additional resources or requirements should be considered?
+
+## Management Decision
+
+What action would you recommend and why?
+
+## Communication
+
+How should the findings and recommendation be documented?
+
+# Course Development Quality Checks
+
+Before a lecture, laboratory, case study, module, or assessment is considered
+complete, it should be reviewed through several lenses.
+
+## Student Accessibility
+
+Can a student with the expected prerequisite background understand what is
+being asked?
+
+## Technical Depth
+
+Is the material appropriate for an upper-division SHM course?
+
+## Professional Relevance
+
+Does the activity resemble a question or decision a safety or hazardous
+materials professional could reasonably encounter?
+
+## Regulatory Currency
+
+Are regulatory requirements, guidance documents, tables, and references
+current?
+
+## Quantitative Solvability
+
+Do students have the information, units, equations, and background needed to
+complete required calculations?
+
+## Lecture–Laboratory Alignment
+
+Does the laboratory apply or extend concepts students have encountered during
+the associated lecture or module?
+
+## Tool Appropriateness
+
+Is the laboratory using R, calculations, regulatory research, or another tool
+because it is appropriate for the problem rather than simply because the tool
+needs to be practiced?
+
+## Workload
+
+Is the expected student workload appropriate for the course and available
+laboratory time?
+
+For the four graded laboratories, does the due date provide sufficient time
+for students to explore the problem, troubleshoot their analysis, interpret
+their findings, and prepare a professional report?
+
+## Learning-Outcome Alignment
+
+Does the activity contribute meaningfully to one or more SHM 377 learning
+outcomes?
+
+## Module Coherence
+
+Do the scientific concepts, regulations, data, laboratory activity, and
+management decision contribute to the same hazardous-material problem?
+
+## Final-Project Alignment
+
+Does the activity develop a capability students will eventually need for the
+final project?
+
+## Graded Laboratory Value
+
+If the activity is being considered as one of the four graded laboratories,
+does it provide enough analytical depth, professional relevance, and
+integration to justify 25 points and substantial student work?
+
+# Open Design Questions
+
+The following questions remain intentionally unresolved during the continuing
+course-development phase:
+
+- What is the final module sequence?
+- Which modules require multiple weeks?
+- How should R and RStudio be introduced following Lecture 01?
+- What should the first guided R dataset investigate?
+- Which four modules provide the strongest problems and datasets for the four
+  graded laboratories?
+- What should the due date be for each graded laboratory?
+- Which graded laboratories are best suited for R-based analysis?
+- Which graded laboratories should emphasize regulatory navigation,
+  calculations, classification, facility assessment, or other methods?
+- Which datasets should anchor the four graded laboratories?
+- Where should radiological and biological hazards appear in the sequence?
+- How should Hazard Communication and GHS be integrated across modules?
+- How should federal hazardous-material regulations be introduced and revisited?
+- Should the final project be individual, team-based, or use a hybrid model?
+- How many final-project case studies should be developed?
+- How should the 100 final-project points be distributed across the project
+  deliverables?
+- How should peer review contribute to final-project development?
+- Which inherited SHM 377 materials should be retained, modified, or replaced?
+- Which inherited regulatory resources need to be updated before Fall 2026?
+
+The following course-design decisions are now established:
+
+- The course uses a **200-point grading system**.
+- There are **four major graded laboratories**.
+- Each graded laboratory is worth **25 points**.
+- The four laboratories total **100 points** and account for **50% of the
+  course grade**.
+- The final project is worth **100 points** and accounts for **50% of the
+  course grade**.
+- Weekly formal laboratory reports are not required.
+- Other laboratory and class activities may be formative rather than graded.
+- The four graded laboratories should be selected based on instructional value,
+  dataset quality, professional relevance, and alignment with the final
+  project.
+- Students should receive meaningful development time for major laboratory
+  reports.
+- Laboratory scaffolding should progressively decrease as students move toward
+  the final project.
+
+# Copyright, Licensing, and Attribution
+
+## Course Materials
+
+Original SHM 377 materials created for the course should clearly identify
+authorship and copyright.
+
+Except where otherwise noted, original educational materials are licensed
+under the **Creative Commons Attribution-NonCommercial 4.0 International
+License (CC BY-NC 4.0)**.
+
+Third-party materials incorporated into lectures and laboratories remain
+subject to their respective copyright, licensing, attribution, and
+permitted-use requirements.
+
+The presence of third-party material within an SHM 377 course resource does
+not place that material under the license applied to original SHM 377 content.
+
+## Standard Lecture and Laboratory Footer
+
+Each lecture and laboratory should conclude with a copyright and use statement
+similar to:
+
+```markdown
+---
+
+### Copyright & Use
+
+**SHM 377: Hazardous Materials Management**  
+© 2026 Yoni Rodriguez
+
+Except where otherwise noted, original course materials are licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0).
+
+Third-party materials remain subject to their respective copyright and
+licensing terms.
+```
+
+## Attribution
+
+Sources used in course materials should be appropriately attributed.
+
+Attribution is particularly important for:
+
+- Figures
+- Photographs
+- Maps
+- Tables
+- Government resources
+- Regulations and regulatory guidance
+- Published research
+- Technical documents
+- Safety Data Sheets
+- Case-study materials
+- External datasets
+- Adapted diagrams or frameworks
+
+Where practical, original course materials should distinguish between:
+
+- Original instructor-created content
+- Adapted content
+- Third-party content reproduced under an applicable license or permitted use
+
+# Course Repository
+
+The SHM 377 course repository is intended to provide students with access to
+course materials and reproducible analytical resources.
+
+The repository includes a `LICENSE.md` file documenting copyright, licensing,
+attribution, and reuse terms.
+
+Except where otherwise noted, original course materials are licensed under the
+**Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0)**.
+
+The course license does not automatically apply to third-party materials
+contained within or referenced by the repository. Third-party materials remain
+subject to their respective copyright and licensing terms.
+
+## Public Repository Materials
+
+The public repository may include:
+
+- Lecture `.qmd` files
+- Rendered lecture HTML files
+- Laboratory `.qmd` files
+- Rendered laboratory HTML files
+- Student-facing R code and templates
+- Publicly distributable datasets
+- Instructor-created figures and graphics
+- Instructor-created photographs
+- Student-facing assignment instructions
+- Final-project instructions and rubrics
+- Course vocabulary and study materials
+- Repository documentation
+- `LICENSE.md`
+
+## Restricted Materials
+
+The public repository should not include:
+
+- Student information
+- Student-generated data containing identifying information
+- Grades
+- Restricted examination questions
+- Answer keys
+- Previous student submissions
+- Copyrighted third-party materials that cannot legally be redistributed
+- Internal university records
+- Protected course records
+
+Restricted materials should be maintained separately from the public teaching
+repository.
+
+# Instructor Notes and Reflections
+
+## Fall 2026
+
+This section should be updated during and after the first offering of the
+redesigned SHM 377 course.
+
+### Keep
+
+Elements that worked particularly well and should be retained in future
+offerings.
+
+### Modify
+
+Elements that were useful but should be revised.
+
+### Remove
+
+Elements that did not meaningfully contribute to student learning or course
+goals.
+
+### Ideas for Future Offerings
+
+New modules, cases, datasets, laboratory activities, regulatory exercises,
+technologies, assessment approaches, or structural changes to consider in
+future versions of SHM 377.

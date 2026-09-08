@@ -1,97 +1,242 @@
 ---
-title: "01-R-introduction"
+title: "Introduction to R & Environmental Data"
+subtitle: "SHM 377 — Hazardous Materials Management"
 author: "Yoni Rodriguez"
-format: html
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    transition: slide
+    width: 1600
+    height: 900
+    margin: 0.08
+    center: false
+    code-overflow: wrap
+    code-copy: true
+    code-line-numbers: false
+execute:
+  echo: true
+  warning: false
+  message: false
 editor: visual
 ---
-## Example: Smoke in the Air
 
-Consider the photograph from the beginning of today's lecture.
+# Virtual Lab 01
 
-:::::: columns
-::: {.column width="48%"}
-### What might we ask?
+## Introduction to R & Environmental Data
 
-- What is in the smoke?
-- Where did it come from?
-- How did it enter the air?
-- How is it moving?
-- Who might be exposed?
-- How much is present?
-- At which concentration is it hazardous? 
+Today we will use a **real environmental monitoring dataset** to begin answering a simple question:
+
+> **What happened to ambient particle concentrations during five days of winter monitoring?**
+
+We will use **R** to:
+
+- obtain the data;
+- inspect the data;
+- check the measurements;
+- calculate simple summaries;
+- create a visualization;
+- interpret what we see.
+
+---
+
+# Start With the Question
+
+## We have measurements
+
+Imagine that an instrument collected repeated measurements of airborne particles over several days.
+
+The measurements change through time.
+
+Some are relatively low.
+
+Some are higher.
+
+Some periods appear more variable than others.
+
+::: {.callout-note}
+Our first task is **not** to write code.
+
+Our first task is to ask:
+
+**What can these measurements tell us?**
 :::
 
-::: {.column width="48%"}
-### Then what?
+---
 
-- How could we measure it?
-- What do the measurements mean?
-- Are concentrations changing?
-- When are concentrations highest?
-- What actions might reduce exposure?
+# The Monitoring Problem
+
+## Winter ambient particle monitoring
+
+The dataset comes from local ambient particle monitoring conducted during:
+
+**December 27–31, 2019**
+
+Measurements were collected approximately every:
+
+**2 minutes**
+
+The monitoring period occurred during winter, when local conditions could include particle emissions associated with activities such as residential heating and wood burning.
+
+---
+
+# What Was Measured?
+
+## Particle concentration
+
+The monitoring instrument recorded repeated measurements of:
+
+**airborne particle concentration**
+
+Our dataset contains two variables:
+
+| Variable | Meaning |
+|---|---|
+| `date_time` | When the measurement was collected |
+| `concentration` | Measured particle concentration |
+
+---
+
+# An Important Scientific Distinction
+
+## Measurement ≠ Source Attribution
+
+The instrument measured **particle concentration**.
+
+It did **not** identify the source of every particle.
+
+Therefore, a high measurement does not automatically tell us:
+
+- what produced the particles;
+- where they came from;
+- whether one particular source was responsible.
+
+::: {.callout-important}
+**Observation is not the same thing as explanation.**
 :::
-::::::
 
-This is where **measurement** becomes part of hazardous-material management.
+---
 
-# How Do We Know What Is Happening?
+# The Question
 
-Hazard recognition tells us that something **may** be dangerous.
+## What are we trying to learn?
 
-Measurement helps us determine what is actually happening.
+> **What happened to ambient particle concentrations during five days of winter monitoring?**
 
-Measurements can help us answer questions such as:
+That is a broad question.
 
-- How much is present?
-- When did concentrations increase?
-- How long did elevated conditions last?
-- Where are the highest concentrations?
-- Are conditions improving or getting worse?
-- Did a control measure make a difference?
+Today, we will begin answering it by:
 
-But measurements create another challenge:
+1. looking at the data;
+2. checking whether the data make sense;
+3. describing the measurements;
+4. plotting concentration through time;
+5. interpreting the pattern.
 
-> **What do we do when we have thousands of measurements?**
+---
 
-# From Measurement to Data
+# Why R?
 
-Environmental and workplace instruments can collect measurements every:
+## Data are evidence
 
-- second
-- minute
-- hour
-- day
+Environmental and hazardous-material decisions increasingly depend on data.
 
-A single monitoring project can quickly produce thousands of observations.
+We may collect:
 
-Humans are not very good at finding patterns by scrolling through thousands of spreadsheet rows.
+- air measurements;
+- water measurements;
+- soil measurements;
+- surface samples;
+- direct-reading instrument data;
+- meteorological data;
+- exposure measurements.
 
-So we need tools that help us:
+The measurements themselves are only the beginning.
 
-```text
-Question
-   ↓
-Data
-   ↓
-Check
-   ↓
-Describe
-   ↓
-Visualize
-   ↓
-Interpret
-   ↓
-Manage
-```
+We still need a way to:
 
-This will become another recurring workflow in SHM 377.
+**organize → inspect → analyze → visualize → communicate**
 
-# Virtual Laboratory
+---
 
-## Introduction to R, RStudio, and Environmental Monitoring Data
+# What Is R?
 
-After the break, we will use a real environmental-monitoring dataset to begin answering a hazardous-material question.
+## R
 
-Our first case:
+**R** is a programming language and analytical environment used for:
 
-> **What happened to ambient particle concentrations during five days of winter smoke monitoring?**
+- working with data;
+- statistical analysis;
+- visualization;
+- reproducible research.
+
+R allows us to give the computer instructions and preserve those instructions so we can see exactly how an analysis was performed.
+
+---
+
+# What Is RStudio?
+
+## RStudio is our workspace
+
+RStudio provides an interface for working with R.
+
+You will commonly see four areas:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Source
+
+Where we write and save code.
+
+### Console
+
+Where R executes commands.
+
+:::
+
+::: {.column width="50%"}
+
+### Environment
+
+Shows objects currently available in R.
+
+### Files / Plots / Packages / Help
+
+Tools for navigating files, viewing graphs, managing packages, and getting help.
+
+:::
+
+::::
+
+---
+
+# One Important Habit
+
+## Save your work in a script
+
+You *can* type commands directly into the Console.
+
+But commands entered only into the Console are easy to lose.
+
+Instead, we will generally write commands in a script.
+
+::: {.callout-tip}
+**The script is our record of what we did.**
+:::
+
+That becomes important for reproducibility.
+
+---
+
+# Your First R Command
+
+## R can behave like a calculator
+
+Try:
+
+```{r}
+2 + 2

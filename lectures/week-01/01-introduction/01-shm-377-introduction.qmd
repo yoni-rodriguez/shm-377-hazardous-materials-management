@@ -12,17 +12,19 @@ editor: visual
 ```{=html}
 <style>
 
+/* =========================================================
+   SHM 377 Lecture Styling
+   ========================================================= */
+
 /* ---------------------------------------------------------
-   SHM 377 Lecture Typography
-   Keep body text and blockquotes visually consistent
+   Typography
+   Keep lecture text consistent throughout the document
    --------------------------------------------------------- */
 
-/* Use the normal document text color throughout */
 body {
   color: #212529;
 }
 
-/* Keep blockquotes consistent with normal lecture text */
 blockquote {
   color: #212529;
   font-size: inherit;
@@ -30,19 +32,67 @@ blockquote {
   font-weight: normal;
 }
 
-/* Do not alter intentional bold text inside blockquotes */
 blockquote strong {
   color: #212529;
 }
 
-/* Keep centered lecture content the same color as body text */
 .text-center {
   color: #212529;
 }
 
-/* Align images in the Types of Hazards section */
+
+/* ---------------------------------------------------------
+   Types of Hazards
+   Keep images aligned on larger screens
+   --------------------------------------------------------- */
+
 .hazard-list {
   min-height: 165px;
+}
+
+
+/* =========================================================
+   Responsive Mobile Layout
+   Stack ALL Quarto columns on narrow screens
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Convert every Quarto column group to a vertical layout */
+  .columns {
+    display: block !important;
+  }
+
+  /* Every content column becomes full width */
+  .columns > .column {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Remove empty spacer columns used in desktop layouts */
+  .columns > .column:empty {
+    display: none !important;
+  }
+
+  /* Remove desktop-only fixed heights */
+  .hazard-list {
+    min-height: auto;
+  }
+
+  /* Keep images within the phone viewport */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent long links or captions from forcing page width */
+  p,
+  li,
+  figcaption {
+    overflow-wrap: anywhere;
+  }
+
 }
 
 </style>

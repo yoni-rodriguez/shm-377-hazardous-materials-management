@@ -2229,24 +2229,53 @@ vertical-align: -.125em;
 body {
 color: #212529;
 }
-
 blockquote {
 color: #212529;
 font-size: inherit;
 font-style: normal;
 font-weight: normal;
 }
-
 blockquote strong {
 color: #212529;
 }
-
 .text-center {
 color: #212529;
 }
 
 .hazard-list {
 min-height: 165px;
+}
+
+@media (max-width: 768px) {
+
+.columns {
+display: block !important;
+}
+
+.columns > .column {
+width: 100% !important;
+max-width: 100% !important;
+flex: 0 0 100% !important;
+}
+
+.columns > .column:empty {
+display: none !important;
+}
+
+.hazard-list {
+min-height: auto;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+p,
+li,
+figcaption {
+overflow-wrap: anywhere;
+}
 }
 </style>
 <div class="columns">

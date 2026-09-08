@@ -1,0 +1,97 @@
+---
+title: "01-R-introduction"
+author: "Yoni Rodriguez"
+format: html
+editor: visual
+---
+## Example: Smoke in the Air
+
+Consider the photograph from the beginning of today's lecture.
+
+:::::: columns
+::: {.column width="48%"}
+### What might we ask?
+
+- What is in the smoke?
+- Where did it come from?
+- How did it enter the air?
+- How is it moving?
+- Who might be exposed?
+- How much is present?
+- At which concentration is it hazardous? 
+:::
+
+::: {.column width="48%"}
+### Then what?
+
+- How could we measure it?
+- What do the measurements mean?
+- Are concentrations changing?
+- When are concentrations highest?
+- What actions might reduce exposure?
+:::
+::::::
+
+This is where **measurement** becomes part of hazardous-material management.
+
+# How Do We Know What Is Happening?
+
+Hazard recognition tells us that something **may** be dangerous.
+
+Measurement helps us determine what is actually happening.
+
+Measurements can help us answer questions such as:
+
+- How much is present?
+- When did concentrations increase?
+- How long did elevated conditions last?
+- Where are the highest concentrations?
+- Are conditions improving or getting worse?
+- Did a control measure make a difference?
+
+But measurements create another challenge:
+
+> **What do we do when we have thousands of measurements?**
+
+# From Measurement to Data
+
+Environmental and workplace instruments can collect measurements every:
+
+- second
+- minute
+- hour
+- day
+
+A single monitoring project can quickly produce thousands of observations.
+
+Humans are not very good at finding patterns by scrolling through thousands of spreadsheet rows.
+
+So we need tools that help us:
+
+```text
+Question
+   ↓
+Data
+   ↓
+Check
+   ↓
+Describe
+   ↓
+Visualize
+   ↓
+Interpret
+   ↓
+Manage
+```
+
+This will become another recurring workflow in SHM 377.
+
+# Virtual Laboratory
+
+## Introduction to R, RStudio, and Environmental Monitoring Data
+
+After the break, we will use a real environmental-monitoring dataset to begin answering a hazardous-material question.
+
+Our first case:
+
+> **What happened to ambient particle concentrations during five days of winter smoke monitoring?**

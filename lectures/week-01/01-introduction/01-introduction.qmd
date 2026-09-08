@@ -9,9 +9,46 @@ format:
 editor: visual
 ---
 
+<style>
+
+/* ---------------------------------------------------------
+   SHM 377 Lecture Typography
+   Keep body text and blockquotes visually consistent
+   --------------------------------------------------------- */
+
+/* Use the normal document text color throughout */
+body {
+  color: #212529;
+}
+
+/* Keep blockquotes consistent with normal lecture text */
+blockquote {
+  color: #212529;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Do not alter intentional bold text inside blockquotes */
+blockquote strong {
+  color: #212529;
+}
+
+/* Keep centered lecture content the same color as body text */
+.text-center {
+  color: #212529;
+}
+
+/* Align images in the Types of Hazards section */
+.hazard-list {
+  min-height: 165px;
+}
+
+</style>
+
 :::::: columns
 ::: {.column width="40%"}
-![Smoke from wildfires obscures the Space Needle and Seattle skyline on September 12, 2020. Photo by Lindsey Wasson/Getty Images.](seattle-smoke-2020.jpg){fig-alt="Seattle skyline and Space Needle obscured by wildfire smoke on September 12, 2020"}
+![Yosemite Valley from Wawona Road (Highway 41), October 10, 2022. El Capitan is visible on the left, Half Dome near the center, and Cathedral Rocks and Spires on the right. Photograph by Yoni Rodriguez.](yosemite-2022.jpg){fig-alt="View of Yosemite Valley from Wawona Road with El Capitan on the left, Half Dome near the center, Cathedral Rocks and Spires on the right, and the forested Yosemite Valley below"}
 :::
 
 ::: {.column width="4%"}
@@ -84,7 +121,13 @@ Before we get started, I'd like to learn a little about who's in the room.
 3. Complete the **Tell Me About You** survey.
 4. We'll use this same response page throughout SHM 377.
 
-![](poll-everywhere-response.jpg){fig-alt="Poll Everywhere QR code and response link for SHM 377" width="700"}
+::: {style="text-align:center; margin: 2rem 0;"}
+
+![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
+
+**Scan the QR code to join Poll Everywhere.**
+
+:::
 
 **Today's survey:**
 
@@ -120,11 +163,15 @@ Before we define a hazardous material, let's see what you think.
 
 Use the same Poll Everywhere response page from the beginning of class.
 
-![](poll-everywhere-response.jpg){fig-alt="Poll Everywhere QR code and response link for SHM 377" width="700"}
+::: {style="text-align:center; margin: 2rem 0;"}
+
+![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
+
+**Scan the QR code to respond.**
+
+:::
 
 ## What Made You Choose?
-
-Look at the class responses.
 
 > **Why did you consider some of these hazardous materials?**
 
@@ -153,11 +200,15 @@ Hazards can take many forms.
 ::: {.column width="30%"}
 ## Chemical
 
+::: {.hazard-list}
 - Toxic substances
 - Flammable materials
 - Corrosives
 - Reactive materials
 - Explosives
+:::
+
+![West Fertilizer Company explosion, West, Texas, April 17, 2013. Credit: U.S. Chemical Safety and Hazard Investigation Board.](west-texas-april-17-2013.jpg){fig-alt="Explosion at the West Fertilizer Company in West, Texas, on April 17, 2013" width="100%"}
 :::
 
 ::: {.column width="5%"}
@@ -166,6 +217,7 @@ Hazards can take many forms.
 ::: {.column width="30%"}
 ## Physical
 
+::: {.hazard-list}
 - Heat
 - Cold
 - Noise
@@ -174,16 +226,23 @@ Hazards can take many forms.
 - Ergonomic stressors
 :::
 
+![Chernobyl Nuclear Power Plant following the April 26, 1986 reactor accident. Photo: Igor Kostin / Novosti Press Agency.](chernobyl-april-26-1986.jpg){fig-alt="Chernobyl Nuclear Power Plant following the April 26, 1986 reactor accident" width="100%"}
+:::
+
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="30%"}
 ## Biological
 
+::: {.hazard-list}
 - Bacteria
 - Viruses
 - Mold
 - Vector-borne hazards
+:::
+
+![Health workers disinfecting a morgue and preparing to bury a probable Ebola victim in Rwampara, Democratic Republic of the Congo, September 2026. Photo: Arlette Bashizi / The New York Times.](bunia-democratic-republic-of-the-congo-september-4-2026-nyt.jpg){fig-alt="Health workers wearing protective equipment during an Ebola response in Rwampara, Democratic Republic of the Congo" width="100%"}
 :::
 ::::::
 
@@ -220,24 +279,46 @@ A **radioactive material**, however, contains unstable atoms that emit ionizing 
 
 ## Where Does SHM 377 Fit?
 
+:::::: columns
+::: {.column width="52%"}
 This course focuses on **hazardous materials and their management**.
 
-But hazardous materials do not exist in isolation.
+But hazardous-material disasters can involve several interacting factors.
 
-A real-world hazardous-material problem may also involve:
+### Deepwater Horizon
 
-- heat or cold
-- noise
-- radiation
-- biological hazards
-- environmental conditions
-- worker activities
-- emergency conditions
+**Physical hazards**
 
-Understanding the entire situation helps us make better management decisions.
+- **Pressure Differential:** "The sudden, massive drop in hydrostatic pressure allowed trapped gas to expand violently as it traveled upward." [Source: EBSCO Research Starters](https://www.ebsco.com/research-starters/environmental-sciences/gulf-mexico-oil-spill)
+- **Equipment Overwhelm:** "The rig's mud-gas separator was physically incapable of handling the volume and speed of the rushing blowout. It failed, raining highly flammable drilling fluids and gas directly onto the rig deck." [Source: U.S. Department of the Interior](https://www.doi.gov/ocl/hearings/112/OilSpillInvestigation_101311)
+
+**Chemical hazards**
+
+- **Flammable Gas:** Methane
+- **Ignition Source:** "The expanding vapor cloud quickly encountered an ignition source on the rig (likely from the electrical system or engine rooms). This caused a rapid chemical combustion reaction, resulting in a massive fireball explosion at 9:49 p.m., followed by a secondary explosion moments later." [Source: U.S. Department of the Interior](https://www.doi.gov/ocl/hearings/112/OilSpillInvestigation_101311)
+
+**Human and organizational decisions**
+
+- Misinterpreted pressure-test results
+- Failure to recognize warning signs
+- Decisions that reduced safety margins
+- Inadequate response to the developing well-control problem
+
+The disaster resulted from these factors **acting together**, not from a single hazard alone.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="44%"}
+![Deepwater Horizon offshore drilling rig fire, Gulf of Mexico, April 21, 2010. Photo: Gerald Herbert / Associated Press.](deepwater-horizon-april-21-2010.jpg){fig-alt="Deepwater Horizon offshore drilling rig engulfed in fire in the Gulf of Mexico on April 21, 2010" width="100%"}
+:::
+::::::
 
 # What Is a Hazardous Material?
 
+:::::: columns
+::: {.column width="52%"}
 At a broad level, a hazardous material is a substance or material capable of causing harm to:
 
 - human health
@@ -252,6 +333,15 @@ Hazardous materials may exist as:
 - **gases**
 
 What makes them hazardous depends on their physical, chemical, biological, or radioactive properties.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="44%"}
+![Phase changes of matter between solids, liquids, and gases.](phase-changes-of-matter.jpg){fig-alt="Diagram showing solids, liquids, and gases and the phase changes between them, including melting, freezing, vaporization, condensation, sublimation, and deposition" width="100%"}
+:::
+::::::
 
 ## Hazardous Properties
 
@@ -268,6 +358,191 @@ Some important hazardous properties include:
 - **Biological hazard** — presence of disease-causing organisms or biological agents
 
 A material may have **more than one hazardous property**.
+
+## Does the Presence of a Hazard Mean You Will Be Harmed?
+
+Not necessarily.
+
+Knowing that something **has a hazardous property** is only the beginning.
+
+To understand the potential for harm, we also need to ask:
+
+- How much are you exposed to?
+- How often are you exposed?
+- How long does the exposure last?
+- How does it enter or interact with the body?
+- What biological effect can occur at that dose?
+
+This relationship between the amount of exposure and the resulting effect is called the **dose-response relationship**.
+
+## "Only the Dose Makes the Poison"
+
+:::::: columns
+::: {.column width="38%"}
+![Portrait of Paracelsus, attributed to Quentin Matsys or his workshop/circle, c. 1530–1540.](paracelsus.jpg){fig-alt="Renaissance portrait of Paracelsus wearing a red hat and holding a book" width="85%"}
+
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="56%"}
+**Paracelsus (1494–1541)** was a Swiss physician and alchemist often called the **Father of Toxicology**.
+
+He is associated with one of the foundational principles of toxicology:
+
+> **"Only the dose makes the poison."**
+
+The important question is therefore not simply:
+
+**Is this hazardous?**
+
+It is also:
+
+**At what dose does it become harmful?**
+:::
+::::::
+
+::: {.text-center}
+
+## From Hazard to Health Effect
+
+The presence of a hazard does not necessarily mean that harm will occur.
+
+<br>
+
+**Hazardous Property**  
+↓  
+**Exposure**  
+↓  
+**Dose**  
+↓  
+**Biological Response**
+
+<br>
+
+The **dose** helps connect exposure to the potential health effect.
+
+:::
+
+Two people can encounter the same hazardous material but receive very different doses depending on the:
+
+- concentration or intensity
+- frequency of exposure
+- duration of exposure
+- route of exposure
+
+## Bananas Are Radioactive
+
+:::::: columns
+::: {.column width="47%"}
+Bananas naturally contain **potassium**.
+
+A small fraction of naturally occurring potassium is the radioactive isotope **potassium-40**.
+
+So technically:
+
+**Bananas are radioactive.**
+
+But does that mean you should stop eating bananas?
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%"}
+![Bananas with a radiation warning symbol. Photo: Stepan Popov.](banana-radioactive.jpg){fig-alt="Bunch of bananas with a radiation warning symbol illustrating the natural radioactivity of potassium in bananas" width="100%"}
+
+*Photo: Stepan Popov.*
+:::
+::::::
+
+## What Do You Think?
+
+### Poll Everywhere
+
+Before we look at the dose, make your best guess.
+
+**1. Should You Stop Eating Bananas?**
+
+- Yes
+- No
+- Not sure
+
+**2. Approximately how many bananas would correspond to a potentially lethal radiation dose?**
+
+- 10
+- 100
+- 1,000
+- 100,000
+- 1,000,000
+- 50,000,000
+
+::: {style="text-align:center; margin: 2rem 0;"}
+
+![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
+
+**Scan the QR code to respond.**
+
+:::
+
+## Radioactive ≠ Automatically Dangerous
+
+The important question is not simply:
+
+**Is radiation present?**
+
+The important question is:
+
+> **What dose does a person receive?**
+
+A banana contains a very small amount of naturally occurring radioactive potassium-40.
+
+Eating a banana therefore exposes you to a **very small amount of ionizing radiation**.
+
+The presence of radioactivity alone does not tell us whether the exposure represents a meaningful health risk.
+
+## How Much Radiation Are We Talking About?
+
+![Illustration comparing radiation doses using banana equivalent doses. Credit: Information is Beautiful / David McCandless.](banana-radioactive-dose.jpg){fig-alt="Infographic from Information is Beautiful comparing approximate radiation doses using bananas with dental X-rays, air travel, annual radiation exposure, and a very large radiation dose" width="400"}
+
+The **banana equivalent dose** is a communication tool used to put very small radiation doses into perspective.
+
+The point is **not** that someone could realistically eat millions of bananas.
+
+The point is that:
+
+> **Detectable radiation is not the same thing as a dangerous radiation dose.**
+
+::: {.text-center}
+
+## Hazard, Exposure, Dose, and Response
+
+This gives us a more complete way to think about hazardous materials:
+
+<br>
+
+**Hazard**  
+↓  
+**Exposure**  
+↓  
+**Dose**  
+↓  
+**Response**
+
+<br>
+
+A material can possess a **hazardous property** without every encounter with that material producing harm.
+
+Understanding risk requires us to consider both:
+
+**What can the hazard do?**
+
+and
+
+**How much exposure actually occurs?**
+
+:::
 
 ## Does Everyone Define "Hazardous Material" the Same Way?
 
@@ -336,6 +611,47 @@ You will learn how to recognize and use these systems.
 
 But hazardous-material management requires more than recognizing a symbol or memorizing a label.
 
+## Hazardous Materials Throughout Their Life Cycle
+
+:::::: columns
+::: {.column width="52%"}
+Hazardous-material management does not occur at only one point.
+
+A hazardous material may need to be managed throughout its life cycle:
+
+::: {.text-center}
+
+Acquire / Receive  
+↓  
+Store  
+↓  
+Use / Handle  
+↓  
+Transport  
+↓  
+Respond to Releases  
+↓  
+Manage Waste  
+↓  
+Dispose
+
+:::
+
+Different hazards, exposures, regulations, and management decisions may become important at different stages.
+
+> **Hazardous-material management means thinking about the material before, during, and after its use.**
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="44%"}
+![Hazardous materials life cycle from acquisition and receiving through storage, use, transport, release response, waste management, and disposal.](hazardous-materials-lifecycle-infographic.jpg){fig-alt="Circular hazardous materials life cycle infographic showing Acquire or Receive, Store, Use or Handle, Transport, Respond to Releases, Manage Waste, and Dispose" width="100%"}
+:::
+::::::
+
+::: {.text-center}
+
 # From Hazard Recognition to Hazard Management
 
 When we encounter a hazardous-material problem, we need to ask more than:
@@ -360,122 +676,50 @@ We also need to ask:
 
 As we work through SHM 377, we will think about hazardous-material problems as a system:
 
-```text
-Hazard / Material
-       ↓
-Properties
-       ↓
-Source / Activity
-       ↓
-Release or Hazard Generation
-       ↓
-Environmental / Workplace Medium
-       ↓
-Transport or Transmission
-       ↓
-Exposure
-       ↓
-Health / Safety / Environmental Effects
-       ↓
-Measurement & Evaluation
-       ↓
-Controls / Management
-       ↓
-Regulation & Communication
-```
+<br>
+
+**Hazard / Material**  
+↓  
+**Properties**  
+↓  
+**Source / Activity**  
+↓  
+**Release or Hazard Generation**  
+↓  
+**Environmental / Workplace Medium**  
+↓  
+**Transport or Transmission**  
+↓  
+**Exposure**  
+↓  
+**Dose**  
+↓  
+**Health / Safety / Environmental Effects**  
+↓  
+**Measurement & Evaluation**  
+↓  
+**Controls / Management**  
+↓  
+**Regulation & Communication**
+
+<br>
 
 Not every hazardous-material problem will require every step.
 
 But this framework gives us a systematic way to understand what is happening and decide what information we need.
 
-## Example: Smoke in the Air
-
-Consider the photograph from the beginning of today's lecture.
-
-:::::: columns
-::: {.column width="48%"}
-### What might we ask?
-
-- What is in the smoke?
-- Where did it come from?
-- How did it enter the air?
-- How is it moving?
-- Who might be exposed?
-- How much is present?
-- At which concentration is it hazardous? 
 :::
 
-::: {.column width="48%"}
-### Then what?
+---
 
-- How could we measure it?
-- What do the measurements mean?
-- Are concentrations changing?
-- When are concentrations highest?
-- What actions might reduce exposure?
-:::
-::::::
+### Copyright & Use
 
-This is where **measurement** becomes part of hazardous-material management.
+**SHM 377: Hazardous Materials Management**  
+© 2026 Yoni Rodriguez
 
-# How Do We Know What Is Happening?
+Except where otherwise noted, original course materials are licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0).
 
-Hazard recognition tells us that something **may** be dangerous.
-
-Measurement helps us determine what is actually happening.
-
-Measurements can help us answer questions such as:
-
-- How much is present?
-- When did concentrations increase?
-- How long did elevated conditions last?
-- Where are the highest concentrations?
-- Are conditions improving or getting worse?
-- Did a control measure make a difference?
-
-But measurements create another challenge:
-
-> **What do we do when we have thousands of measurements?**
-
-# From Measurement to Data
-
-Environmental and workplace instruments can collect measurements every:
-
-- second
-- minute
-- hour
-- day
-
-A single monitoring project can quickly produce thousands of observations.
-
-Humans are not very good at finding patterns by scrolling through thousands of spreadsheet rows.
-
-So we need tools that help us:
-
-```text
-Question
-   ↓
-Data
-   ↓
-Check
-   ↓
-Describe
-   ↓
-Visualize
-   ↓
-Interpret
-   ↓
-Manage
-```
-
-This will become another recurring workflow in SHM 377.
-
-# Virtual Laboratory
-
-## Introduction to R, RStudio, and Environmental Monitoring Data
-
-After the break, we will use a real environmental-monitoring dataset to begin answering a hazardous-material question.
-
-Our first case:
-
-> **What happened to ambient particle concentrations during five days of winter smoke monitoring?**
+Third-party materials remain subject to their respective copyright and
+licensing terms.

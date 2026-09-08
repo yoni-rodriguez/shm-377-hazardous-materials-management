@@ -79,8 +79,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <body class="quarto-light">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
-<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
@@ -95,18 +95,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link" data-scroll-target="#r-and-rstudio">R and RStudio</a>
   <ul class="collapse">
   <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
-  <li><a href="#what-is-rstudio" id="toc-what-is-rstudio" class="nav-link" data-scroll-target="#what-is-rstudio">What is RStudio?</a>
-  <ul class="collapse">
-  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
-  <li><a href="#console" id="toc-console" class="nav-link" data-scroll-target="#console">Console</a></li>
-  <li><a href="#environment" id="toc-environment" class="nav-link" data-scroll-target="#environment">Environment</a></li>
-  <li><a href="#files-plots-packages-and-help" id="toc-files-plots-packages-and-help" class="nav-link" data-scroll-target="#files-plots-packages-and-help">Files, Plots, Packages, and Help</a></li>
+  <li><a href="#what-is-rstudio" id="toc-what-is-rstudio" class="nav-link" data-scroll-target="#what-is-rstudio">What is RStudio?</a></li>
   </ul></li>
+  <li><a href="#installing-r-and-rstudio" id="toc-installing-r-and-rstudio" class="nav-link" data-scroll-target="#installing-r-and-rstudio">Installing R and RStudio</a>
+  <ul class="collapse">
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
+  <li><a href="#check-your-installation" id="toc-check-your-installation" class="nav-link" data-scroll-target="#check-your-installation">Check Your Installation</a></li>
+  <li><a href="#the-rstudio-interface" id="toc-the-rstudio-interface" class="nav-link" data-scroll-target="#the-rstudio-interface">The RStudio Interface</a></li>
+  </ul></li>
+  <li><a href="#organizing-your-work" id="toc-organizing-your-work" class="nav-link" data-scroll-target="#organizing-your-work">Organizing Your Work</a>
+  <ul class="collapse">
+  <li><a href="#create-a-course-folder" id="toc-create-a-course-folder" class="nav-link" data-scroll-target="#create-a-course-folder">Create a Course Folder</a></li>
+  <li><a href="#file-naming" id="toc-file-naming" class="nav-link" data-scroll-target="#file-naming">File Naming</a></li>
+  </ul></li>
+  <li><a href="#creating-your-first-r-script" id="toc-creating-your-first-r-script" class="nav-link" data-scroll-target="#creating-your-first-r-script">Creating Your First R Script</a>
+  <ul class="collapse">
+  <li><a href="#open-a-new-r-script" id="toc-open-a-new-r-script" class="nav-link" data-scroll-target="#open-a-new-r-script">Open a New R Script</a></li>
+  <li><a href="#save-your-r-script" id="toc-save-your-r-script" class="nav-link" data-scroll-target="#save-your-r-script">Save Your R Script</a></li>
+  <li><a href="#set-the-working-directory" id="toc-set-the-working-directory" class="nav-link" data-scroll-target="#set-the-working-directory">Set the Working Directory</a></li>
   </ul></li>
   <li><a href="#your-first-r-commands" id="toc-your-first-r-commands" class="nav-link" data-scroll-target="#your-first-r-commands">Your First R Commands</a></li>
   <li><a href="#creating-an-object" id="toc-creating-an-object" class="nav-link" data-scroll-target="#creating-an-object">Creating an Object</a></li>
-  <li><a href="#getting-the-dataset" id="toc-getting-the-dataset" class="nav-link" data-scroll-target="#getting-the-dataset">Getting the Dataset</a></li>
+  <li><a href="#getting-the-dataset" id="toc-getting-the-dataset" class="nav-link" data-scroll-target="#getting-the-dataset">Getting the Dataset</a>
+  <ul class="collapse">
+  <li><a href="#download-the-dataset" id="toc-download-the-dataset" class="nav-link" data-scroll-target="#download-the-dataset">Download the Dataset</a></li>
+  </ul></li>
   <li><a href="#importing-the-dataset" id="toc-importing-the-dataset" class="nav-link" data-scroll-target="#importing-the-dataset">Importing the Dataset</a></li>
+  <li><a href="#reading-r-code" id="toc-reading-r-code" class="nav-link" data-scroll-target="#reading-r-code">Reading R Code</a>
+  <ul class="collapse">
+  <li><a href="#commands-and-functions" id="toc-commands-and-functions" class="nav-link" data-scroll-target="#commands-and-functions">Commands and Functions</a></li>
+  <li><a href="#referring-to-a-variable" id="toc-referring-to-a-variable" class="nav-link" data-scroll-target="#referring-to-a-variable">Referring to a Variable</a></li>
+  </ul></li>
   <li><a href="#inspect-before-you-analyze" id="toc-inspect-before-you-analyze" class="nav-link" data-scroll-target="#inspect-before-you-analyze">Inspect Before You Analyze</a></li>
   <li><a href="#look-at-the-first-rows" id="toc-look-at-the-first-rows" class="nav-link" data-scroll-target="#look-at-the-first-rows">Look at the First Rows</a></li>
   <li><a href="#look-at-the-last-rows" id="toc-look-at-the-last-rows" class="nav-link" data-scroll-target="#look-at-the-last-rows">Look at the Last Rows</a></li>
@@ -114,20 +134,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#dataset-dimensions" id="toc-dataset-dimensions" class="nav-link" data-scroll-target="#dataset-dimensions">Dataset Dimensions</a></li>
   <li><a href="#examine-the-structure" id="toc-examine-the-structure" class="nav-link" data-scroll-target="#examine-the-structure">Examine the Structure</a></li>
   <li><a href="#did-r-understand-the-date-and-time" id="toc-did-r-understand-the-date-and-time" class="nav-link" data-scroll-target="#did-r-understand-the-date-and-time">Did R Understand the Date and Time?</a></li>
-  <li><a href="#check-the-measurements" id="toc-check-the-measurements" class="nav-link" data-scroll-target="#check-the-measurements">Check the Measurements</a></li>
+  <li><a href="#check-the-measurements" id="toc-check-the-measurements" class="nav-link" data-scroll-target="#check-the-measurements">Check the Measurements</a>
+  <ul class="collapse">
+  <li><a href="#minimum" id="toc-minimum" class="nav-link" data-scroll-target="#minimum">Minimum</a></li>
+  <li><a href="#maximum" id="toc-maximum" class="nav-link" data-scroll-target="#maximum">Maximum</a></li>
+  </ul></li>
   <li><a href="#unusual-values" id="toc-unusual-values" class="nav-link" data-scroll-target="#unusual-values">Unusual Values</a></li>
   <li><a href="#describe-the-data" id="toc-describe-the-data" class="nav-link" data-scroll-target="#describe-the-data">Describe the Data</a>
   <ul class="collapse">
   <li><a href="#mean" id="toc-mean" class="nav-link" data-scroll-target="#mean">Mean</a></li>
   <li><a href="#median" id="toc-median" class="nav-link" data-scroll-target="#median">Median</a></li>
-  <li><a href="#minimum" id="toc-minimum" class="nav-link" data-scroll-target="#minimum">Minimum</a></li>
-  <li><a href="#maximum" id="toc-maximum" class="nav-link" data-scroll-target="#maximum">Maximum</a></li>
+  <li><a href="#minimum-1" id="toc-minimum-1" class="nav-link" data-scroll-target="#minimum-1">Minimum</a></li>
+  <li><a href="#maximum-1" id="toc-maximum-1" class="nav-link" data-scroll-target="#maximum-1">Maximum</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul></li>
   <li><a href="#descriptive-statistics-have-limits" id="toc-descriptive-statistics-have-limits" class="nav-link" data-scroll-target="#descriptive-statistics-have-limits">Descriptive Statistics Have Limits</a></li>
   <li><a href="#visualizing-concentration-through-time" id="toc-visualizing-concentration-through-time" class="nav-link" data-scroll-target="#visualizing-concentration-through-time">Visualizing Concentration Through Time</a></li>
-  <li><a href="#read-the-plot-command" id="toc-read-the-plot-command" class="nav-link" data-scroll-target="#read-the-plot-command">Read the Plot Command</a></li>
-  <li><a href="#why-does-the-axis-say-only-concentration" id="toc-why-does-the-axis-say-only-concentration" class="nav-link" data-scroll-target="#why-does-the-axis-say-only-concentration">Why Does the Axis Say Only Concentration?</a></li>
+  <li><a href="#reading-the-plot-function" id="toc-reading-the-plot-function" class="nav-link" data-scroll-target="#reading-the-plot-function">Reading the Plot Function</a>
+  <ul class="collapse">
+  <li><a href="#arguments" id="toc-arguments" class="nav-link" data-scroll-target="#arguments">Arguments</a></li>
+  <li><a href="#why-do-we-use-commas" id="toc-why-do-we-use-commas" class="nav-link" data-scroll-target="#why-do-we-use-commas">Why Do We Use Commas?</a></li>
+  <li><a href="#why-does-date_time-come-first" id="toc-why-does-date_time-come-first" class="nav-link" data-scroll-target="#why-does-date_time-come-first">Why Does <code>date_time</code> Come First?</a></li>
+  <li><a href="#positional-arguments" id="toc-positional-arguments" class="nav-link" data-scroll-target="#positional-arguments">Positional Arguments</a></li>
+  <li><a href="#named-arguments" id="toc-named-arguments" class="nav-link" data-scroll-target="#named-arguments">Named Arguments</a></li>
+  <li><a href="#what-does-type-l-mean" id="toc-what-does-type-l-mean" class="nav-link" data-scroll-target="#what-does-type-l-mean">What Does <code>type = "l"</code> Mean?</a></li>
+  <li><a href="#what-does-xlab-mean" id="toc-what-does-xlab-mean" class="nav-link" data-scroll-target="#what-does-xlab-mean">What Does <code>xlab</code> Mean?</a></li>
+  <li><a href="#what-does-ylab-mean" id="toc-what-does-ylab-mean" class="nav-link" data-scroll-target="#what-does-ylab-mean">What Does <code>ylab</code> Mean?</a></li>
+  <li><a href="#what-does-mean-inside-the-function" id="toc-what-does-mean-inside-the-function" class="nav-link" data-scroll-target="#what-does-mean-inside-the-function">What Does <code>=</code> Mean Inside the Function?</a></li>
+  <li><a href="#read-the-entire-command" id="toc-read-the-entire-command" class="nav-link" data-scroll-target="#read-the-entire-command">Read the Entire Command</a></li>
+  </ul></li>
+  <li><a href="#why-units-matter" id="toc-why-units-matter" class="nav-link" data-scroll-target="#why-units-matter">Why Units Matter</a></li>
   <li><a href="#look-before-explaining" id="toc-look-before-explaining" class="nav-link" data-scroll-target="#look-before-explaining">Look Before Explaining</a></li>
   <li><a href="#observation-and-interpretation" id="toc-observation-and-interpretation" class="nav-link" data-scroll-target="#observation-and-interpretation">Observation and Interpretation</a></li>
   <li><a href="#what-can-we-conclude" id="toc-what-can-we-conclude" class="nav-link" data-scroll-target="#what-can-we-conclude">What Can We Conclude?</a></li>
@@ -144,14 +180,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul>
 </nav>
 </div>
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-</div>
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Introduction to R &amp; Environmental Data</h1>
-<p class="subtitle lead">SHM 377 — Hazardous Materials Management</p>
+<p class="subtitle lead">SHM 377 Hazardous Materials Management</p>
 </div>
 
 
@@ -299,6 +333,8 @@ blockquote strong {
 </tr>
 </tbody>
 </table>
+<p>The measurements were collected using a <strong>TSI DustTrak</strong>.</p>
+<p>Particle concentration was measured in <strong>milligrams per cubic meter (mg/m³)</strong>.</p>
 <p>The monitoring instrument measured particle concentration.</p>
 <p>It did not identify the exact source of every particle.</p>
 <p>This distinction is important.</p>
@@ -327,57 +363,311 @@ blockquote strong {
 </section>
 <section id="r-and-rstudio" class="level1">
 <h1>R and RStudio</h1>
+<p>We will use two pieces of software in this course: <strong>R</strong> and <strong>RStudio</strong>.</p>
+<p>They work together, but they are not the same thing.</p>
+<blockquote class="blockquote">
+<p><strong>R is the program that performs the analysis. RStudio is the interface we use to work with R.</strong></p>
+</blockquote>
+<p>Both are available for free.</p>
 <section id="what-is-r" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-r">What is R?</h2>
-<p>R is a programming language and analytical environment used for:</p>
+<p><img src="r-logo.jpg" class="img-fluid" alt="R statistical computing software logo." width="180"></p>
+<p><strong>R</strong> is a programming language and analytical environment used for:</p>
 <ul>
 <li>data analysis</li>
 <li>statistics</li>
 <li>visualization</li>
 <li>reproducible research</li>
 </ul>
+<p>When we ask R to calculate a mean, summarize a dataset, or create a graph, <strong>R is the software actually performing those operations</strong>.</p>
+<p>R is free software and is available for Windows, macOS, and Linux.</p>
+<p><a href="https://www.r-project.org/">Download R from the R Project</a></p>
 </section>
 <section id="what-is-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-rstudio">What is RStudio?</h2>
-<p>RStudio is the interface we will use to work with R.</p>
-<p>You will commonly see four areas:</p>
-<section id="source" class="level3">
-<h3 class="anchored" data-anchor-id="source">Source</h3>
-<p>Where we write and save our code.</p>
+<p><img src="r-studio-logo.jpg" class="img-fluid" alt="RStudio integrated development environment logo." width="180"></p>
+<p><strong>RStudio</strong> is an integrated development environment, or IDE, that provides a convenient interface for working with R.</p>
+<p>Instead of working with R through a basic command window, RStudio gives us an organized workspace where we can:</p>
+<ul>
+<li>write and save code</li>
+<li>run R commands</li>
+<li>view our data</li>
+<li>create and view graphs</li>
+<li>navigate files</li>
+<li>access help and documentation</li>
+</ul>
+<p>RStudio Desktop is available in a free open source edition.</p>
+<p><a href="https://posit.co/downloads/">Download RStudio Desktop from Posit</a></p>
 </section>
-<section id="console" class="level3">
-<h3 class="anchored" data-anchor-id="console">Console</h3>
-<p>Where R executes commands.</p>
 </section>
-<section id="environment" class="level3">
-<h3 class="anchored" data-anchor-id="environment">Environment</h3>
-<p>Shows objects currently available in R.</p>
+<section id="installing-r-and-rstudio" class="level1 page-columns page-full">
+<h1>Installing R and RStudio</h1>
+<p>Before we begin working with data, we need both <strong>R</strong> and <strong>RStudio Desktop</strong> installed on your computer.</p>
+<p>Both are free.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Installation order matters
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Install the software in this order:</p>
+<ol type="1">
+<li><strong>Install R</strong></li>
+<li><strong>Install RStudio Desktop</strong></li>
+<li><strong>Open RStudio</strong></li>
+<li><strong>Confirm that RStudio can find and run R</strong></li>
+</ol>
+<p>RStudio provides the interface, but R performs the computations.</p>
+</div>
+</div>
+<section id="windows" class="level2">
+<h2 class="anchored" data-anchor-id="windows">Windows</h2>
+<ol type="1">
+<li>Go to the <a href="https://www.r-project.org/">R Project</a>.</li>
+<li>Select <strong>CRAN</strong>.</li>
+<li>Choose a CRAN mirror.</li>
+<li>Select <strong>Download R for Windows</strong>.</li>
+<li>Download the current version of R.</li>
+<li>Run the installer and follow the installation prompts.</li>
+<li>Go to the <a href="https://posit.co/downloads/">RStudio Desktop download page</a>.</li>
+<li>Download the free version of RStudio Desktop for Windows.</li>
+<li>Run the RStudio installer.</li>
+<li>Open RStudio.</li>
+</ol>
 </section>
-<section id="files-plots-packages-and-help" class="level3">
-<h3 class="anchored" data-anchor-id="files-plots-packages-and-help">Files, Plots, Packages, and Help</h3>
-<p>Tools for navigating files, viewing graphs, managing packages, and finding documentation.</p>
+<section id="macos" class="level2">
+<h2 class="anchored" data-anchor-id="macos">macOS</h2>
+<p>The installation process on macOS depends on your version of macOS and your Mac’s processor.</p>
+<ol type="1">
+<li>Go to the <a href="https://www.r-project.org/">R Project</a>.</li>
+<li>Select <strong>CRAN</strong>.</li>
+<li>Choose a CRAN mirror.</li>
+<li>Select <strong>Download R for macOS</strong>.</li>
+<li>Read the available installer descriptions carefully.</li>
+<li>Download the version appropriate for your Mac.</li>
+<li>Install R.</li>
+<li>Go to the <a href="https://posit.co/downloads/">RStudio Desktop download page</a>.</li>
+<li>Download the free version of RStudio Desktop for macOS.</li>
+<li>Install RStudio.</li>
+<li>Open RStudio.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>macOS users
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not guess which installer you need.</p>
+<p>Different Mac computers may use different processors. We will verify your Mac and select the appropriate installer before continuing if you are unsure.</p>
+</div>
+</div>
+</section>
+<section id="check-your-installation" class="level2">
+<h2 class="anchored" data-anchor-id="check-your-installation">Check Your Installation</h2>
+<p>Once RStudio opens, locate the <strong>Console</strong> pane.</p>
+<p>You should see information about the version of R that is running followed by the <code>&gt;</code> prompt.</p>
+<p>At the prompt, enter:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>If R returns:</p>
+<pre class="text"><code>[1] 4</code></pre>
+<p>R and RStudio are communicating correctly.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Need more help?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you have trouble installing R or RStudio, use the official installation resources:</p>
+<ul>
+<li><a href="https://www.r-project.org/">R Project</a></li>
+<li><a href="https://posit.co/downloads/">RStudio Desktop Download</a></li>
+<li><a href="https://docs.posit.co/ide/desktop-pro/getting_started/installation.html">RStudio Desktop Installation Documentation</a></li>
+</ul>
+<p>If you are unsure which version to install, especially on macOS, ask for help before continuing.</p>
+</div>
+</div>
+</section>
+<section id="the-rstudio-interface" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="the-rstudio-interface">The RStudio Interface</h2>
+<p>You will commonly see four areas in RStudio:</p>
+<div class="column-screen-inset">
+<p><img src="r-studio-panes.jpg" class="img-fluid" alt="RStudio interface showing the Source, Console, Environment and History, and Files, Plots, Packages, Help, and Viewer panes."></p>
+</div>
 <p>One important habit for this course is:</p>
 <blockquote class="blockquote">
-<p><strong>Write your commands in a script rather than relying only on the Console.</strong></p>
+<p><strong>Write your commands in the Source pane rather than relying only on the Console.</strong></p>
 </blockquote>
-<p>The script becomes a record of what you did.</p>
+<p>The Source pane allows us to save our code and creates a record of what we did.</p>
 </section>
+</section>
+<section id="organizing-your-work" class="level1">
+<h1>Organizing Your Work</h1>
+<p>Before downloading our dataset, we need to decide where our files will live.</p>
+<p>Good file organization makes working with data much easier. Many problems in R happen because files are saved in different locations and R cannot find them.</p>
+<p>For this course, we will keep files associated with the same project together.</p>
+<section id="create-a-course-folder" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-course-folder">Create a Course Folder</h2>
+<p>Create a folder on your computer called:</p>
+<pre class="text"><code>SHM-377</code></pre>
+<p>Inside that folder, create a folder for today’s lab:</p>
+<pre class="text"><code>SHM-377/
+└── virtual-lab-01/</code></pre>
+<p>We will save everything for today’s analysis inside <code>virtual-lab-01</code>.</p>
+<p>By the end of the lab, your folder may look something like this:</p>
+<pre class="text"><code>SHM-377/
+└── virtual-lab-01/
+    ├── winter-smoke-2019-12-27_to_2019-12-31.csv
+    └── virtual-lab-01.R</code></pre>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Keep your project files together
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not save the dataset in one location, your R script somewhere else, and your other project files in another folder.</p>
+<p>Keeping related files together makes your analysis easier to reproduce and reduces problems caused by missing files or incorrect file paths.</p>
+</div>
+</div>
+</section>
+<section id="file-naming" class="level2">
+<h2 class="anchored" data-anchor-id="file-naming">File Naming</h2>
+<p>Use file names that tell you what the file contains.</p>
+<p>Good:</p>
+<pre class="text"><code>winter-smoke-2019-12-27_to_2019-12-31.csv
+virtual-lab-01.R</code></pre>
+<p>Avoid names such as:</p>
+<pre class="text"><code>data.csv
+data-final.csv
+data-final-2.csv
+stuff.csv</code></pre>
+<p>Clear file names become increasingly important as projects grow.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>A simple rule for this course
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>One project, one folder.</strong></p>
+<p>Keep the data, code, figures, and other files associated with an analysis together.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="creating-your-first-r-script" class="level1">
+<h1>Creating Your First R Script</h1>
+<p>Now we need a place to write and save our R commands.</p>
+<p>We will use an <strong>R script</strong>.</p>
+<p>An R script is a text file that contains R commands. Instead of typing commands only into the Console and losing track of what we did, we can save our commands in a script and use them again later.</p>
+<section id="open-a-new-r-script" class="level2">
+<h2 class="anchored" data-anchor-id="open-a-new-r-script">Open a New R Script</h2>
+<p>In RStudio:</p>
+<ol type="1">
+<li>Select <strong>File</strong>.</li>
+<li>Select <strong>New File</strong>.</li>
+<li>Select <strong>R Script</strong>.</li>
+</ol>
+<p>A new blank file will open in the Source pane.</p>
+<p>This is where we will write our R commands.</p>
+</section>
+<section id="save-your-r-script" class="level2">
+<h2 class="anchored" data-anchor-id="save-your-r-script">Save Your R Script</h2>
+<p>Before writing more code, save the file.</p>
+<ol type="1">
+<li>Select <strong>File</strong>.</li>
+<li>Select <strong>Save As</strong>.</li>
+<li>Navigate to your <code>SHM-377</code> folder.</li>
+<li>Open the <code>virtual-lab-01</code> folder.</li>
+<li>Save the file as:</li>
+</ol>
+<pre class="text"><code>virtual-lab-01.R</code></pre>
+<p>The <code>.R</code> file extension tells your computer that this is an R script.</p>
+<p>Your folder should now look like this:</p>
+<pre class="text"><code>SHM-377/
+└── virtual-lab-01/
+    └── virtual-lab-01.R</code></pre>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Write your commands in the script
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For this course, write your R commands in the R script in the Source pane.</p>
+<p>The Console shows what R is doing, but the script provides a saved record of the commands you used.</p>
+</div>
+</div>
+</section>
+<section id="set-the-working-directory" class="level2">
+<h2 class="anchored" data-anchor-id="set-the-working-directory">Set the Working Directory</h2>
+<p>R also needs to know where to look for the files used in our analysis.</p>
+<p>Because we saved our R script inside <code>virtual-lab-01</code>, we can tell R to use that folder as the working directory.</p>
+<p>In RStudio:</p>
+<ol type="1">
+<li>Select <strong>Session</strong>.</li>
+<li>Select <strong>Set Working Directory</strong>.</li>
+<li>Select <strong>To Source File Location</strong>.</li>
+</ol>
+<p>This tells R to look for files in the same folder where the R script is saved.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Why does this matter?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Later, we will ask R to open the dataset using only its file name:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="st">"winter-smoke-2019-12-27_to_2019-12-31.csv"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>R needs to know which folder to search.</p>
+<p>Setting the working directory to the source file location tells R to begin searching inside <code>virtual-lab-01</code>.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="your-first-r-commands" class="level1">
 <h1>Your First R Commands</h1>
+<p>Now that R and RStudio are installed and communicating, we can begin working in R.</p>
 <p>We will start very simply.</p>
-<p>Run:</p>
+<p>A <strong>command</strong> is an instruction we give R.</p>
+<p>For example:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4</code></pre>
 </div>
 </div>
+<p>This command asks R to perform a calculation.</p>
 <p>R receives the instruction and returns the result underneath the code.</p>
 <p>Try another:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="sc">/</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="sc">/</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5</code></pre>
 </div>
@@ -391,11 +681,11 @@ blockquote strong {
 <h1>Creating an Object</h1>
 <p>We can also store information in R.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Now ask R what is stored in <code>x</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5</code></pre>
 </div>
@@ -404,7 +694,7 @@ blockquote strong {
 <pre class="text"><code>&lt;-</code></pre>
 <p>is called the assignment operator.</p>
 <p>You can read this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>as:</p>
 <blockquote class="blockquote">
 <p>Store the value 5 in an object called <code>x</code>.</p>
@@ -413,19 +703,42 @@ blockquote strong {
 </section>
 <section id="getting-the-dataset" class="level1">
 <h1>Getting the Dataset</h1>
-<p>Our teaching dataset is:</p>
-<pre class="text"><code>winter-smoke-2019-12-27_to_2019-12-31.csv</code></pre>
-<p>The dataset contains measurements from December 27 through December 31, 2019.</p>
-<p>For the first lab, we want the process of getting the dataset to be simple.</p>
-<p>Later in the course we can expand our GitHub workflow.</p>
+<p>Now that we have a place for our work, we need the dataset we will analyze.</p>
+<p>For this lab, we will use:</p>
+<p><code>winter-smoke-2019-12-27_to_2019-12-31.csv</code></p>
+<p>The dataset contains ambient particle measurements collected from December 27 through December 31, 2019.</p>
+<section id="download-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="download-the-dataset">Download the Dataset</h2>
+<p>The dataset is available in the SHM 377 GitHub repository.</p>
+<ol type="1">
+<li>Open the SHM 377 GitHub repository.</li>
+<li>Navigate to <code>lectures/week-01/01-R-introduction/</code>.</li>
+<li>Select <code>winter-smoke-2019-12-27_to_2019-12-31.csv</code>.</li>
+<li>Download the file.</li>
+<li>Save the file inside your <code>virtual-lab-01</code> folder.</li>
+</ol>
+<p>Your folder should now contain:</p>
+<pre class="text"><code>SHM-377/
+└── virtual-lab-01/
+    ├── virtual-lab-01.R
+    └── winter-smoke-2019-12-27_to_2019-12-31.csv</code></pre>
+<p>Now we are ready to bring the dataset into R.</p>
+</section>
 </section>
 <section id="importing-the-dataset" class="level1">
 <h1>Importing the Dataset</h1>
-<p>We can use <code>read.csv()</code> to import the file.</p>
+<p>We can use the <code>read.csv()</code> function to import the file.</p>
+<p><strong>Function:</strong> <code>read.csv()</code></p>
+<p><strong>Function name:</strong> <code>read.csv</code></p>
+<p><strong>Purpose:</strong> Import data from a CSV file.</p>
+<p>A <strong>function</strong> is a tool in R that performs a particular task.</p>
+<p>The name gives us a clue about what this function does.</p>
+<p><code>read.csv()</code> tells R to read a CSV file.</p>
+<p>Enter this command in your R script:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>winter_smoke <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"winter-smoke-2019-12-27_to_2019-12-31.csv"</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>winter_smoke <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"winter-smoke-2019-12-27_to_2019-12-31.csv"</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Read that command from right to left.</p>
 <p>R will:</p>
@@ -435,7 +748,62 @@ blockquote strong {
 <li>create a dataset in R</li>
 <li>store the dataset under the name <code>winter_smoke</code></li>
 </ol>
+<p>The assignment operator <code>&lt;-</code> is doing the same thing we saw earlier when we wrote:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This time, instead of storing the number <code>5</code>, we are storing an entire dataset.</p>
 <p>We now have data inside R.</p>
+</section>
+<section id="reading-r-code" class="level1">
+<h1>Reading R Code</h1>
+<p>Before we continue, let’s learn how to read some of the R code we will use.</p>
+<section id="commands-and-functions" class="level2">
+<h2 class="anchored" data-anchor-id="commands-and-functions">Commands and Functions</h2>
+<p>A <strong>command</strong> is an instruction we give R.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>asks R to perform a calculation.</p>
+<p>Many of the commands we use in R involve <strong>functions</strong>.</p>
+<p>A function is a tool in R that performs a particular task.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The function name is <code>head</code>.</p>
+<p>The parentheses tell R that we want to use the function.</p>
+<p>We can place information inside the parentheses to tell the function what we want it to work with.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This tells R:</p>
+<blockquote class="blockquote">
+<p>Use the <code>head()</code> function on the dataset called <code>winter_smoke</code>.</p>
+</blockquote>
+<p>Throughout this course, when we introduce a new function, focus first on two questions:</p>
+<ol type="1">
+<li>What is the function called?</li>
+<li>What does the function do?</li>
+</ol>
+<p>You do not need to memorize every function.</p>
+</section>
+<section id="referring-to-a-variable" class="level2">
+<h2 class="anchored" data-anchor-id="referring-to-a-variable">Referring to a Variable</h2>
+<p>Our dataset is called:</p>
+<pre class="text"><code>winter_smoke</code></pre>
+<p>One variable inside that dataset is called:</p>
+<pre class="text"><code>concentration</code></pre>
+<p>In R, we can refer to that variable using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>concentration</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The <code>$</code> tells R to look inside <code>winter_smoke</code> for the variable called <code>concentration</code>.</p>
+<p>You can read:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>concentration</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>as:</p>
+<blockquote class="blockquote">
+<p>The <code>concentration</code> variable inside the <code>winter_smoke</code> dataset.</p>
+</blockquote>
+<p>Later, when we write something such as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>we can read it as:</p>
+<blockquote class="blockquote">
+<p>Use the <code>mean()</code> function on the <code>concentration</code> variable inside the <code>winter_smoke</code> dataset.</p>
+</blockquote>
+</section>
 </section>
 <section id="inspect-before-you-analyze" class="level1">
 <h1>Inspect Before You Analyze</h1>
@@ -455,9 +823,12 @@ blockquote strong {
 </section>
 <section id="look-at-the-first-rows" class="level1">
 <h1>Look at the First Rows</h1>
-<p>Use <code>head()</code>.</p>
+<p>The first function we will use to inspect our dataset is <code>head()</code>.</p>
+<p><strong>Function:</strong> <code>head()</code></p>
+<p><strong>Function name:</strong> <code>head</code></p>
+<p><strong>Purpose:</strong> Look at the first several rows of a dataset.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            date_time concentration
 1 2019-12-27 00:01:59         0.018
@@ -468,7 +839,7 @@ blockquote strong {
 6 2019-12-27 00:11:59         0.019</code></pre>
 </div>
 </div>
-<p>This shows the first several observations.</p>
+<p>This tells R to use the <code>head()</code> function on our <code>winter_smoke</code> dataset.</p>
 <p>Look at the output.</p>
 <p>Ask yourself:</p>
 <blockquote class="blockquote">
@@ -477,9 +848,12 @@ blockquote strong {
 </section>
 <section id="look-at-the-last-rows" class="level1">
 <h1>Look at the Last Rows</h1>
-<p>Use <code>tail()</code>.</p>
+<p>The <code>tail()</code> function allows us to look at the end of a dataset.</p>
+<p><strong>Function:</strong> <code>tail()</code></p>
+<p><strong>Function name:</strong> <code>tail</code></p>
+<p><strong>Purpose:</strong> Look at the last several rows of a dataset.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>               date_time concentration
 3595 2019-12-31 23:49:59         0.002
@@ -494,9 +868,12 @@ blockquote strong {
 </section>
 <section id="variable-names" class="level1">
 <h1>Variable Names</h1>
-<p>Use <code>names()</code>.</p>
+<p>The <code>names()</code> function shows us the names of the variables in an object.</p>
+<p><strong>Function:</strong> <code>names()</code></p>
+<p><strong>Function name:</strong> <code>names</code></p>
+<p><strong>Purpose:</strong> Show the variable names in a dataset.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "date_time"     "concentration"</code></pre>
 </div>
@@ -507,14 +884,25 @@ concentration</code></pre>
 </section>
 <section id="dataset-dimensions" class="level1">
 <h1>Dataset Dimensions</h1>
-<p>Use <code>dim()</code>.</p>
+<p>The <code>dim()</code> function shows us the dimensions of an object.</p>
+<p><strong>Function:</strong> <code>dim()</code></p>
+<p><strong>Function name:</strong> <code>dim</code></p>
+<p><strong>Purpose:</strong> Show the number of rows and columns in a dataset.</p>
+<p>The name <code>dim</code> is short for <strong>dimensions</strong>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3600    2</code></pre>
 </div>
 </div>
-<p>R reports:</p>
+<p>Inside the parentheses, we tell the function which object we want it to examine:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Here:</p>
+<pre class="text"><code>dim</code></pre>
+<p>is the function name, and:</p>
+<pre class="text"><code>winter_smoke</code></pre>
+<p>is the object we are asking the function to examine.</p>
+<p>R reports two numbers in this order:</p>
 <pre class="text"><code>rows columns</code></pre>
 <p>The rows represent observations.</p>
 <p>The columns represent variables.</p>
@@ -522,42 +910,92 @@ concentration</code></pre>
 </section>
 <section id="examine-the-structure" class="level1">
 <h1>Examine the Structure</h1>
-<p>Use <code>str()</code>.</p>
+<p>The <code>str()</code> function shows us the structure of an object.</p>
+<p><strong>Function:</strong> <code>str()</code></p>
+<p><strong>Function name:</strong> <code>str</code></p>
+<p><strong>Purpose:</strong> Examine the structure of a dataset.</p>
+<p>The name <code>str</code> is short for <strong>structure</strong>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   3600 obs. of  2 variables:
  $ date_time    : chr  "2019-12-27 00:01:59" "2019-12-27 00:03:59" "2019-12-27 00:05:59" "2019-12-27 00:07:59" ...
  $ concentration: num  0.018 0.019 0.019 0.019 0.019 0.019 0.019 0.019 0.019 0.019 ...</code></pre>
 </div>
 </div>
-<p>This tells us several things at once, including:</p>
+<p>This tells R:</p>
+<blockquote class="blockquote">
+<p>Use the <code>str()</code> function to examine the object called <code>winter_smoke</code>.</p>
+</blockquote>
+<p>This function tells us several things at once, including:</p>
 <ul>
 <li>variable names</li>
 <li>variable types</li>
 <li>example values</li>
 </ul>
-<p>This is one of the most useful commands to run immediately after importing a dataset.</p>
+<p>This is one of the most useful functions to run immediately after importing a dataset.</p>
 </section>
 <section id="did-r-understand-the-date-and-time" class="level1">
 <h1>Did R Understand the Date and Time?</h1>
-<p>The <code>date_time</code> variable may initially be imported as text.</p>
-<p>If that happens, R does not yet understand that those values represent time.</p>
-<p>We can convert the variable.</p>
+<p>When we examined the structure of our dataset, R may have imported the <code>date_time</code> variable as text.</p>
+<p>If that happens, R does not yet understand that those values represent dates and times.</p>
+<p>We need to tell R how to interpret them.</p>
+<p>The function we will use is:</p>
+<pre class="text"><code>as.POSIXct()</code></pre>
+<p><strong>Function:</strong> <code>as.POSIXct()</code></p>
+<p><strong>Function name:</strong> <code>as.POSIXct</code></p>
+<p><strong>Purpose:</strong> Convert date and time information into a format that R recognizes as date and time data.</p>
+<p>The beginning of the function name gives us a useful clue:</p>
+<pre class="text"><code>as.</code></pre>
+<p>functions in R are often used to convert something from one type of data into another type.</p>
+<p>For our purposes, you can think of:</p>
+<pre class="text"><code>as.POSIXct()</code></pre>
+<p>as:</p>
+<blockquote class="blockquote">
+<p>Convert this information into date and time data that R can understand.</p>
+</blockquote>
+<p>You do not need to memorize the name <code>as.POSIXct()</code>.</p>
+<p>For now, what matters is understanding what we are asking R to do.</p>
+<p>Our dataset is called:</p>
+<pre class="text"><code>winter_smoke</code></pre>
+<p>The date and time variable inside that dataset is called:</p>
+<pre class="text"><code>date_time</code></pre>
+<p>We can refer to that variable using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Remember that <code>$</code> tells R to look inside the dataset for a particular variable.</p>
+<p>You can read:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>as:</p>
+<blockquote class="blockquote">
+<p>The <code>date_time</code> variable inside the <code>winter_smoke</code> dataset.</p>
+</blockquote>
+<p>Now we can convert that variable:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>Read the command from right to left.</p>
+<p>First:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>identifies the <code>date_time</code> variable inside the <code>winter_smoke</code> dataset.</p>
+<p>Then:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.POSIXct</span>(winter_smoke<span class="sc">$</span>date_time)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>asks R to convert those values into date and time data.</p>
+<p>Finally:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time <span class="ot">&lt;-</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>stores the converted values back into the <code>date_time</code> variable.</p>
 <p>Then check the structure again.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(winter_smoke)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   3600 obs. of  2 variables:
  $ date_time    : POSIXct, format: "2019-12-27 00:01:59" "2019-12-27 00:03:59" ...
  $ concentration: num  0.018 0.019 0.019 0.019 0.019 0.019 0.019 0.019 0.019 0.019 ...</code></pre>
 </div>
 </div>
+<p>Compare the result with what we saw before.</p>
+<p>Did the variable type change?</p>
 <p>This introduces another important habit:</p>
 <blockquote class="blockquote">
 <p><strong>Do not assume your code worked. Check.</strong></p>
@@ -566,26 +1004,46 @@ concentration</code></pre>
 <section id="check-the-measurements" class="level1">
 <h1>Check the Measurements</h1>
 <p>Before calculating averages or making graphs, we should inspect the range of the measurements.</p>
-<p>First, find the minimum.</p>
+<section id="minimum" class="level2">
+<h2 class="anchored" data-anchor-id="minimum">Minimum</h2>
+<p>The <code>min()</code> function finds the smallest value.</p>
+<p><strong>Function:</strong> <code>min()</code></p>
+<p><strong>Function name:</strong> <code>min</code></p>
+<p><strong>Purpose:</strong> Find the minimum value.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0</code></pre>
 </div>
 </div>
-<p>Now find the maximum.</p>
+<p>We can read this as:</p>
+<blockquote class="blockquote">
+<p>Use the <code>min()</code> function on the <code>concentration</code> variable inside the <code>winter_smoke</code> dataset.</p>
+</blockquote>
+</section>
+<section id="maximum" class="level2">
+<h2 class="anchored" data-anchor-id="maximum">Maximum</h2>
+<p>The <code>max()</code> function finds the largest value.</p>
+<p><strong>Function:</strong> <code>max()</code></p>
+<p><strong>Function name:</strong> <code>max</code></p>
+<p><strong>Purpose:</strong> Find the maximum value.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.288</code></pre>
 </div>
 </div>
+<p>We can read this as:</p>
+<blockquote class="blockquote">
+<p>Use the <code>max()</code> function on the <code>concentration</code> variable inside the <code>winter_smoke</code> dataset.</p>
+</blockquote>
 <p>The observed concentration range in this teaching dataset is approximately:</p>
 <pre class="text"><code>0.000 to 0.288</code></pre>
 <p>At this stage, we should ask:</p>
 <blockquote class="blockquote">
 <p>Do these measurements appear plausible?</p>
 </blockquote>
+</section>
 </section>
 <section id="unusual-values" class="level1">
 <h1>Unusual Values</h1>
@@ -617,19 +1075,31 @@ concentration</code></pre>
 <p>Now that we have inspected and checked the dataset, we can begin summarizing it.</p>
 <section id="mean" class="level2">
 <h2 class="anchored" data-anchor-id="mean">Mean</h2>
+<p>The <code>mean()</code> function calculates the arithmetic mean.</p>
+<p><strong>Function:</strong> <code>mean()</code></p>
+<p><strong>Function name:</strong> <code>mean</code></p>
+<p><strong>Purpose:</strong> Calculate the mean of a set of values.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.02079694</code></pre>
 </div>
 </div>
+<p>We can read this as:</p>
+<blockquote class="blockquote">
+<p>Use the <code>mean()</code> function on the <code>concentration</code> variable inside the <code>winter_smoke</code> dataset.</p>
+</blockquote>
 <p>The mean gives us one way to describe the center of the measurements.</p>
 <p>But one number cannot show us how concentrations changed through time.</p>
 </section>
 <section id="median" class="level2">
 <h2 class="anchored" data-anchor-id="median">Median</h2>
+<p>The <code>median()</code> function calculates the median.</p>
+<p><strong>Function:</strong> <code>median()</code></p>
+<p><strong>Function name:</strong> <code>median</code></p>
+<p><strong>Purpose:</strong> Calculate the median of a set of values.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.018</code></pre>
 </div>
@@ -639,19 +1109,19 @@ concentration</code></pre>
 <p>Are they similar?</p>
 <p>If not, what might that suggest about the distribution of measurements?</p>
 </section>
-<section id="minimum" class="level2">
-<h2 class="anchored" data-anchor-id="minimum">Minimum</h2>
+<section id="minimum-1" class="level2">
+<h2 class="anchored" data-anchor-id="minimum-1">Minimum</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0</code></pre>
 </div>
 </div>
 </section>
-<section id="maximum" class="level2">
-<h2 class="anchored" data-anchor-id="maximum">Maximum</h2>
+<section id="maximum-1" class="level2">
+<h2 class="anchored" data-anchor-id="maximum-1">Maximum</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.288</code></pre>
 </div>
@@ -659,14 +1129,18 @@ concentration</code></pre>
 </section>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>R can calculate several descriptive statistics at once.</p>
+<p>The <code>summary()</code> function produces several summary statistics at once.</p>
+<p><strong>Function:</strong> <code>summary()</code></p>
+<p><strong>Function name:</strong> <code>summary</code></p>
+<p><strong>Purpose:</strong> Produce a summary of an object.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(winter_smoke<span class="sc">$</span>concentration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
  0.0000  0.0130  0.0180  0.0208  0.0300  0.2880 </code></pre>
 </div>
 </div>
+<p>For a numeric variable, R provides several descriptive statistics.</p>
 <p>Look at the output.</p>
 <p>What information does R provide?</p>
 <p>What information is still missing?</p>
@@ -689,55 +1163,252 @@ concentration</code></pre>
 <p>We will place:</p>
 <p><strong>time on the x axis</strong></p>
 <p>and</p>
-<p><strong>concentration on the y axis</strong></p>
+<p><strong>particle concentration on the y axis</strong></p>
+<p>These measurements were collected using a TSI DustTrak.</p>
+<p>The particle concentration measurements are reported in:</p>
+<p><strong>milligrams per cubic meter (mg/m³)</strong></p>
+<p>The function we will use is <code>plot()</code>.</p>
+<p><strong>Function:</strong> <code>plot()</code></p>
+<p><strong>Function name:</strong> <code>plot</code></p>
+<p><strong>Purpose:</strong> Create a graph.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
-<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Date / Time"</span>,</span>
-<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Concentration"</span></span>
-<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Date / Time"</span>,</span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Particle Concentration (mg/m³)"</span></span>
+<span id="cb74-7"><a href="#cb74-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="01-R-introduction_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="01-R-introduction_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The graph will appear directly underneath the code.</p>
-<p>This is one of the advantages of using a Quarto document.</p>
-<p>The code, result, and explanation remain together.</p>
+<p>In this lab document, the graph appears directly underneath the code.</p>
+<p>When you run the command from your R script in RStudio, the graph will appear in the <strong>Plots</strong> pane.</p>
 </section>
-<section id="read-the-plot-command" class="level1">
-<h1>Read the Plot Command</h1>
-<p>Look at the code again.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
-<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
-<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Date / Time"</span>,</span>
-<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Concentration"</span></span>
-<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>We told R:</p>
-<ol type="1">
-<li>use <code>date_time</code> on the x axis</li>
-<li>use <code>concentration</code> on the y axis</li>
-<li>connect observations with a line</li>
-<li>label the x axis</li>
-<li>label the y axis</li>
-</ol>
+<section id="reading-the-plot-function" class="level1">
+<h1>Reading the Plot Function</h1>
+<p>The <code>plot()</code> function is more complicated than the functions we have used so far.</p>
+<p>That makes it a useful example for learning how to read R code.</p>
+<p>Look at the command again:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb75-5"><a href="#cb75-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Date / Time"</span>,</span>
+<span id="cb75-6"><a href="#cb75-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Particle Concentration (mg/m³)"</span></span>
+<span id="cb75-7"><a href="#cb75-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Everything inside the parentheses provides information to the <code>plot()</code> function.</p>
+<p>These pieces of information are called <strong>arguments</strong>.</p>
+<section id="arguments" class="level2">
+<h2 class="anchored" data-anchor-id="arguments">Arguments</h2>
+<p>An <strong>argument</strong> gives a function information it needs to perform its task.</p>
+<p>Our <code>plot()</code> function contains five arguments:</p>
+<pre class="text"><code>winter_smoke$date_time
+winter_smoke$concentration
+type = "l"
+xlab = "Date / Time"
+ylab = "Particle Concentration (mg/m³)"</code></pre>
+<p>Each argument is separated by a comma.</p>
 </section>
-<section id="why-does-the-axis-say-only-concentration" class="level1">
-<h1>Why Does the Axis Say Only Concentration?</h1>
-<p>You may notice that we have not added a concentration unit.</p>
-<p>That is intentional.</p>
-<p>We still need to confirm the measurement scale and units from the original project documentation.</p>
-<p>Until that information is verified, we should not invent a unit.</p>
+<section id="why-do-we-use-commas" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-use-commas">Why Do We Use Commas?</h2>
+<p>Inside a function, commas separate one argument from the next.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The comma tells R that:</p>
+<pre class="text"><code>winter_smoke$date_time</code></pre>
+<p>is one argument and:</p>
+<pre class="text"><code>winter_smoke$concentration</code></pre>
+<p>is another argument.</p>
+<p>We do not use a semicolon here.</p>
+<p>A semicolon can be used in R to separate complete commands or expressions.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span>; x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>contains two complete instructions.</p>
+<p>That is different from separating arguments inside a function.</p>
+<p>For this course, use <strong>commas to separate arguments inside functions</strong>.</p>
+</section>
+<section id="why-does-date_time-come-first" class="level2">
+<h2 class="anchored" data-anchor-id="why-does-date_time-come-first">Why Does <code>date_time</code> Come First?</h2>
+<p>The first two arguments in our <code>plot()</code> function are:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>concentration</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The <code>plot()</code> function expects information about what should appear on the x axis and what should appear on the y axis.</p>
+<p>When we provide arguments without writing their names, R uses their position.</p>
+<p>The first argument is used for the x axis.</p>
+<p>The second argument is used for the y axis.</p>
+<p>Therefore:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>date_time</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>comes first because we want time on the x axis.</p>
+<p>And:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>winter_smoke<span class="sc">$</span>concentration</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>comes second because we want particle concentration on the y axis.</p>
+<p>You can read:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb84-3"><a href="#cb84-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration</span>
+<span id="cb84-4"><a href="#cb84-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>as:</p>
 <blockquote class="blockquote">
-<p><strong>If we have not verified something, we should not present it as fact.</strong></p>
+<p>Plot <code>date_time</code> on the x axis and <code>concentration</code> on the y axis.</p>
 </blockquote>
+</section>
+<section id="positional-arguments" class="level2">
+<h2 class="anchored" data-anchor-id="positional-arguments">Positional Arguments</h2>
+<p>The first two arguments are being identified by their position.</p>
+<p>These are called <strong>positional arguments</strong>.</p>
+<p>We could make their meaning more explicit by writing:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> winter_smoke<span class="sc">$</span>concentration</span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This tells R exactly the same thing.</p>
+<p>Here:</p>
+<pre class="text"><code>x =</code></pre>
+<p>identifies the x axis data.</p>
+<p>And:</p>
+<pre class="text"><code>y =</code></pre>
+<p>identifies the y axis data.</p>
+<p>For our first graph, we are using the shorter form:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration</span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Both forms tell R to use <code>date_time</code> for x and <code>concentration</code> for y.</p>
+</section>
+<section id="named-arguments" class="level2">
+<h2 class="anchored" data-anchor-id="named-arguments">Named Arguments</h2>
+<p>The remaining arguments are written differently:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>type <span class="ot">=</span> <span class="st">"l"</span>,</span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>xlab <span class="ot">=</span> <span class="st">"Date / Time"</span>,</span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a>ylab <span class="ot">=</span> <span class="st">"Particle Concentration (mg/m³)"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>These are <strong>named arguments</strong>.</p>
+<p>Instead of relying on position, we explicitly tell R which setting we are changing.</p>
+</section>
+<section id="what-does-type-l-mean" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-type-l-mean">What Does <code>type = "l"</code> Mean?</h2>
+<p>The <code>type</code> argument controls how the observations are drawn.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>type <span class="ot">=</span> <span class="st">"l"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The letter:</p>
+<pre class="text"><code>l</code></pre>
+<p>stands for <strong>line</strong>.</p>
+<p>This tells R to connect the observations with a line.</p>
+<p>The quotation marks tell R that <code>"l"</code> is text rather than the name of an object.</p>
+</section>
+<section id="what-does-xlab-mean" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-xlab-mean">What Does <code>xlab</code> Mean?</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>xlab <span class="ot">=</span> <span class="st">"Date / Time"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>xlab</code> means <strong>x axis label</strong>.</p>
+<p>This tells R to display:</p>
+<pre class="text"><code>Date / Time</code></pre>
+<p>as the label for the x axis.</p>
+</section>
+<section id="what-does-ylab-mean" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-ylab-mean">What Does <code>ylab</code> Mean?</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>ylab <span class="ot">=</span> <span class="st">"Particle Concentration (mg/m³)"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>ylab</code> means <strong>y axis label</strong>.</p>
+<p>This tells R to display:</p>
+<pre class="text"><code>Particle Concentration (mg/m³)</code></pre>
+<p>as the label for the y axis.</p>
+<p>The unit is part of the label because the numbers alone do not tell us what was measured or how the measurement should be interpreted.</p>
+</section>
+<section id="what-does-mean-inside-the-function" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-mean-inside-the-function">What Does <code>=</code> Mean Inside the Function?</h2>
+<p>Earlier we used:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;-</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>to store information in an object.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Inside a function, we will often see:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="ot">=</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>used to provide a value for a named argument.</p>
+<p>For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>type <span class="ot">=</span> <span class="st">"l"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>means:</p>
+<blockquote class="blockquote">
+<p>Use <code>"l"</code> for the <code>type</code> argument.</p>
+</blockquote>
+<p>And:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb100"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>xlab <span class="ot">=</span> <span class="st">"Date / Time"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>means:</p>
+<blockquote class="blockquote">
+<p>Use <code>"Date / Time"</code> for the <code>xlab</code> argument.</p>
+</blockquote>
+<p>The <code>=</code> here is helping us specify how the function should behave.</p>
+</section>
+<section id="read-the-entire-command" class="level2">
+<h2 class="anchored" data-anchor-id="read-the-entire-command">Read the Entire Command</h2>
+<p>We can now read the complete function:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb101-3"><a href="#cb101-3" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
+<span id="cb101-4"><a href="#cb101-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb101-5"><a href="#cb101-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Date / Time"</span>,</span>
+<span id="cb101-6"><a href="#cb101-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Particle Concentration (mg/m³)"</span></span>
+<span id="cb101-7"><a href="#cb101-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>as:</p>
+<blockquote class="blockquote">
+<p>Use the <code>plot()</code> function. Put <code>date_time</code> on the x axis. Put <code>concentration</code> on the y axis. Connect the observations with a line. Label the x axis <code>"Date / Time"</code>. Label the y axis <code>"Particle Concentration (mg/m³)"</code>.</p>
+</blockquote>
+<p>That is all the command is asking R to do.</p>
+</section>
+</section>
+<section id="why-units-matter" class="level1">
+<h1>Why Units Matter</h1>
+<p>A number without a unit can be difficult or impossible to interpret correctly.</p>
+<p>In this dataset, the concentration values came from a TSI DustTrak and are reported in:</p>
+<p><strong>milligrams per cubic meter (mg/m³)</strong></p>
+<p>However, notice that our CSV variable is simply called:</p>
+<pre class="text"><code>concentration</code></pre>
+<p>The variable name itself does not tell us the unit.</p>
+<p>This is common when working with environmental monitoring data.</p>
+<p>A CSV file may contain the numerical measurements but may not contain all of the information needed to understand those measurements.</p>
+<p>That information may instead come from:</p>
+<ul>
+<li>instrument settings</li>
+<li>field notes</li>
+<li>data dictionaries</li>
+<li>project documentation</li>
+<li>sampling protocols</li>
+<li>laboratory reports</li>
+<li>instrument manuals</li>
+<li>knowledge of the monitoring method</li>
+</ul>
+<p>This means that importing a dataset is not enough.</p>
+<p>We also need to understand:</p>
+<blockquote class="blockquote">
+<p><strong>What was measured, how was it measured, and what units were used?</strong></p>
+</blockquote>
+<p>The appropriate unit depends on the agent, the environmental medium, the instrument, and the measurement method.</p>
+<p>For example, an air concentration may be expressed differently from a concentration measured in water or soil.</p>
+<p>Different agents may also be reported using different units.</p>
+<p>Understanding the standard measurement practices for the <strong>medium and agent being evaluated</strong> is part of understanding the dataset.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Never assume the units
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not infer a unit only from the numerical values in a dataset.</p>
+<p>Confirm the units using the instrument information, project documentation, sampling method, or another reliable source.</p>
+<p>If the unit cannot be verified, do not present one as fact.</p>
+</div>
+</div>
+<p>For this dataset, we have verified the measurement information, so our graph should identify the y axis as:</p>
+<pre class="text"><code>Particle Concentration (mg/m³)</code></pre>
+<p>Including the unit makes the graph more informative and preserves important measurement context.</p>
 </section>
 <section id="look-before-explaining" class="level1">
 <h1>Look Before Explaining</h1>
@@ -877,19 +1548,21 @@ Effects</code></pre>
 <h1>Reproducibility</h1>
 <p>One reason we are using R is that the analysis itself can be saved.</p>
 <p>For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>winter_smoke <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"winter-smoke-2019-12-27_to_2019-12-31.csv"</span></span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(winter_smoke)</span>
-<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(winter_smoke<span class="sc">$</span>concentration)</span>
-<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
-<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
-<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
-<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span></span>
-<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a>winter_smoke <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(</span>
+<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"winter-smoke-2019-12-27_to_2019-12-31.csv"</span></span>
+<span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb107-4"><a href="#cb107-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-5"><a href="#cb107-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(winter_smoke)</span>
+<span id="cb107-6"><a href="#cb107-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-7"><a href="#cb107-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(winter_smoke<span class="sc">$</span>concentration)</span>
+<span id="cb107-8"><a href="#cb107-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-9"><a href="#cb107-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb107-10"><a href="#cb107-10" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>date_time,</span>
+<span id="cb107-11"><a href="#cb107-11" aria-hidden="true" tabindex="-1"></a>  winter_smoke<span class="sc">$</span>concentration,</span>
+<span id="cb107-12"><a href="#cb107-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb107-13"><a href="#cb107-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Date / Time"</span>,</span>
+<span id="cb107-14"><a href="#cb107-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Particle Concentration (mg/m³)"</span></span>
+<span id="cb107-15"><a href="#cb107-15" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>These commands provide a record of what we did.</p>
 <p>Someone can inspect the code and understand how the analysis was produced.</p>
 <p>Later, this idea will lead naturally into Quarto reports.</p>
@@ -897,19 +1570,19 @@ Effects</code></pre>
 <section id="you-do-not-need-to-memorize-everything" class="level1">
 <h1>You Do Not Need to Memorize Everything</h1>
 <p>Today you encountered commands such as:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read.csv</span>()</span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>()</span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>()</span>
-<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>()</span>
-<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>()</span>
-<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>()</span>
-<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="fu">as.POSIXct</span>()</span>
-<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>()</span>
-<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>()</span>
-<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>()</span>
-<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>()</span>
-<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>()</span>
-<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read.csv</span>()</span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>()</span>
+<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>()</span>
+<span id="cb108-4"><a href="#cb108-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>()</span>
+<span id="cb108-5"><a href="#cb108-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>()</span>
+<span id="cb108-6"><a href="#cb108-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>()</span>
+<span id="cb108-7"><a href="#cb108-7" aria-hidden="true" tabindex="-1"></a><span class="fu">as.POSIXct</span>()</span>
+<span id="cb108-8"><a href="#cb108-8" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>()</span>
+<span id="cb108-9"><a href="#cb108-9" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>()</span>
+<span id="cb108-10"><a href="#cb108-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>()</span>
+<span id="cb108-11"><a href="#cb108-11" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>()</span>
+<span id="cb108-12"><a href="#cb108-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>()</span>
+<span id="cb108-13"><a href="#cb108-13" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You do not need to memorize all of these immediately.</p>
 <p>What matters more is understanding why we use them.</p>
 <p>Ask yourself:</p>

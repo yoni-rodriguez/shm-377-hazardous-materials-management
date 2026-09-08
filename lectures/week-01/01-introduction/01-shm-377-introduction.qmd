@@ -9,6 +9,7 @@ format:
 editor: visual
 ---
 
+```{=html}
 <style>
 
 /* ---------------------------------------------------------
@@ -45,6 +46,7 @@ blockquote strong {
 }
 
 </style>
+```
 
 :::::: columns
 ::: {.column width="40%"}
@@ -116,17 +118,15 @@ Before we get started, I'd like to learn a little about who's in the room.
 
 ### Poll Everywhere: First-Time Setup
 
-1. Scan the QR code below.
-2. Sign in/register using your **CWU account**.
-3. Complete the **Tell Me About You** survey.
-4. We'll use this same response page throughout SHM 377.
+1.  Scan the QR code below.
+2.  Sign in/register using your **CWU account**.
+3.  Complete the **Tell Me About You** survey.
+4.  We'll use this same response page throughout SHM 377.
 
 ::: {style="text-align:center; margin: 2rem 0;"}
-
 ![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
 
 **Scan the QR code to join Poll Everywhere.**
-
 :::
 
 **Today's survey:**
@@ -164,11 +164,9 @@ Before we define a hazardous material, let's see what you think.
 Use the same Poll Everywhere response page from the beginning of class.
 
 ::: {style="text-align:center; margin: 2rem 0;"}
-
 ![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
 
 **Scan the QR code to respond.**
-
 :::
 
 ## What Made You Choose?
@@ -196,11 +194,11 @@ But there is another question we need to answer:
 
 Hazards can take many forms.
 
-:::::: columns
-::: {.column width="30%"}
+::::::::::: columns
+:::: {.column width="30%"}
 ## Chemical
 
-::: {.hazard-list}
+::: hazard-list
 - Toxic substances
 - Flammable materials
 - Corrosives
@@ -209,15 +207,15 @@ Hazards can take many forms.
 :::
 
 ![West Fertilizer Company explosion, West, Texas, April 17, 2013. Credit: U.S. Chemical Safety and Hazard Investigation Board.](west-texas-april-17-2013.jpg){fig-alt="Explosion at the West Fertilizer Company in West, Texas, on April 17, 2013" width="100%"}
-:::
+::::
 
 ::: {.column width="5%"}
 :::
 
-::: {.column width="30%"}
+:::: {.column width="30%"}
 ## Physical
 
-::: {.hazard-list}
+::: hazard-list
 - Heat
 - Cold
 - Noise
@@ -227,15 +225,15 @@ Hazards can take many forms.
 :::
 
 ![Chernobyl Nuclear Power Plant following the April 26, 1986 reactor accident. Photo: Igor Kostin / Novosti Press Agency.](chernobyl-april-26-1986.jpg){fig-alt="Chernobyl Nuclear Power Plant following the April 26, 1986 reactor accident" width="100%"}
-:::
+::::
 
 ::: {.column width="5%"}
 :::
 
-::: {.column width="30%"}
+:::: {.column width="30%"}
 ## Biological
 
-::: {.hazard-list}
+::: hazard-list
 - Bacteria
 - Viruses
 - Mold
@@ -243,8 +241,8 @@ Hazards can take many forms.
 :::
 
 ![Health workers disinfecting a morgue and preparing to bury a probable Ebola victim in Rwampara, Democratic Republic of the Congo, September 2026. Photo: Arlette Bashizi / The New York Times.](bunia-democratic-republic-of-the-congo-september-4-2026-nyt.jpg){fig-alt="Health workers wearing protective equipment during an Ebola response in Rwampara, Democratic Republic of the Congo" width="100%"}
-:::
-::::::
+::::
+:::::::::::
 
 <br>
 
@@ -380,7 +378,6 @@ This relationship between the amount of exposure and the resulting effect is cal
 :::::: columns
 ::: {.column width="38%"}
 ![Portrait of Paracelsus, attributed to Quentin Matsys or his workshop/circle, c. 1530–1540.](paracelsus.jpg){fig-alt="Renaissance portrait of Paracelsus wearing a red hat and holding a book" width="85%"}
-
 :::
 
 ::: {.column width="6%"}
@@ -403,26 +400,24 @@ It is also:
 :::
 ::::::
 
-::: {.text-center}
-
+::: text-center
 ## From Hazard to Health Effect
 
 The presence of a hazard does not necessarily mean that harm will occur.
 
 <br>
 
-**Hazardous Property**  
-↓  
-**Exposure**  
-↓  
-**Dose**  
-↓  
+**Hazardous Property**\
+↓\
+**Exposure**\
+↓\
+**Dose**\
+↓\
 **Biological Response**
 
 <br>
 
 The **dose** helps connect exposure to the potential health effect.
-
 :::
 
 Two people can encounter the same hazardous material but receive very different doses depending on the:
@@ -479,11 +474,9 @@ Before we look at the dose, make your best guess.
 - 50,000,000
 
 ::: {style="text-align:center; margin: 2rem 0;"}
-
 ![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
 
 **Scan the QR code to respond.**
-
 :::
 
 ## Radioactive ≠ Automatically Dangerous
@@ -514,20 +507,19 @@ The point is that:
 
 > **Detectable radiation is not the same thing as a dangerous radiation dose.**
 
-::: {.text-center}
-
+::: text-center
 ## Hazard, Exposure, Dose, and Response
 
 This gives us a more complete way to think about hazardous materials:
 
 <br>
 
-**Hazard**  
-↓  
-**Exposure**  
-↓  
-**Dose**  
-↓  
+**Hazard**\
+↓\
+**Exposure**\
+↓\
+**Dose**\
+↓\
 **Response**
 
 <br>
@@ -541,7 +533,6 @@ Understanding risk requires us to consider both:
 and
 
 **How much exposure actually occurs?**
-
 :::
 
 ## Does Everyone Define "Hazardous Material" the Same Way?
@@ -613,34 +604,32 @@ But hazardous-material management requires more than recognizing a symbol or mem
 
 ## Hazardous Materials Throughout Their Life Cycle
 
-:::::: columns
-::: {.column width="52%"}
+::::::: columns
+:::: {.column width="52%"}
 Hazardous-material management does not occur at only one point.
 
 A hazardous material may need to be managed throughout its life cycle:
 
-::: {.text-center}
-
-Acquire / Receive  
-↓  
-Store  
-↓  
-Use / Handle  
-↓  
-Transport  
-↓  
-Respond to Releases  
-↓  
-Manage Waste  
-↓  
+::: text-center
+Acquire / Receive\
+↓\
+Store\
+↓\
+Use / Handle\
+↓\
+Transport\
+↓\
+Respond to Releases\
+↓\
+Manage Waste\
+↓\
 Dispose
-
 :::
 
 Different hazards, exposures, regulations, and management decisions may become important at different stages.
 
 > **Hazardous-material management means thinking about the material before, during, and after its use.**
-:::
+::::
 
 ::: {.column width="4%"}
 :::
@@ -648,10 +637,9 @@ Different hazards, exposures, regulations, and management decisions may become i
 ::: {.column width="44%"}
 ![Hazardous materials life cycle from acquisition and receiving through storage, use, transport, release response, waste management, and disposal.](hazardous-materials-lifecycle-infographic.jpg){fig-alt="Circular hazardous materials life cycle infographic showing Acquire or Receive, Store, Use or Handle, Transport, Respond to Releases, Manage Waste, and Dispose" width="100%"}
 :::
-::::::
+:::::::
 
-::: {.text-center}
-
+::: text-center
 # From Hazard Recognition to Hazard Management
 
 When we encounter a hazardous-material problem, we need to ask more than:
@@ -678,28 +666,28 @@ As we work through SHM 377, we will think about hazardous-material problems as a
 
 <br>
 
-**Hazard / Material**  
-↓  
-**Properties**  
-↓  
-**Source / Activity**  
-↓  
-**Release or Hazard Generation**  
-↓  
-**Environmental / Workplace Medium**  
-↓  
-**Transport or Transmission**  
-↓  
-**Exposure**  
-↓  
-**Dose**  
-↓  
-**Health / Safety / Environmental Effects**  
-↓  
-**Measurement & Evaluation**  
-↓  
-**Controls / Management**  
-↓  
+**Hazard / Material**\
+↓\
+**Properties**\
+↓\
+**Source / Activity**\
+↓\
+**Release or Hazard Generation**\
+↓\
+**Environmental / Workplace Medium**\
+↓\
+**Transport or Transmission**\
+↓\
+**Exposure**\
+↓\
+**Dose**\
+↓\
+**Health / Safety / Environmental Effects**\
+↓\
+**Measurement & Evaluation**\
+↓\
+**Controls / Management**\
+↓\
 **Regulation & Communication**
 
 <br>
@@ -707,19 +695,15 @@ As we work through SHM 377, we will think about hazardous-material problems as a
 Not every hazardous-material problem will require every step.
 
 But this framework gives us a systematic way to understand what is happening and decide what information we need.
-
 :::
 
----
+------------------------------------------------------------------------
 
 ### Copyright & Use
 
-**SHM 377: Hazardous Materials Management**  
+**SHM 377: Hazardous Materials Management**\
 © 2026 Yoni Rodriguez
 
-Except where otherwise noted, original course materials are licensed under the
-Creative Commons Attribution-NonCommercial 4.0 International License
-(CC BY-NC 4.0).
+Except where otherwise noted, original course materials are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
 
-Third-party materials remain subject to their respective copyright and
-licensing terms.
+Third-party materials remain subject to their respective copyright and licensing terms.

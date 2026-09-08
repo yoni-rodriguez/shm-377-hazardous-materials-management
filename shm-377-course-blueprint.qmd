@@ -519,6 +519,69 @@ evidence when solving hazardous-material problems.
 R should be introduced early and then developed progressively through repeated
 use rather than taught as an isolated programming unit.
 
+## Role of Artificial Intelligence
+
+Artificial intelligence is not prohibited in SHM 377. Students are encouraged
+to use AI thoughtfully as a tool for learning, problem solving, coding
+assistance, brainstorming, and improving their understanding.
+
+Students remain responsible for the accuracy, interpretation, reasoning, and
+recommendations contained in work they submit. If AI is used in preparing a
+laboratory report, project, analysis, or other submitted work, students should
+briefly identify where AI was used and explain how or why it was used.
+
+Students should not enter confidential, proprietary, sensitive,
+employer-owned, or otherwise restricted information into AI systems. AI
+availability and acceptable use also vary among workplaces. Students should
+therefore develop sufficient understanding of the underlying analytical
+methods and course concepts to evaluate AI-generated information and work
+without AI when necessary.
+
+### Instructional Philosophy
+
+AI should support student thinking rather than replace it.
+
+The purpose of SHM 377 is not to require students to memorize R syntax or
+complete technical work without access to modern tools. Students may receive
+R commands, templates, examples, troubleshooting support, and other
+scaffolding throughout the course.
+
+The emphasis is on whether students can:
+
+- Understand the hazardous materials problem
+- Understand what the data represent and how they were obtained
+- Select or appropriately use analytical methods
+- Interpret analytical results
+- Evaluate the accuracy and limitations of information
+- Apply technical and regulatory resources
+- Develop defensible management recommendations
+- Communicate their reasoning clearly
+
+A useful principle for the course is:
+
+> **Support the mechanics. Assess the reasoning.**
+
+Students should be able to explain the work they submit, including analyses
+or code developed with AI assistance.
+
+### Professional Use of AI
+
+AI use in professional settings may be limited by organizational policies,
+information security requirements, confidentiality requirements, software
+restrictions, or restrictions on moving organizational data to personal
+devices or external systems.
+
+SHM 377 should therefore help students learn both how to use AI appropriately
+and how to work when AI tools are unavailable or prohibited.
+
+Students should develop enough understanding of R, data analysis, hazardous
+materials principles, and professional resources to evaluate AI-generated
+information rather than assuming that an AI-generated response is correct.
+
+The final student-facing AI policy should be reviewed against current Central
+Washington University requirements before being incorporated into the course
+syllabus and other official course materials.
+
 ## Initial R Workflow
 
 The initial introduction should allow students to achieve a useful analytical

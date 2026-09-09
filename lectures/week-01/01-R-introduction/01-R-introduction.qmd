@@ -564,11 +564,29 @@ The dataset contains ambient particle measurements collected from December 27 th
 
 The dataset is available in the SHM 377 GitHub repository.
 
-1.  Open the SHM 377 GitHub repository.
-2.  Navigate to `lectures/week-01/01-R-introduction/`.
-3.  Select `winter-smoke-2019-12-27_to_2019-12-31.csv`.
-4.  Download the file.
-5.  Save the file inside your `virtual-lab-01` folder.
+Use the guide below to navigate to the dataset and download the CSV file.
+
+![](github-instructions.jpg){fig-alt="Step-by-step instructions showing how to navigate the SHM 377 GitHub repository to locate and download the winter smoke CSV dataset." width="100%"}
+
+Follow the steps shown above:
+
+1. Open the SHM 377 GitHub repository.
+2. Open the `lectures` folder.
+3. Open the `week-01` folder.
+4. Open the `01-R-introduction` folder.
+5. Select `winter-smoke-2019-12-27_to_2019-12-31.csv`.
+6. Download the CSV file.
+7. Save the file inside your `virtual-lab-01` folder.
+
+::: callout-important
+## Make sure you download the CSV file
+
+The file you need for this lab is:
+
+`winter-smoke-2019-12-27_to_2019-12-31.csv`
+
+Do not download the `.qmd`, `.html`, or `.pdf` file when you are trying to obtain the dataset.
+:::
 
 Your folder should now contain:
 
@@ -578,6 +596,14 @@ SHM-377/
     ├── virtual-lab-01.R
     └── winter-smoke-2019-12-27_to_2019-12-31.csv
 ```
+
+::: callout-tip
+## Check before continuing
+
+Confirm that both `virtual-lab-01.R` and `winter-smoke-2019-12-27_to_2019-12-31.csv` are saved inside the same `virtual-lab-01` folder.
+
+Keeping these files together will allow R to find the dataset when we import it in the next step.
+:::
 
 Now we are ready to bring the dataset into R.
 

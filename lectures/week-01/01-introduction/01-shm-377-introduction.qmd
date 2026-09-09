@@ -1,20 +1,11 @@
 ---
-title: "Introduction to R & Environmental Data"
-subtitle: "SHM 377 — Hazardous Materials Management"
-author: "Yoni Rodriguez"
 format:
   html:
     toc: true
-    toc-depth: 3
-    toc-location: left
-    code-copy: true
-    code-overflow: wrap
-    code-fold: false
-    number-sections: false
-execute:
-  echo: true
-  warning: false
-  message: false
+    toc-location: right
+    smooth-scroll: true
+    code-fold: true
+    embed-resources: true
 editor: visual
 ---
 
@@ -22,7 +13,7 @@ editor: visual
 <style>
 
 /* =========================================================
-   Lecture Styling
+   SHM 377 Lecture Styling
    ========================================================= */
 
 /* ---------------------------------------------------------
@@ -50,6 +41,16 @@ blockquote strong {
 }
 
 
+/* ---------------------------------------------------------
+   Types of Hazards
+   Keep images aligned on larger screens
+   --------------------------------------------------------- */
+
+.hazard-list {
+  min-height: 165px;
+}
+
+
 /* =========================================================
    Responsive Mobile Layout
    Stack ALL Quarto columns on narrow screens
@@ -74,13 +75,18 @@ blockquote strong {
     display: none !important;
   }
 
+  /* Remove desktop-only fixed heights */
+  .hazard-list {
+    min-height: auto;
+  }
+
   /* Keep images within the phone viewport */
   img {
     max-width: 100%;
     height: auto;
   }
 
-  /* Prevent long text or captions from forcing page width */
+  /* Prevent long links or captions from forcing page width */
   p,
   li,
   figcaption {
@@ -92,774 +98,662 @@ blockquote strong {
 </style>
 ```
 
-# Virtual Lab 01
+:::::: columns
+::: {.column width="40%"}
+![Yosemite Valley from Wawona Road (Highway 41), October 10, 2022. El Capitan is visible on the left, Half Dome near the center, and Cathedral Rocks and Spires on the right. Photograph by Yoni Rodriguez.](yosemite-2022.jpg){fig-alt="View of Yosemite Valley from Wawona Road with El Capitan on the left, Half Dome near the center, Cathedral Rocks and Spires on the right, and the forested Yosemite Valley below"}
+:::
 
-## Introduction to R & Environmental Data
+::: {.column width="4%"}
+:::
 
-Today we will use a real environmental monitoring dataset to answer a simple question:
+::: {.column width="56%"}
+## SHM 377: Hazardous Materials Management
 
-> **What happened to ambient particle concentrations during five days of winter monitoring?**
+### Introduction to Hazardous Materials Management
 
-We will use R to:
+**Lecture 01 · Fall 2026**
 
-- obtain the data
-- inspect the data
-- check the measurements
-- calculate simple summaries
-- create a visualization
-- interpret what we see
+Yoni Rodriguez\
+Engineering Technologies, Safety, and Construction\
+Central Washington University\
+[Yoni.Rodriguez\@cwu.edu](mailto:Yoni.Rodriguez@cwu.edu)
+:::
+::::::
 
-The goal is not to become a programmer today.
+# Introduction
 
-The goal is to begin using R as a tool for environmental and hazardous materials data analysis.
+- Who am I?
+- What are hazardous materials?
+- How do we manage hazardous materials?
+- Where does data fit?
+- What will we do in this course?
 
-# The Monitoring Question
+# Who am I?
 
-We have repeated measurements of airborne particles collected during winter monitoring.
+:::::: columns
+::: {.column width="44%"}
+![Yoni Rodriguez receiving the 2024 Peer Award at NASA Armstrong Flight Research Center, Edwards, California. Photo: [NASA Armstrong Flight Research Center](https://www.nasa.gov/armstrong/).](nasa-award.jpg){fig-alt="Yoni Rodriguez receiving the 2024 Peer Award at NASA Armstrong Flight Research Center"}
+:::
 
-The measurements were collected approximately every two minutes from:
+::: {.column width="5%"}
+:::
 
-**December 27 through December 31, 2019**
+::: {.column width="51%"}
+## Before CWU
 
-Our question is:
+**Environmental Health Scientist**\
+NASA
 
-> **What happened to ambient particle concentrations during these five days?**
+## Education
 
-Before doing any analysis, we need to understand what the dataset contains.
+**B.S. Biochemistry**\
+Washington State University
 
-# The Dataset
+**Graduate Training**\
+University of Washington
 
-The teaching dataset contains approximately 3,600 observations.
+## Today
 
-It contains two variables:
+**Assistant Professor**\
+Central Washington University
 
-| Variable | Meaning |
-|---|---|
-| `date_time` | When the measurement was collected |
-| `concentration` | Measured particle concentration |
+**Research Scientist**\
+University of Washington
+:::
+::::::
 
-The monitoring instrument measured particle concentration.
+# Tell Me About You
 
-It did not identify the exact source of every particle.
+Before we get started, I'd like to learn a little about who's in the room.
 
-This distinction is important.
+### Poll Everywhere: First-Time Setup
 
-> **Measurement does not equal source attribution.**
+1.  Scan the QR code below.
+2.  Sign in/register using your **CWU account**.
+3.  Complete the **Tell Me About You** survey.
+4.  We'll use this same response page throughout SHM 377.
 
-If concentration increases, we can observe the increase.
+::: {style="text-align:center; margin: 2rem 0;"}
+![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
 
-We cannot automatically conclude what caused it.
+**Scan the QR code to join Poll Everywhere.**
+:::
 
-# Why Are We Using R?
+**Today's survey:**
 
-Environmental and hazardous materials work often produces large amounts of data.
+- What is your year in school?
+- What is your major?
+- Have you taken a course related to hazardous materials before?
+- Have you used R, RStudio, or another programming language before?
 
-Examples include:
+# What Are Hazardous Materials and How Do We Manage Them?
 
-- air monitoring
-- water sampling
-- soil sampling
-- surface sampling
-- direct reading instrument data
-- meteorological measurements
-- exposure measurements
+Before we define a hazardous material, let's see what you think.
 
-R gives us a way to organize, inspect, analyze, visualize, and communicate those data.
+## What Counts as a Hazardous Material?
 
-Another major advantage is reproducibility.
+### Poll Everywhere
 
-Instead of clicking through a series of menus and trying to remember what we did, we can save the commands used for the analysis.
+**Which of the following would you consider a hazardous material?**
 
-# R and RStudio
+*Select all that apply.*
 
-## What is R?
+- Gasoline
+- Lead
+- Asbestos
+- Pesticides
+- Lithium-ion batteries
+- Smoke
+- Ionizing radiation
+- Non-ionizing radiation
+- Heat
+- Cold
+- Bacteria
+- Viruses
 
-R is a programming language and analytical environment used for:
+Use the same Poll Everywhere response page from the beginning of class.
 
-- data analysis
-- statistics
-- visualization
-- reproducible research
+::: {style="text-align:center; margin: 2rem 0;"}
+![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
 
-## What is RStudio?
+**Scan the QR code to respond.**
+:::
 
-RStudio is the interface we will use to work with R.
+## What Made You Choose?
 
-You will commonly see four areas:
+> **Why did you consider some of these hazardous materials?**
 
-### Source
+> **Why might you have hesitated on others?**
 
-Where we write and save our code.
+What made something seem hazardous?
 
-### Console
+- Could it make someone sick?
+- Could it cause an injury?
+- Could it burn or explode?
+- Could it damage property?
+- Could it damage the environment?
+- Could someone be exposed to it?
 
-Where R executes commands.
+These are all useful questions.
 
-### Environment
+But there is another question we need to answer:
 
-Shows objects currently available in R.
+> **Is everything that is hazardous a hazardous material?**
 
-### Files, Plots, Packages, and Help
+# Types of Hazards
 
-Tools for navigating files, viewing graphs, managing packages, and finding documentation.
+Hazards can take many forms.
 
-One important habit for this course is:
+::::::::::: columns
+:::: {.column width="30%"}
+## Chemical
 
-> **Write your commands in a script rather than relying only on the Console.**
+::: hazard-list
+- Toxic substances
+- Flammable materials
+- Corrosives
+- Reactive materials
+- Explosives
+:::
 
-The script becomes a record of what you did.
+![West Fertilizer Company explosion, West, Texas, April 17, 2013. Credit: U.S. Chemical Safety and Hazard Investigation Board.](west-texas-april-17-2013.jpg){fig-alt="Explosion at the West Fertilizer Company in West, Texas, on April 17, 2013" width="100%"}
+::::
 
-# Your First R Commands
+::: {.column width="5%"}
+:::
 
-We will start very simply.
+:::: {.column width="30%"}
+## Physical
 
-Run:
+::: hazard-list
+- Heat
+- Cold
+- Noise
+- Ionizing radiation
+- Non-ionizing radiation
+- Ergonomic stressors
+:::
 
-```{r}
-2 + 2
-```
+![Chernobyl Nuclear Power Plant following the April 26, 1986 reactor accident. Photo: Igor Kostin / Novosti Press Agency.](chernobyl-april-26-1986.jpg){fig-alt="Chernobyl Nuclear Power Plant following the April 26, 1986 reactor accident" width="100%"}
+::::
 
-R receives the instruction and returns the result underneath the code.
+::: {.column width="5%"}
+:::
 
-Try another:
+:::: {.column width="30%"}
+## Biological
 
-```{r}
-10 / 2
-```
+::: hazard-list
+- Bacteria
+- Viruses
+- Mold
+- Vector-borne hazards
+:::
 
-At its most basic level, working with R means:
+![Health workers disinfecting a morgue and preparing to bury a probable Ebola victim in Rwampara, Democratic Republic of the Congo, September 2026. Photo: Arlette Bashizi / The New York Times.](bunia-democratic-republic-of-the-congo-september-4-2026-nyt.jpg){fig-alt="Health workers wearing protective equipment during an Ebola response in Rwampara, Democratic Republic of the Congo" width="100%"}
+::::
+:::::::::::
 
-> We give R an instruction and R returns something.
+<br>
 
-# Creating an Object
+All of these can cause harm.
 
-We can also store information in R.
+But **not every hazard is a hazardous material**.
 
-```{r}
-x <- 5
-```
+## Hazard ≠ Hazardous Material
 
-Now ask R what is stored in `x`.
+A **hazard** is something with the potential to cause harm.
 
-```{r}
-x
-```
+A **hazardous material** is a material or substance whose properties can pose a risk to:
 
-The symbol:
+- human health
+- safety
+- property
+- the environment
 
-```text
-<-
-```
+Consider some of our Poll Everywhere examples.
 
-is called the assignment operator.
+**Heat** can be hazardous, but heat is not a material.
 
-You can read this:
+**Cold** can be hazardous, but cold is not a material.
 
-```r
-x <- 5
-```
+**Noise** can damage hearing, but noise is not a material.
 
-as:
+**Ionizing radiation** can cause harm, but radiation is energy rather than matter.
 
-> Store the value 5 in an object called `x`.
+A **radioactive material**, however, contains unstable atoms that emit ionizing radiation.
 
-We will use this idea constantly when working with datasets.
+> **All hazardous materials present hazards, but not all hazards are hazardous materials.**
 
-# Getting the Dataset
+## Where Does SHM 377 Fit?
 
-Our teaching dataset is:
+:::::: columns
+::: {.column width="52%"}
+This course focuses on **hazardous materials and their management**.
 
-```text
-winter-smoke-2019-12-27_to_2019-12-31.csv
-```
+But hazardous-material disasters can involve several interacting factors.
 
-The dataset contains measurements from December 27 through December 31, 2019.
+### Deepwater Horizon
 
-For the first lab, we want the process of getting the dataset to be simple.
+**Physical hazards**
 
-Later in the course we can expand our GitHub workflow.
+- **Pressure Differential:** "The sudden, massive drop in hydrostatic pressure allowed trapped gas to expand violently as it traveled upward." [Source: EBSCO Research Starters](https://www.ebsco.com/research-starters/environmental-sciences/gulf-mexico-oil-spill)
+- **Equipment Overwhelm:** "The rig's mud-gas separator was physically incapable of handling the volume and speed of the rushing blowout. It failed, raining highly flammable drilling fluids and gas directly onto the rig deck." [Source: U.S. Department of the Interior](https://www.doi.gov/ocl/hearings/112/OilSpillInvestigation_101311)
 
-# Importing the Dataset
+**Chemical hazards**
 
-We can use `read.csv()` to import the file.
+- **Flammable Gas:** Methane
+- **Ignition Source:** "The expanding vapor cloud quickly encountered an ignition source on the rig (likely from the electrical system or engine rooms). This caused a rapid chemical combustion reaction, resulting in a massive fireball explosion at 9:49 p.m., followed by a secondary explosion moments later." [Source: U.S. Department of the Interior](https://www.doi.gov/ocl/hearings/112/OilSpillInvestigation_101311)
 
-```{r}
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-```
+**Human and organizational decisions**
 
-Read that command from right to left.
+- Misinterpreted pressure-test results
+- Failure to recognize warning signs
+- Decisions that reduced safety margins
+- Inadequate response to the developing well-control problem
 
-R will:
+The disaster resulted from these factors **acting together**, not from a single hazard alone.
+:::
 
-1. find the CSV file
-2. read the file
-3. create a dataset in R
-4. store the dataset under the name `winter_smoke`
+::: {.column width="4%"}
+:::
 
-We now have data inside R.
+::: {.column width="44%"}
+![Deepwater Horizon offshore drilling rig fire, Gulf of Mexico, April 21, 2010. Photo: Gerald Herbert / Associated Press.](deepwater-horizon-april-21-2010.jpg){fig-alt="Deepwater Horizon offshore drilling rig engulfed in fire in the Gulf of Mexico on April 21, 2010" width="100%"}
+:::
+::::::
 
-# Inspect Before You Analyze
+# What Is a Hazardous Material?
 
-One of the most important habits in this course will be:
+:::::: columns
+::: {.column width="52%"}
+At a broad level, a hazardous material is a substance or material capable of causing harm to:
 
-> **Look at your data before analyzing it.**
+- human health
+- safety
+- property
+- the environment
 
-We want to know:
+Hazardous materials may exist as:
 
-- Did the file import correctly?
-- What variables are present?
-- How many observations are there?
-- What does one row represent?
-- Did R interpret the variables correctly?
-- Do the values look reasonable?
+- **solids**
+- **liquids**
+- **gases**
 
-# Look at the First Rows
+What makes them hazardous depends on their physical, chemical, biological, or radioactive properties.
+:::
 
-Use `head()`.
+::: {.column width="4%"}
+:::
 
-```{r}
-head(winter_smoke)
-```
+::: {.column width="44%"}
+![Phase changes of matter between solids, liquids, and gases.](phase-changes-of-matter.jpg){fig-alt="Diagram showing solids, liquids, and gases and the phase changes between them, including melting, freezing, vaporization, condensation, sublimation, and deposition" width="100%"}
+:::
+::::::
 
-This shows the first several observations.
+## Hazardous Properties
 
-Look at the output.
+Some important hazardous properties include:
 
-Ask yourself:
+- **Flammability** — ability to ignite and burn
+- **Corrosivity** — ability to damage living tissue or materials
+- **Toxicity** — ability to cause harmful health effects
+- **Reactivity** — ability to undergo dangerous chemical reactions
+- **Explosivity** — ability to rapidly release energy and pressure
+- **Oxidizing potential** — ability to intensify combustion
+- **Pressure** — hazards associated with compressed or liquefied gases
+- **Radioactivity** — emission of ionizing radiation
+- **Biological hazard** — presence of disease-causing organisms or biological agents
 
-> What does one row appear to represent?
+A material may have **more than one hazardous property**.
 
-# Look at the Last Rows
+## Does the Presence of a Hazard Mean You Will Be Harmed?
 
-Use `tail()`.
+Not necessarily.
 
-```{r}
-tail(winter_smoke)
-```
+Knowing that something **has a hazardous property** is only the beginning.
 
-Looking at both the beginning and end of a dataset can help us confirm that the file contains the time period we expected.
+To understand the potential for harm, we also need to ask:
 
-# Variable Names
+- How much are you exposed to?
+- How often are you exposed?
+- How long does the exposure last?
+- How does it enter or interact with the body?
+- What biological effect can occur at that dose?
 
-Use `names()`.
+This relationship between the amount of exposure and the resulting effect is called the **dose-response relationship**.
 
-```{r}
-names(winter_smoke)
-```
+## "Only the Dose Makes the Poison"
 
-We expect to see:
+:::::: columns
+::: {.column width="38%"}
+![Portrait of Paracelsus, attributed to Quentin Matsys or his workshop/circle, c. 1530–1540.](paracelsus.jpg){fig-alt="Renaissance portrait of Paracelsus wearing a red hat and holding a book" width="85%"}
+:::
 
-```text
-date_time
-concentration
-```
+::: {.column width="6%"}
+:::
 
-# Dataset Dimensions
+::: {.column width="56%"}
+**Paracelsus (1494–1541)** was a Swiss physician and alchemist often called the **Father of Toxicology**.
 
-Use `dim()`.
+He is associated with one of the foundational principles of toxicology:
 
-```{r}
-dim(winter_smoke)
-```
+> **"Only the dose makes the poison."**
 
-R reports:
+The important question is therefore not simply:
 
-```text
-rows columns
-```
+**Is this hazardous?**
 
-The rows represent observations.
+It is also:
 
-The columns represent variables.
+**At what dose does it become harmful?**
+:::
+::::::
 
-For this dataset, each row represents one monitoring measurement.
+::: text-center
+## From Hazard to Health Effect
 
-# Examine the Structure
+The presence of a hazard does not necessarily mean that harm will occur.
 
-Use `str()`.
+<br>
 
-```{r}
-str(winter_smoke)
-```
+**Hazardous Property**\
+↓\
+**Exposure**\
+↓\
+**Dose**\
+↓\
+**Biological Response**
 
-This tells us several things at once, including:
+<br>
 
-- variable names
-- variable types
-- example values
+The **dose** helps connect exposure to the potential health effect.
+:::
 
-This is one of the most useful commands to run immediately after importing a dataset.
+Two people can encounter the same hazardous material but receive very different doses depending on the:
 
-# Did R Understand the Date and Time?
+- concentration or intensity
+- frequency of exposure
+- duration of exposure
+- route of exposure
 
-The `date_time` variable may initially be imported as text.
+## Bananas Are Radioactive
 
-If that happens, R does not yet understand that those values represent time.
+:::::: columns
+::: {.column width="47%"}
+Bananas naturally contain **potassium**.
 
-We can convert the variable.
+A small fraction of naturally occurring potassium is the radioactive isotope **potassium-40**.
 
-```{r}
-winter_smoke$date_time <- as.POSIXct(
-  winter_smoke$date_time
-)
-```
+So technically:
 
-Then check the structure again.
+**Bananas are radioactive.**
 
-```{r}
-str(winter_smoke)
-```
+But does that mean you should stop eating bananas?
+:::
 
-This introduces another important habit:
+::: {.column width="6%"}
+:::
 
-> **Do not assume your code worked. Check.**
+::: {.column width="47%"}
+![Bananas with a radiation warning symbol. Photo: Stepan Popov.](banana-radioactive.jpg){fig-alt="Bunch of bananas with a radiation warning symbol illustrating the natural radioactivity of potassium in bananas" width="100%"}
 
-# Check the Measurements
+*Photo: Stepan Popov.*
+:::
+::::::
 
-Before calculating averages or making graphs, we should inspect the range of the measurements.
+## What Do You Think?
 
-First, find the minimum.
+### Poll Everywhere
 
-```{r}
-min(winter_smoke$concentration)
-```
+Before we look at the dose, make your best guess.
 
-Now find the maximum.
+**1. Should You Stop Eating Bananas?**
 
-```{r}
-max(winter_smoke$concentration)
-```
+- Yes
+- No
+- Not sure
 
-The observed concentration range in this teaching dataset is approximately:
+**2. Approximately how many bananas would correspond to a potentially lethal radiation dose?**
 
-```text
-0.000 to 0.288
-```
+- 10
+- 100
+- 1,000
+- 100,000
+- 1,000,000
+- 50,000,000
 
-At this stage, we should ask:
+::: {style="text-align:center; margin: 2rem 0;"}
+![Scan to respond in Poll Everywhere](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
 
-> Do these measurements appear plausible?
+**Scan the QR code to respond.**
+:::
 
-# Unusual Values
+## Radioactive ≠ Automatically Dangerous
 
-Suppose one concentration is much higher than most of the others.
+The important question is not simply:
 
-Should we immediately delete it?
+**Is radiation present?**
 
-No.
+The important question is:
 
-An unusual value could represent:
+> **What dose does a person receive?**
 
-- a real environmental event
-- a nearby source
-- unusual instrument behavior
-- a processing problem
-- something we do not yet understand
+A banana contains a very small amount of naturally occurring radioactive potassium-40.
 
-Before removing a value, ask:
+Eating a banana therefore exposes you to a **very small amount of ionizing radiation**.
 
-- Is it physically possible?
-- Do nearby observations show a similar pattern?
-- Was something happening at that time?
-- Could the instrument have malfunctioned?
-- Do we have enough evidence to make a decision?
+The presence of radioactivity alone does not tell us whether the exposure represents a meaningful health risk.
 
-> **Unusual does not automatically mean incorrect.**
+## How Much Radiation Are We Talking About?
 
-# Describe the Data
+![Illustration comparing radiation doses using banana equivalent doses. Credit: Information is Beautiful / David McCandless.](banana-radioactive-dose.jpg){fig-alt="Infographic from Information is Beautiful comparing approximate radiation doses using bananas with dental X-rays, air travel, annual radiation exposure, and a very large radiation dose" width="400"}
 
-Now that we have inspected and checked the dataset, we can begin summarizing it.
+The **banana equivalent dose** is a communication tool used to put very small radiation doses into perspective.
 
-## Mean
+The point is **not** that someone could realistically eat millions of bananas.
 
-```{r}
-mean(winter_smoke$concentration)
-```
+The point is that:
 
-The mean gives us one way to describe the center of the measurements.
+> **Detectable radiation is not the same thing as a dangerous radiation dose.**
 
-But one number cannot show us how concentrations changed through time.
+::: text-center
+## Hazard, Exposure, Dose, and Response
 
-## Median
+This gives us a more complete way to think about hazardous materials:
 
-```{r}
-median(winter_smoke$concentration)
-```
+<br>
 
-The median gives us another measure of the center.
+**Hazard**\
+↓\
+**Exposure**\
+↓\
+**Dose**\
+↓\
+**Response**
 
-Compare the mean and median.
+<br>
 
-Are they similar?
+A material can possess a **hazardous property** without every encounter with that material producing harm.
 
-If not, what might that suggest about the distribution of measurements?
+Understanding risk requires us to consider both:
 
-## Minimum
-
-```{r}
-min(winter_smoke$concentration)
-```
-
-## Maximum
-
-```{r}
-max(winter_smoke$concentration)
-```
-
-## Summary
-
-R can calculate several descriptive statistics at once.
-
-```{r}
-summary(winter_smoke$concentration)
-```
-
-Look at the output.
-
-What information does R provide?
-
-What information is still missing?
-
-# Descriptive Statistics Have Limits
-
-A numerical summary can tell us about:
-
-- the center
-- the range
-- the distribution
-
-But it cannot tell us when concentrations changed.
-
-For that, we need to look at the measurements through time.
-
-# Visualizing Concentration Through Time
-
-Because these measurements were repeatedly collected over several days, a time series graph is a natural first visualization.
-
-We will place:
-
-**time on the x axis**
+**What can the hazard do?**
 
 and
 
-**concentration on the y axis**
+**How much exposure actually occurs?**
+:::
 
-```{r}
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Concentration"
-)
-```
+## Does Everyone Define "Hazardous Material" the Same Way?
 
-The graph will appear directly underneath the code.
+Not necessarily.
 
-This is one of the advantages of using a Quarto document.
+Different organizations define and classify hazardous materials based on the problem they are trying to manage.
 
-The code, result, and explanation remain together.
+:::::: columns
+::: {.column width="46%"}
+### Workplace
 
-# Read the Plot Command
+**OSHA / Washington L&I**
 
-Look at the code again.
+How can workers be protected from hazardous chemicals and exposures?
+:::
 
-```r
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Concentration"
-)
-```
+::: {.column width="8%"}
+:::
 
-We told R:
+::: {.column width="46%"}
+### Transportation
 
-1. use `date_time` on the x axis
-2. use `concentration` on the y axis
-3. connect observations with a line
-4. label the x axis
-5. label the y axis
+**U.S. Department of Transportation**
 
-# Why Does the Axis Say Only Concentration?
+Can the material pose an unreasonable risk during transportation?
+:::
+::::::
 
-You may notice that we have not added a concentration unit.
+<br>
 
-That is intentional.
+:::::: columns
+::: {.column width="46%"}
+### Environment & Waste
 
-We still need to confirm the measurement scale and units from the original project documentation.
+**EPA / Washington State Department of Ecology**
 
-Until that information is verified, we should not invent a unit.
+How should releases, contamination, and hazardous wastes be managed?
+:::
 
-> **If we have not verified something, we should not present it as fact.**
+::: {.column width="8%"}
+:::
 
-# Look Before Explaining
+::: {.column width="46%"}
+### Emergency Response
 
-Study the graph before trying to explain it.
+**NFPA and other emergency-response systems**
 
-Ask:
+What hazards do responders need to recognize quickly?
+:::
+::::::
 
-- Is concentration constant?
-- Are there peaks?
-- When do the largest peaks occur?
-- Are there periods of relatively low concentration?
-- Are some periods more variable?
-- Do any patterns appear to repeat?
+<br>
 
-The first step is observation.
+The same material may therefore be described or regulated differently depending on **where it is, how it is being used, and what is happening to it**.
 
-# Observation and Interpretation
+## Hazard Communication Is Part of Management
 
-A statement such as:
+Throughout SHM 377, we will encounter several systems used to communicate information about hazardous materials.
 
-> Particle concentration varied throughout the monitoring period, with periods of relatively low concentration interrupted by higher measured concentrations.
+- **GHS / OSHA labels and Safety Data Sheets**
+- **DOT hazard classes and placards**
+- **NFPA 704 hazard identification**
+- **Environmental and hazardous-waste classifications**
 
-is an observation based on the dataset.
+You will learn how to recognize and use these systems.
 
-A statement such as:
+But hazardous-material management requires more than recognizing a symbol or memorizing a label.
 
-> Residential wood burning caused the peaks.
+## Hazardous Materials Throughout Their Life Cycle
 
-is a source attribution claim.
+::::::: columns
+:::: {.column width="52%"}
+Hazardous-material management does not occur at only one point.
 
-The dataset alone does not prove that.
+A hazardous material may need to be managed throughout its life cycle:
 
-# What Can We Conclude?
+::: text-center
+Acquire / Receive\
+↓\
+Store\
+↓\
+Use / Handle\
+↓\
+Transport\
+↓\
+Respond to Releases\
+↓\
+Manage Waste\
+↓\
+Dispose
+:::
 
-From the measurements we can examine:
+Different hazards, exposures, regulations, and management decisions may become important at different stages.
 
-- when concentrations increased
-- how high measured concentrations became
-- how concentrations changed through time
-- whether elevated periods persisted
-- how variable the measurements were
+> **Hazardous-material management means thinking about the material before, during, and after its use.**
+::::
 
-# What Can We Not Conclude?
+::: {.column width="4%"}
+:::
 
-From this dataset alone, we cannot determine:
+::: {.column width="44%"}
+![Hazardous materials life cycle from acquisition and receiving through storage, use, transport, release response, waste management, and disposal.](hazardous-materials-lifecycle-infographic.jpg){fig-alt="Circular hazardous materials life cycle infographic showing Acquire or Receive, Store, Use or Handle, Transport, Respond to Releases, Manage Waste, and Dispose" width="100%"}
+:::
+:::::::
 
-- the exact source of every particle
-- why every concentration increase occurred
-- whether one source caused a particular peak
+::: text-center
+# From Hazard Recognition to Hazard Management
 
-Additional information would be needed.
-
-# What Other Data Could Help?
-
-The monitoring results may lead us to new questions.
-
-For example:
+When we encounter a hazardous-material problem, we need to ask more than:
 
-- What was the wind speed?
-- What was the wind direction?
-- What was the temperature?
-- Were there atmospheric inversions?
-- Were there nearby emission sources?
-- Did local heating activity change?
+> **What is it?**
 
-This is how data analysis often works.
+We also need to ask:
 
-One answer produces better questions.
+> **What can it do?**
 
-# Return to the Original Question
+> **Where is it?**
 
-Our original question was:
+> **How can it move?**
 
-> **What happened to ambient particle concentrations during five days of winter monitoring?**
+> **Who or what could be exposed?**
 
-We now have several ways to answer that question.
+> **How much is present?**
 
-We:
+> **How do we control or manage it?**
 
-- inspected the dataset
-- checked its structure
-- examined its measurement range
-- calculated descriptive statistics
-- plotted concentration through time
-- interpreted the observed pattern
+## A Framework for SHM 377
 
-# The SHM 377 Data Workflow
+As we work through SHM 377, we will think about hazardous-material problems as a system:
 
-Throughout this course, we will repeatedly use a workflow like this:
+<br>
 
-```text
-Question
-   ↓
-Data
-   ↓
-Check
-   ↓
-Describe / Analyze
-   ↓
-Visualize
-   ↓
-Interpret
-   ↓
-Communicate / Manage
-```
+**Hazard / Material**\
+↓\
+**Properties**\
+↓\
+**Source / Activity**\
+↓\
+**Release or Hazard Generation**\
+↓\
+**Environmental / Workplace Medium**\
+↓\
+**Transport or Transmission**\
+↓\
+**Exposure**\
+↓\
+**Dose**\
+↓\
+**Health / Safety / Environmental Effects**\
+↓\
+**Measurement & Evaluation**\
+↓\
+**Controls / Management**\
+↓\
+**Regulation & Communication**
 
-The specific commands will change.
+<br>
 
-The reasoning process will remain similar.
+Not every hazardous-material problem will require every step.
 
-# Connecting Data to Hazardous Materials Management
+But this framework gives us a systematic way to understand what is happening and decide what information we need.
+:::
 
-In hazardous materials management, we may begin with questions about:
+------------------------------------------------------------------------
 
-```text
-Material
-   ↓
-Properties
-   ↓
-Source / Activity
-   ↓
-Release
-   ↓
-Environmental Medium
-   ↓
-Transport
-   ↓
-Exposure
-   ↓
-Dose
-   ↓
-Effects
-```
+### Copyright & Use
 
-Monitoring provides evidence about parts of that system.
+**SHM 377: Hazardous Materials Management**\
+© 2026 Yoni Rodriguez
 
-Data analysis helps us move from measurements toward evaluation and decision making.
+Except where otherwise noted, original course materials are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
 
-```text
-Hazardous Materials Problem
-          ↓
-      Measurement
-          ↓
-         Data
-          ↓
-      Evaluation
-          ↓
-    Interpretation
-          ↓
- Management / Control
-```
-
-# Reproducibility
-
-One reason we are using R is that the analysis itself can be saved.
-
-For example:
-
-```r
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-
-head(winter_smoke)
-
-summary(winter_smoke$concentration)
-
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l"
-)
-```
-
-These commands provide a record of what we did.
-
-Someone can inspect the code and understand how the analysis was produced.
-
-Later, this idea will lead naturally into Quarto reports.
-
-# You Do Not Need to Memorize Everything
-
-Today you encountered commands such as:
-
-```r
-read.csv()
-head()
-tail()
-names()
-dim()
-str()
-as.POSIXct()
-min()
-max()
-mean()
-median()
-summary()
-plot()
-```
-
-You do not need to memorize all of these immediately.
-
-What matters more is understanding why we use them.
-
-Ask yourself:
-
-```text
-What is my question?
-
-What does my dataset contain?
-
-Did the data import correctly?
-
-Do the measurements look reasonable?
-
-How can I describe them?
-
-How can I visualize them?
-
-What does the evidence show?
-
-What can I not conclude?
-```
-
-# What You Accomplished
-
-In this first virtual lab, you:
-
-- worked with a real environmental monitoring dataset
-- imported data into R
-- inspected the dataset
-- checked the measurements
-- calculated basic descriptive statistics
-- created a time series visualization
-- interpreted the results
-- distinguished measurement from source attribution
-
-# The Main Idea
-
-> **We are not learning R for the sake of learning R.**
-
-We are learning how to use data to investigate, evaluate, and communicate hazardous materials problems.
-
-# Where We Go Next
-
-We will continue building on the same workflow throughout SHM 377.
-
-Over time, we will move from basic R commands toward:
-
-```text
-R
-↓
-R scripts
-↓
-data analysis
-↓
-visualization
-↓
-interpretation
-↓
-reproducible Quarto reports
-```
-
-We do not need to learn everything at once.
-
-We start with the question.
-
-Then we use the data to work toward an answer.
+Third-party materials remain subject to their respective copyright and licensing terms.

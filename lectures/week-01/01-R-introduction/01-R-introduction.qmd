@@ -5,7 +5,7 @@ author: "Yoni Rodriguez"
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 3se
     toc-location: right
     code-copy: true
     code-overflow: wrap
@@ -226,49 +226,49 @@ Before we begin working with data, we need both **R** and **RStudio Desktop** in
 
 Both are free.
 
-::: {.callout-important}
+::: callout-important
 ## Installation order matters
 
 Install the software in this order:
 
-1. **Install R**
-2. **Install RStudio Desktop**
-3. **Open RStudio**
-4. **Confirm that RStudio can find and run R**
+1.  **Install R**
+2.  **Install RStudio Desktop**
+3.  **Open RStudio**
+4.  **Confirm that RStudio can find and run R**
 
 RStudio provides the interface, but R performs the computations.
 :::
 
 ## Windows
 
-1. Go to the [R Project](https://www.r-project.org/).
-2. Select **CRAN**.
-3. Choose a CRAN mirror.
-4. Select **Download R for Windows**.
-5. Download the current version of R.
-6. Run the installer and follow the installation prompts.
-7. Go to the [RStudio Desktop download page](https://posit.co/downloads/).
-8. Download the free version of RStudio Desktop for Windows.
-9. Run the RStudio installer.
+1.  Go to the [R Project](https://www.r-project.org/).
+2.  Select **CRAN**.
+3.  Choose a CRAN mirror.
+4.  Select **Download R for Windows**.
+5.  Download the current version of R.
+6.  Run the installer and follow the installation prompts.
+7.  Go to the [RStudio Desktop download page](https://posit.co/downloads/).
+8.  Download the free version of RStudio Desktop for Windows.
+9.  Run the RStudio installer.
 10. Open RStudio.
 
 ## macOS
 
 The installation process on macOS depends on your version of macOS and your Mac's processor.
 
-1. Go to the [R Project](https://www.r-project.org/).
-2. Select **CRAN**.
-3. Choose a CRAN mirror.
-4. Select **Download R for macOS**.
-5. Read the available installer descriptions carefully.
-6. Download the version appropriate for your Mac.
-7. Install R.
-8. Go to the [RStudio Desktop download page](https://posit.co/downloads/).
-9. Download the free version of RStudio Desktop for macOS.
+1.  Go to the [R Project](https://www.r-project.org/).
+2.  Select **CRAN**.
+3.  Choose a CRAN mirror.
+4.  Select **Download R for macOS**.
+5.  Read the available installer descriptions carefully.
+6.  Download the version appropriate for your Mac.
+7.  Install R.
+8.  Go to the [RStudio Desktop download page](https://posit.co/downloads/).
+9.  Download the free version of RStudio Desktop for macOS.
 10. Install RStudio.
 11. Open RStudio.
 
-::: {.callout-warning}
+::: callout-warning
 ## macOS users
 
 Do not guess which installer you need.
@@ -292,13 +292,13 @@ At the prompt, enter:
 
 If R returns:
 
-```text
+``` text
 [1] 4
 ```
 
 R and RStudio are communicating correctly.
 
-::: {.callout-tip}
+::: callout-tip
 ## Need more help?
 
 If you have trouble installing R or RStudio, use the official installation resources:
@@ -314,7 +314,7 @@ If you are unsure which version to install, especially on macOS, ask for help be
 
 You will commonly see four areas in RStudio:
 
-::: {.column-screen-inset}
+::: column-screen-inset
 ![](r-studio-panes.jpg){fig-alt="RStudio interface showing the Source, Console, Environment and History, and Files, Plots, Packages, Help, and Viewer panes."}
 :::
 
@@ -336,13 +336,13 @@ For this course, we will keep files associated with the same project together.
 
 Create a folder on your computer called:
 
-```text
+``` text
 SHM-377
 ```
 
 Inside that folder, create a folder for today's lab:
 
-```text
+``` text
 SHM-377/
 └── virtual-lab-01/
 ```
@@ -351,14 +351,14 @@ We will save everything for today's analysis inside `virtual-lab-01`.
 
 By the end of the lab, your folder may look something like this:
 
-```text
+``` text
 SHM-377/
 └── virtual-lab-01/
     ├── winter-smoke-2019-12-27_to_2019-12-31.csv
     └── virtual-lab-01.R
 ```
 
-::: {.callout-important}
+::: callout-important
 ## Keep your project files together
 
 Do not save the dataset in one location, your R script somewhere else, and your other project files in another folder.
@@ -372,14 +372,14 @@ Use file names that tell you what the file contains.
 
 Good:
 
-```text
+``` text
 winter-smoke-2019-12-27_to_2019-12-31.csv
 virtual-lab-01.R
 ```
 
 Avoid names such as:
 
-```text
+``` text
 data.csv
 data-final.csv
 data-final-2.csv
@@ -388,7 +388,7 @@ stuff.csv
 
 Clear file names become increasingly important as projects grow.
 
-::: {.callout-tip}
+::: callout-tip
 ## A simple rule for this course
 
 **One project, one folder.**
@@ -408,9 +408,9 @@ An R script is a text file that contains R commands. Instead of typing commands 
 
 In RStudio:
 
-1. Select **File**.
-2. Select **New File**.
-3. Select **R Script**.
+1.  Select **File**.
+2.  Select **New File**.
+3.  Select **R Script**.
 
 A new blank file will open in the Source pane.
 
@@ -420,13 +420,13 @@ This is where we will write our R commands.
 
 Before writing more code, save the file.
 
-1. Select **File**.
-2. Select **Save As**.
-3. Navigate to your `SHM-377` folder.
-4. Open the `virtual-lab-01` folder.
-5. Save the file as:
+1.  Select **File**.
+2.  Select **Save As**.
+3.  Navigate to your `SHM-377` folder.
+4.  Open the `virtual-lab-01` folder.
+5.  Save the file as:
 
-```text
+``` text
 virtual-lab-01.R
 ```
 
@@ -434,13 +434,13 @@ The `.R` file extension tells your computer that this is an R script.
 
 Your folder should now look like this:
 
-```text
+``` text
 SHM-377/
 └── virtual-lab-01/
     └── virtual-lab-01.R
 ```
 
-::: {.callout-important}
+::: callout-important
 ## Write your commands in the script
 
 For this course, write your R commands in the R script in the Source pane.
@@ -456,18 +456,18 @@ Because we saved our R script inside `virtual-lab-01`, we can tell R to use that
 
 In RStudio:
 
-1. Select **Session**.
-2. Select **Set Working Directory**.
-3. Select **To Source File Location**.
+1.  Select **Session**.
+2.  Select **Set Working Directory**.
+3.  Select **To Source File Location**.
 
 This tells R to look for files in the same folder where the R script is saved.
 
-::: {.callout-tip}
+::: callout-tip
 ## Why does this matter?
 
 Later, we will ask R to open the dataset using only its file name:
 
-```r
+``` r
 "winter-smoke-2019-12-27_to_2019-12-31.csv"
 ```
 
@@ -520,7 +520,7 @@ x
 
 The symbol:
 
-```text
+``` text
 <-
 ```
 
@@ -528,7 +528,7 @@ is called the assignment operator.
 
 You can read this:
 
-```r
+``` r
 x <- 5
 ```
 
@@ -552,15 +552,15 @@ The dataset contains ambient particle measurements collected from December 27 th
 
 The dataset is available in the SHM 377 GitHub repository.
 
-1. Open the SHM 377 GitHub repository.
-2. Navigate to `lectures/week-01/01-R-introduction/`.
-3. Select `winter-smoke-2019-12-27_to_2019-12-31.csv`.
-4. Download the file.
-5. Save the file inside your `virtual-lab-01` folder.
+1.  Open the SHM 377 GitHub repository.
+2.  Navigate to `lectures/week-01/01-R-introduction/`.
+3.  Select `winter-smoke-2019-12-27_to_2019-12-31.csv`.
+4.  Download the file.
+5.  Save the file inside your `virtual-lab-01` folder.
 
 Your folder should now contain:
 
-```text
+``` text
 SHM-377/
 └── virtual-lab-01/
     ├── virtual-lab-01.R
@@ -597,14 +597,14 @@ Read that command from right to left.
 
 R will:
 
-1. find the CSV file
-2. read the file
-3. create a dataset in R
-4. store the dataset under the name `winter_smoke`
+1.  find the CSV file
+2.  read the file
+3.  create a dataset in R
+4.  store the dataset under the name `winter_smoke`
 
 The assignment operator `<-` is doing the same thing we saw earlier when we wrote:
 
-```r
+``` r
 x <- 5
 ```
 
@@ -622,7 +622,7 @@ A **command** is an instruction we give R.
 
 For example:
 
-```r
+``` r
 2 + 2
 ```
 
@@ -634,7 +634,7 @@ A function is a tool in R that performs a particular task.
 
 For example:
 
-```r
+``` r
 head()
 ```
 
@@ -646,7 +646,7 @@ We can place information inside the parentheses to tell the function what we wan
 
 For example:
 
-```r
+``` r
 head(winter_smoke)
 ```
 
@@ -656,8 +656,8 @@ This tells R:
 
 Throughout this course, when we introduce a new function, focus first on two questions:
 
-1. What is the function called?
-2. What does the function do?
+1.  What is the function called?
+2.  What does the function do?
 
 You do not need to memorize every function.
 
@@ -665,19 +665,19 @@ You do not need to memorize every function.
 
 Our dataset is called:
 
-```text
+``` text
 winter_smoke
 ```
 
 One variable inside that dataset is called:
 
-```text
+``` text
 concentration
 ```
 
 In R, we can refer to that variable using:
 
-```r
+``` r
 winter_smoke$concentration
 ```
 
@@ -685,7 +685,7 @@ The `$` tells R to look inside `winter_smoke` for the variable called `concentra
 
 You can read:
 
-```r
+``` r
 winter_smoke$concentration
 ```
 
@@ -695,7 +695,7 @@ as:
 
 Later, when we write something such as:
 
-```r
+``` r
 mean(winter_smoke$concentration)
 ```
 
@@ -772,7 +772,7 @@ names(winter_smoke)
 
 We expect to see:
 
-```text
+``` text
 date_time
 concentration
 ```
@@ -795,19 +795,19 @@ dim(winter_smoke)
 
 Inside the parentheses, we tell the function which object we want it to examine:
 
-```r
+``` r
 dim(winter_smoke)
 ```
 
 Here:
 
-```text
+``` text
 dim
 ```
 
 is the function name, and:
 
-```text
+``` text
 winter_smoke
 ```
 
@@ -815,7 +815,7 @@ is the object we are asking the function to examine.
 
 R reports two numbers in this order:
 
-```text
+``` text
 rows columns
 ```
 
@@ -863,7 +863,7 @@ We need to tell R how to interpret them.
 
 The function we will use is:
 
-```text
+``` text
 as.POSIXct()
 ```
 
@@ -875,7 +875,7 @@ as.POSIXct()
 
 The beginning of the function name gives us a useful clue:
 
-```text
+``` text
 as.
 ```
 
@@ -883,7 +883,7 @@ functions in R are often used to convert something from one type of data into an
 
 For our purposes, you can think of:
 
-```text
+``` text
 as.POSIXct()
 ```
 
@@ -897,19 +897,19 @@ For now, what matters is understanding what we are asking R to do.
 
 Our dataset is called:
 
-```text
+``` text
 winter_smoke
 ```
 
 The date and time variable inside that dataset is called:
 
-```text
+``` text
 date_time
 ```
 
 We can refer to that variable using:
 
-```r
+``` r
 winter_smoke$date_time
 ```
 
@@ -917,7 +917,7 @@ Remember that `$` tells R to look inside the dataset for a particular variable.
 
 You can read:
 
-```r
+``` r
 winter_smoke$date_time
 ```
 
@@ -937,7 +937,7 @@ Read the command from right to left.
 
 First:
 
-```r
+``` r
 winter_smoke$date_time
 ```
 
@@ -945,7 +945,7 @@ identifies the `date_time` variable inside the `winter_smoke` dataset.
 
 Then:
 
-```r
+``` r
 as.POSIXct(winter_smoke$date_time)
 ```
 
@@ -953,7 +953,7 @@ asks R to convert those values into date and time data.
 
 Finally:
 
-```r
+``` r
 winter_smoke$date_time <-
 ```
 
@@ -1015,7 +1015,7 @@ We can read this as:
 
 The observed concentration range in this teaching dataset is approximately:
 
-```text
+``` text
 0.000 to 0.288
 ```
 
@@ -1191,7 +1191,7 @@ That makes it a useful example for learning how to read R code.
 
 Look at the command again:
 
-```r
+``` r
 plot(
   winter_smoke$date_time,
   winter_smoke$concentration,
@@ -1211,7 +1211,7 @@ An **argument** gives a function information it needs to perform its task.
 
 Our `plot()` function contains five arguments:
 
-```text
+``` text
 winter_smoke$date_time
 winter_smoke$concentration
 type = "l"
@@ -1227,7 +1227,7 @@ Inside a function, commas separate one argument from the next.
 
 For example:
 
-```r
+``` r
 plot(
   winter_smoke$date_time,
   winter_smoke$concentration
@@ -1236,13 +1236,13 @@ plot(
 
 The comma tells R that:
 
-```text
+``` text
 winter_smoke$date_time
 ```
 
 is one argument and:
 
-```text
+``` text
 winter_smoke$concentration
 ```
 
@@ -1254,7 +1254,7 @@ A semicolon can be used in R to separate complete commands or expressions.
 
 For example:
 
-```r
+``` r
 x <- 5; x
 ```
 
@@ -1268,7 +1268,7 @@ For this course, use **commas to separate arguments inside functions**.
 
 The first two arguments in our `plot()` function are:
 
-```r
+``` r
 winter_smoke$date_time,
 winter_smoke$concentration
 ```
@@ -1283,7 +1283,7 @@ The second argument is used for the y axis.
 
 Therefore:
 
-```r
+``` r
 winter_smoke$date_time
 ```
 
@@ -1291,7 +1291,7 @@ comes first because we want time on the x axis.
 
 And:
 
-```r
+``` r
 winter_smoke$concentration
 ```
 
@@ -1299,7 +1299,7 @@ comes second because we want particle concentration on the y axis.
 
 You can read:
 
-```r
+``` r
 plot(
   winter_smoke$date_time,
   winter_smoke$concentration
@@ -1318,7 +1318,7 @@ These are called **positional arguments**.
 
 We could make their meaning more explicit by writing:
 
-```r
+``` r
 plot(
   x = winter_smoke$date_time,
   y = winter_smoke$concentration
@@ -1329,7 +1329,7 @@ This tells R exactly the same thing.
 
 Here:
 
-```text
+``` text
 x =
 ```
 
@@ -1337,7 +1337,7 @@ identifies the x axis data.
 
 And:
 
-```text
+``` text
 y =
 ```
 
@@ -1345,7 +1345,7 @@ identifies the y axis data.
 
 For our first graph, we are using the shorter form:
 
-```r
+``` r
 plot(
   winter_smoke$date_time,
   winter_smoke$concentration
@@ -1358,7 +1358,7 @@ Both forms tell R to use `date_time` for x and `concentration` for y.
 
 The remaining arguments are written differently:
 
-```r
+``` r
 type = "l",
 xlab = "Date / Time",
 ylab = "Particle Concentration (mg/m³)"
@@ -1372,13 +1372,13 @@ Instead of relying on position, we explicitly tell R which setting we are changi
 
 The `type` argument controls how the observations are drawn.
 
-```r
+``` r
 type = "l"
 ```
 
 The letter:
 
-```text
+``` text
 l
 ```
 
@@ -1390,7 +1390,7 @@ The quotation marks tell R that `"l"` is text rather than the name of an object.
 
 ## What Does `xlab` Mean?
 
-```r
+``` r
 xlab = "Date / Time"
 ```
 
@@ -1398,7 +1398,7 @@ xlab = "Date / Time"
 
 This tells R to display:
 
-```text
+``` text
 Date / Time
 ```
 
@@ -1406,7 +1406,7 @@ as the label for the x axis.
 
 ## What Does `ylab` Mean?
 
-```r
+``` r
 ylab = "Particle Concentration (mg/m³)"
 ```
 
@@ -1414,7 +1414,7 @@ ylab = "Particle Concentration (mg/m³)"
 
 This tells R to display:
 
-```text
+``` text
 Particle Concentration (mg/m³)
 ```
 
@@ -1426,7 +1426,7 @@ The unit is part of the label because the numbers alone do not tell us what was 
 
 Earlier we used:
 
-```r
+``` r
 <-
 ```
 
@@ -1434,13 +1434,13 @@ to store information in an object.
 
 For example:
 
-```r
+``` r
 x <- 5
 ```
 
 Inside a function, we will often see:
 
-```r
+``` r
 =
 ```
 
@@ -1448,7 +1448,7 @@ used to provide a value for a named argument.
 
 For example:
 
-```r
+``` r
 type = "l"
 ```
 
@@ -1458,7 +1458,7 @@ means:
 
 And:
 
-```r
+``` r
 xlab = "Date / Time"
 ```
 
@@ -1472,7 +1472,7 @@ The `=` here is helping us specify how the function should behave.
 
 We can now read the complete function:
 
-```r
+``` r
 plot(
   winter_smoke$date_time,
   winter_smoke$concentration,
@@ -1498,7 +1498,7 @@ In this dataset, the concentration values came from a TSI DustTrak and are repor
 
 However, notice that our CSV variable is simply called:
 
-```text
+``` text
 concentration
 ```
 
@@ -1533,7 +1533,7 @@ Different agents may also be reported using different units.
 
 Understanding the standard measurement practices for the **medium and agent being evaluated** is part of understanding the dataset.
 
-::: {.callout-important}
+::: callout-important
 ## Never assume the units
 
 Do not infer a unit only from the numerical values in a dataset.
@@ -1545,7 +1545,7 @@ If the unit cannot be verified, do not present one as fact.
 
 For this dataset, we have verified the measurement information, so our graph should identify the y axis as:
 
-```text
+``` text
 Particle Concentration (mg/m³)
 ```
 
@@ -1640,7 +1640,7 @@ We:
 
 Throughout this course, we will repeatedly use a workflow like this:
 
-```text
+``` text
 Question
    ↓
 Data
@@ -1664,7 +1664,7 @@ The reasoning process will remain similar.
 
 In hazardous materials management, we may begin with questions about:
 
-```text
+``` text
 Material
    ↓
 Properties
@@ -1688,7 +1688,7 @@ Monitoring provides evidence about parts of that system.
 
 Data analysis helps us move from measurements toward evaluation and decision making.
 
-```text
+``` text
 Hazardous Materials Problem
           ↓
       Measurement
@@ -1708,7 +1708,7 @@ One reason we are using R is that the analysis itself can be saved.
 
 For example:
 
-```r
+``` r
 winter_smoke <- read.csv(
   "winter-smoke-2019-12-27_to_2019-12-31.csv"
 )
@@ -1736,7 +1736,7 @@ Later, this idea will lead naturally into Quarto reports.
 
 Today you encountered commands such as:
 
-```r
+``` r
 read.csv()
 head()
 tail()
@@ -1758,7 +1758,7 @@ What matters more is understanding why we use them.
 
 Ask yourself:
 
-```text
+``` text
 What is my question?
 
 What does my dataset contain?
@@ -1801,7 +1801,7 @@ We will continue building on the same workflow throughout SHM 377.
 
 Over time, we will move from basic R commands toward:
 
-```text
+``` text
 R
 ↓
 R scripts

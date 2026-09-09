@@ -2,19 +2,23 @@
 title: "Introduction to R & Environmental Data"
 subtitle: "SHM 377 Hazardous Materials Management"
 author: "Yoni Rodriguez"
+
 format:
   html:
     toc: true
-    toc-depth: 3se
+    toc-depth: 3
     toc-location: right
     code-copy: true
     code-overflow: wrap
     code-fold: false
     number-sections: false
+    embed-resources: true
+
 execute:
   echo: true
   warning: false
   message: false
+
 editor: visual
 ---
 

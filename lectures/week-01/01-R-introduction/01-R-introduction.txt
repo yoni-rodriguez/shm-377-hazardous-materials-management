@@ -2130,11 +2130,3 @@ We do not need to learn everything at once.
 We start with the question.
 
 Then we use the data to work toward an answer.
-
----
-
-<div class="text-center">
-
-© 2026 Yoni Rodriguez. All rights reserved.
-
-</div>

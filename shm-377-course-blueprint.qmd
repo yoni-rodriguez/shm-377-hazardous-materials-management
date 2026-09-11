@@ -611,77 +611,79 @@ syllabus and other official course materials.
 
 ## Initial R Workflow
 
-The initial introduction should allow students to achieve a useful analytical
-result quickly:
-
-```text
-Hazardous-Material Question
-            ↓
-       Obtain Dataset
-            ↓
-        Import into R
-            ↓
-        Inspect Data
-            ↓
-    Describe / Summarize
-            ↓
-        Visualize
-            ↓
-        Interpret
-            ↓
-Connect Results to the Hazardous-Material Problem
-```
-
 Students should learn R commands in the context of answering questions about a
 dataset rather than learning programming syntax in isolation.
 
-Virtual Lab 01 serves as the primary introductory R experience. It is formative
-and highly scaffolded and does not count as one of the four major graded
-laboratories.
+**Virtual Lab 01: Introduction to R & Environmental Data** serves as the
+primary introductory R experience and is also **Graded Lab 01**.
+
+Virtual Lab 01 is worth **25 points** and is intentionally highly guided and
+completion based. Students who complete and submit the required materials
+receive full credit.
+
+The purpose of Lab 01 is to establish the analytical and reproducible workflow
+used throughout the course rather than evaluate students' prior programming
+experience.
+
+Students should complete Lab 01 having successfully:
+
+- worked in RStudio;
+- organized project files;
+- created and saved an R script;
+- used comments to organize an analysis;
+- imported environmental monitoring data;
+- inspected and checked a dataset;
+- performed basic transformations and descriptive analyses;
+- created a visualization;
+- interpreted results cautiously;
+- distinguished measurement from unsupported source attribution; and
+- preserved a reproducible record of their analytical workflow.
+
+Virtual Lab 01 also serves as a reference students can return to throughout the
+quarter when they need support with foundational R, RStudio, file-management,
+data-import, inspection, visualization, interpretation, or reproducibility
+skills.
 
 ## Analytical and Professional Skill Progression
 
-The introductory R laboratory and four graded laboratories serve different
-purposes.
-
-The introductory R laboratory is a formative, highly scaffolded experience
-designed to introduce students to environmental data and a reproducible
-analytical workflow.
-
-The four graded laboratories then progressively develop independence in solving
-hazardous-materials problems rather than independence in R programming.
+The four graded laboratories progressively reduce instructional scaffolding
+while increasing student responsibility for hazardous-material reasoning,
+analysis, interpretation, and management decisions.
 
 ```text
-VIRTUAL LAB 01
+LAB 01
 Introduction to R & Environmental Data
-Formative / Highly Scaffolded
+Highly Guided / Completion Based
+Establish the Analytical Workflow
         ↓
-LAB 1
-Highly Structured
-Scenario + evidence + report template
+LAB 02
+Guided Analysis
+Apply the Established Workflow to a
+Hazardous-Material Problem
         ↓
-LAB 2
-Guided
-Apply appropriate analytical and professional tools
+LAB 03
+Semi-Structured Analysis
+Make Analytical and Interpretive Choices
         ↓
-LAB 3
-Semi-Structured
-Determine what information and analysis are needed
-        ↓
-LAB 4
-Increasingly Independent
-Develop and defend a management recommendation
+LAB 04
+Scenario-Based Decision Making
+Select and Defend an Appropriate Approach
         ↓
 FINAL GROUP PROJECT
 Independent Team Integration
 ```
 
-Students may use R, Excel, calculations, regulatory resources, technical
-references, or other appropriate tools depending on the problem.
+The progression reflects increasing independence in hazardous-material
+reasoning rather than increasing programming sophistication.
 
-The progression therefore reflects increasing independence in hazardous
-materials reasoning, analysis, interpretation, research, decision-making, and
-professional communication rather than increasing programming sophistication.
+Lab 01 establishes the foundational analytical workflow. Later laboratories
+should build upon rather than reteach the basic R, RStudio, file-management,
+scripting, data-import, inspection, visualization, interpretation, and
+reproducibility skills introduced in Lab 01.
+
+Students may use R, Excel, calculations, regulatory resources, technical
+references, or other appropriate tools depending on the problem and assignment
+requirements.
 
 # Laboratory Philosophy
 
@@ -706,6 +708,59 @@ Datasets may include authentic public or open datasets when appropriate.
 Professor-created or simulated datasets may also be used when they provide a
 clear instructional advantage. Simulated data should be clearly identified as
 such.
+
+## Virtual Laboratory Design Model
+
+The finalized **Virtual Lab 01: Introduction to R & Environmental Data**
+serves as the instructional and visual model for subsequent SHM 377 virtual
+laboratories.
+
+Where appropriate, virtual laboratories should follow a recognizable
+progression:
+
+```text
+Real-World Question
+        ↓
+Context
+        ↓
+Data / Evidence
+        ↓
+Tools
+        ↓
+Workflow
+        ↓
+Analysis
+        ↓
+Visualization
+        ↓
+Interpretation
+        ↓
+Hazardous-Material Significance
+        ↓
+Management Decision
+        ↓
+Reproducibility / Communication
+```
+
+The exact components and relative emphasis should vary according to the
+hazardous-material problem.
+
+Lab 01 provides unusually detailed explanation because it establishes the
+technical workflow for students who may have little or no prior experience
+with R or RStudio.
+
+Subsequent laboratories should preserve the same general instructional
+architecture while progressively reducing technical scaffolding and increasing
+the amount of hazardous-material reasoning expected from students.
+
+Basic R concepts already established in Lab 01 should not normally be retaught
+from the beginning in later laboratories. Students should instead be directed
+back to Lab 01 as a reference when they need assistance with foundational
+analytical procedures.
+
+The goal is for the analytical tools to become progressively less prominent
+while the hazardous-material problem, evidence, interpretation, regulatory
+context, and management decision become progressively more prominent.
 
 # Four Major Graded Laboratories
 
@@ -959,7 +1014,7 @@ Potential modules include:
 
 | Module | Scientific / Technical Focus | Potential Application |
 |---|---|---|
-| Course & Analytical Foundations | Hazardous-material reasoning, R/RStudio, data interpretation | Formative introductory dataset |
+| Course & Analytical Foundations | Hazardous-material reasoning, R/RStudio, data interpretation | Graded Lab 01: Introduction to R & Environmental Data |
 | Chemical Behavior | Phase, form, medium, properties, calculations | Chemical case |
 | Measurement & Exposure | Sampling, measurement, exposure data | Monitoring dataset |
 | Radiation | Fundamentals, units, behavior, protection | Radiation case/data |
@@ -1022,13 +1077,18 @@ Lecture 01 is complete and locked for Fall 2026.
 - Interpreting measurements in the context of a hazardous-material problem
 - Distinguishing measurement evidence from unsupported source attribution
 
-Virtual Lab 01 is formative and highly scaffolded. Its purpose is to introduce
-students to one professional analytical tool and establish a common data
-reasoning workflow. It does not count as one of the four major graded
-laboratories.
+Virtual Lab 01 is **Graded Lab 01** and is worth **25 points**.
+
+The laboratory is highly scaffolded and completion based. Its purpose is to
+ensure that students successfully establish the course analytical workflow and
+have an accessible first laboratory grade before later assignments require
+greater independence.
+
+Students who complete and submit the required Lab 01 materials receive full
+credit.
 
 After Virtual Lab 01, course development should shift toward substantive
-hazardous-materials lectures and modules. R may continue to be used where
+hazardous-material lectures and modules. R may continue to be used where
 appropriate, but subsequent graded laboratories should not be framed as an
 R-coding sequence.
 
@@ -1133,19 +1193,16 @@ The graded assessments should progressively move from structured to independent
 hazardous-materials problem solving:
 
 ```text
-Virtual Lab 01
-Formative R / Data Foundation
+Lab 01
+Highly Guided / Completion Based
       ↓
-Lab 1
-Highly Structured
-      ↓
-Lab 2
+Lab 02
 Guided
       ↓
-Lab 3
+Lab 03
 Semi-Structured
       ↓
-Lab 4
+Lab 04
 Increasing Independence
       ↓
 Final Group Project
@@ -1730,8 +1787,8 @@ course-development phase:
 
 - What is the final module sequence?
 - Which modules require multiple weeks?
-- Which four modules provide the strongest problems, scenarios, datasets, and
-  professional applications for the four graded laboratories?
+- Which three additional modules provide the strongest problems, scenarios,
+  datasets, and professional applications for Graded Labs 02–04?
 - What should the due date be for each graded laboratory?
 - Which graded laboratories should emphasize data analysis, regulatory
   navigation, calculations, classification, facility assessment, or other
@@ -1763,10 +1820,23 @@ The following course-design decisions are now established:
   course grade**.
 - Weekly formal laboratory reports are not required.
 - Other laboratory and class activities may be formative rather than graded.
-- Virtual Lab 01 introduces R and RStudio through environmental monitoring
-  data.
-- Virtual Lab 01 is formative and does not count as one of the four major
-  graded laboratories.
+- **Virtual Lab 01: Introduction to R & Environmental Data is Graded Lab 01.**
+- Graded Lab 01 is worth **25 points**.
+- Graded Lab 01 is intentionally **highly guided and completion based**.
+- Students who complete and submit the required Lab 01 materials receive full
+  credit.
+- Lab 01 is designed to establish a common analytical and reproducible workflow
+  rather than assess prior programming experience.
+- The finalized Virtual Lab 01 serves as the instructional and visual model for
+  subsequent SHM 377 virtual laboratories.
+- Lab 01 serves as a reference for foundational R, RStudio, file-management,
+  scripting, data-import, inspection, visualization, interpretation, and
+  reproducibility skills.
+- Subsequent laboratories should build upon rather than reteach the foundational
+  analytical skills established in Lab 01.
+- Laboratory scaffolding should progressively decrease from Lab 01 through Lab
+  04 while expectations for hazardous-material reasoning, interpretation, and
+  management decisions progressively increase.
 - SHM 377 is not an R-programming course.
 - After the introductory R experience, students may use R, Excel, or another
   appropriate analytical interface unless an assignment requires a particular

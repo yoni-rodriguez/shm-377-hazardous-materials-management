@@ -184,66 +184,44 @@ questions.
 
 ## Laboratories
 
-Laboratory activities connect hazardous-material concepts with measurement,
-data analysis, regulatory research, quantitative reasoning, and management
-decisions.
+SHM 377 includes four major graded laboratories worth **25 points each** for a
+total of **100 points (50% of the course grade)**.
 
-The course includes **four major graded laboratories**.
+### Graded Lab 01 — Introduction to R & Environmental Data
 
-Each graded laboratory is worth **25 points**, for a total of **100 laboratory
-points**.
+Virtual Lab 01 is a highly guided, completion-based introductory laboratory.
+Students who complete and submit the required materials receive full credit.
 
-The four graded laboratories collectively account for **50% of the total
-course grade**.
+The purpose of Lab 01 is to establish the analytical workflow used throughout
+the course. Students work with RStudio, organize project files, create an R
+script, import environmental monitoring data, inspect and summarize
+measurements, create a visualization, interpret the results, and preserve a
+reproducible record of their analysis.
 
-The graded laboratories are intentionally selected based on the strength of the
-hazardous-material problem, dataset, analytical opportunity, and professional
-application.
+Lab 01 also serves as a reference for foundational analytical procedures used
+later in the course.
 
-Not every laboratory activity or Wednesday meeting will result in a formal
-graded report.
+### Laboratory Progression
 
-Other class meetings may include formative activities such as:
-
-- R practice
-- Dataset exploration
-- Applied calculations
-- Safety Data Sheet interpretation
-- Regulatory navigation
-- Hazard classification
-- Storage and compatibility exercises
-- Transportation decisions
-- Environmental release scenarios
-- Emergency-response scenarios
-- Waste-characterization exercises
-- Case studies
-- Final-project development
-
-A typical major laboratory may ask students to:
+The four laboratories progressively reduce instructional scaffolding while
+increasing responsibility for hazardous-material reasoning and
+decision-making.
 
 ```text
-Observe a problem
+Lab 01
+Highly Guided / Completion Based
         ↓
-Understand how measurements or information were obtained
+Lab 02
+Guided Analysis
         ↓
-Work with a dataset or technical problem
+Lab 03
+Semi-Structured Analysis
         ↓
-Analyze the evidence
+Lab 04
+Scenario-Based Decision Making
         ↓
-Interpret the results
-        ↓
-Locate relevant technical or regulatory information
-        ↓
-Develop a management recommendation
-        ↓
-Communicate and defend the decision
-```
-
-Laboratories may use photographs, videos, process diagrams, public datasets,
-technical documents, regulatory resources, and professor-created scenarios to
-approximate the reasoning involved in real hazardous-material investigations.
-
-When simulated datasets are used, they will be identified as simulated.
+Final Group Project
+Independent Team Integration
 
 ---
 

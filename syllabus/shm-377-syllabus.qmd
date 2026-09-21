@@ -76,7 +76,7 @@ There is no required commercial textbook for the course. Readings, case material
 
 Students need regular access to Canvas, their CWU email, and a laptop computer capable of viewing course materials and completing laboratory and analytical work.
 
-**Students should bring a laptop to the first day of instruction on Wednesday, September 23, and to subsequent class meetings when requested.** We will begin working with course technology and analytical tools during the first class meeting.
+**Students should bring a laptop to the first day of instruction on Wednesday, September 23, and to subsequent class meetings.** We will begin working with course technology and analytical tools during the first class meeting.
 
 SHM 377 will introduce R and RStudio as one professional environment for working with environmental and hazardous materials data. Students are not expected to enter the course with previous R or programming experience.
 

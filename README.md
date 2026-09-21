@@ -46,6 +46,16 @@ SHM 377 is offered in Ellensburg during Fall Quarter 2026.
 - **Monday:** 1:00 PM–3:20 PM
 - **Wednesday:** 1:00 PM–3:20 PM
 - **Location:** HOGU 226
+- **Professor:** Yoni Rodriguez, Assistant Professor
+- **Office Hours:** Monday and Wednesday, 10:00–11:30 AM, drop in, and by appointment
+
+Office hours are time reserved for students. Students do not need to be
+struggling or have an emergency to attend. Office hours may be used to ask
+questions, review course concepts, discuss assignments, talk about careers,
+troubleshoot an analysis, or develop a plan for succeeding in the course.
+
+Students who would like to meet privately or cannot attend the scheduled
+drop in office hours may email Professor Rodriguez to arrange an appointment.
 
 The course uses a weekly lecture–laboratory structure.
 
@@ -68,6 +78,15 @@ Laboratory / Data / Application / Decision-Making
 Because Fall Quarter 2026 begins on Wednesday, September 23, the first week
 contains a single SHM 377 meeting before the regular Monday–Wednesday sequence
 begins.
+
+Major opening course dates include:
+
+- **September 23:** Lecture 00: Course Welcome and Orientation. Students should
+  bring a laptop.
+- **September 28:** CWU Libraries Session, 1:00 to 2:00 PM. Students will
+  review library resources, explore OneSearch strategies, and set up SciFinder
+  access for hazardous-material research.
+- **September 30:** Lecture 01: Introduction to SHM 377.
 
 ---
 
@@ -161,9 +180,10 @@ hazardous-material and exposure data.
 Students are not expected to enter the course already knowing R, and the
 course is not intended to be a programming course.
 
-Early laboratory activities provide substantial guidance and reusable code.
-As the quarter progresses, students gradually take greater responsibility for
-selecting, modifying, interpreting, and communicating their analyses.
+The introductory R laboratory provides substantial guidance and reusable
+code. After this introductory experience, students may use R, Excel, or another
+appropriate analytical interface for graded laboratory work unless a particular
+assignment requires a specific method.
 
 Students may use R to:
 
@@ -177,8 +197,13 @@ Students may use R to:
 - Identify patterns
 - Interpret evidence
 
-The emphasis is on using data to answer hazardous-material management
-questions.
+Regardless of the tool selected, students remain responsible for performing
+the analysis correctly, documenting their work, interpreting the results, and
+explaining how the evidence supports their conclusions.
+
+The guiding principle for analytical work in SHM 377 is:
+
+> **Support the mechanics. Assess the reasoning.**
 
 ---
 
@@ -222,6 +247,10 @@ Scenario-Based Decision Making
         ↓
 Final Group Project
 Independent Team Integration
+```
+
+Later laboratories build upon rather than reteach the foundational analytical
+workflow established in Lab 01.
 
 ---
 
@@ -264,6 +293,45 @@ Increasingly Independent
 Final Project
 Independent Integration
 ```
+
+---
+
+## Final Grade Scale
+
+CWU defines the institutional letter grades and associated grade points used on
+the academic transcript. SHM 377 uses the following course percentage ranges to
+translate the 200 course points into CWU letter grades.
+
+| Percentage | Letter Grade | CWU Grade Points |
+|---:|:---:|---:|
+| 94 to 100% | A | 4.0 |
+| 90 to less than 94% | A- | 3.7 |
+| 87 to less than 90% | B+ | 3.3 |
+| 83 to less than 87% | B | 3.0 |
+| 80 to less than 83% | B- | 2.7 |
+| 77 to less than 80% | C+ | 2.3 |
+| 73 to less than 77% | C | 2.0 |
+| 70 to less than 73% | C- | 1.7 |
+| 67 to less than 70% | D+ | 1.3 |
+| 63 to less than 67% | D | 1.0 |
+| 60 to less than 63% | D- | 0.7 |
+| Below 60% | F | 0.0 |
+
+The percentage thresholds above are course specific and are not presented as
+university mandated percentage cutoffs.
+
+## Extra Credit
+
+A standing learning and study skills extra credit opportunity is available to
+all students under the same rules.
+
+Students may read an approved chapter from Cal Newport's *How to Become a
+Straight-A Student* or Peter C. Brown, Henry L. Roediger III, and Mark A.
+McDaniel's *Make It Stick* and complete the associated Canvas reflection.
+
+A maximum of **5 extra credit points** may be earned. Individual extra credit
+assignments will not be created at the end of the quarter for a particular
+student.
 
 ---
 
@@ -313,33 +381,131 @@ Correct Calculation / Analysis
 
 ---
 
-## Final Project
+## Final Group Project
 
-The final project is worth **100 points** and accounts for **50% of the total
-course grade**.
+The final group project is worth **100 points** and accounts for **50% of the
+total course grade**.
 
-It serves as the culminating application of the major skills developed
-throughout SHM 377.
+The project serves as the culminating application of the SHM 377 hazardous
+materials reasoning framework.
 
-Students will investigate a hazardous-material problem or case and develop an
-evidence-based analysis that may incorporate:
+Students will work in teams to investigate a complex hazardous materials
+management scenario provided by Professor Rodriguez. The scenario will require
+students to integrate multiple stages of hazardous materials management rather
+than solve a single isolated problem.
 
-- Hazard characterization
-- Material behavior
-- Measurement data
-- Quantitative analysis
-- R-generated figures and tables
-- Applied calculations
-- Technical resources
-- Regulatory interpretation
+Depending on the scenario, teams may need to consider:
+
+- Material characterization
+- Receiving and acquisition
+- Storage
+- Use and handling
+- Exposure and release potential
+- Controls and safety protocols
+- Emergency considerations
+- Waste generation and management
+- Transportation and shipment
+- Disposal
+- Regulatory requirements
 - Management recommendations
 - Professional communication
 
-The four graded laboratories are intended to progressively prepare students for
-the level of independence expected in the final project.
+Students will determine what information is needed, locate appropriate technical
+and regulatory resources, evaluate available evidence, perform appropriate
+analyses where necessary, identify limitations or missing information, and
+develop defensible management recommendations.
 
-The exact final-project format, rubric, and internal point distribution will be
-provided separately.
+Project work will develop throughout the quarter. Selected laboratory periods
+will provide dedicated time for groups to conduct research, analyze information,
+develop recommendations, prepare their presentation, ask questions, and receive
+feedback.
+
+Project deliverables may include a professional written report, figures and
+tables, applied calculations, data analysis, regulatory analysis, management
+recommendations, and an oral presentation.
+
+### Final Project Presentations
+
+Final projects will be presented during the final week of instruction on
+**Monday, November 30 and Wednesday, December 2, 2026**.
+
+Each group will select one of the two presentation dates, and all members of the
+group must agree on the selected date. All groups must complete their
+presentation by December 2.
+
+Each group will have approximately **20 minutes to present**, followed by
+approximately **5 minutes for questions and discussion**. Every group member is
+expected to participate meaningfully in the presentation.
+
+Detailed project instructions, group assignments, milestones, written
+deliverable requirements, scheduling procedures, and the grading rubric will be
+provided during the quarter.
+
+---
+
+## Artificial Intelligence
+
+Artificial intelligence is not prohibited in SHM 377.
+
+Students are encouraged to use AI thoughtfully as a tool for learning, problem
+solving, coding assistance, brainstorming, troubleshooting, and improving their
+understanding.
+
+Students remain responsible for the accuracy, interpretation, reasoning,
+calculations, regulatory information, and recommendations contained in work they
+submit. AI should support rather than replace student thinking.
+
+If AI materially contributes to a laboratory report, project, analysis, or
+other submitted work, students should briefly identify the tool and explain
+where or how it was used.
+
+Students should verify factual claims, calculations, regulatory information,
+code, and sources rather than assuming generated content is accurate. Students
+should also be able to explain the work they submit, including analyses or code
+developed with AI assistance.
+
+Do not enter confidential, proprietary, sensitive, employer owned, or otherwise
+restricted information into AI systems.
+
+AI availability and acceptable use vary among workplaces. Students should
+therefore develop sufficient understanding of the underlying analytical
+methods, hazardous materials principles, and professional resources to evaluate
+AI generated information and work without AI when necessary.
+
+Using AI to fabricate evidence or citations, misrepresent generated work as
+independent work, or bypass the learning purpose of an assignment may constitute
+academic dishonesty.
+
+A useful principle for SHM 377 is:
+
+> **Support the mechanics. Assess the reasoning.**
+
+---
+
+## Public Course Resource
+
+This repository is intentionally maintained as a public educational resource.
+
+Students may access course materials without needing to follow the Professor on
+GitHub and may continue to use the materials after completing SHM 377 or
+graduating from Central Washington University.
+
+The repository provides another way to access course lectures, laboratories,
+datasets, analytical code and templates, assignment instructions, and other
+publicly available materials during the quarter.
+
+The repository will remain publicly accessible after the Fall 2026 quarter so
+that students may continue to return to SHM 377 materials as they progress
+through the Safety and Health Management program, other coursework, internships,
+and their professional careers.
+
+Public access also allows these materials to serve as an educational resource
+and example for students, professors, and academic programs outside Central
+Washington University, subject to the copyright and licensing terms described
+below.
+
+Canvas remains the primary course platform for announcements, assignments,
+grades, student submissions, and materials that cannot be distributed publicly.
 
 ---
 
@@ -357,7 +523,7 @@ shm-377-hazardous-materials-management/
 ├── resources/
 ├── syllabus/
 │
-├── course-blueprint.qmd
+│   └── shm-377-course-blueprint.qmd
 ├── LICENSE.md
 ├── README.md
 └── shm-377-hazardous-materials-management.Rproj
@@ -420,7 +586,7 @@ resources.
 
 ## Course Blueprint
 
-The file `course-blueprint.qmd` documents the instructional design and ongoing
+The file `course-resources/shm-377-course-blueprint.qmd` documents the instructional design and ongoing
 development of SHM 377.
 
 The blueprint includes:
@@ -446,17 +612,61 @@ developed and refined.
 
 ---
 
-## Licensing
+## Course Development
 
-Except where otherwise noted, original educational materials in this
-repository created by Yoni Rodriguez are licensed under the
-**Creative Commons Attribution-NonCommercial 4.0 International License
-(CC BY-NC 4.0).**
+This repository supports SHM 377 Hazardous Materials Management at Central
+Washington University.
 
-See `LICENSE.md` for complete licensing information.
+Course materials are designed to evolve as hazardous materials practices,
+regulations, technical resources, evidence, case studies, datasets, and
+professional applications change.
 
-Third-party materials remain subject to their respective copyright, licensing,
-and terms of use.
+The course schedule remains flexible so that useful contemporary hazardous
+materials problems and cases can be incorporated as the quarter develops.
+
+---
+
+## Copyright and License
+
+Copyright © 2026 Yoni Rodriguez.
+
+Except where otherwise noted, original educational materials in this repository
+are licensed under the **Creative Commons Attribution-NonCommercial 4.0
+International License (CC BY-NC 4.0)**.
+
+Under this license, original course materials may be shared and adapted for
+noncommercial purposes provided that appropriate attribution is given, a link to
+the license is provided, and any changes are indicated.
+
+Commercial use of the original course materials requires separate permission
+from the copyright holder.
+
+Public availability of this repository does not alter these licensing terms.
+
+For complete licensing, attribution, and permissions information, see
+**`LICENSE.md`**.
+
+### Third Party Materials
+
+This repository may contain photographs, figures, graphics, excerpts, datasets,
+maps, and other materials created or owned by third parties.
+
+These materials are not covered by the CC BY-NC 4.0 license applied to original
+course materials unless explicitly stated otherwise.
+
+All third party materials remain subject to the copyright, licensing, and terms
+of use established by their respective rights holders. Inclusion in this
+repository does not grant permission for their reuse.
+
+### Course Assessments and Student Information
+
+Restricted assessments, answer keys, grades, student records, student
+submissions, and other protected course materials are not included in this
+public repository.
+
+Student facing assignment instructions, laboratory activities, grading rubrics,
+and other educational materials may be included when appropriate for public
+distribution.
 
 ---
 

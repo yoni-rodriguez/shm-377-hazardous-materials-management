@@ -1,0 +1,538 @@
+---
+title: "SHM 377: Hazardous Materials Management"
+subtitle: "Fall 2026 Syllabus"
+author: "Yoni Rodriguez, Assistant Professor"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    geometry: margin=0.8in
+    fontsize: 10.5pt
+editor: visual
+---
+
+```{=html}
+<style>
+.grade-table table {
+  width: 600px !important;
+  max-width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.grade-table th,
+.grade-table td {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+</style>
+```
+
+# Course Information
+
+|  |  |
+|---|---|
+| **Course** | SHM 377: Hazardous Materials Management |
+| **Credits** | 4 |
+| **Contact hours** | 3 lecture, 2 laboratory |
+| **Term** | Fall 2026 |
+| **Meeting** | Monday and Wednesday, 1:00 to 3:20 PM |
+| **Location** | Hogue 226 |
+| **Format** | In person |
+| **Professor** | Yoni Rodriguez, Assistant Professor |
+| **Email** | Yoni.Rodriguez@cwu.edu |
+| **Office Hours** | Monday and Wednesday, 10:00 to 11:30 AM, drop in, and by appointment |
+
+Office hours are time reserved for students. You do not need to be struggling or have an emergency to attend. Drop in office hours are available every **Monday and Wednesday from 10:00 to 11:30 AM**. You can use this time to ask questions, review a concept, discuss an assignment, talk about careers, troubleshoot an analysis, or develop a plan for succeeding in the course.
+
+Students who would like to meet privately or cannot attend the scheduled drop in office hours may email Professor Rodriguez to arrange an appointment.
+
+# Course Description
+
+Management of hazardous materials, including best practices and federal regulations associated with transportation, storage, use, and disposal of hazardous materials in the workplace.
+
+**Prerequisites:** CHEM 101 or CHEM 111/111LAB or CHEM 181/181LAB.
+
+SHM 377 develops the scientific, quantitative, regulatory, and professional reasoning needed to manage hazardous materials in workplace settings.
+
+The course examines hazardous materials across their lifecycle, including transportation, storage, use, exposure, release, emergency response, waste management, and disposal. Students will work with scientific information, measurement data, calculations, technical resources, regulations, and real or realistic hazardous materials problems to develop and defend management decisions.
+
+# Course Learning Outcomes
+
+By the end of the course, students should be able to:
+
+1.  Anticipate, recognize, evaluate, and develop control strategies associated with hazardous materials.
+2.  Utilize federal regulations related to hazardous materials to assess compliance.
+3.  Utilize Department of Transportation regulations related to hazardous materials to assess compliance.
+
+# Course Materials and Technology
+
+There is no required commercial textbook for the course. Readings, case materials, government resources, regulations, technical documents, datasets, research articles, and other materials will be provided or linked through Canvas. Some copyrighted materials may be available only through Canvas or CWU library access.
+
+Students need regular access to Canvas, their CWU email, and a laptop computer capable of viewing course materials and completing laboratory and analytical work.
+
+**Students should bring a laptop to the first day of instruction on Wednesday, September 23, and to subsequent class meetings when requested.** We will begin working with course technology and analytical tools during the first class meeting.
+
+SHM 377 will introduce R and RStudio as one professional environment for working with environmental and hazardous materials data. Students are not expected to enter the course with previous R or programming experience.
+
+After the introductory R laboratory, students may use R, Excel, or another appropriate analytical interface for graded laboratory work unless a particular assignment requires a specific method.
+
+According to CWU guidance, one credit represents a total time commitment of approximately three hours each week, including scheduled class time and work outside class. A four credit course therefore represents a substantial weekly time commitment.
+
+## CWU Libraries Session
+
+On **Monday, September 28, 2026**, SHM 377 will meet at the **CWU Library from 1:00 to 2:00 PM** instead of our regular classroom.
+
+During this session, students will:
+
+- Review resources available through CWU Libraries
+- Explore OneSearch strategies for locating digital and physical materials
+- Set up a SciFinder account for locating scientific information about hazardous chemicals
+
+The research skills and resources introduced during this session will support laboratory work, hazardous materials research, and the Final Group Project throughout the quarter.
+
+Additional instructions, including any required SciFinder account setup activities, will be provided through Canvas.
+
+# Course Organization and Approach
+
+Hazardous materials management requires more than identifying a chemical or memorizing a regulation.
+
+Professionals must be able to determine what material is present, understand how it behaves, determine where it may move, evaluate how it can be measured, interpret available data, identify applicable requirements, and decide how the material should be managed.
+
+SHM 377 therefore uses an applied, case based approach that integrates science, exposure assessment, quantitative analysis, regulations, and management decisions.
+
+Throughout the course, we will repeatedly use the following hazardous materials reasoning framework:
+
+``` text
+Material
+   ↓
+Phase / Form
+   ↓
+Medium
+   ↓
+Movement
+   ↓
+Properties
+   ↓
+Measurement
+   ↓
+Data
+   ↓
+Decision
+```
+
+The purpose of the framework is to help answer a larger series of professional questions:
+
+``` text
+What is the problem?
+        ↓
+What information do I need?
+        ↓
+Where can I find that information?
+        ↓
+What does the evidence tell me?
+        ↓
+What requirements apply?
+        ↓
+What should we do?
+        ↓
+How can I defend and communicate that decision?
+```
+
+The goal is not simply to memorize chemical properties, equations, regulatory citations, labels, or tables. The goal is to learn how to find and use the information needed to make a defensible hazardous materials management decision.
+
+# Lecture and Laboratory Integration
+
+SHM 377 meets Monday and Wednesday in extended instructional periods.
+
+Where appropriate, the two meetings will function as an integrated lecture and laboratory sequence:
+
+``` text
+Monday
+Concepts / Case Framing / Preparation
+                ↓
+Wednesday
+Laboratory / Data / Application / Decision Making
+```
+
+Monday meetings may introduce the scientific concepts, hazardous materials problem, technical tools, quantitative methods, or regulatory resources needed for an application.
+
+Wednesday meetings may provide opportunities to apply those concepts through hazardous materials scenarios, calculations, regulatory research, measurement data, data analysis, interpretation, and management decisions.
+
+Not every Wednesday meeting will produce a graded laboratory report. Class meetings may include guided practice, calculations, regulatory navigation, data exploration, Safety Data Sheet interpretation, case studies, group problem solving, project development, and other applied activities.
+
+Lectures and laboratories are intended to reinforce one another rather than operate as separate components of the course.
+
+# Role of Chemistry
+
+Chemistry provides tools for understanding hazardous materials behavior.
+
+SHM 377 builds upon prerequisite chemistry knowledge without functioning as a second general chemistry course. Chemical and quantitative concepts will be introduced or revisited when they help us understand or solve a hazardous materials management problem.
+
+Relevant concepts may include:
+
+- Density
+- Specific gravity
+- Mass and volume
+- Concentration
+- Unit conversions
+- Parts per million
+- Molarity
+- Volatility
+- Solubility
+- Vapor pressure
+- Chemical compatibility
+- Reactivity
+- Chemical quantities in containers
+- Regulatory or reporting quantities
+
+Calculations are used to support interpretation and decision making rather than as isolated mathematical exercises.
+
+# Role of Regulations
+
+Regulations are professional resources rather than lists of facts to memorize.
+
+Students will practice locating, navigating, interpreting, and applying regulatory requirements to hazardous materials problems.
+
+Relevant regulatory frameworks may include requirements administered by the Occupational Safety and Health Administration, U.S. Department of Transportation, U.S. Environmental Protection Agency, and other applicable federal or state agencies.
+
+Students will increasingly practice determining:
+
+``` text
+What agency has authority?
+        ↓
+What regulation or technical resource applies?
+        ↓
+Where is the relevant requirement?
+        ↓
+What does it require?
+        ↓
+Does the scenario comply?
+        ↓
+What action is needed?
+```
+
+# Data Analysis and Analytical Tools
+
+Data are one source of evidence used to evaluate hazardous materials problems.
+
+Students may work with environmental monitoring data, exposure measurements, inventories, incident data, regulatory information, calculations, or other quantitative evidence throughout the course.
+
+R and RStudio are introduced early so that students gain experience using a reproducible analytical environment to import, inspect, summarize, visualize, and interpret a real environmental dataset.
+
+SHM 377 is not an R programming course.
+
+After the introductory R experience, students may use R, Excel, or another appropriate analytical interface for graded laboratory work unless a particular assignment requires a specific method.
+
+Regardless of the tool selected, students remain responsible for performing the analysis correctly, documenting their work, interpreting the results, and explaining how the evidence supports their conclusions.
+
+The guiding principle for analytical work in SHM 377 is:
+
+> **Support the mechanics. Assess the reasoning.**
+
+# Assessment and Grading
+
+SHM 377 uses a 200 point grading structure.
+
+| Assessment           |  Points |  Percent |
+|----------------------|--------:|---------:|
+| Graded Lab 1         |      25 |    12.5% |
+| Graded Lab 2         |      25 |    12.5% |
+| Graded Lab 3         |      25 |    12.5% |
+| Graded Lab 4         |      25 |    12.5% |
+| **Laboratory Total** | **100** |  **50%** |
+| Final Group Project  |     100 |      50% |
+| **Total**            | **200** | **100%** |
+
+The four laboratories provide structured opportunities to practice and demonstrate the scientific, quantitative, regulatory, analytical, and professional reasoning developed throughout the course.
+
+The final group project asks students to integrate those capabilities in a more independent hazardous materials management scenario.
+
+The assessments intentionally progress toward greater independence:
+
+``` text
+Lab 01
+Highly Guided / Completion Based
+        ↓
+Lab 02
+Guided
+        ↓
+Lab 03
+Semi Structured
+        ↓
+Lab 04
+Increasing Independence
+        ↓
+Final Group Project
+Independent Team Integration
+```
+
+Regular class activities may be formative rather than graded. Practice calculations, data exercises, regulatory searches, case studies, group problem solving, and other activities are intended to provide opportunities to practice, receive feedback, and prepare for the major assessments without creating unnecessary graded work.
+
+## Final Grade Scale
+
+Central Washington University defines the letter grades and grade points used on the academic transcript. In the CWU catalog, A and A- are identified as Excellent, the B range as Good, the C range as Satisfactory, the D range as Marginal Pass, and F as Failure. CWU does not list an A+ grade. The catalog defines these letter grades and grade points but does not prescribe percentage cutoffs for individual courses.
+
+SHM 377 uses the percentage ranges below to translate course points into CWU letter grades. These percentage ranges are the grading scale adopted for this course.
+
+::: grade-table
+|          Percentage | Letter Grade | CWU Grade Points |
+|--------------------:|:-------------|-----------------:|
+|          94 to 100% | A            |              4.0 |
+| 90 to less than 94% | A-           |              3.7 |
+| 87 to less than 90% | B+           |              3.3 |
+| 83 to less than 87% | B            |              3.0 |
+| 80 to less than 83% | B-           |              2.7 |
+| 77 to less than 80% | C+           |              2.3 |
+| 73 to less than 77% | C            |              2.0 |
+| 70 to less than 73% | C-           |              1.7 |
+| 67 to less than 70% | D+           |              1.3 |
+| 63 to less than 67% | D            |              1.0 |
+| 60 to less than 63% | D-           |              0.7 |
+|           Below 60% | F            |              0.0 |
+:::
+
+Source basis: Central Washington University Undergraduate Catalog, *Academic and General Regulations*, "Grading Policies and Regulations." The percentage thresholds above are course specific and are not presented as university mandated percentage cutoffs.
+
+# Graded Laboratories
+
+SHM 377 includes four major graded laboratories during the quarter.
+
+Each laboratory is worth **25 points**, for a total of **100 laboratory points** and **50% of the course grade**.
+
+The laboratories progressively reduce instructional scaffolding while increasing student responsibility for hazardous materials reasoning, analysis, interpretation, and management decisions.
+
+## Graded Lab 01
+
+**Virtual Lab 01: Introduction to R & Environmental Data** is the first graded laboratory.
+
+Lab 01 is intentionally highly guided and completion based. Students who complete and submit the required materials receive full credit.
+
+The purpose of Lab 01 is to establish a common analytical and reproducible workflow rather than assess previous programming experience.
+
+Students will use R and RStudio to organize project files, create and save an R script, import environmental monitoring data, inspect a dataset, perform basic transformations and descriptive analyses, create a visualization, interpret results cautiously, and preserve a reproducible record of their work.
+
+Lab 01 will remain available as a reference throughout the quarter.
+
+## Laboratories 02 through 04
+
+Later laboratories will apply scientific, quantitative, analytical, regulatory, and professional reasoning to hazardous materials problems.
+
+Students may use R, Excel, calculations, regulatory resources, technical references, or other appropriate tools depending on the problem and assignment requirements.
+
+Later laboratories will progressively provide less procedural guidance and require greater independence in determining what information is needed, selecting appropriate tools, interpreting evidence, and developing management recommendations.
+
+Major graded laboratory work will normally culminate in a professional written report. Assignment specific requirements and due dates will be provided through Canvas.
+
+# Laboratory Report Expectations
+
+Laboratory reports should be independently produced unless an assignment explicitly states otherwise.
+
+Students may discuss concepts, methods, and troubleshooting with classmates, but each individual laboratory submission should reflect the student's own analysis, interpretation, calculations, and written work.
+
+Depending on the problem, a laboratory report may include:
+
+1.  Scenario or problem
+2.  Hazardous material or process
+3.  Available evidence
+4.  Analysis
+5.  Results
+6.  Interpretation
+7.  Technical and regulatory considerations
+8.  Management recommendations
+9.  Limitations
+10. References
+
+The exact structure may vary depending on the assignment.
+
+Regardless of the analytical tool used, students should document their work sufficiently for the analytical process and reasoning to be evaluated.
+
+Tables and figures should be clearly labeled. Graphs should include informative axis labels and appropriate units. Units should be included in calculations and final answers. Numerical results should be interpreted in the context of the hazardous materials problem rather than reported without explanation.
+
+Students should not submit unexplained computer output in place of written interpretation.
+
+# Final Group Project
+
+The final group project is worth 100 points and accounts for 50% of the total course grade.
+
+The project serves as the culminating application of the SHM 377 hazardous materials reasoning framework.
+
+Students will work in teams to investigate a complex hazardous materials management scenario provided by Professor Rodriguez. The scenario will require students to integrate multiple stages of hazardous materials management rather than solve a single isolated problem.
+
+Depending on the scenario, teams may need to consider:
+
+1. Material characterization
+2. Receiving and acquisition
+3. Storage
+4. Use and handling
+5. Exposure and release potential
+6. Controls and safety protocols
+7. Emergency considerations
+8. Waste generation and management
+9. Transportation and shipment
+10. Disposal
+11. Regulatory requirements
+12. Management recommendations
+13. Professional communication
+
+Students will determine what information is needed, locate appropriate technical and regulatory resources, evaluate available evidence, perform appropriate analyses where necessary, identify limitations or missing information, and develop defensible management recommendations.
+
+Project work will develop throughout the quarter. Selected laboratory periods will provide dedicated time for groups to work together on their projects. During this time, students may conduct research, locate and interpret technical or regulatory resources, analyze information, develop their recommendations, prepare their presentation, ask questions, receive feedback, and collaborate with other groups when appropriate.
+
+These project work periods are intended to provide structured time for students to apply concepts from the course as they are introduced rather than completing the entire project at the end of the quarter.
+
+Project deliverables may include a professional written report, figures and tables, applied calculations, data analysis, regulatory analysis, management recommendations, and an oral presentation.
+
+## Final Project Presentation Schedule
+
+Final projects will be presented during the final week of instruction on Monday, November 30 and Wednesday, December 2, 2026.
+
+Each group will select one of the two presentation dates. All members of the group must agree on the selected date. Groups may choose to present on Monday, November 30 or Wednesday, December 2, but all groups must complete their presentation by Wednesday, December 2.
+
+Each group will have approximately 20 minutes to present, followed by approximately 5 minutes for questions and discussion. Every group member is expected to participate meaningfully in the presentation.
+
+Detailed project instructions, group assignments, scheduling procedures, milestones, written deliverable requirements, and the grading rubric will be provided during the quarter.
+
+# Attendance and Absences
+
+Regular attendance is expected because many course activities depend on laboratory work, discussion, collaboration, problem solving, and in class application. Attendance itself is not a graded course component, but missing class may mean missing an activity that cannot be reproduced in exactly the same form.
+
+If you know you will miss class, communicate as early as reasonably possible. If illness, emergency, university activity, religious accommodation, or another significant circumstance affects your ability to participate, contact Professor Rodriguez so that an appropriate plan can be discussed when possible.
+
+# Late Work, Make Up Work, and Extensions
+
+Due dates are posted in Canvas. Students should communicate before a deadline whenever reasonably possible if circumstances will prevent timely completion.
+
+Extensions and make up opportunities are not automatic and depend on the nature of the activity and circumstances. Some live laboratory activities, discussions, presentations, and collaborative activities cannot be recreated exactly after they occur.
+
+Do not wait until the end of the quarter to raise a missing assignment or unresolved grading issue. Check Canvas regularly and communicate early.
+
+# Extra Credit
+
+A standing learning and study skills extra credit opportunity is available to every student. Students may read an approved chapter from Cal Newport's *How to Become a Straight-A Student* or Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel's *Make It Stick* and complete the associated Canvas reflection.
+
+The reflection will ask you to identify an important idea, connect it to your current approach to learning, try a strategy, and reflect on what happened.
+
+A maximum of 5 extra credit points may be earned. Individual extra credit assignments will not be created at the end of the quarter for a particular student.
+
+# Grades and Grade Questions
+
+You are encouraged to ask how an assignment was evaluated, where points were lost, whether something may have been overlooked, or how to improve on future work. If you believe a grading error occurred, bring it to Professor Rodriguez's attention promptly.
+
+Grades are earned through the published course requirements. A grade will not be changed simply because a student needs a particular final grade, and individual extra credit opportunities will not be created for one student when they are unavailable to the rest of the class.
+
+# Communication and Professional Expectations
+
+Hazardous materials professionals must be able to communicate scientific, quantitative, regulatory, and technical information to workers, employers, regulators, communities, emergency responders, and other professionals.
+
+Throughout SHM 377, students will practice communicating technical information through discussion, laboratory reports, case analysis, management recommendations, and the final project.
+
+Clear communication is more important than unnecessarily complicated language. Students should work toward explaining hazardous materials problems accurately, supporting conclusions with evidence, and communicating recommendations in a way that the intended audience can understand.
+
+Use email or Canvas for short questions, clarification, absence notifications, and meeting requests. Complex questions about course performance, personal circumstances, laboratory work, project planning, or grades are usually better handled during office hours or an appointment.
+
+When emailing, identify the course and make the question clear. A useful subject line is **SHM 377 Question About \[Topic or Assignment\]**. Students are responsible for checking Canvas announcements and CWU email regularly.
+
+# Course Materials and Continued Access
+
+Canvas is the primary course platform for SHM 377 and will be used for announcements, assignments, grades, student submissions, and materials that cannot be distributed publicly.
+
+Instructor created course materials may also be made available through the [SHM 377 Hazardous Materials Management GitHub repository](https://github.com/yoni-rodriguez/shm-377-hazardous-materials-management.git).
+
+The repository provides another way to access course lectures, laboratories, datasets, analytical code and templates, assignment instructions, and other publicly available course materials.
+
+The repository will remain publicly accessible after the Fall 2026 quarter so that students may continue to return to SHM 377 materials as they progress through the Safety and Health Management program, other coursework, internships, and their professional careers.
+
+Student information, grades, submissions, restricted assessment materials, answer keys, and copyrighted materials that cannot be publicly redistributed will not be placed in the public repository.
+
+# Inclement Weather and Transportation Disruptions
+
+If weather or transportation conditions make an in person class impractical or unsafe, the class may move to a remote format or an asynchronous Canvas activity may replace that meeting.
+
+Any change will be announced through Canvas as early as reasonably possible. Students should not place themselves at unreasonable risk to travel to class and should communicate if local conditions affect their ability to participate.
+
+# Artificial Intelligence
+
+Artificial intelligence is not prohibited in SHM 377. Students are encouraged to use AI thoughtfully as a tool for learning, problem solving, coding assistance, brainstorming, troubleshooting, and improving their understanding.
+
+Students remain responsible for the accuracy, interpretation, reasoning, calculations, regulatory information, and recommendations contained in work they submit. AI should support rather than replace your own thinking.
+
+If AI materially contributes to a laboratory report, project, analysis, or other submitted work, briefly identify the tool and explain where or how it was used.
+
+Students should verify factual claims, calculations, regulatory information, code, and sources rather than assuming generated content is accurate. Students should also be able to explain the work they submit, including analyses or code developed with AI assistance.
+
+Do not enter confidential, proprietary, sensitive, employer owned, or otherwise restricted information into AI systems.
+
+AI availability and acceptable use vary among workplaces. Students should therefore develop sufficient understanding of the underlying analytical methods, hazardous materials principles, and professional resources to evaluate AI generated information and work without AI when necessary.
+
+Using AI to fabricate evidence or citations, misrepresent generated work as your own independent work, or bypass the learning purpose of an assignment may constitute academic dishonesty. If you are unsure whether a use is appropriate, ask before submitting the work.
+
+# Academic Integrity
+
+Students are expected to act in accordance with CWU academic integrity and student conduct requirements. Submitted work must accurately represent your own contribution and must appropriately acknowledge the work, ideas, evidence, and tools used.
+
+Academic dishonesty may be addressed under CWU 501-20 and WAC 106-125-020.
+
+# Classroom Community and Conduct
+
+CWU expects every member of the university community to contribute to an inclusive and respectful culture for all in its classrooms, work environments, and at campus events.
+
+Hazardous materials management involves real workers, communities, industries, regulations, environmental releases, emergencies, and sometimes difficult events. We may disagree about interpretation, risk, compliance, or management strategies.
+
+Students should question ideas and evidence without attacking people. Asking someone to explain or support a position is part of academic inquiry.
+
+# Disability Services
+
+Central Washington University is committed to creating a learning environment that meets the needs of its diverse student body. If you anticipate or experience any obstacles to learning, contact Disability Services to discuss a range of available options.
+
+Student Disability Services is located in 205 Bouillon Hall. Call (509) 963-2214 or email ds\@cwu.edu for more information.
+
+# Religious Accommodations
+
+University Policy, CWU 501-20(39), provides for reasonable accommodation of student absences for religious holidays in accordance with RCW 28B.137.010.
+
+Students seeking reasonable accommodations under this policy must provide written notice to their instructors within the first two weeks of class specifying the dates for which religious accommodations are requested.
+
+Contact the Vice President for Student Engagement and Success at (509) 963-1515 for further information.
+
+# Sexual Misconduct, Responsible Employee, and Confidential Resources
+
+Central Washington University is committed to providing all community members with a learning and work environment that is free from sexual misconduct and discrimination.
+
+Students have rights and options for getting help if they have experienced sexual misconduct or discrimination. Information can be found at the Office for CWU Civil Rights Compliance website or by contacting the CWU Title IX Coordinator.
+
+As Responsible Employees, all faculty and staff are required to report information regarding sexual misconduct or related incidents and disclosures regarding sexual misconduct and discrimination to the CWU Title IX Coordinator, unless they are designated as a confidential resource.
+
+Students may receive confidential support by contacting CWU PATH, 509-963-1745 or PATH\@CWU.edu, or CWU Student Counseling Services, 509-963-1391.
+
+# Tentative Major Dates
+
+The schedule below identifies major course milestones. Course modules, current cases, laboratory topics, and instructional pacing may change. Canvas will contain the current schedule.
+
+| Date or period | Major milestone |
+|---|---|
+| **September 23** | First day of SHM 377. Lecture 00: Course welcome, syllabus, expectations, resources, and course orientation. **Bring a laptop.** |
+| **September 28** | CWU Libraries Session, 1:00 to 2:00 PM. **Meet at the CWU Library.** |
+| [**September 29**]{style="color: red;"} | [CWU Change of Schedule Period ends. **Last day to add or drop classes** during the regular change of schedule period.]{style="color: red;"} |
+| **September 30** | **Lecture-01: Introduction to SHM-377** |
+| November 11 | Veterans Day, no class |
+| November 25 to 27 | Thanksgiving and Native American Heritage Day recess, no class |
+| **November 30 and December 2** | **Final Group Project Presentations. Groups may select either presentation date. All groups must present by December 2.** |
+| December 4 | Last day of instruction |
+| December 7 | Study Day |
+| December 8 to 11 | Final Exam Week |
+
+# Syllabus Changes
+
+This syllabus provides the course structure, expectations, and major assessment plan. Reasonable changes may be necessary because of class progress, current events, laboratory development, weather, university operations, or other circumstances.
+
+Changes will be communicated through Canvas. The current Canvas schedule and announcements should be used for day to day course deadlines.
+
+------------------------------------------------------------------------
+
+© 2026 Yoni Rodriguez. SHM 377: Hazardous Materials Management. Except where otherwise noted, instructor created course materials are licensed under CC BY-NC 4.0. Third party materials retain their original copyright and licensing terms.

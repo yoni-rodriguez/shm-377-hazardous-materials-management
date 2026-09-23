@@ -36,7 +36,7 @@ editor: visual
 # Course Information
 
 |  |  |
-|---|---|
+|------------------------------------|------------------------------------|
 | **Course** | SHM 377: Hazardous Materials Management |
 | **Credits** | 4 |
 | **Contact hours** | 3 lecture, 2 laboratory |
@@ -45,7 +45,7 @@ editor: visual
 | **Location** | Hogue 226 |
 | **Format** | In person |
 | **Professor** | Yoni Rodriguez, Assistant Professor |
-| **Email** | Yoni.Rodriguez@cwu.edu |
+| **Email** | Yoni.Rodriguez\@cwu.edu |
 | **Office Hours** | Monday and Wednesday, 10:00 to 11:30 AM, drop in, and by appointment |
 
 Office hours are time reserved for students. You do not need to be struggling or have an emergency to attend. Drop in office hours are available every **Monday and Wednesday from 10:00 to 11:30 AM**. You can use this time to ask questions, review a concept, discuss an assignment, talk about careers, troubleshoot an analysis, or develop a plan for succeeding in the course.
@@ -276,7 +276,7 @@ Regular class activities may be formative rather than graded. Practice calculati
 
 ## Final Grade Scale
 
-Central Washington University defines the letter grades and grade points used on the academic transcript. In the CWU catalog, A and A- are identified as Excellent, the B range as Good, the C range as Satisfactory, the D range as Marginal Pass, and F as Failure. CWU does not list an A+ grade. The catalog defines these letter grades and grade points but does not prescribe percentage cutoffs for individual courses.
+Central Washington University defines the letter grades and grade points used on the academic transcript. In the CWU catalog, A and A- are identified as Excellent, the B range as Good, the C range as Satisfactory, the D and F as Failure. CWU does not list an A+ grade. The catalog defines these letter grades and grade points but does not prescribe percentage cutoffs for individual courses.
 
 SHM 377 uses the percentage ranges below to translate course points into CWU letter grades. These percentage ranges are the grading scale adopted for this course.
 
@@ -366,15 +366,15 @@ Students will work in teams to investigate a complex hazardous materials managem
 
 Depending on the scenario, teams may need to consider:
 
-1. Material characterization
-2. Receiving and acquisition
-3. Storage
-4. Use and handling
-5. Exposure and release potential
-6. Controls and safety protocols
-7. Emergency considerations
-8. Waste generation and management
-9. Transportation and shipment
+1.  Material characterization
+2.  Receiving and acquisition
+3.  Storage
+4.  Use and handling
+5.  Exposure and release potential
+6.  Controls and safety protocols
+7.  Emergency considerations
+8.  Waste generation and management
+9.  Transportation and shipment
 10. Disposal
 11. Regulatory requirements
 12. Management recommendations
@@ -515,7 +515,7 @@ Students may receive confidential support by contacting CWU PATH, 509-963-1745 o
 The schedule below identifies major course milestones. Course modules, current cases, laboratory topics, and instructional pacing may change. Canvas will contain the current schedule.
 
 | Date or period | Major milestone |
-|---|---|
+|------------------------------------|------------------------------------|
 | **September 23** | First day of SHM 377. Lecture 00: Course welcome, syllabus, expectations, resources, and course orientation. **Bring a laptop.** |
 | **September 28** | CWU Libraries Session, 1:00 to 2:00 PM. **Meet at the CWU Library.** |
 | [**September 29**]{style="color: red;"} | [CWU Change of Schedule Period ends. **Last day to add or drop classes** during the regular change of schedule period.]{style="color: red;"} |

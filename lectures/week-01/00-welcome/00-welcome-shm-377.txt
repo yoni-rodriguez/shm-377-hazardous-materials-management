@@ -1,0 +1,1121 @@
+---
+title: "SHM 377: Hazardous Materials Management"
+subtitle: "Lecture 00: Welcome to SHM 377"
+author: "Yoni Rodriguez"
+format:
+  html:
+    toc: true
+    toc-location: right
+    smooth-scroll: true
+    code-fold: true
+    embed-resources: true
+  pdf:
+    toc: true
+    documentclass: scrartcl
+    geometry:
+      - margin=0.75in
+editor: visual
+---
+
+```{=html}
+<style>
+
+/* =========================================================
+   Lecture Styling
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Typography
+   Keep lecture text consistent throughout the document
+   --------------------------------------------------------- */
+
+body {
+  color: #212529;
+}
+
+blockquote {
+  color: #212529;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+}
+
+blockquote strong {
+  color: #212529;
+}
+
+.text-center {
+  color: #212529;
+}
+
+
+/* =========================================================
+   Responsive Mobile Layout
+   Stack ALL Quarto columns on narrow screens
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .columns {
+    display: block !important;
+  }
+
+  .columns > .column {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .columns > .column:empty {
+    display: none !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  p,
+  li,
+  figcaption {
+    overflow-wrap: anywhere;
+  }
+}
+
+</style>
+```
+
+:::::: columns
+::: {.column width="40%"}
+![Mount Rainier, Washington. Photograph by Yoni Rodriguez, 2022.](mount-rainier.jpg){fig-alt="Mount Rainier photographed by Yoni Rodriguez in June 2022"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="56%"}
+## SHM 377: Hazardous Materials Management
+
+### Welcome to SHM 377
+
+**Lecture 00 · Fall 2026**
+
+Yoni Rodriguez\
+Engineering Technologies, Safety, and Construction\
+Central Washington University\
+[Yoni.Rodriguez\@cwu.edu](mailto:Yoni.Rodriguez@cwu.edu)
+:::
+::::::
+
+# Welcome
+
+Welcome to **SHM 377: Hazardous Materials Management**.
+
+Before we begin working with hazardous materials, regulations, environmental data, or laboratory problems, I want us to learn a little about each other and talk about how this course will work.
+
+Today we will talk about:
+
+- Who am I?
+- Who are you?
+- What is SHM 377?
+- How does this course work?
+- What can you expect from me?
+- What do I expect from you?
+- How can you succeed in this course?
+- How do you communicate with professors?
+- What resources are available to you at CWU?
+
+# Who am I?
+
+:::::: columns
+::: {.column width="44%"}
+![Yoni Rodriguez receiving the 2024 Peer Award at NASA Armstrong Flight Research Center, Edwards, California. Photo: [NASA Armstrong Flight Research Center](https://www.nasa.gov/armstrong/).](nasa-award.jpg){fig-alt="Yoni Rodriguez receiving the 2024 Peer Award at NASA Armstrong Flight Research Center"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="51%"}
+## Before CWU
+
+**Environmental Health Scientist**\
+NASA Armstrong Flight Research Center
+
+## Education
+
+**B.S. Biochemistry & Molecular Biosciences**\
+Washington State University
+
+**M.S. Exposure Science**\
+University of Washington
+
+## Today
+
+**Assistant Professor**\
+Central Washington University
+
+**Research Scientist**\
+University of Washington
+:::
+::::::
+
+# My Path Here
+
+My path into safety, health, and hazardous materials management was not completely linear.
+
+I began in **biochemistry and molecular biosciences**, where I became interested in how biological and chemical processes affect human health.
+
+At the University of Washington, that interest expanded into **exposure science**: understanding what people are exposed to, how exposure occurs, how we measure it, and what it may mean for health.
+
+My work has included occupational and environmental health research involving:
+
+- anencephaly + water quality
+- wildfire smoke | respiratory health
+- heavy metals | lead exposure
+- heat stress
+- environmental exposure monitoring
+
+At NASA Armstrong Flight Research Center, I worked in Code 260 (Medical) as an environmental public health scientist. I supported missions involving chemical, radiation, and biological exposures.
+
+Today, I teach here at CWU while continuing research with the University of Washington.
+
+::: callout-note
+## Why am I telling you this?
+
+There is not one path into hazardous materials management.
+
+People enter this work through safety, chemistry, engineering, environmental science, public health, emergency response, occupational health, transportation, waste management, and many other disciplines.
+
+During this course, you may discover connections to interests you already have.
+:::
+
+# Tell Me About You
+
+Before we get started, I'd like to learn a little about who's in the room.
+
+A few things I would like to know:
+
+1. **What is your year at CWU?**
+2. **What brought you into the Safety and Health Management program?**
+3. **Have you worked with hazardous materials before?**
+4. **What chemistry courses have you taken?**
+5. **Have you used R, Excel, or another data-analysis tool before?**
+6. **What are you hoping to get out of SHM 377?**
+7. **When you hear "hazardous materials management," what comes to mind?**
+
+------------------------------------------------------------------------
+
+# What Is This Course?
+
+SHM 377 examines the **management of hazardous materials in workplace settings**.
+
+We will consider hazardous materials across their lifecycle, including:
+
+- transportation
+- receiving
+- storage
+- use and handling
+- exposure
+- releases
+- emergency response
+- waste management
+- disposal
+
+But the goal is not simply to memorize a list of rules for each stage.
+
+# What Does "Management" Mean?
+
+Imagine that you are told:
+
+> "We are bringing a new hazardous material into the facility."
+
+What would you need to know?
+
+- What is the material?
+- What are its properties?
+- How will it be used and stored?
+- How could workers be exposed?
+- What happens if it is released?
+- What regulations apply?
+- How will the waste be managed?
+
+Hazardous materials management means learning how to **find and use the information needed to make a defensible decision**.
+
+# A Framework for Hazardous Materials Management
+
+Throughout the quarter, we will repeatedly ask:
+
+- What is the problem?
+- What information do I need?
+- Where can I find that information?
+- What does the evidence tell me?
+- What requirements apply?
+- What should we do?
+- How can I defend and communicate that decision?
+
+You are not expected to memorize every chemical property, exposure limit, regulation, or technical requirement.
+
+The goal is to learn **what information you need, where to find it, and how to use it**.
+
+# How SHM 377 Works
+
+SHM 377 meets:
+
+::: {.text-center}
+### Monday & Wednesday
+
+### 1:00–3:20 PM
+:::
+
+These extended meetings allow us to integrate **lecture and laboratory work**.
+
+Where appropriate:
+
+::: {.text-center}
+## Monday
+
+### Concepts / Case Framing / Preparation
+
+### ↓
+
+## Wednesday
+
+### Laboratory / Data / Application / Decision Making
+:::
+
+# Lecture + Laboratory
+
+Class meetings may include:
+
+- interactive lectures
+- hazardous materials cases
+- calculations
+- Safety Data Sheets
+- regulatory research
+- environmental and exposure data
+- R and Excel
+- scientific literature
+- technical resources
+- individual activities
+- group problem solving
+- laboratory work
+- and project development
+
+Not every Wednesday will produce a graded laboratory report.
+
+Sometimes the goal is simply to **practice using the tools we will need later**.
+
+# Chemistry in SHM 377
+
+Chemistry is a prerequisite for this course.
+
+But SHM 377 is **not another general chemistry course**.
+
+We will revisit chemistry when it helps us understand or solve a hazardous materials problem.
+
+Examples may include:
+
+- density
+- specific gravity
+- mass and volume
+- concentration
+- parts per million
+- molarity
+- volatility
+- solubility
+- vapor pressure
+- compatibility
+- and reactivity
+
+The question is not only:
+
+> "Can you perform the calculation?"
+
+It is also:
+
+> **"What does the result mean for this hazardous materials problem?"**
+
+# Regulations in SHM 377
+
+We will work with regulations throughout the course.
+
+You are **not expected to memorize the CFR**.
+
+Instead, you will practice determining:
+
+- who has authority
+- what requirements apply
+- where to find them
+- what they require
+- whether a scenario complies
+- what action is needed
+
+The goal is to learn how to **find, interpret, and apply regulations to real problems**.
+
+# Your Professional Toolbox
+
+Throughout the quarter, we will use different sources of information, including:
+
+- Safety Data Sheets
+- regulatory resources
+- scientific and technical literature
+- environmental and exposure data
+- CWU Libraries and SciFinder
+- analytical tools such as R and Excel
+- AI tools
+
+Different problems require different tools.
+
+Part of SHM 377 is learning **what information you need and where to find it**.
+
+# R and RStudio
+
+We are going to begin the course by working with **R and RStudio**.
+
+You do **not** need previous programming experience.
+
+And:
+
+::: {.text-center}
+## SHM 377 is not an R programming course.
+:::
+
+R is one professional tool we can use to work with environmental and hazardous materials data.
+
+# Why Are We Learning R?
+
+Data are one form of evidence.
+
+R gives us a reproducible environment for:
+
+- importing data
+- inspecting data
+- organizing data
+- summarizing measurements
+- visualizing results
+- interpreting patterns
+- and documenting what we did
+
+You are learning how to use a tool to investigate a problem.
+
+# After Lab 01
+
+After the introductory R laboratory, you may generally use:
+
+- **R**
+- **Excel**
+- or another appropriate analytical interface
+
+for later laboratory work unless a particular assignment requires a specific method.
+
+Regardless of the software you choose, you remain responsible for:
+
+- performing the analysis correctly
+- documenting your work
+- interpreting the results
+- and explaining what the evidence means
+
+::: {.text-center}
+## Support the mechanics. Assess the reasoning.
+:::
+
+# Where Should I Look?
+
+## Canvas
+
+Use Canvas for:
+
+- announcements
+- assignments
+- deadlines
+- grades
+- submissions
+- copyrighted readings
+- and course-specific instructions
+
+## Course Repository
+
+Instructor-created public materials may also be available through the [SHM 377 Hazardous Materials Management GitHub repository](https://github.com/yoni-rodriguez/shm-377-hazardous-materials-management.git).
+
+The repository may include:
+
+- lectures
+- laboratories
+- datasets
+- analytical code
+- templates
+- assignment instructions
+- and other publicly available materials
+
+The goal is for you to be able to return to these materials later in the SHM program and throughout your professional career.
+
+# Major Assessments
+
+| Assessment | Points | Percent |
+|---|---:|---:|
+| Graded Lab 01 | 25 | 12.5% |
+| Graded Lab 02 | 25 | 12.5% |
+| Graded Lab 03 | 25 | 12.5% |
+| Graded Lab 04 | 25 | 12.5% |
+| **Laboratory Total** | **100** | **50%** |
+| Final Group Project | 100 | 50% |
+| **Total** | **200** | **100%** |
+
+# The Labs Build Toward Independence
+
+As the quarter progresses, you will take on more responsibility for the analysis and decision-making process.
+
+| Assessment | Level of Guidance |
+|---|---|
+| Lab 01 | Highly guided / completion based |
+| Lab 02 | Guided |
+| Lab 03 | Semi-structured |
+| Lab 04 | Increasing independence |
+| Final Group Project | Independent team integration |
+
+The goal is to gradually move from **following a process** to **deciding what process is needed**.
+
+# Graded Lab 01
+
+Our first graded laboratory is:
+
+
+## Virtual Lab 01
+
+### Introduction to R & Environmental Data
+
+
+Lab 01 is intentionally **highly guided and completion based**.
+
+The goal is to establish a common analytical workflow.
+
+It is **not** designed to determine who already knows how to program.
+
+# What Will You Do in Lab 01?
+
+You will practice:
+
+- organizing project files
+- creating and saving an R script
+- importing environmental monitoring data
+- inspecting a dataset
+- performing basic transformations
+- calculating descriptive statistics
+- creating a visualization
+- interpreting results
+- and preserving a reproducible record of your work
+
+Lab 01 will remain available as a reference throughout the quarter.
+
+# The Final Group Project
+
+The Final Group Project is worth **100 points**, or **50% of the course grade**.
+
+Your group will receive a hazardous materials management scenario.
+
+Depending on the scenario, you may need to consider:
+
+- material characterization
+- receiving
+- storage
+- use and handling
+- exposure and release potential
+- controls
+- emergency considerations
+- waste management
+- transportation
+- disposal
+- regulations
+- and professional communication
+
+# The Question Changes
+
+Early in the quarter, I may tell you:
+
+> "Import this dataset."
+
+> "Calculate this value."
+
+> "Look at this regulation."
+
+As the quarter progresses, the question increasingly becomes:
+
+> **What information do you think you need?**
+
+That transition is intentional.
+
+# Learning How to Learn
+
+College requires more than simply spending time studying.
+
+**How you study matters.**
+
+This quarter, I want you to experiment with how you learn.
+
+That is one reason the course includes an optional study-skills extra credit opportunity.
+
+# Extra Credit: Learn About Learning
+
+You may read an approved chapter from one of two books and try applying what you learn to your own coursework.
+
+:::::: columns
+::: {.column width="46%"}
+
+![](a-student-cal-newport.jpg){fig-alt="Cover of How to Become a Straight-A Student by Cal Newport" width="280"}
+
+### *How to Become a Straight-A Student*
+
+**Cal Newport**
+
+Practical strategies for managing college work and studying effectively.
+
+#### Plan your work
+
+Instead of:
+
+> "I'll work on SHM 377 sometime tonight."
+
+Try:
+
+> "From 4:00–4:45 PM, I will work through today's hazardous materials problem."
+
+Give your work a specific time and place.
+
+#### Work deeply
+
+Create periods of focused work where you can give a difficult task your full attention.
+
+Reduce distractions, protect the time you set aside, and focus on **one demanding task at a time**.
+
+Forty-five focused minutes can be very different from forty-five minutes spent repeatedly switching between studying, messages, social media, and other tasks.
+
+#### Take useful notes
+
+Do not try to write down every word.
+
+Listen for:
+
+- important ideas
+- explanations
+- examples
+- relationships between concepts
+- and questions you still have
+
+Your notes should help you **think about the material later**, not simply reproduce everything that was said.
+
+:::
+
+::: {.column width="8%"}
+:::
+
+::: {.column width="46%"}
+
+![](make-it-stick.jpg){fig-alt="Cover of Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel" width="280"}
+
+### *Make It Stick*
+
+**Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel**
+
+Strategies based on research into learning and memory.
+
+#### Practice retrieval
+
+Instead of only putting information **into** your brain, practice pulling information **out**.
+
+After class:
+
+1. Close your notes.
+2. Write down what you remember.
+3. Reopen your notes and compare.
+
+Ask yourself:
+
+- What did I remember?
+- What did I forget?
+- What did I misunderstand?
+
+#### Don't confuse familiarity with learning
+
+Rereading something can make it look familiar.
+
+That does not necessarily mean you can explain or use it.
+
+Close your notes and ask:
+
+> **What can I explain without looking?**
+
+#### Space your practice
+
+Return to important ideas over time rather than trying to learn everything in one long study session.
+
+For example:
+
+**Learn → Wait → Retrieve → Check → Return later**
+
+#### Mix what you practice
+
+As you learn more concepts, practice deciding **which idea or tool applies to a problem** rather than studying every concept completely in isolation.
+
+That ability to recognize and apply the appropriate concept is part of learning.
+
+:::
+::::::
+
+# Try It Yourself
+
+For the extra credit reflection:
+
+1. Read an approved chapter from either book
+2. Identify an idea that seems useful to you
+3. Connect it to how you currently approach learning
+4. **Try the strategy**
+5. Reflect on what happened
+
+You do not have to decide that the strategy worked.
+
+The goal is to experiment with your own learning and think about the results.
+
+**Maximum: 5 extra credit points**
+
+# Communicating With Professors
+
+![Central Washington University campus. Photo: [Central Washington University](https://www.cwu.edu/).](campus-map-cwu.jpg){fig-alt="Aerial view of the Central Washington University campus"}
+
+College may be the first time you regularly communicate with professors outside of a classroom.
+
+There are some simple professional habits that can make those interactions easier.
+
+## Faculty Are Different
+
+Faculty have different:
+
+- personalities
+- expectations
+- communication styles
+- schedules
+- research interests
+- approaches to teaching
+- preferences for how students communicate with them
+
+You do not need a special script to speak with a professor.
+
+Start with the same principles you would use in a professional workplace:
+
+::: {.text-center}
+### Be respectful. Be clear. Provide context. Ask for what you need.
+:::
+
+## Approaching a Professor's Office
+
+If you visit a professor's office:
+
+- **Knock before entering**, even if the door is open
+- Wait for the professor to invite you in
+- Introduce yourself if the professor may not know you yet
+- Ask whether it is a good time to talk
+- Do not assume an open office door means you should enter and sit down
+- If the professor is meeting with someone else, give them privacy and come back later
+
+You can simply say:
+
+> "Hi Professor Rodriguez, do you have a few minutes?"
+
+If it is not a good time, ask when you should come back or whether you should schedule an appointment.
+
+::: callout-note
+## What about office hours?
+
+**Office hours are specifically reserved for students.**
+
+You are welcome to come during my scheduled drop-in office hours without making an appointment first.
+
+Mondays and Wednesdays 10:00 am - 11:30 am
+:::
+
+# Before You Email
+
+Ask yourself:
+
+1. **What am I asking?**
+2. **What information does the professor need to answer me?**
+3. **Would this be easier to discuss in person?**
+
+Email works well for:
+
+- quick questions
+- clarification
+- absence notifications
+- scheduling
+- simple requests
+
+Complex questions about a laboratory, your performance in the course, a grade, the Final Project, or personal circumstances may be easier to discuss during office hours or an appointment.
+
+# A Useful Email Structure
+
+You do not need to write a long or overly formal email.
+
+Give the professor enough information to understand **who you are and what you need**.
+
+### Subject
+
+**SHM 377 Question About [Topic or Assignment]**
+
+### Greeting
+
+Hello Professor Rodriguez,
+
+### Context
+
+I'm in your SHM 377 course.
+
+### Question
+
+I'm working on [assignment/topic], and I have a question about...
+
+### What you've already tried
+
+I reviewed [lecture/Canvas/instructions/resource], but I'm still unsure about...
+
+### Close
+
+Thank you,\
+[Your Name]
+
+# Example Email
+
+> **Subject:** SHM 377 Question About Lab 02
+>
+> Hello Professor Rodriguez,
+>
+> I'm working on Lab 02 and had a question about exposure limits. I was able to calculate the concentration, but I'm not sure which exposure limit is appropriate for the scenario.
+>
+> I reviewed the lab instructions and lecture notes, but I'm still unsure how to decide which limit applies.
+>
+> Could you point me toward the resource I should use?
+>
+> Thank you,\
+> [your name]
+
+# Asking About a Grade
+
+It is completely appropriate to ask questions about your grade or feedback.
+
+For example:
+
+> "Could you help me understand where I lost points?"
+
+or
+
+> "I reviewed the feedback and had a question about this section."
+
+or
+
+> "What should I improve before the next laboratory?"
+
+Those questions give us something useful to discuss.
+
+If you think something may have been graded incorrectly, you can ask about that too.
+
+The goal is to understand **how your work was evaluated and what you can do next**.
+
+# Office Hours
+
+Office hours are time specifically reserved for students.
+
+For SHM 377:
+
+::: {.text-center}
+### Monday & Wednesday
+
+### 10:00–11:30 AM
+
+### Drop in
+:::
+
+You do **not** need an appointment during scheduled drop-in hours.
+
+# You Don't Need to Have a Problem
+
+Come to office hours to:
+
+- ask about something from class
+- review chemistry
+- troubleshoot R or Excel
+- work through a calculation
+- navigate a regulation
+- discuss your Final Project
+- ask about careers
+- talk about internships
+- discuss research
+- get feedback
+- or simply introduce yourself
+
+# "I Don't Know What to Ask"
+
+That's okay.
+
+You can approach and say:
+
+> "I'm having trouble understanding vapor pressure."
+
+or
+
+> "I don't know where to start on this regulation."
+
+or
+
+> "My R code isn't working and I don't understand the error."
+
+or even:
+
+> "I understand the lecture when you're explaining it, but when I try the problem by myself I get lost."
+
+That gives us somewhere to start.
+
+# Bring the Problem With You
+
+When asking for help with a technical problem, bring what you have.
+
+That might include:
+
+- the assignment
+- your notes
+- your calculation
+- your R script
+- your Excel file
+- the error message
+- the regulation
+- the SDS
+- or the resource you were using
+
+You do not need to solve the problem before asking for help.
+
+Showing what you tried helps us identify **where the problem started**.
+
+# Use Your Resources
+
+You have access to more than this classroom.
+
+CWU provides resources to support you throughout your time at the university.
+
+- **Academic support:** [Learning Commons](https://www.cwu.edu/academics/academic-resources/learning-commons/tutoring/index.php)
+- **Research and library assistance:** [CWU Libraries](https://www.lib.cwu.edu/)
+- **Academic advising:** [Academic Advising](https://www.cwu.edu/academics/academic-resources/academic-advising/index.php)
+- **Accessibility and accommodations:** [Disability Services](https://www.cwu.edu/student-life/student-support/disability-services/index.php)
+- **Counseling and wellbeing:** [Student Counseling Services](https://www.cwu.edu/student-life/health-wellness-services/counseling-services/index.php)
+- **Career development:** [Career Services](https://careerservices.cwu.edu/)
+- **Technology:** [Technology Resources](https://www.cwu.edu/academics/colleges/college-business/student-resources/technology-resources.php)
+
+Part of succeeding in college is learning **where to go when you need something**.
+
+# CWU Libraries
+
+On **Monday, September 28**, we will meet at the:
+
+::: {.text-center}
+### CWU Library
+
+### 1:00–2:00 PM
+:::
+
+We will explore:
+
+- CWU Libraries resources
+- OneSearch
+- finding physical and digital materials
+- and **SciFinder** for locating scientific information about hazardous chemicals
+
+These resources will support our laboratory work and Final Group Project throughout the quarter.
+
+# When Life Happens
+
+Illness happens.
+
+Emergencies happen.
+
+Transportation problems happen.
+
+Family situations happen.
+
+Unexpected things happen.
+
+The important professional habit is:
+
+::: {.text-center}
+## Communicate.
+:::
+
+You do not need to provide unnecessary personal details.
+
+Tell me what I need to know so that we can determine the appropriate next step.
+
+## Example Message
+
+> **Subject:** SHM 377 Absence
+>
+> Hello Professor Rodriguez,
+>
+> I won't be able to attend SHM 377 today because of an unexpected personal situation. I will check Canvas and review the course materials I missed.
+>
+> Please let me know if there is an in-class laboratory activity or anything else I should follow up on.
+>
+> Thank you,\
+> [your name]
+
+Notice what the message does:
+
+- explains that the student will be absent
+- communicates as early as possible
+- shows that they will check the available course materials
+- asks what they need to do next
+- and does **not** require them to share private details
+
+The goal is not to explain everything that happened.
+
+The goal is to **communicate what is affecting the course and determine the next step**.
+
+# Artificial Intelligence
+
+Artificial intelligence is **not prohibited** in SHM 377.
+
+You may use AI thoughtfully for:
+
+- learning
+- problem solving
+- coding assistance
+- brainstorming
+- troubleshooting
+- and improving your understanding
+
+But AI should support rather than replace your own thinking.
+
+# You Are Responsible for the Work
+
+If AI materially contributes to submitted work:
+
+- identify the tool
+- briefly explain how you used it
+- verify factual claims
+- verify calculations
+- verify regulatory information
+- verify code
+- verify sources
+- and understand what you submit
+
+Do not assume generated information is correct.
+
+::: {.text-center}
+## You should be able to explain your work.
+:::
+
+# Verification Is a Professional Habit
+
+If an AI system tells you:
+
+> "According to 29 CFR..."
+
+your next step should be to **open the regulation and verify it**.
+
+The same principle applies to information from:
+
+- websites
+- search engines
+- coworkers
+- technical documents
+- AI
+- and other secondary sources
+
+Ask:
+
+::: {.text-center}
+## Where did this information come from?
+
+## Can I verify it?
+:::
+
+# Professional Habits Start Now
+
+Your professional reputation does not suddenly begin after graduation.
+
+Practice now:
+
+- showing up and participating
+- communicating
+- meeting commitments
+- asking questions
+- listening
+- accepting feedback
+- checking your work
+- admitting when you don't know something
+- finding credible information
+- documenting what you did
+- explaining your reasoning
+- and treating people respectfully
+
+These habits transfer far beyond SHM 377.
+
+# Clear > Complicated
+
+Professional communication does not mean using the biggest words possible.
+
+Your goal is to communicate technical information:
+
+**accurately**
+
+and
+
+**in a way your audience can understand.**
+
+Hazardous materials professionals may need to communicate with:
+
+- workers
+- employers
+- scientists
+- engineers
+- emergency responders
+- regulators
+- managers
+- and communities
+
+Being technically correct matters.
+
+Being understood matters too.
+
+# What I Want You to Leave With
+
+By the end of SHM 377, I do not expect you to have memorized every chemical property, regulation, equation, or exposure limit.
+
+I want you to be able to encounter a hazardous materials problem you have **never seen before** and determine:
+
+- what you need to know
+- where to find reliable information
+- what the evidence tells you
+- what action is needed
+- how to defend your decision
+
+That is the skill we are going to practice.
+
+# Important Dates
+
+### September 28
+
+**CWU Libraries Session**\
+Meet at the CWU Library from 1:00–2:00 PM.
+
+### September 29
+
+**Last day of the regular CWU Change of Schedule Period**
+
+### September 30
+
+**Lecture 01: Introduction to SHM 377**
+
+# Questions?
+
+### Welcome to SHM 377.
+
+Let's have a good quarter.
+
+------------------------------------------------------------------------
+
+© 2026 Yoni Rodriguez. SHM 377: Hazardous Materials Management. Except where otherwise noted, instructor-created course materials are licensed under CC BY-NC 4.0.

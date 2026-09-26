@@ -743,7 +743,7 @@ Different hazards, exposures, regulations, and management decisions may become i
 :::
 :::::::
 
----
+------------------------------------------------------------------------
 
 # Key Takeaway
 
@@ -760,8 +760,7 @@ We need to understand:
 
 > **Hazardous materials management is the process of recognizing hazards, understanding potential exposures, and making informed decisions about how materials should be managed throughout their life cycle.**
 
-
----
+------------------------------------------------------------------------
 
 # Key Terms
 
@@ -773,7 +772,7 @@ We need to understand:
 | Hazard communication | Systems used to communicate information about hazardous materials, including labels, Safety Data Sheets, placards, and hazard-identification systems. |
 | Hazardous-material life cycle | The stages through which a hazardous material may be acquired, stored, used, transported, released, managed as waste, and disposed. |
 
----
+------------------------------------------------------------------------
 
 ### Copyright & Use
 

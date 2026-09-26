@@ -71,10 +71,10 @@ Virtual Lab 01 is graded for **completion**.
 
 To receive full credit:
 
-1. **Show me that your code runs on your local computer during class.**
-2. **Complete the interpretation section in your R script.**
-3. **Save your R script as `virtual-lab-01.R`.**
-4. **Upload `virtual-lab-01.R` directly to Canvas.**
+1.  **Show me that your code runs on your local computer during class.**
+2.  **Complete the interpretation section in your R script.**
+3.  **Save your R script as `virtual-lab-01.R`.**
+4.  **Upload `virtual-lab-01.R` directly to Canvas.**
 
 If you complete these requirements, you will receive **full credit for Virtual Lab 01**.
 
@@ -418,7 +418,8 @@ You should see your CSV and R script.
 
 The Console and R script both allow us to work with R, but they serve different purposes.
 
-```{=html}
+::: {.content-visible when-format="html"}
+
 <table style="width:100%; border-collapse:collapse;">
   <thead>
     <tr>
@@ -449,7 +450,10 @@ The Console and R script both allow us to work with R, but they serve different 
     </tr>
   </tbody>
 </table>
-```
+
+:::
+
+::: {.content-visible when-format="pdf"}
 
 ```{=latex}
 \begin{center}
@@ -465,8 +469,9 @@ Not automatically saved as your analysis & Saved as an \texttt{.R} file \\
 \end{center}
 ```
 
-## Try a Command in the Console
+:::
 
+## Try a Command in the Console
 Enter:
 
 ``` r

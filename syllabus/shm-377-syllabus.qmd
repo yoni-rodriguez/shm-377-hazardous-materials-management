@@ -2,17 +2,21 @@
 title: "SHM 377: Hazardous Materials Management"
 subtitle: "Fall 2026 Syllabus"
 author: "Yoni Rodriguez, Assistant Professor"
+
 format:
   html:
     toc: true
     toc-depth: 3
     theme: cosmo
+    embed-resources: true
+
   pdf:
     toc: true
     toc-depth: 3
     number-sections: false
     geometry: margin=0.8in
     fontsize: 10.5pt
+
 editor: visual
 ---
 

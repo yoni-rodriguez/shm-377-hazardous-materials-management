@@ -170,8 +170,8 @@ At the University of Washington, that interest expanded into **exposure science*
 My work has included occupational and environmental health research involving:
 
 - anencephaly + water quality
-- wildfire smoke | respiratory health
-- heavy metals | lead exposure
+- wildfire smoke \| respiratory health
+- heavy metals \| lead exposure
 - heat stress
 - environmental exposure monitoring
 
@@ -195,13 +195,13 @@ Before we get started, I'd like to learn a little about who's in the room.
 
 A few things I would like to know:
 
-1. **What is your year at CWU?**
-2. **What brought you into the Safety and Health Management program?**
-3. **Have you worked with hazardous materials before?**
-4. **What chemistry courses have you taken?**
-5. **Have you used R, Excel, or another data-analysis tool before?**
-6. **What are you hoping to get out of SHM 377?**
-7. **When you hear "hazardous materials management," what comes to mind?**
+1.  **What is your year at CWU?**
+2.  **What brought you into the Safety and Health Management program?**
+3.  **Have you worked with hazardous materials before?**
+4.  **What chemistry courses have you taken?**
+5.  **Have you used R, Excel, or another data-analysis tool before?**
+6.  **What are you hoping to get out of SHM 377?**
+7.  **When you hear "hazardous materials management," what comes to mind?**
 
 ------------------------------------------------------------------------
 
@@ -261,7 +261,7 @@ The goal is to learn **what information you need, where to find it, and how to u
 
 SHM 377 meets:
 
-::: {.text-center}
+::: text-center
 ### Monday & Wednesday
 
 ### 1:00–3:20 PM
@@ -271,7 +271,7 @@ These extended meetings allow us to integrate **lecture and laboratory work**.
 
 Where appropriate:
 
-::: {.text-center}
+::: text-center
 ## Monday
 
 ### Concepts / Case Framing / Preparation
@@ -376,7 +376,7 @@ You do **not** need previous programming experience.
 
 And:
 
-::: {.text-center}
+::: text-center
 ## SHM 377 is not an R programming course.
 :::
 
@@ -415,7 +415,7 @@ Regardless of the software you choose, you remain responsible for:
 - interpreting the results
 - and explaining what the evidence means
 
-::: {.text-center}
+::: text-center
 ## Support the mechanics. Assess the reasoning.
 :::
 
@@ -451,27 +451,27 @@ The goal is for you to be able to return to these materials later in the SHM pro
 
 # Major Assessments
 
-| Assessment | Points | Percent |
-|---|---:|---:|
-| Graded Lab 01 | 25 | 12.5% |
-| Graded Lab 02 | 25 | 12.5% |
-| Graded Lab 03 | 25 | 12.5% |
-| Graded Lab 04 | 25 | 12.5% |
-| **Laboratory Total** | **100** | **50%** |
-| Final Group Project | 100 | 50% |
-| **Total** | **200** | **100%** |
+| Assessment           |  Points |  Percent |
+|----------------------|--------:|---------:|
+| Graded Lab 01        |      25 |    12.5% |
+| Graded Lab 02        |      25 |    12.5% |
+| Graded Lab 03        |      25 |    12.5% |
+| Graded Lab 04        |      25 |    12.5% |
+| **Laboratory Total** | **100** |  **50%** |
+| Final Group Project  |     100 |      50% |
+| **Total**            | **200** | **100%** |
 
 # The Labs Build Toward Independence
 
 As the quarter progresses, you will take on more responsibility for the analysis and decision-making process.
 
-| Assessment | Level of Guidance |
-|---|---|
-| Lab 01 | Highly guided / completion based |
-| Lab 02 | Guided |
-| Lab 03 | Semi-structured |
-| Lab 04 | Increasing independence |
-| Final Group Project | Independent team integration |
+| Assessment          | Level of Guidance                |
+|---------------------|----------------------------------|
+| Lab 01              | Highly guided / completion based |
+| Lab 02              | Guided                           |
+| Lab 03              | Semi-structured                  |
+| Lab 04              | Increasing independence          |
+| Final Group Project | Independent team integration     |
 
 The goal is to gradually move from **following a process** to **deciding what process is needed**.
 
@@ -479,11 +479,9 @@ The goal is to gradually move from **following a process** to **deciding what pr
 
 Our first graded laboratory is:
 
-
 ## Virtual Lab 01
 
 ### Introduction to R & Environmental Data
-
 
 Lab 01 is intentionally **highly guided and completion based**.
 
@@ -560,7 +558,6 @@ You may read an approved chapter from one of two books and try applying what you
 
 :::::: columns
 ::: {.column width="46%"}
-
 ![](a-student-cal-newport.jpg){fig-alt="Cover of How to Become a Straight-A Student by Cal Newport" width="280"}
 
 ### *How to Become a Straight-A Student*
@@ -602,14 +599,12 @@ Listen for:
 - and questions you still have
 
 Your notes should help you **think about the material later**, not simply reproduce everything that was said.
-
 :::
 
 ::: {.column width="8%"}
 :::
 
 ::: {.column width="46%"}
-
 ![](make-it-stick.jpg){fig-alt="Cover of Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel" width="280"}
 
 ### *Make It Stick*
@@ -624,9 +619,9 @@ Instead of only putting information **into** your brain, practice pulling inform
 
 After class:
 
-1. Close your notes.
-2. Write down what you remember.
-3. Reopen your notes and compare.
+1.  Close your notes.
+2.  Write down what you remember.
+3.  Reopen your notes and compare.
 
 Ask yourself:
 
@@ -657,7 +652,6 @@ For example:
 As you learn more concepts, practice deciding **which idea or tool applies to a problem** rather than studying every concept completely in isolation.
 
 That ability to recognize and apply the appropriate concept is part of learning.
-
 :::
 ::::::
 
@@ -665,11 +659,11 @@ That ability to recognize and apply the appropriate concept is part of learning.
 
 For the extra credit reflection:
 
-1. Read an approved chapter from either book
-2. Identify an idea that seems useful to you
-3. Connect it to how you currently approach learning
-4. **Try the strategy**
-5. Reflect on what happened
+1.  Read an approved chapter from either book
+2.  Identify an idea that seems useful to you
+3.  Connect it to how you currently approach learning
+4.  **Try the strategy**
+5.  Reflect on what happened
 
 You do not have to decide that the strategy worked.
 
@@ -701,7 +695,7 @@ You do not need a special script to speak with a professor.
 
 Start with the same principles you would use in a professional workplace:
 
-::: {.text-center}
+::: text-center
 ### Be respectful. Be clear. Provide context. Ask for what you need.
 :::
 
@@ -736,9 +730,9 @@ Mondays and Wednesdays 10:00 am - 11:30 am
 
 Ask yourself:
 
-1. **What am I asking?**
-2. **What information does the professor need to answer me?**
-3. **Would this be easier to discuss in person?**
+1.  **What am I asking?**
+2.  **What information does the professor need to answer me?**
+3.  **Would this be easier to discuss in person?**
 
 Email works well for:
 
@@ -758,7 +752,7 @@ Give the professor enough information to understand **who you are and what you n
 
 ### Subject
 
-**SHM 377 Question About [Topic or Assignment]**
+**SHM 377 Question About \[Topic or Assignment\]**
 
 ### Greeting
 
@@ -770,16 +764,16 @@ I'm in your SHM 377 course.
 
 ### Question
 
-I'm working on [assignment/topic], and I have a question about...
+I'm working on \[assignment/topic\], and I have a question about...
 
 ### What you've already tried
 
-I reviewed [lecture/Canvas/instructions/resource], but I'm still unsure about...
+I reviewed \[lecture/Canvas/instructions/resource\], but I'm still unsure about...
 
 ### Close
 
 Thank you,\
-[Your Name]
+\[Your Name\]
 
 # Example Email
 
@@ -794,7 +788,7 @@ Thank you,\
 > Could you point me toward the resource I should use?
 >
 > Thank you,\
-> [your name]
+> \[your name\]
 
 # Asking About a Grade
 
@@ -824,7 +818,7 @@ Office hours are time specifically reserved for students.
 
 For SHM 377:
 
-::: {.text-center}
+::: text-center
 ### Monday & Wednesday
 
 ### 10:00–11:30 AM
@@ -912,7 +906,7 @@ Part of succeeding in college is learning **where to go when you need something*
 
 On **Monday, September 28**, we will meet at the:
 
-::: {.text-center}
+::: text-center
 ### CWU Library
 
 ### 1:00–2:00 PM
@@ -941,7 +935,7 @@ Unexpected things happen.
 
 The important professional habit is:
 
-::: {.text-center}
+::: text-center
 ## Communicate.
 :::
 
@@ -960,7 +954,7 @@ Tell me what I need to know so that we can determine the appropriate next step.
 > Please let me know if there is an in-class laboratory activity or anything else I should follow up on.
 >
 > Thank you,\
-> [your name]
+> \[your name\]
 
 Notice what the message does:
 
@@ -1004,7 +998,7 @@ If AI materially contributes to submitted work:
 
 Do not assume generated information is correct.
 
-::: {.text-center}
+::: text-center
 ## You should be able to explain your work.
 :::
 
@@ -1027,7 +1021,7 @@ The same principle applies to information from:
 
 Ask:
 
-::: {.text-center}
+::: text-center
 ## Where did this information come from?
 
 ## Can I verify it?
@@ -1054,7 +1048,7 @@ Practice now:
 
 These habits transfer far beyond SHM 377.
 
-# Clear > Complicated
+# Clear \> Complicated
 
 Professional communication does not mean using the biggest words possible.
 

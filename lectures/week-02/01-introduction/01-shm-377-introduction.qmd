@@ -126,7 +126,6 @@ blockquote strong {
 
 </style>
 ```
-
 :::::: columns
 ::: {.column width="40%"}
 ![Yosemite Valley from Wawona Road (Highway 41), October 10, 2022. El Capitan is visible on the left, Half Dome near the center, and Cathedral Rocks and Spires on the right. Photograph by Yoni Rodriguez.](yosemite-2022.jpg){fig-alt="View of Yosemite Valley from Wawona Road with El Capitan on the left, Half Dome near the center, Cathedral Rocks and Spires on the right, and the forested Yosemite Valley below"}
@@ -138,7 +137,7 @@ blockquote strong {
 ::: {.column width="56%"}
 ## SHM 377: Hazardous Materials Management
 
-### Introduction to Hazardous Materials Management
+### What Is a Hazardous Material?
 
 **Lecture 01 · Fall 2026**
 
@@ -149,88 +148,13 @@ Central Washington University\
 :::
 ::::::
 
-# Introduction
-
-- Who am I?
-- What are hazardous materials?
-- How do we manage hazardous materials?
-
 ------------------------------------------------------------------------
 
-# Who am I?
-
-:::::: columns
-::: {.column width="44%"}
-![Yoni Rodriguez receiving the 2024 Peer Award at NASA Armstrong Flight Research Center, Edwards, California. Photo: [NASA Armstrong Flight Research Center](https://www.nasa.gov/armstrong/).](nasa-award.jpg){fig-alt="Yoni Rodriguez receiving the 2024 Peer Award at NASA Armstrong Flight Research Center"}
-:::
-
-::: {.column width="5%"}
-:::
-
-::: {.column width="51%"}
-## Before CWU
-
-**Environmental Health Scientist**\
-NASA
-
-## Education
-
-**B.S. Biochemistry**\
-Washington State University
-
-**Graduate Training**\
-University of Washington
-
-## Today
-
-**Assistant Professor**\
-Central Washington University
-
-**Research Scientist**\
-University of Washington
-:::
-::::::
-
-------------------------------------------------------------------------
-
-# Tell Me About You
-
-Before we get started, I'd like to learn a little about who's in the room.
-
-### Poll Everywhere: First-Time Setup
-
-:::::: {.columns .poll-layout}
-::: {.column width="68%"}
-1.  Scan the QR code.
-2.  Sign in/register using your **CWU account**.
-3.  Complete the **Tell Me About You** survey.
-4.  We'll use this same response page throughout SHM 377.
-
-**Today's survey:**
-
-- What is your year in school?
-- What is your major?
-- Have you taken a course related to hazardous materials before?
-- Have you used R, RStudio, or another programming language before?
-:::
-
-::: {.column width="4%"}
-:::
-
-::: {.column .poll-qr width="28%"}
-![](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
-:::
-::::::
-
-------------------------------------------------------------------------
-
-# What Are Hazardous Materials and How Do We Manage Them?
+# What Counts as a Hazardous Material?
 
 Before we define a hazardous material, let's see what you think.
 
-## What Counts as a Hazardous Material?
-
-### Poll Everywhere
+## Poll Everywhere
 
 :::::: {.columns .poll-layout}
 ::: {.column width="68%"}

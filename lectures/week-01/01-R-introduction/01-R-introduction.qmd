@@ -32,75 +32,27 @@ editor: visual
 
 ```{=html}
 <style>
-
-/* =========================================================
-   Lecture Styling
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   Typography
-   Keep lecture text consistent throughout the document
-   --------------------------------------------------------- */
-
-body {
-  color: #212529;
-}
-
+body { color: #212529; }
 blockquote {
   color: #212529;
   font-size: inherit;
   font-style: normal;
   font-weight: normal;
 }
-
-blockquote strong {
-  color: #212529;
-}
-
-.text-center {
-  color: #212529;
-}
-
-
-/* =========================================================
-   Responsive Mobile Layout
-   Stack ALL Quarto columns on narrow screens
-   ========================================================= */
+blockquote strong { color: #212529; }
+.text-center { color: #212529; }
 
 @media (max-width: 768px) {
-
-  /* Convert every Quarto column group to a vertical layout */
-  .columns {
-    display: block !important;
-  }
-
-  /* Every content column becomes full width */
+  .columns { display: block !important; }
   .columns > .column {
     width: 100% !important;
     max-width: 100% !important;
     flex: 0 0 100% !important;
   }
-
-  /* Remove empty spacer columns used in desktop layouts */
-  .columns > .column:empty {
-    display: none !important;
-  }
-
-  /* Keep images within the phone viewport */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Prevent long text or captions from forcing page width */
-  p,
-  li,
-  figcaption {
-    overflow-wrap: anywhere;
-  }
-
+  .columns > .column:empty { display: none !important; }
+  img { max-width: 100%; height: auto; }
+  p, li, figcaption { overflow-wrap: anywhere; }
 }
-
 </style>
 ```
 
@@ -108,135 +60,81 @@ blockquote strong {
 
 ## Introduction to R & Environmental Data
 
-Today we will use a real environmental monitoring dataset to answer a simple question:
+This first virtual lab begins at the beginning.
 
-> **What happened to ambient particle concentrations during five days of winter monitoring?**
+We will install the software, organize our files, create an R script, learn the RStudio workspace, import a real environmental monitoring dataset, inspect the data, create a visualization, and interpret what we see.
 
-We will use R to:
+::: callout-important
+## Virtual Lab 01 Submission and Credit
 
-- obtain the data
-- inspect the data
-- check the measurements
-- calculate simple summaries
-- create a visualization
-- interpret what we see
+Virtual Lab 01 is graded for **completion**.
+
+To receive full credit:
+
+1. **Show me that your code runs on your local computer during class.**
+2. **Complete the interpretation section in your R script.**
+3. **Save your R script as `virtual-lab-01.R`.**
+4. **Upload `virtual-lab-01.R` directly to Canvas.**
+
+If you complete these requirements, you will receive **full credit for Virtual Lab 01**.
+
+The purpose of this first lab is to make sure you can successfully complete the basic workflow we will use throughout the quarter.
+:::
+
+::: callout-important
+## Complete the Steps in Order
+
+**Do not skip ahead. Complete each numbered step in order. Later steps depend on files and objects created in earlier steps.**
+:::
 
 The goal is not to become a programmer today.
 
-The goal is to begin using R as a tool for environmental and hazardous materials data analysis.
+The goal is to learn a repeatable workflow for using R to investigate and communicate environmental and hazardous materials data.
 
-# The Monitoring Question
-
-We have repeated measurements of airborne particles collected during winter monitoring.
-
-The measurements were collected approximately every two minutes from:
-
-**December 27 through December 31, 2019**
-
-Our question is:
-
-> **What happened to ambient particle concentrations during these five days?**
-
-Before doing any analysis, we need to understand what the dataset contains.
-
-# The Dataset
-
-The teaching dataset contains approximately 3,600 observations.
-
-It contains two variables:
-
-| Variable        | Meaning                            |
-|-----------------|------------------------------------|
-| `date_time`     | When the measurement was collected |
-| `concentration` | Measured particle concentration    |
-
-The measurements were collected using a **TSI DustTrak**.
-
-Particle concentration was measured in **milligrams per cubic meter (mg/m³)**.
-
-The monitoring instrument measured particle concentration.
-
-It did not identify the exact source of every particle.
-
-This distinction is important.
-
-> **Measurement does not equal source attribution.**
-
-If concentration increases, we can observe the increase.
-
-We cannot automatically conclude what caused it.
-
-# Why Are We Using R?
-
-Environmental and hazardous materials work often produces large amounts of data.
-
-Examples include:
-
-- air monitoring
-- water sampling
-- soil sampling
-- surface sampling
-- direct reading instrument data
-- meteorological measurements
-- exposure measurements
-
-R gives us a way to organize, inspect, analyze, visualize, and communicate those data.
-
-Another major advantage is reproducibility.
-
-Instead of clicking through a series of menus and trying to remember what we did, we can save the commands used for the analysis.
-
-# R and RStudio
+# Step 1: Install R and RStudio
 
 We will use two pieces of software in this course: **R** and **RStudio**.
 
 They work together, but they are not the same thing.
 
-> **R is the program that performs the analysis. RStudio is the interface we use to work with R.**
+> **R is the program that performs the analysis. RStudio is the workspace we use to interact with R.**
 
-Both are available for free.
+``` text
+R
+Performs calculations
+Runs commands
+Analyzes data
 
-## What is R?
+        ↓ works through
+
+RStudio
+Provides the workspace
+Write and save scripts
+Run commands
+View files
+View data
+Create graphs
+```
+
+## What Is R?
 
 ![](r-logo.jpg){fig-alt="R statistical computing software logo." width="180px"}
 
-**R** is a programming language and analytical environment used for:
-
-- data analysis
-- statistics
-- visualization
-- reproducible research
+**R** is a programming language and analytical environment used for data analysis, statistics, visualization, and reproducible research.
 
 When we ask R to calculate a mean, summarize a dataset, or create a graph, **R is the software actually performing those operations**.
 
-R is free software and is available for Windows, macOS, and Linux.
+[R Project](https://www.r-project.org/)
 
-[Download R from the R Project](https://www.r-project.org/)
-
-## What is RStudio?
+## What Is RStudio?
 
 ![](r-studio-logo.jpg){fig-alt="RStudio integrated development environment logo." width="180px"}
 
-**RStudio** is an integrated development environment, or IDE, that provides a convenient interface for working with R.
+**RStudio** is an integrated development environment, or IDE, that provides an organized workspace for working with R.
 
-Instead of working with R through a basic command window, RStudio gives us an organized workspace where we can:
+RStudio allows us to write and save code, run commands, view data, navigate files, create graphs, and access help.
 
-- write and save code
-- run R commands
-- view our data
-- create and view graphs
-- navigate files
-- access help and documentation
-
-RStudio Desktop is available in a free open source edition.
-
-[Download RStudio Desktop from Posit](https://posit.co/downloads/)
-
-# Installing R and RStudio
-
-Before we begin working with data, we need both **R** and **RStudio Desktop** installed on your computer.
-
-Both are free.
+[RStudio Desktop from Posit](https://posit.co/downloads/)
 
 ::: callout-important
 ## Installation order matters
@@ -255,768 +153,520 @@ RStudio provides the interface, but R performs the computations.
 
 1.  Go to the [R Project](https://www.r-project.org/).
 2.  Select **CRAN**.
-3.  Choose a CRAN mirror.
-4.  Select **Download R for Windows**.
-5.  Download the current version of R.
-6.  Run the installer and follow the installation prompts.
+3.  Scroll down to the **USA** section.
+4.  Select the **Oregon State University** CRAN mirror.
+
+![](cran-mirror.jpg){fig-alt="CRAN mirror list with the Oregon State University mirror highlighted." width="95%"}
+
+5.  Select **Download R for Windows**.
+6.  Download and install the current version of R.
 7.  Go to the [RStudio Desktop download page](https://posit.co/downloads/).
-8.  Download the free version of RStudio Desktop for Windows.
-9.  Run the RStudio installer.
-10. Open RStudio.
+8.  Download and install the free version of RStudio Desktop.
+9.  Open **RStudio**.
+
+::: callout-tip
+## Which CRAN Mirror Should I Choose?
+
+For this course, select the **Oregon State University** mirror shown above.
+
+A CRAN mirror is simply a server that provides the R installation files. There are many mirrors because the same files are hosted at different locations.
+
+You do not need to compare the different mirrors. For our class, use **Oregon State University**.
+:::
 
 ## macOS
-
-The installation process on macOS depends on your version of macOS and your Mac's processor.
 
 1.  Go to the [R Project](https://www.r-project.org/).
 2.  Select **CRAN**.
 3.  Choose a CRAN mirror.
 4.  Select **Download R for macOS**.
-5.  Read the available installer descriptions carefully.
-6.  Download the version appropriate for your Mac.
-7.  Install R.
-8.  Go to the [RStudio Desktop download page](https://posit.co/downloads/).
-9.  Download the free version of RStudio Desktop for macOS.
-10. Install RStudio.
-11. Open RStudio.
+5.  Read the installer descriptions and choose the version appropriate for your Mac.
+6.  Install R.
+7.  Go to the [RStudio Desktop download page](https://posit.co/downloads/).
+8.  Download and install RStudio Desktop.
+9.  Open **RStudio**.
 
 ::: callout-warning
 ## macOS users
 
-Do not guess which installer you need.
-
-Different Mac computers may use different processors. We will verify your Mac and select the appropriate installer before continuing if you are unsure.
+Do not guess which installer you need. If you are unsure which version is appropriate for your Mac, ask for help before continuing.
 :::
 
 ## Check Your Installation
 
-Once RStudio opens, locate the **Console** pane.
+When RStudio opens, locate the **Console**.
 
-You should see information about the version of R that is running followed by the `>` prompt.
-
-At the prompt, enter:
+At the `>` prompt, enter:
 
 ```{r}
 #| eval: false
-
-2 + 2
-```
-
-If R returns:
-
-``` text
-[1] 4
-```
-
-R and RStudio are communicating correctly.
-
-::: callout-tip
-## Need more help?
-
-If you have trouble installing R or RStudio, use the official installation resources:
-
-- [R Project](https://www.r-project.org/)
-- [RStudio Desktop Download](https://posit.co/downloads/)
-- [RStudio Desktop Installation Documentation](https://docs.posit.co/ide/desktop-pro/getting_started/installation.html)
-
-If you are unsure which version to install, especially on macOS, ask for help before continuing.
-:::
-
-## The RStudio Interface
-
-You will commonly see four areas in RStudio:
-
-::: column-screen-inset
-![](r-studio-panes.jpg){fig-alt="RStudio interface showing the Source, Console, Environment and History, and Files, Plots, Packages, Help, and Viewer panes."}
-:::
-
-One important habit for this course is:
-
-> **Write your commands in the Source pane rather than relying only on the Console.**
-
-The Source pane allows us to save our code and creates a record of what we did.
-
-# Organizing Your Work
-
-Before downloading our dataset, we need to decide where our files will live.
-
-Good file organization makes working with data much easier. Many problems in R happen because files are saved in different locations and R cannot find them.
-
-For this course, we will keep files associated with the same project together.
-
-## Create a Course Folder
-
-Create a folder on your computer called:
-
-```text
-SHM-377
-```
-
-Inside that folder, create a folder for today's lab:
-
-```text
-SHM-377/
-└── virtual-lab-01/
-```
-
-We will save everything for today's analysis inside `virtual-lab-01`.
-
-By the end of the lab, your folder may look something like this:
-
-```text
-SHM-377/
-└── virtual-lab-01/
-    ├── winter-smoke-2019-12-27_to_2019-12-31.csv
-    └── virtual-lab-01.R
-```
-
-::: {.callout-important}
-## Keep your project files together
-
-Do not save the dataset in one location, your R script somewhere else, and your other project files in another folder.
-
-Keeping related files together makes your analysis easier to reproduce and reduces problems caused by missing files or incorrect file paths.
-:::
-
-## File Naming
-
-Use file names that tell you what the file contains.
-
-Good:
-
-```text
-winter-smoke-2019-12-27_to_2019-12-31.csv
-virtual-lab-01.R
-```
-
-Avoid names such as:
-
-```text
-data.csv
-data-final.csv
-data-final-2.csv
-stuff.csv
-```
-
-Clear file names become increasingly important as projects grow.
-
-# Create an RStudio Project
-
-Now that we have organized our files, we will create an **RStudio Project**.
-
-An RStudio Project gives RStudio a defined home for the work associated with a project.
-
-For SHM 377, this helps us keep our:
-
-- data
-- R scripts
-- figures
-- reports
-- other course files
-
-organized together.
-
-In RStudio:
-
-1. Select **File**.
-2. Select **New Project**.
-3. Select **Existing Directory**.
-4. Navigate to your `SHM-377` folder.
-5. Select the folder.
-6. Select **Create Project**.
-
-RStudio will reopen using that folder as the project.
-
-You should now see the project name in the upper right corner of RStudio.
-
-::: {.callout-tip}
-## A simple rule for this course
-
-**One course project, organized folders within that project.**
-
-Your RStudio Project gives the course a home.
-
-Folders inside the project help organize individual labs and analyses.
-:::
-
-# Organizing an R Script with Comments
-
-Before we begin adding R commands to our script, let's look at how we can organize and document our work.
-
-A simple beginning for your script might look like this:
-
-```r
-# Virtual Lab 01
-# Your Name
-# Date
-```
-
-Notice that each line begins with:
-
-```text
-#
-```
-
-In an R script, the `#` symbol begins a **comment**.
-
-## What Is a Comment?
-
-A comment is text written for the person reading the code.
-
-R does not run anything that appears after `#` on that line.
-
-For example:
-
-```r
-# Import the dataset
-```
-
-is a comment.
-
-R sees the `#` and ignores the rest of that line when the script is run.
-
-Comments allow us to explain what different parts of our code are doing.
-
-For example:
-
-```r
-# Import the dataset
-
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-
-# Convert the date and time variable
-
-winter_smoke$date_time <- as.POSIXct(
-  winter_smoke$date_time
-)
-```
-
-The comments help us understand the purpose of each section, but only the R commands are executed.
-
-## Comments Can Also Follow Code
-
-The `#` does not have to appear at the beginning of a line.
-
-For example:
-
-```r
-x <- 5  # Store the value 5 in x
-```
-
-R runs:
-
-```r
-x <- 5
-```
-
-but ignores:
-
-```text
-# Store the value 5 in x
-```
-
-Everything after `#` on that line is treated as a comment.
-
-::: {.callout-important}
-## R does not run comments
-
-When R encounters `#`, it treats everything after it on that line as a comment.
-
-```r
-# This entire line is a comment
-
-x <- 5  # R runs x <- 5 but ignores this explanation
-```
-
-Comments are for people reading the script, not instructions for R to execute.
-:::
-
-## Using Comments as Section Headers
-
-We can also use comments to organize our script into sections.
-
-For example:
-
-```r
-# Virtual Lab 01
-# Your Name
-# Date
-
-
-# Import Data
-
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-
-
-# Convert Date and Time
-
-winter_smoke$date_time <- as.POSIXct(
-  winter_smoke$date_time
-)
-
-
-# Create Visualization
-
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Particle Concentration (mg/m³)"
-)
-```
-
-The lines beginning with `#` act as labels that make the script easier to read.
-
-As our analyses become longer, these comments will help us quickly identify different parts of our work.
-
-::: {.callout-tip}
-## Write code for your future self
-
-A good R script should not only run correctly.
-
-It should also help you understand what you did when you return to the analysis later.
-
-Use comments to explain and organize your work.
-:::
-
-# Commands and Functions
-
-Before we continue, we need to distinguish two terms that we will use throughout this course.
-
-## What Is an R Command?
-
-A **command** is any instruction that we give R.
-
-For example:
-
-```r
-2 + 2
-```
-
-is a command.
-
-It tells R to perform a calculation.
-
-This is also a command:
-
-```r
-x <- 5
-```
-
-It tells R to store the value `5` in an object called `x`.
-
-## What Is an R Function?
-
-A **function** is a tool in R that performs a particular task.
-
-Functions usually have a name followed by parentheses.
-
-For example:
-
-```r
-head()
-```
-
-is a function.
-
-The function name is:
-
-```text
-head
-```
-
-The parentheses indicate that we want R to use the function.
-
-We can provide information inside the parentheses:
-
-```r
-head(winter_smoke)
-```
-
-This means:
-
-> Use the `head()` function on the object called `winter_smoke`.
-
-::: {.callout-note}
-## A function call is also a command
-
-When we enter:
-
-```r
-head(winter_smoke)
-```
-
-we are giving R a **command**.
-
-That command contains a call to the **`head()` function**.
-
-You can think of **command** as the broader term.
-
-A **function** is one of the tools we can use inside a command.
-:::
-
-# The Console and the Script Have Different Jobs
-
-During an analysis, we will sometimes run commands simply to investigate the data.
-
-For example:
-
-```r
-head(winter_smoke)
-dim(winter_smoke)
-str(winter_smoke)
-```
-
-These commands help us answer questions such as:
-
-- Did the data import correctly?
-- How many observations are there?
-- What variables are present?
-- How did R interpret those variables?
-
-We may run these commands directly in the **Console** while we investigate the dataset.
-
-We do not need to save every exploratory command in our final R script.
-
-Our R script should preserve the commands that are important for reproducing the analysis.
-
-For example:
-
-```r
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-
-winter_smoke$date_time <- as.POSIXct(
-  winter_smoke$date_time
-)
-
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Particle Concentration (mg/m³)"
-)
-```
-
-Those commands perform actions that we want to reproduce.
-
-::: {.callout-tip}
-## Think of it this way
-
-**Console:** investigate, test, check, and explore.
-
-**R script:** save the important steps needed to reproduce your analysis.
-
-You may sometimes decide that an exploratory command is important enough to preserve.
-
-The goal is not to follow a rigid rule.
-
-The goal is to understand why you are running each command.
-:::
-
-# Running Code from Your R Script
-
-Writing code in the Source pane does not automatically run it.
-
-R only performs the command when you send it to the Console.
-
-To run a command from your script:
-
-1. Click on the line you want to run.
-2. Select **Run** at the top of the Source pane.
-
-You can also use:
-
-**Windows:** `Ctrl + Enter`
-
-**macOS:** `Command + Enter`
-
-The command will appear in the Console and R will execute it.
-
-::: {.callout-important}
-## Run your commands in order
-
-R can only use objects that have already been created during the current session.
-
-For example, this command:
-
-```r
-head(winter_smoke)
-```
-
-will only work after the object `winter_smoke` has been created.
-
-If R returns:
-
-```text
-Error: object 'winter_smoke' not found
-```
-
-ask yourself:
-
-> Did I run the earlier command that created `winter_smoke`?
-:::
-
-# Your First R Commands
-
-We will start very simply.
-
-Enter this command in the Console:
-
-```r
 2 + 2
 ```
 
 R should return:
 
-```text
+``` text
 [1] 4
 ```
 
-Try another:
+If you see `[1] 4`, R and RStudio are communicating correctly.
 
-```r
-10 / 2
-```
+# Step 2: Download the Dataset from GitHub
 
-At its most basic level, working with R means:
+We will use GitHub throughout SHM 377 to access lecture materials, datasets, and other course resources.
 
-> We give R an instruction and R returns something.
-
-# Creating an Object
-
-We can also store information in R.
-
-Enter:
-
-```r
-x <- 5
-```
-
-Now ask R what is stored in `x`.
-
-```r
-x
-```
-
-The symbol:
-
-```text
-<-
-```
-
-is called the assignment operator.
-
-You can read:
-
-```r
-x <- 5
-```
-
-as:
-
-> Store the value 5 in an object called `x`.
-
-We will use this idea constantly when working with datasets.
-
-# Getting the Dataset
-
-Now that we have a place for our work, we need the dataset we will analyze.
-
-For this lab, we will use:
+For this lab, we need:
 
 `winter-smoke-2019-12-27_to_2019-12-31.csv`
 
-The dataset contains ambient particle measurements collected from December 27 through December 31, 2019.
+A **CSV** is a data file. CSV stands for **comma separated values**. For this lab, the CSV contains the environmental measurements we will analyze in R.
 
-## Download the Dataset
+::: callout-important
+## Use the SHM 377 GitHub Guide
 
-The dataset is available in the SHM 377 GitHub repository.
+Before continuing, open the **How to Download SHM 377 Course Materials from GitHub** guide in the **Week 1 module on Canvas**.
 
-Use the guide below to navigate to the dataset and download the CSV file.
+The guide walks you through how to:
 
-![](github-instructions.jpg){fig-alt="Step-by-step instructions showing how to navigate the SHM 377 GitHub repository to locate and download the winter smoke CSV dataset." width="100%"}
+1.  Find the SHM 377 GitHub repository.
+2.  Navigate to the correct week and lecture folder.
+3.  Download course materials.
+4.  Download the CSV dataset.
+5.  Move the CSV into your SHM 377 course folder.
+6.  Find the dataset using the RStudio Files pane.
 
-Follow the steps shown above:
-
-1. Open the SHM 377 GitHub repository.
-2. Open the `lectures` folder.
-3. Open the `week-01` folder.
-4. Open the `01-R-introduction` folder.
-5. Select `winter-smoke-2019-12-27_to_2019-12-31.csv`.
-6. Download the CSV file.
-7. Save the file inside your `virtual-lab-01` folder.
-
-::: {.callout-important}
-## Make sure you download the CSV file
-
-The file you need for this lab is:
-
-`winter-smoke-2019-12-27_to_2019-12-31.csv`
-
-Do not download the `.qmd`, `.html`, or `.pdf` file when you are trying to obtain the dataset.
+You do not need to learn GitHub programming or Git commands for this course.
 :::
 
-Your folder should now contain:
+For this lab, follow the guide until you have downloaded:
 
-```text
+``` text
+winter-smoke-2019-12-27_to_2019-12-31.csv
+```
+
+Your browser will normally place the file in your computer's **Downloads** folder.
+
+Do not open the CSV in Excel yet.
+
+We will organize the file before importing it into R.
+
+# Step 3: Create Your SHM 377 Folders
+
+Before we begin the analysis, create a permanent location for your SHM 377 course files on your computer.
+
+A simple organization is:
+
+``` text
 SHM-377/
 └── virtual-lab-01/
-    ├── virtual-lab-01.R
+```
+
+Move the CSV you downloaded from your computer's **Downloads** folder into `virtual-lab-01`.
+
+For example:
+
+``` text
+SHM-377/
+└── virtual-lab-01/
     └── winter-smoke-2019-12-27_to_2019-12-31.csv
 ```
 
-# Where Is R Looking?
+Your exact folder structure may look different. That is okay.
 
-Before we ask R to import a file, we need to know where R is looking for that file.
+> **The important part is that you know where the CSV is stored and that it is inside the folder you are using for your RStudio work.**
 
-This location is called the **working directory**.
+::: callout-important
+## Your Downloads folder is not your project folder
 
-Your RStudio Project and your working directory are related, but they are not the same thing.
+Your browser may place downloaded files in **Downloads** automatically.
 
-The **RStudio Project** organizes the larger body of work.
+Move the CSV into the `virtual-lab-01` folder you created for this course. Keeping related files together makes your work easier to find and reduces file path problems.
+:::
 
-The **working directory** tells R which folder it should currently use when looking for files.
+## File Naming
+
+Use names that tell you what a file contains.
+
+Good:
+
+``` text
+winter-smoke-2019-12-27_to_2019-12-31.csv
+virtual-lab-01.R
+```
+
+Avoid:
+
+``` text
+data.csv
+final.R
+final-final.R
+stuff.csv
+```
+
+Clear file organization is part of a reproducible professional workflow.
+
+# Step 4: Open RStudio and Create an R Script
+
+Open **RStudio**.
+
+When RStudio first opens, your screen may not look exactly like the example used in class.
+
+::: callout-note
+## You may initially see only three panes
+
+Nothing is wrong.
+
+The fourth pane appears when you open a file in the **Source** pane.
+:::
+
+## Create an R Script
+
+There are two ways to create a new R script.
+
+### Option 1: Use the Menu
+
+1.  Select **File**.
+2.  Select **New File**.
+3.  Select **R Script**.
+
+### Option 2: Use the New File Button
+
+You can also select the **New File** button in the upper left corner of RStudio and choose **R Script**.
+
+![](file.jpg){fig-alt="RStudio toolbar showing the New File button in the upper left and the Run button above the Source pane." width="100%"}
+
+After you create the R script, a new pane will appear in the upper left portion of RStudio.
+
+This is the **Source pane**.
+
+> **An R script is a file where you write and save R commands.**
+
+## Save the Script Immediately
+
+Select **File → Save As**.
+
+Navigate to:
+
+``` text
+SHM-377/
+└── virtual-lab-01/
+```
+
+Save the script as:
+
+``` text
+virtual-lab-01.R
+```
+
+Your lab folder should now contain:
+
+``` text
+SHM-377/
+└── virtual-lab-01/
+        ├── winter-smoke-2019-12-27_to_2019-12-31.csv
+        └── virtual-lab-01.R
+```
+
+The `.R` file is your R script.
+
+# Step 5: Learn the Four RStudio Panes
+
+Now that an R script is open, RStudio should display the four main areas we will use.
+
+::: column-screen-inset
+![](r-studio-panes.jpg){fig-alt="RStudio interface showing the Source, Console, Environment and History, and Files, Plots, Packages, Help, and Viewer panes."}
+:::
+
+## [Source Pane]{style="color:#0072CE;"}
+
+The [**Source pane**]{style="color:#0072CE;"} is where your R script is open.
+
+Use it to write and save code that you want to keep.
+
+## [Console Pane]{style="color:#00843D;"}
+
+The [**Console pane**]{style="color:#00843D;"} is where R executes commands and displays output.
+
+You can also type exploratory commands directly into the Console.
+
+## [Environment / History Pane]{style="color:#E65100;"}
+
+The [**Environment / History pane**]{style="color:#E65100;"} shows your data objects, variables, and a history of past commands.
+
+Later, after we import the dataset, you should see it appear in the Environment.
+
+## [Files / Plots / Packages / Help / Viewer Pane]{style="color:#5E00B8;"}
+
+The [**Files / Plots / Packages / Help / Viewer pane**]{style="color:#5E00B8;"} allows you to navigate files, view plots, manage packages, and access help files.
+
+### Use the Files Pane
+
+Select the **Files** tab and navigate through the folders on your computer.
+
+Find:
+
+``` text
+SHM-377/
+└── virtual-lab-01/
+```
+
+You should see your CSV and R script.
+
+> **The folder exists on your computer. The Files pane lets you navigate those same folders from inside RStudio.**
+
+# Step 6: The Console and R Script Have Different Jobs
+
+The Console and R script both allow us to work with R, but they serve different purposes.
+
+```{=html}
+<table style="width:100%; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="width:50%; text-align:left; padding:10px; border-bottom:1px solid #999; border-right:2px solid #777;">Console</th>
+      <th style="width:50%; text-align:left; padding:10px; border-bottom:1px solid #999;">R Script</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:10px; border-bottom:1px solid #ddd; border-right:2px solid #777;">Try something</td>
+      <td style="padding:10px; border-bottom:1px solid #ddd;">Save your work</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border-bottom:1px solid #ddd; border-right:2px solid #777;">Explore</td>
+      <td style="padding:10px; border-bottom:1px solid #ddd;">Build an analysis</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border-bottom:1px solid #ddd; border-right:2px solid #777;">Check something</td>
+      <td style="padding:10px; border-bottom:1px solid #ddd;">Keep important commands</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border-bottom:1px solid #ddd; border-right:2px solid #777;">Immediate</td>
+      <td style="padding:10px; border-bottom:1px solid #ddd;">Reusable</td>
+    </tr>
+    <tr>
+      <td style="padding:10px; border-bottom:1px solid #ddd; border-right:2px solid #777;">Not automatically saved as your analysis</td>
+      <td style="padding:10px; border-bottom:1px solid #ddd;">Saved as an <code>.R</code> file</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```{=latex}
+\begin{center}
+\begin{tabular}{p{0.45\linewidth}|p{0.45\linewidth}}
+\textbf{Console} & \textbf{R Script} \\
+\hline
+Try something & Save your work \\
+Explore & Build an analysis \\
+Check something & Keep important commands \\
+Immediate & Reusable \\
+Not automatically saved as your analysis & Saved as an \texttt{.R} file \\
+\end{tabular}
+\end{center}
+```
+
+## Try a Command in the Console
+
+Enter:
+
+``` r
+2 + 2
+```
+
+R should immediately return:
+
+``` text
+[1] 4
+```
+
+## Type the Same Command in Your R Script
+
+Now type this in the **Source pane**:
+
+``` r
+2 + 2
+```
+
+What happened?
+
+Nothing happened yet.
+
+> **Writing code and running code are two different actions.**
+
+Writing a command in an R script saves the instruction. R does not perform that instruction until you run it.
+
+## Run Code from the Script
+
+Writing code in the Source pane does not automatically run it.
+
+To run a line from your R script:
+
+1.  Click anywhere on the line you want to run.
+2.  Select the **Run** button at the top of the Source pane.
+
+The **Run** button is highlighted in the image below.
+
+![](run.jpg){fig-alt="RStudio toolbar with the Run button highlighted above the Source pane." width="100%"}
+
+You can also use the keyboard shortcut:
+
+**Windows:** `Ctrl + Enter`
+
+**macOS:** `Command + Enter`
+
+The command is sent from your R script to the **Console**, where R executes it.
+
+::: callout-tip
+## Script → Run → Console
+
+Think of the process this way:
+
+``` text
+Write the command in your R script
+              ↓
+         Select Run
+              ↓
+Command is sent to the Console
+              ↓
+         R executes it
+```
+:::
+
+# Step 7: Start Your R Script
+
+Delete the practice `2 + 2` line from your script.
+
+At the top of `virtual-lab-01.R`, type:
+
+``` r
+# Virtual Lab 01
+# Your Name
+# Date
+```
+
+## What Does `#` Mean?
+
+In an R script, `#` begins a **comment**.
+
+R does not execute the text after `#` on that line.
+
+Comments help people understand and organize code.
+
+Add another comment:
+
+``` r
+# Import Data
+```
+
+Your script should now begin something like:
+
+``` r
+# Virtual Lab 01
+# Your Name
+# Date
+
+# Import Data
+```
+
+::: callout-tip
+## Write code for your future self
+
+A good R script should not only run correctly. It should also help you understand what you did when you return to the analysis later.
+:::
+
+# Step 8: Make Sure R Can Find Your Files
+
+Before importing the CSV, we need to make sure R is looking in the correct folder.
+
+The location R is currently using is called the **working directory**.
 
 ## Check the Working Directory
 
-Use the `getwd()` function.
+We will run the next command directly in the **Console**.
 
-**Function:** `getwd()`
+The **Console pane is the lower left pane in RStudio**, highlighted in green below.
 
-**Function name:** `getwd`
+![](console.jpg){fig-alt="RStudio interface with the Console pane highlighted in green in the lower left." width="100%"}
 
-**Purpose:** Show the current working directory.
+Click next to the `>` prompt in the Console and enter:
 
-The name means:
-
-```text
-get working directory
-```
-
-Enter this command in the **Console**:
-
-```r
+``` r
 getwd()
 ```
 
+**Function:** `getwd()`
+
+**Purpose:** Show the current working directory.
+
 R will display the folder it is currently using.
 
-Ask yourself:
+Ask:
 
-> Is R looking inside my `virtual-lab-01` folder?
+> **Is R looking inside my `virtual-lab-01` folder?**
 
 ## See What Files R Can Find
 
-We can also use:
+In the Console, run:
 
-```r
+``` r
 list.files()
 ```
 
 **Function:** `list.files()`
 
-**Function name:** `list.files`
+**Purpose:** Show files in the current working directory.
 
-**Purpose:** Show the files available in the current working directory.
+You want to see:
 
-Run:
-
-```r
-list.files()
-```
-
-You should see:
-
-```text
+``` text
 winter-smoke-2019-12-27_to_2019-12-31.csv
 ```
 
-among the files listed.
+If the CSV appears in `list.files()`, R can see it.
 
-If you can see the CSV in `list.files()`, R can see the file.
+## If R Is Looking in the Wrong Folder
 
-# Set the Working Directory
-
-If `getwd()` does not show your `virtual-lab-01` folder, set the working directory before continuing.
-
-Because your R script is saved inside `virtual-lab-01`, the easiest method is:
-
-1. Make sure `virtual-lab-01.R` is open in the Source pane.
-2. Select **Session**.
-3. Select **Set Working Directory**.
-4. Select **To Source File Location**.
-
-R should now use the folder containing your **R script.**
-
-Check again:
-
-```r
-getwd()
-```
+Make sure `virtual-lab-01.R` is open in the **Source pane**.
 
 Then:
 
-```r
-list.files()
-```
+1.  Select **Session** from the RStudio menu.
+2.  Select **Set Working Directory**.
+3.  Select **To Source File Location**.
 
-You should now be able to see the CSV file.
+The menu path is shown below:
 
-::: {.callout-important}
-## This is one of the first things to check when R cannot find a file
+![](session.jpg){fig-alt="RStudio Session menu showing Set Working Directory and To Source File Location." width="100%"}
 
-If R returns an error such as:
+This tells R to use the folder containing your open R script as the working directory.
 
-```text
-cannot open file
-```
+Now return to the **Console** and check again:
 
-or:
-
-```text
-No such file or directory
-```
-
-check:
-
-```r
+``` r
 getwd()
 list.files()
 ```
 
-Ask:
+You should now see that R is looking inside your `virtual-lab-01` folder and that your CSV appears when you run `list.files()`.
 
-1. Where is R looking?
-2. Is the file actually there?
+::: callout-important
+## When R cannot find a file
 
-This simple check can solve many file import problems.
+Ask two questions:
+
+1.  **Where is R looking?**
+2.  **Is the file actually there?**
+
+`getwd()` and `list.files()` can solve many file import problems.
 :::
 
-# Importing the Dataset
+# Step 9: Import the Dataset
 
-Now we are ready to import the dataset.
+Now we are ready to add the first meaningful analysis command to our **R script**.
 
-We will save this command in our **R script** because importing the data is an important part of reproducing the analysis.
+Under `# Import Data`, enter:
 
-The function we will use is `read.csv()`.
-
-**Function:** `read.csv()`
-
-**Function name:** `read.csv`
-
-**Purpose:** Import data from a CSV file.
-
-Enter this command in your **R script:**
-
-```r
+``` r
 winter_smoke <- read.csv(
   "winter-smoke-2019-12-27_to_2019-12-31.csv"
 )
@@ -1024,262 +674,201 @@ winter_smoke <- read.csv(
 
 Run the command.
 
-Read it from right to left.
+After it runs successfully, `winter_smoke` should appear in the **Environment** pane.
 
-First:
+## Read the Command
 
-```r
-read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
+``` text
+winter_smoke <- read.csv("winter-smoke-2019-12-27_to_2019-12-31.csv")
+     ↑             ↑                         ↑
+   object       function                  argument
+            ↑
+     assignment operator
 ```
 
-tells R to read the CSV file.
+### Command
 
-Then:
+A **command** is an instruction we give R.
 
-```r
-winter_smoke <-
+The entire line is a command.
+
+### Function
+
+A **function** is a tool in R that performs a task.
+
+Here, the function is:
+
+``` r
+read.csv()
 ```
 
-stores the imported dataset in an object called `winter_smoke`.
+Its job is to import a CSV file.
 
-R will:
+### Argument
 
-1. find the CSV file
-2. read the file
-3. create a dataset in R
-4. store the dataset under the name `winter_smoke`
+An **argument** gives a function information it needs to perform its task.
 
-After the command runs successfully, you should see `winter_smoke` appear in the **Environment** pane.
+Here, the argument is the name of the CSV file:
 
-# Inspect Before You Analyze
+``` text
+"winter-smoke-2019-12-27_to_2019-12-31.csv"
+```
 
-Now we want to investigate the dataset before deciding what needs to be changed or analyzed.
+### Object
 
-These next commands are primarily **exploratory**.
+An **object** is something stored in R.
 
-You can run them in the **Console.**
+Here, the imported dataset is stored as:
 
-You do not need to save every one in your R script.
+``` text
+winter_smoke
+```
 
-Our questions are:
+### Assignment Operator
 
-- Did the file import correctly?
-- What variables are present?
-- How many observations are there?
-- What does one row represent?
-- Did R interpret the variables correctly?
-- Do the values look reasonable?
+The symbol:
 
-# Look at the First Rows
+``` text
+<-
+```
 
-The `head()` function shows the first several rows.
+is the **assignment operator**.
 
-**Function:** `head()`
+You can read the command from right to left:
 
-**Function name:** `head`
+> Read this CSV file and store the result in an object called `winter_smoke`.
 
-**Purpose:** Look at the first several rows of a dataset.
+# Step 10: Inspect the Dataset in the Console
 
-Run in the **Console:**
+We imported the dataset using our **R script** because importing it is an important part of the analysis we want to preserve.
 
-```r
+Now we will investigate the dataset in the **Console**.
+
+## Look at the First Rows
+
+Run in the Console:
+
+``` r
 head(winter_smoke)
 ```
 
-Ask yourself:
+Read the command:
 
-> What does one row appear to represent?
+``` text
+head(winter_smoke)
+ ↑        ↑
+function  argument
+```
 
-# Look at the Last Rows
+The entire line is a **command**.
 
-The `tail()` function shows the last several rows.
+`head()` is the **function**.
 
-**Function:** `tail()`
+`winter_smoke` is the **argument** supplied to the function.
 
-**Function name:** `tail`
+**Purpose:** `head()` shows the first several rows of a dataset.
 
-**Purpose:** Look at the last several rows of a dataset.
+## Look at the Last Rows
 
-Run in the **Console:**
-
-```r
+``` r
 tail(winter_smoke)
 ```
 
-Looking at both the beginning and end can help us confirm that the file contains the time period we expected.
+**Purpose:** `tail()` shows the last several rows.
 
-# Variable Names
+## See the Variable Names
 
-The `names()` function shows the variable names.
-
-**Function:** `names()`
-
-**Function name:** `names`
-
-**Purpose:** Show the variable names in a dataset.
-
-Run in the **Console:**
-
-```r
+``` r
 names(winter_smoke)
 ```
 
 We expect:
 
-```text
+``` text
 date_time
 concentration
 ```
 
-# Dataset Dimensions
+## Check the Dimensions
 
-The `dim()` function shows the dimensions of an object.
-
-**Function:** `dim()`
-
-**Function name:** `dim`
-
-**Purpose:** Show the number of rows and columns in a dataset.
-
-The name `dim` is short for **dimensions**.
-
-Run in the **Console:**
-
-```r
+``` r
 dim(winter_smoke)
 ```
 
-R reports two numbers in this order:
+R reports:
 
-```text
+``` text
 rows columns
 ```
 
-The rows represent observations.
+The rows are observations. The columns are variables.
 
-The columns represent variables.
+## Examine the Structure
 
-For this dataset, each row represents one monitoring measurement.
-
-# Examine the Structure
-
-The `str()` function shows the structure of an object.
-
-**Function:** `str()`
-
-**Function name:** `str`
-
-**Purpose:** Examine the structure of a dataset.
-
-The name `str` is short for **structure**.
-
-Run in the **Console:**
-
-```r
+``` r
 str(winter_smoke)
 ```
 
-This function tells us several things at once, including:
+`str()` shows information such as variable names, variable types, and example values.
 
-- variable names
-- variable types
-- example values
+This is one of the most useful checks immediately after importing a dataset.
 
-This is one of the most useful functions to run immediately after importing a dataset.
+# Step 11: Understand the Monitoring Dataset
 
-# Did R Understand the Date and Time?
+Now that we have successfully imported and inspected the file, we can focus on the environmental question.
 
-Our inspection revealed something important.
+> **What happened to ambient particle concentrations during five days of winter monitoring?**
 
-R may have imported the `date_time` variable as text rather than as date and time data.
+The dataset contains approximately 3,600 observations collected from **December 27 through December 31, 2019**.
 
-The exploratory commands helped us identify a problem.
+| Variable        | Meaning                            |
+|-----------------|------------------------------------|
+| `date_time`     | When the measurement was collected |
+| `concentration` | Measured particle concentration    |
 
-Now we need to make a change to the dataset.
+The measurements were collected using a **TSI DustTrak**.
 
-Because this change is part of our analysis, we **will save it in the R script**.
+Particle concentration was measured in **milligrams per cubic meter (mg/m³)**.
 
-The function we will use is:
+The instrument measured particle concentration. It did not identify the exact source of every particle.
 
-```text
-as.POSIXct()
+> **Measurement does not equal source attribution.**
+
+# Step 12: Prepare the Date and Time Variable
+
+Our inspection may show that `date_time` was imported as text.
+
+Because correcting the variable type is part of our analysis, save this command in the **R script**.
+
+Add a section comment:
+
+``` r
+# Convert Date and Time
 ```
 
-**Function:** `as.POSIXct()`
+Then add:
 
-**Function name:** `as.POSIXct`
-
-**Purpose:** Convert date and time information into a format that R recognizes as date and time data.
-
-The beginning of the function name gives us a useful clue:
-
-```text
-as.
-```
-
-Functions beginning with `as.` are often used to convert something from one data type into another.
-
-For our purposes, think of:
-
-```text
-as.POSIXct()
-```
-
-as:
-
-> Convert this information into date and time data that R can understand.
-
-You do not need to memorize the name `as.POSIXct()`.
-
-Add this command to your **R script:**
-
-```r
+``` r
 winter_smoke$date_time <- as.POSIXct(
   winter_smoke$date_time
 )
 ```
 
+**Function:** `as.POSIXct()`
+
+**Purpose:** Convert date and time information into a format R recognizes as date and time data.
+
 Run the command.
 
-Read it from right to left.
+Then return to the Console and check:
 
-First:
-
-```r
-winter_smoke$date_time
-```
-
-identifies the `date_time` variable inside `winter_smoke`.
-
-Then:
-
-```r
-as.POSIXct(winter_smoke$date_time)
-```
-
-asks R to convert those values into date and time data.
-
-Finally:
-
-```r
-winter_smoke$date_time <-
-```
-
-stores the converted values back into the `date_time` variable.
-
-Now return to the **Console** and check again:
-
-```r
+``` r
 str(winter_smoke)
 ```
 
 Did the variable type change?
 
-Notice the workflow:
-
-```text
+``` text
 Inspect in the Console
         ↓
 Identify a problem
@@ -1291,167 +880,64 @@ Run the change
 Check again in the Console
 ```
 
-This introduces an important habit:
-
 > **Do not assume your code worked. Check.**
 
-# Check the Measurements
+# Step 13: Check the Measurements
 
-Before calculating averages or making graphs, inspect the range of the measurements.
+Before calculating averages or making graphs, inspect the measurement range.
 
-These are also useful exploratory checks.
+Run these exploratory checks in the Console:
 
-## Minimum
-
-The `min()` function finds the smallest value.
-
-**Function:** `min()`
-
-**Function name:** `min`
-
-**Purpose:** Find the minimum value.
-
-Run in the **Console:**
-
-```r
+``` r
 min(winter_smoke$concentration)
-```
-
-## Maximum
-
-The `max()` function finds the largest value.
-
-**Function:** `max()`
-
-**Function name:** `max`
-
-**Purpose:** Find the maximum value.
-
-Run in the **Console:**
-
-```r
 max(winter_smoke$concentration)
 ```
 
-The observed concentration range in this teaching dataset is approximately:
+The observed concentration range is approximately:
 
-```text
+``` text
 0.000 to 0.288
 ```
 
-At this stage, ask:
+Ask:
 
 > Do these measurements appear plausible?
 
-# Unusual Values
+## Unusual Values
 
-Suppose one concentration is much higher than most of the others.
+An unusual value is not automatically an error.
 
-Should we immediately delete it?
+It could represent a real environmental event, a nearby source, unusual instrument behavior, a processing problem, or something we do not yet understand.
 
-No.
-
-An unusual value could represent:
-
-- a real environmental event
-- a nearby source
-- unusual instrument behavior
-- a processing problem
-- something we do not yet understand
-
-Before removing a value, ask:
-
-- Is it physically possible?
-- Do nearby observations show a similar pattern?
-- Was something happening at that time?
-- Could the instrument have malfunctioned?
-- Do we have enough evidence to make a decision?
+Before removing a value, ask whether it is physically possible, whether nearby observations show a similar pattern, whether something was happening at that time, and whether there is enough evidence to make a decision.
 
 > **Unusual does not automatically mean incorrect.**
 
-# Describe the Data
+# Step 14: Describe the Data
 
-Now that we have inspected and checked the dataset, we can begin summarizing it.
+Now calculate several simple summaries:
 
-**Whether a descriptive statistic belongs in your final script depends on whether it is part of the analysis you intend to report.**
-
-For this lab, we will calculate several summaries.
-
-## Mean
-
-The `mean()` function calculates the arithmetic mean.
-
-**Function:** `mean()`
-
-**Function name:** `mean`
-
-**Purpose:** Calculate the mean of a set of values.
-
-```r
+``` r
 mean(winter_smoke$concentration)
-```
-
-The mean gives us one way to describe the center of the measurements.
-
-But one number cannot show us how concentrations changed through time.
-
-## Median
-
-The `median()` function calculates the median.
-
-**Function:** `median()`
-
-**Function name:** `median`
-
-**Purpose:** Calculate the median of a set of values.
-
-```r
 median(winter_smoke$concentration)
+summary(winter_smoke$concentration)
 ```
+
+**`mean()`** calculates the arithmetic mean.
+
+**`median()`** calculates the median.
+
+**`summary()`** provides several descriptive statistics at once.
 
 Compare the mean and median.
 
 Are they similar?
 
-If not, what might that suggest about the distribution of measurements?
+A numerical summary can tell us about the center, range, and distribution, but it cannot tell us **when** concentrations changed.
 
-## Summary
+# Step 15: Visualize Concentration Through Time
 
-The `summary()` function produces several summary statistics at once.
-
-**Function:** `summary()`
-
-**Function name:** `summary`
-
-**Purpose:** Produce a summary of an object.
-
-```r
-summary(winter_smoke$concentration)
-```
-
-For a numeric variable, R provides several descriptive statistics.
-
-Look at the output.
-
-What information does R provide?
-
-What information is still missing?
-
-# Descriptive Statistics Have Limits
-
-A numerical summary can tell us about:
-
-- the center
-- the range
-- the distribution
-
-But it cannot tell us when concentrations changed.
-
-For that, we need to look at the measurements through time.
-
-# Visualizing Concentration Through Time
-
-Because these measurements were repeatedly collected over several days, a time series graph is a natural first visualization.
+Because the measurements were repeatedly collected over several days, a time series graph is a natural first visualization.
 
 We will place:
 
@@ -1461,25 +947,15 @@ and
 
 **particle concentration on the y axis**
 
-These measurements were collected using a TSI DustTrak.
+Add another section to your R script:
 
-The particle concentration measurements are reported in:
+``` r
+# Create Visualization
+```
 
-**milligrams per cubic meter (mg/m³)**
+Then add:
 
-The function we will use is `plot()`.
-
-**Function:** `plot()`
-
-**Function name:** `plot`
-
-**Purpose:** Create a graph.
-
-This is a command that we want to preserve because the graph is part of our analysis.
-
-**Add it to your R script:**
-
-```r
+``` r
 plot(
   winter_smoke$date_time,
   winter_smoke$concentration,
@@ -1491,37 +967,15 @@ plot(
 
 Run the command.
 
-The graph will appear in the **Plots** pane in RStudio.
+The graph should appear in the **Plots** pane.
 
-# Reading the Plot Function
+## Reading the `plot()` Function
 
-The `plot()` function is more complicated than the functions we have used so far.
-
-That makes it a useful example for learning how to read R code.
-
-Look at the command again:
-
-```r
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Particle Concentration (mg/m³)"
-)
-```
-
-Everything inside the parentheses provides information to the `plot()` function.
+Everything inside the parentheses provides information to `plot()`.
 
 These pieces of information are called **arguments**.
 
-## Arguments
-
-An **argument** gives a function information it needs to perform its task.
-
-Our `plot()` function contains five arguments:
-
-```text
+``` text
 winter_smoke$date_time
 winter_smoke$concentration
 type = "l"
@@ -1529,339 +983,21 @@ xlab = "Date / Time"
 ylab = "Particle Concentration (mg/m³)"
 ```
 
-Each argument is separated by a comma.
+Commas separate arguments.
 
-## Why Do We Use Commas?
+The first argument supplies the x axis data.
 
-Inside a function, commas separate one argument from the next.
+The second argument supplies the y axis data.
 
-For example:
+`type = "l"` tells R to draw a line.
 
-```r
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration
-)
-```
+`xlab` supplies the x axis label.
 
-The comma tells R that:
+`ylab` supplies the y axis label.
 
-```text
-winter_smoke$date_time
-```
+Inside a function, `=` is commonly used to supply a value to a named argument.
 
-is one argument and:
-
-```text
-winter_smoke$concentration
-```
-
-is another argument.
-
-We do not use a semicolon here.
-
-A semicolon can be used in R to separate complete commands or expressions.
-
-For example:
-
-```r
-x <- 5; x
-```
-
-contains two complete instructions.
-
-That is different from separating arguments inside a function.
-
-For this course, use **commas to separate arguments inside functions**.
-
-## Why Does `date_time` Come First?
-
-The first two arguments in our `plot()` function are:
-
-```r
-winter_smoke$date_time,
-winter_smoke$concentration
-```
-
-The `plot()` function expects information about what should appear on the x axis and what should appear on the y axis.
-
-When we provide arguments without writing their names, R uses their position.
-
-The first argument is used for the x axis.
-
-The second argument is used for the y axis.
-
-Therefore:
-
-```r
-winter_smoke$date_time
-```
-
-comes first because we want time on the x axis.
-
-And:
-
-```r
-winter_smoke$concentration
-```
-
-comes second because we want particle concentration on the y axis.
-
-## Positional Arguments
-
-The first two arguments are being identified by their position.
-
-These are called **positional arguments**.
-
-We could make their meaning more explicit by writing:
-
-```r
-plot(
-  x = winter_smoke$date_time,
-  y = winter_smoke$concentration
-)
-```
-
-This tells R the same thing.
-
-## Named Arguments
-
-The remaining arguments are:
-
-```r
-type = "l",
-xlab = "Date / Time",
-ylab = "Particle Concentration (mg/m³)"
-```
-
-These are **named arguments**.
-
-Instead of relying on position, we explicitly tell R which setting we are changing.
-
-## What Does `type = "l"` Mean?
-
-```r
-type = "l"
-```
-
-The `type` argument controls how the observations are drawn.
-
-The letter `"l"` stands for **line**.
-
-This tells R to connect the observations with a line.
-
-## What Does `xlab` Mean?
-
-```r
-xlab = "Date / Time"
-```
-
-`xlab` means **x axis label**.
-
-## What Does `ylab` Mean?
-
-```r
-ylab = "Particle Concentration (mg/m³)"
-```
-
-`ylab` means **y axis label**.
-
-The unit is part of the label because the numbers alone do not tell us what was measured or how the measurement should be interpreted.
-
-## What Does `=` Mean Inside the Function?
-
-Earlier we used:
-
-```r
-<-
-```
-
-to store information in an object.
-
-Inside a function, we often use:
-
-```r
-=
-```
-
-to provide a value for a named argument.
-
-For example:
-
-```r
-type = "l"
-```
-
-means:
-
-> Use `"l"` for the `type` argument.
-
-# Exporting Your Plot
-
-Creating the graph in R is only part of the job.
-
-You may need to use the graph in:
-
-- a report
-- a Word document
-- a presentation
-- another communication product
-
-RStudio allows us to export the graph from the **Plots** pane.
-
-After creating the graph:
-
-1. Open the **Plots** pane.
-2. Select **Export**.
-3. Choose **Save as Image** or **Save as PDF**.
-4. Choose where you want to save the file.
-5. Give the figure a descriptive file name.
-6. Save the figure.
-
-For example:
-
-```text
-winter-smoke-concentration-time-series.jpg
-```
-
-You can then insert the saved figure into Word, PowerPoint, or another document.
-
-::: {.callout-tip}
-## Save figures with the rest of your project
-
-A useful project structure might eventually look like:
-
-```text
-SHM-377/
-└── virtual-lab-01/
-    ├── winter-smoke-2019-12-27_to_2019-12-31.csv
-    ├── virtual-lab-01.R
-    └── winter-smoke-concentration-time-series.jpg
-```
-
-Keeping the data, code, and figures together makes it easier to understand where the products of your analysis came from.
-:::
-
-# What Should Be in Your R Script?
-
-By this point, your R script does not need to contain every command that you entered while exploring the dataset.
-
-A simple version of the important reproducible steps might look like:
-
-```r
-# Virtual Lab 01
-# Your Name
-# Date
-
-# Import data
-
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-
-# Convert date and time
-
-winter_smoke$date_time <- as.POSIXct(
-  winter_smoke$date_time
-)
-
-# Plot concentration through time
-
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Particle Concentration (mg/m³)"
-)
-```
-
-During the analysis, you may also have used:
-
-```r
-getwd()
-list.files()
-head(winter_smoke)
-tail(winter_smoke)
-names(winter_smoke)
-dim(winter_smoke)
-str(winter_smoke)
-min(winter_smoke$concentration)
-max(winter_smoke$concentration)
-```
-
-Those commands helped you **evaluate and understand the dataset**.
-
-They do not all need to remain in the final script unless you decide they are important to the analysis you want to preserve.
-
-The important distinction is:
-
-> **Use the Console to investigate. Use the script to preserve the analysis you want to reproduce.**
-
-# Why Units Matter
-
-A number without a unit can be difficult or impossible to interpret correctly.
-
-In this dataset, the concentration values came from a TSI DustTrak and are reported in:
-
-**milligrams per cubic meter (mg/m³)**
-
-However, notice that our CSV variable is simply called:
-
-``` text
-concentration
-```
-
-The variable name itself does not tell us the unit.
-
-This is common when working with environmental monitoring data.
-
-A CSV file may contain the numerical measurements but may not contain all of the information needed to understand those measurements.
-
-That information may instead come from:
-
-- instrument settings
-- field notes
-- data dictionaries
-- project documentation
-- sampling protocols
-- laboratory reports
-- instrument manuals
-- knowledge of the monitoring method
-
-This means that importing a dataset is not enough.
-
-We also need to understand:
-
-> **What was measured, how was it measured, and what units were used?**
-
-The appropriate unit depends on the agent, the environmental medium, the instrument, and the measurement method.
-
-For example, an air concentration may be expressed differently from a concentration measured in water or soil.
-
-Different agents may also be reported using different units.
-
-Understanding the standard measurement practices for the **medium and agent being evaluated** is part of understanding the dataset.
-
-::: callout-important
-## Never assume the units
-
-Do not infer a unit only from the numerical values in a dataset.
-
-Confirm the units using the instrument information, project documentation, sampling method, or another reliable source.
-
-If the unit cannot be verified, do not present one as fact.
-:::
-
-For this dataset, we have verified the measurement information, so our graph should identify the y axis as:
-
-``` text
-Particle Concentration (mg/m³)
-```
-
-Including the unit makes the graph more informative and preserves important measurement context.
-
-# Look Before Explaining
+# Step 16: Look Before Explaining
 
 Study the graph before trying to explain it.
 
@@ -1874,15 +1010,15 @@ Ask:
 - Are some periods more variable?
 - Do any patterns appear to repeat?
 
-The first step is observation.
+The first step is **observation**.
 
-# Observation and Interpretation
+# Step 17: Interpret What the Data Show
 
 A statement such as:
 
 > Particle concentration varied throughout the monitoring period, with periods of relatively low concentration interrupted by higher measured concentrations.
 
-is an observation based on the dataset.
+is an observation supported by the dataset.
 
 A statement such as:
 
@@ -1892,7 +1028,7 @@ is a source attribution claim.
 
 The dataset alone does not prove that.
 
-# What Can We Conclude?
+## What Can We Examine?
 
 From the measurements we can examine:
 
@@ -1902,7 +1038,7 @@ From the measurements we can examine:
 - whether elevated periods persisted
 - how variable the measurements were
 
-# What Can We Not Conclude?
+## What Can We Not Conclude?
 
 From this dataset alone, we cannot determine:
 
@@ -1910,41 +1046,176 @@ From this dataset alone, we cannot determine:
 - why every concentration increase occurred
 - whether one source caused a particular peak
 
-Additional information would be needed.
+Additional information could include wind speed, wind direction, temperature, atmospheric inversions, nearby emission sources, and local heating activity.
 
-# What Other Data Could Help?
+# Step 18: Document Your Interpretation in the R Script
 
-The monitoring results may lead us to new questions.
+Your R script can contain more than code.
+
+We can also use **comments** to document what we observed and how we interpreted the results.
+
+Return to your `virtual-lab-01.R` script and add:
+
+``` r
+# Interpretation
+
+# What patterns do you observe in the graph?
+# Write your response below.
+
+
+# What does the evidence show?
+# Write your response below.
+
+
+# What can you NOT conclude from these data?
+# Write your response below.
+```
+
+Replace the blank comment lines with your own observations and interpretation.
+
+Remember that every line of written text in an R script must begin with `#`.
 
 For example:
 
-- What was the wind speed?
-- What was the wind direction?
-- What was the temperature?
-- Were there atmospheric inversions?
-- Were there nearby emission sources?
-- Did local heating activity change?
+``` r
+# Interpretation
 
-This is how data analysis often works.
+# Particle concentrations changed throughout the monitoring period.
+# Several periods had higher measured concentrations than the surrounding
+# observations.
+# The measurements show when concentrations changed, but these data alone
+# cannot identify the source responsible for each increase.
+```
 
-One answer produces better questions.
+Because each line begins with `#`, R recognizes the writing as a **comment** and does not try to execute it as code.
 
-# Return to the Original Question
+::: callout-important
+## Why Not Use Triple Backticks?
 
-Our original question was:
+Triple backticks are used in **Markdown and Quarto documents**, not for writing paragraphs inside a standard `.R` script.
 
-> **What happened to ambient particle concentrations during five days of winter monitoring?**
+Later in SHM 377, you can choose to begin creating **Quarto reports**, you will be able to write paragraphs normally and place R code inside separate code blocks.
 
-We now have several ways to answer that question.
+For now:
 
-We:
+**R script:** use `#` for written notes and interpretation.
 
-- inspected the dataset
-- checked its structure
-- examined its measurement range
-- calculated descriptive statistics
-- plotted concentration through time
-- interpreted the observed pattern
+**Quarto report:** write normal paragraphs and place R code in code blocks and render .html, .pdf files.
+:::
+
+# Step 19: Export and Save Your Work
+
+## Export the Plot
+
+From the **Plots** pane:
+
+1.  Select **Export**.
+2.  Choose **Save as Image** or **Save as PDF**.
+3.  Navigate to your `virtual-lab-01` folder.
+4.  Give the figure a descriptive name.
+5.  Save it.
+
+For example:
+
+``` text
+winter-smoke-concentration-time-series.jpg
+```
+
+Your lab folder may now look like:
+
+``` text
+SHM-377/
+└── virtual-lab-01/
+        ├── winter-smoke-2019-12-27_to_2019-12-31.csv
+        ├── virtual-lab-01.R
+        └── winter-smoke-concentration-time-series.jpg
+```
+
+## Review Your R Script
+
+A simple version of the important reproducible steps should look like:
+
+``` r
+# Virtual Lab 01
+# Your Name
+# Date
+
+# Import Data
+
+winter_smoke <- read.csv(
+  "winter-smoke-2019-12-27_to_2019-12-31.csv"
+)
+
+# Convert Date and Time
+
+winter_smoke$date_time <- as.POSIXct(
+  winter_smoke$date_time
+)
+
+# Create Visualization
+
+plot(
+  winter_smoke$date_time,
+  winter_smoke$concentration,
+  type = "l",
+  xlab = "Date / Time",
+  ylab = "Particle Concentration (mg/m³)"
+)
+
+# Interpretation
+
+# What patterns do you observe in the graph?
+# Write your response below.
+
+# What does the evidence show?
+# Write your response below.
+
+# What can you NOT conclude from these data?
+# Write your response below.
+```
+
+During the analysis, you also used exploratory commands such as:
+
+``` r
+getwd()
+list.files()
+head(winter_smoke)
+tail(winter_smoke)
+names(winter_smoke)
+dim(winter_smoke)
+str(winter_smoke)
+min(winter_smoke$concentration)
+max(winter_smoke$concentration)
+mean(winter_smoke$concentration)
+median(winter_smoke$concentration)
+summary(winter_smoke$concentration)
+```
+
+Those commands helped you evaluate and understand the dataset.
+
+> **Use the Console to investigate. Use the script to preserve the analysis you want to reproduce.**
+
+# Why Units Matter
+
+A number without a unit can be difficult or impossible to interpret correctly.
+
+For this dataset, particle concentration is reported in:
+
+**milligrams per cubic meter (mg/m³)**
+
+The CSV variable is simply called `concentration`, so the variable name itself does not tell us the unit.
+
+Measurement information may come from instrument settings, field notes, data dictionaries, project documentation, sampling protocols, laboratory reports, instrument manuals, or knowledge of the monitoring method.
+
+Always ask:
+
+> **What was measured, how was it measured, and what units were used?**
+
+::: callout-important
+## Never assume the units
+
+Do not infer a unit only from numerical values. Confirm the unit from reliable measurement or project information.
+:::
 
 # The SHM 377 Data Workflow
 
@@ -1971,8 +1242,6 @@ The specific commands will change.
 The reasoning process will remain similar.
 
 # Connecting Data to Hazardous Materials Management
-
-In hazardous materials management, we may begin with questions about:
 
 ``` text
 Material
@@ -2012,41 +1281,13 @@ Hazardous Materials Problem
  Management / Control
 ```
 
-# Reproducibility
-
-One reason we are using R is that the analysis itself can be saved.
-
-For example:
-
-``` r
-winter_smoke <- read.csv(
-  "winter-smoke-2019-12-27_to_2019-12-31.csv"
-)
-
-head(winter_smoke)
-
-summary(winter_smoke$concentration)
-
-plot(
-  winter_smoke$date_time,
-  winter_smoke$concentration,
-  type = "l",
-  xlab = "Date / Time",
-  ylab = "Particle Concentration (mg/m³)"
-)
-```
-
-These commands provide a record of what we did.
-
-Someone can inspect the code and understand how the analysis was produced.
-
-Later, this idea will lead naturally into Quarto reports.
-
 # You Do Not Need to Memorize Everything
 
-Today you encountered commands such as:
+Today you encountered functions such as:
 
 ``` r
+getwd()
+list.files()
 read.csv()
 head()
 tail()
@@ -2062,18 +1303,22 @@ summary()
 plot()
 ```
 
-You do not need to memorize all of these immediately.
+You do not need to memorize all of them immediately.
 
-What matters more is understanding why we use them.
+What matters more is understanding **why** you are using them.
 
 Ask yourself:
 
 ``` text
 What is my question?
 
-What does my dataset contain?
+Where are my files?
+
+Can R find them?
 
 Did the data import correctly?
+
+What does my dataset contain?
 
 Do the measurements look reasonable?
 
@@ -2090,10 +1335,16 @@ What can I not conclude?
 
 In this first virtual lab, you:
 
-- worked with a real environmental monitoring dataset
-- imported data into R
-- inspected the dataset
-- checked the measurements
+- installed and distinguished R and RStudio
+- downloaded a CSV dataset from GitHub
+- organized course and lab files on your computer
+- created and saved an R script
+- learned the major RStudio panes
+- distinguished the Console from an R script
+- used comments to organize your script
+- checked the working directory
+- imported environmental monitoring data
+- inspected and prepared the dataset
 - calculated basic descriptive statistics
 - created a time series visualization
 - interpreted the results
@@ -2107,34 +1358,36 @@ We are learning how to use data to investigate, evaluate, and communicate hazard
 
 # Where We Go Next
 
-We will continue building on the same workflow throughout SHM 377.
+In later virtual labs, you will use the same basic workflow with new hazardous materials questions and datasets.
 
-Over time, we will move from basic R commands toward:
+You already know the foundation:
 
 ``` text
-R
+Organize files
 ↓
-R scripts
+Open RStudio
 ↓
-data analysis
+Create an R script
 ↓
-visualization
+Import data
 ↓
-interpretation
+Inspect
 ↓
-reproducible Quarto reports
+Analyze
+↓
+Visualize
+↓
+Interpret
+↓
+Communicate
 ```
 
 We do not need to learn everything at once.
 
-We start with the question.
+We start with the question, organize the information we need, and use the data to work toward an answer.
 
-Then we use the data to work toward an answer.
+------------------------------------------------------------------------
 
----
-
-<div class="text-center">
-
+::: text-center
 © 2026 Yoni Rodriguez. All rights reserved.
-
-</div>
+:::

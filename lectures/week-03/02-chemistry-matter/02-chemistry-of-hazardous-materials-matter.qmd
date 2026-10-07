@@ -283,13 +283,23 @@ One useful distinction is whether the material is a **pure substance** or a **mi
 
 A **pure substance** has a defined chemical composition.
 
-Pure substances can be classified as either **elements** or **compounds**.
+Pure substances are of two types: **elements** and **compounds**.
 
 #### Elements
 
-An **element** consists of one type of atom.
+An **element** is a substance that cannot be broken down into simpler substances by a chemical reaction.
 
-Examples include:
+Each element is made of one type of atom.
+
+An **atom** is the smallest unit of an element that has the chemical properties of that element.
+
+For example:
+
+- a hydrogen atom has the chemical properties of the element hydrogen
+- an oxygen atom has the chemical properties of the element oxygen
+- an aluminum atom has the chemical properties of the element aluminum
+
+Examples of elements include:
 
 - oxygen
 - chlorine
@@ -418,7 +428,7 @@ When sodium chloride dissolves in water, sodium and chloride are dispersed throu
 ::: callout-note
 ## Build the Vocabulary
 
-**Atom:** a basic unit of an element.
+**Atom:** the smallest unit of an element that has the chemical properties of that element.
 
 **Molecule:** two or more atoms bound together in a discrete arrangement.
 
@@ -428,7 +438,7 @@ When sodium chloride dissolves in water, sodium and chloride are dispersed throu
 
 **Solute:** a substance dissolved in a solvent.
 
-We will examine atoms, electrical charge, ions, and chemical bonding in greater detail as we continue through the lecture.
+We will return to atoms, electrical charge, ions, and chemical bonding as we continue through the course.
 :::
 
 #### Heterogeneous Mixtures
@@ -715,9 +725,10 @@ We use them to begin answering a more important hazardous materials question:
 
 | Term | Meaning |
 |------------------------------------|------------------------------------|
+| **Atom** | The smallest unit of an element that has the chemical properties of that element. |
 | **Matter** | Anything that has mass and occupies space. |
 | **Pure substance** | Matter with a defined chemical composition. |
-| **Element** | A pure substance consisting of one type of atom. |
+| **Element** | A substance that cannot be broken down into simpler substances by a chemical reaction. |
 | **Compound** | An electrically neutral substance consisting of two or more different elements whose atoms are present in a definite ratio. |
 | **Mixture** | Two or more substances physically combined while retaining their chemical identities. |
 | **Homogeneous mixture** | A mixture with a uniform composition throughout. |
@@ -725,7 +736,6 @@ We use them to begin answering a more important hazardous materials question:
 | **Solution** | A homogeneous mixture in which one or more substances are dissolved in another substance. |
 | **Solvent** | The substance in a solution that dissolves the other substance or substances. |
 | **Solute** | A substance dissolved in a solvent. |
-| **Atom** | A basic unit of an element. |
 | **Molecule** | Two or more atoms bound together in a discrete arrangement. |
 | **Ion** | An atom or group of bonded atoms with a positive or negative electrical charge. |
 | **Physical separation** | A process that separates substances without changing their chemical identities. |

@@ -1,0 +1,182 @@
+---
+title: "SHM 377: Hazardous Materials Management"
+subtitle: "Final Project Guidelines and Rubric | Draft 01"
+author: "Professor Rodriguez"
+date: "2026-10-10"
+format:
+  html:
+    toc: true
+    embed-resources: true
+  pdf:
+    toc: true
+    number-sections: false
+    geometry: margin=0.8in
+---
+
+::: {.callout-note title="Draft for Student Review"}
+This document proposes the final project expectations. Professor Rodriguez will confirm grading weights, deadlines, and presentation order in Canvas.
+
+**Safety Notice:** No hazardous experiments, uncontrolled demonstrations, exposure measurements, or handling of hazardous substances are required or authorized for this project.
+:::
+# Project at a glance
+
+| Item | Proposed requirement |
+|---|---|
+| Course | SHM 377: Hazardous Materials Management, Fall 2026 |
+| Format | Individual or group; maximum five students per group |
+| Current project teams | Six groups, 20 students currently listed |
+| Presentation | 20 minutes plus 5 minutes for questions |
+| Presentation dates | Monday, November 30 and Wednesday, December 2, 2026 |
+| Research presentation | Proposed 100-point rubric |
+| Audience feedback | Proposed 100 points: five evaluations at 20 points each |
+| Submission | Presentation slides and individual audience feedback as directed in Canvas |
+
+::: {.callout-important title="Central Objective"}
+Investigate a specific hazardous material or chemical hazard in a realistic occupational or industrial setting.
+
+Use **chemistry, credible evidence, and sound risk management principles** to explain what can happen and recommend practical controls.
+:::
+
+# Hazardous materials reasoning framework
+
+**Material → Chemistry → Behavior → Hazards → Risk → Management**
+
+1. **Material:** What substance, mixture, or material is involved? What is its composition and intended use?
+2. **Chemistry:** Which properties matter (e.g., bonding, reactivity, flammability, phase, volatility, incompatibility, decomposition)?
+3. **Behavior:** How might the material behave during routine use, storage, transport, a spill, or an abnormal event?
+4. **Hazards:** What mechanisms could cause injury, illness, fire, explosion, environmental damage, or equipment failure?
+5. **Risk:** Under what conditions are adverse outcomes plausible, and what evidence supports that assessment?
+6. **Management:** What prevention, engineering, administrative, emergency response, and disposal measures are justified?
+
+::: {.callout-tip title="Think Like a Chemist"}
+The goal is to **think like a chemist**: use observable evidence and chemical principles to make defensible decisions.
+
+Do not merely list hazards from a Safety Data Sheet (SDS). Explain **why those hazards arise, how the material behaves, and under what conditions those hazards become significant.**
+:::
+
+# What to include in your presentation
+
+1. **Define the problem and setting.** Introduce the industry, process, or incident scenario and why the material matters.
+2. **Identify and characterize the material.** Provide the relevant identity, composition, uses, and physical and chemical properties. Cite authoritative sources, including an SDS when appropriate.
+3. **Explain the chemistry.** Connect properties to mechanisms such as ignition, oxidation, self-heating, corrosivity, incompatibility, aerosol generation, or persistence, as relevant to your topic.
+4. **Analyze credible scenarios.** Describe normal operations and at least one realistic upset, failure, or exposure scenario. Identify who or what may be affected.
+5. **Evaluate risk and evidence.** Distinguish inherent hazard from the likelihood and severity of harm under specific conditions. Identify uncertainties and data limitations.
+6. **Recommend management controls.** Address substitution or elimination where feasible, engineering controls, safe handling and storage, labeling and communication, training, PPE, spill or emergency procedures, and waste management as relevant. Explain the reasoning behind priorities.
+7. **Conclude with a decision.** State what a safety and health professional should recommend, what evidence supports that decision, and how effectiveness could be checked.
+
+::: {.callout-note title="Presentation Guidance"}
+Plan for **20 minutes of presentation** followed by **5 minutes of questions and discussion**.
+
+Use readable visuals, citations on relevant slides, and a final reference list.
+
+A separate written report is not required by this draft.
+
+**Safety Reminder:** Do not perform hazardous demonstrations.
+:::
+
+# Part A: Research presentation rubric (proposed 100 points)
+
+| Criterion | Points | What you should demonstrate |
+|---|---:|---|
+| Problem definition and industrial context | 10 | Clear setting, scope, and relevance to hazardous materials management. |
+| Material identification and properties | 15 | Accurate identification and selection of properties relevant to the scenario. |
+| Chemical reasoning and material behavior | 20 | Explain how chemistry predicts behavior and hazardous mechanisms. |
+| Scenario-based hazard and risk evaluation | 20 | Analyze plausible conditions, exposure or release pathways, severity, likelihood, and uncertainty. |
+| Prevention and management recommendations | 20 | Practical, prioritized controls justified by chemical behavior and evidence. |
+| Evidence, sources, and scientific accuracy | 10 | Credible sources, clear citations, accurate claims, and appropriate treatment of uncertainty. |
+| Communication, conclusions, and Q&A | 5 | Organized presentation, clear final recommendation, and thoughtful responses. |
+| **Total** | **100** | |
+
+::: {.callout-tip title="Grading Emphasis"}
+**Scientific reasoning and defensible management decisions** matter more than memorizing technical vocabulary.
+
+Strong work connects **chemistry to action**.
+:::
+
+# Part B: Audience feedback rubric (proposed 100 points)
+
+With six groups, each student evaluates the **other five presentations**, not their own. Each evaluation is worth **20 points**; five evaluations total **100 points**. The professor will confirm whether this proposed allocation matches the final course grading structure.
+
+| Criterion for each presentation | Points |
+|---|---:|
+| Identify one important material property or chemical principle | 5 |
+| Explain how that property relates to a hazard or scenario | 5 |
+| Evaluate one management recommendation or limitation | 5 |
+| Ask one specific, constructive question | 5 |
+| **Total per evaluation** | **20** |
+
+::: {.callout appearance="simple" icon=false title="Example" style="background-color: #f2f2f2; border-left: 4px solid #808080;"}
+“You described self-heating as the cause of ignition. What storage conditions would make heat accumulate faster than it can dissipate, and how would your proposed controls address those conditions?”
+:::
+
+## How Feedback Will Be Submitted
+
+- Professor Rodriguez will provide **printed audience feedback forms** during Final Project presentation week.
+- Each student must complete their **own feedback form for each of the five other group presentations**, including students working in groups.
+- Students will complete their evaluations during each presentation using the established audience feedback criteria.
+- Completed feedback forms must be submitted to Professor Rodriguez **at the end of each presentation day**.
+- **Attendance is required to earn audience feedback points.** Students who are absent for a presentation will receive **0 points for that presentation**. Feedback cannot be submitted afterward for a presentation the student did not attend.
+- Students do not evaluate their own group's presentation. Their presentation is assessed separately under the presentation rubric.
+- Feedback must be specific, respectful, and based on the material presented. Generic, incomplete, or unrelated responses will not receive full credit.
+
+**Audience Feedback: 100 Points Total**
+
+Each student evaluates five other group presentations, worth **20 points each**, for a total of 100 points.
+
+Feedback is graded on the quality and relevance of each student's responses, not simply on completing or submitting a form.
+# Current groups and possible research questions
+
+These reflect the topics selected in class on **October 7, 2026**. The example questions help narrow the scope; they do not replace student choices.
+
+| Group | Students | Topic selected | Example research question |
+|---|---:|---|---|
+| 1 | 2 | Skydrol in aviation | How do phosphate-ester hydraulic-fluid properties affect compatibility, maintenance exposures, spill response, and storage decisions? |
+| 2 | 1 | “Retrochemicals” (definition pending) | Which specific historical or legacy chemical does the student mean, and what properties create contemporary management challenges? |
+| 3 | 4 | Explosions (industry pending) | In a selected industry, which material properties and operating conditions can produce an explosion, and which controls interrupt that sequence? |
+| 4 | 5 | Spontaneous combustion | Under what conditions can a chosen material self-heat to ignition, and how should it be stored and handled? |
+| 5 | 4 | Asbestos or silica (selection pending) | How do material properties and work processes produce hazardous airborne particles, and which controls best limit exposure? |
+| 6 | 4 | Topic undecided | What specific material, process, and scenario would allow a chemistry-based hazard assessment and management recommendation? |
+
+::: {.callout-caution title="Scope Reminders"}
+- **Group 2:** Clarify what “retrochemicals” means.
+- **Group 3:** Identify an industry and a specific explosion mechanism.
+- **Group 4:** Select a material and distinguish self-heating from externally ignited fires.
+- **Group 5:** Select **either asbestos or respirable crystalline silica** and focus on a defined work process.
+- **Group 6:** Propose a specific topic.
+
+**Enrollment Verification:** The six listed groups contain **20 students**. Any unassigned students should meet with me to be verified.
+:::
+
+# Expectations for individuals and groups
+
+All teams use the same presentation rubric and the same **25-minute presentation slot**, regardless of group size. Each student is expected to contribute meaningfully to research, preparation, and presentation, understand the overall analysis, and be ready to answer questions. The professor may request a brief statement of individual contributions or use individual accountability measures if needed. A larger team should demonstrate appropriate coordination and depth, not simply add more slides.
+
+# Presentation schedule
+
+| Date | Proposed groups | Presentation time | Class period |
+|---|---|---:|---|
+| Monday, November 30 | Groups 1, 2, 3 | 3 × 25 = 75 min | 1:00–3:20 PM |
+| Wednesday, December 2 | Groups 4, 5, 6 | 3 × 25 = 75 min | 1:00–3:20 PM |
+| **Total** | **6 presentations** | **150 min** | **Two class meetings** |
+
+This is a **proposed** order. Each 140-minute meeting has approximately 65 minutes remaining for transitions, discussion, and course activities. Final order and submission deadlines will be announced in Canvas.
+
+# Final project checklist
+
+- [ ] We have defined a specific material, industrial setting, and research question.
+- [ ] We can explain which chemical or physical properties matter and why.
+- [ ] We connect those properties to behavior during normal operations and a plausible failure scenario.
+- [ ] We distinguish a material's inherent hazard from risk under defined conditions.
+- [ ] We identify relevant worker, public, environmental, or equipment consequences.
+- [ ] We support claims with credible sources and acknowledge uncertainty.
+- [ ] We recommend controls and justify them using chemistry and evidence.
+- [ ] We can state a clear management decision and explain how to evaluate its effectiveness.
+- [ ] Our presentation fits 20 minutes plus 5 minutes of questions.
+- [ ] Every group member understands the full project and their contribution.
+- [ ] Each student understands the expectation to evaluate the other five presentations.
+
+::: {.callout-tip title="What Success Looks Like"}
+A strong SHM 377 project does more than describe a hazardous substance or a dramatic incident.
+
+It explains **how and why a material behaves**, identifies the **conditions that create risk**, and makes an **evidence-based recommendation for preventing harm**.
+:::

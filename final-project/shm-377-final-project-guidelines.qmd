@@ -180,3 +180,14 @@ A strong SHM 377 project does more than describe a hazardous substance or a dram
 
 It explains **how and why a material behaves**, identifies the **conditions that create risk**, and makes an **evidence-based recommendation for preventing harm**.
 :::
+
+---
+
+::: {style="text-align: center; font-size: 0.85em; color: #666666;"}
+© 2026 Yoni Rodriguez. All rights reserved.
+
+Central Washington University | SHM 377: Hazardous Materials Management
+:::
+
+
+

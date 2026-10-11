@@ -1,0 +1,274 @@
+
+---
+title: "Virtual Lab 02"
+subtitle: "Scientific Reasoning and Hazardous Materials Investigation"
+author: "Professor Yoni Rodriguez"
+date: "2026-10-10"
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    theme: cosmo
+    embed-resources: true
+    self-contained-math: true
+
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    toc: true
+    number-sections: false
+    colorlinks: true
+
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Purpose
+
+The purpose of this laboratory is to develop your ability to apply
+scientific reasoning to a real-world hazardous materials incident.
+
+Hazardous materials management requires more than identifying a
+chemical or memorizing its properties. Safety and health professionals
+must use available evidence, recognize uncertainty, anticipate how
+hazardous materials may behave, and make informed decisions to protect
+workers, emergency responders, and surrounding communities.
+
+In this laboratory, you will investigate a historical railroad
+incident involving liquefied petroleum gas (LPG).
+
+You will practice answering three fundamental questions:
+
+1. **What has happened?**
+2. **What will or could happen?**
+3. **What can you change?**
+
+The objective is not simply to identify the correct answer. It is
+to demonstrate how you arrive at your conclusions using scientific
+reasoning.
+
+# Skills
+
+By completing this laboratory, you will practice the following skills:
+
+1. **Scientific observation:** Identify important facts,
+   environmental conditions, and changes in an incident.
+
+2. **Critical thinking:** Distinguish between observations,
+   assumptions, and conclusions.
+
+3. **Scientific reasoning:** Apply principles of chemistry and
+   physics to understand hazardous materials behavior.
+
+4. **Hazard anticipation:** Predict potential outcomes using
+   available evidence.
+
+5. **Problem-solving:** Identify actions that could prevent or
+   reduce the consequences of a hazardous materials incident.
+
+6. **Technical communication:** Explain your reasoning clearly
+   and support conclusions using scientific principles.
+
+# Course Learning Outcomes
+
+Upon completion of this laboratory, you should be able to:
+
+1. Explain how physical and chemical properties influence the
+   behavior of hazardous materials.
+
+2. Apply scientific reasoning to investigate a hazardous
+   materials incident.
+
+3. Identify conditions that may contribute to a hazardous
+   materials release.
+
+4. Predict potential consequences of hazardous materials under
+   changing environmental conditions.
+
+5. Recommend preventive or corrective actions based on
+   available scientific evidence.
+
+6. Communicate technical conclusions using clear,
+   evidence-based reasoning.
+
+# Instructions
+
+Virtual Lab 02 consists of two parts.
+
+## Part 1: Scientific Reasoning
+
+You will review a historical railroad incident involving
+liquefied petroleum gas (LPG).
+
+Using the information provided, you will answer three questions
+designed to develop your scientific reasoning abilities.
+
+Your responses should demonstrate how you think through the
+problem, not simply state what happened.
+
+You are encouraged to use your lecture materials and credible
+scientific resources.
+
+You do not need to use RStudio, Excel, or any other data analysis
+software for Part 1.
+
+## Part 2: Data Analysis and Visualization
+
+In Part 2, you will receive a dataset related to the incident.
+
+You will use RStudio, Microsoft Excel, or another software program
+of your choice to create visualizations and interpret the data.
+
+You will then revisit your initial scientific reasoning and
+evaluate your conclusions using quantitative evidence.
+
+**Part 2 instructions and the dataset will be provided separately.**
+
+# Part 1: Incident Investigation
+
+## Historical Scenario: February 22–24, 1978
+
+On February 22, 1978, at approximately 10:30 PM, 24 freight cars
+derailed in a downtown area.
+
+Weather conditions included light snow on the ground and
+temperatures in the mid-20s degrees Fahrenheit.
+
+The freight train was traveling at the posted speed limit of
+35 miles per hour.
+
+The rear brakeman, positioned toward the front of the train,
+noticed an automatic emergency brake application. He observed
+that the train had separated and that cars 17 through 39 had
+derailed.
+
+Among the derailed freight cars were two tank cars containing
+liquefied petroleum gas (LPG):
+
+- UTLX-83013
+- UTLX-81467
+
+Upon initial inspection, neither tank car displayed evidence
+of leakage, although both had sustained substantial damage.
+
+It was decided that the tank cars would be repositioned so their
+contents could be transferred into highway tankers.
+
+Several freight cars obstructing access to the LPG tank cars
+were moved.
+
+A cable sling was attached to one end of an LPG tank car, with
+the opposite end used as a pivot point. A wooden support was
+placed beneath the end where the cable was attached.
+
+The other cars were repositioned using similar methods.
+
+The tank car relocations were completed by approximately
+2:15 PM on February 23.
+
+Gas monitoring conducted during the recovery operations
+showed no indication of leakage.
+
+Recovery crews continued removing damaged freight cars and
+wreckage until approximately 8:00 PM on February 23.
+
+Because of the extent of its damage, the LPG tank car at the
+southern end of the incident was selected for unloading first.
+
+The second LPG tank car was scheduled for unloading the
+following day, February 24.
+
+By approximately 1:00 PM on February 24, a highway tanker
+arrived to facilitate the transfer.
+
+At approximately 2:53 PM, the northern LPG tank car ruptured,
+releasing LPG into the surrounding environment.
+
+The released gas ignited shortly afterward from an
+undetermined ignition source.
+
+By the time of the rupture, outdoor temperatures had increased
+into the 50s degrees Fahrenheit, and skies were clear.
+
+## Scientific Reasoning Questions
+
+Using the information provided and the scientific principles
+introduced in this course, answer the following questions.
+
+### Question 1: What has happened?
+
+Identify the important observations and conditions associated
+with the incident.
+
+Explain which information you believe is relevant to
+understanding the situation.
+
+Distinguish between what is known and what you may need
+to investigate further.
+
+### Question 2: What will or could happen?
+
+Using your understanding of chemistry, physics, and the
+behavior of matter, explain what you believe could happen
+as conditions change.
+
+Develop a scientifically reasonable prediction based on
+the available evidence.
+
+Explain how you arrived at your prediction.
+
+### Question 3: What can you change?
+
+Imagine that you are the safety and health professional
+responsible for evaluating the incident.
+
+What actions would you recommend to reduce the likelihood
+or severity of a hazardous materials incident?
+
+Explain the scientific reasoning behind your recommendations.
+
+Identify any additional information you would need before
+making a final decision.
+
+# Part 1: Submission Requirements
+
+Submit a document containing your responses to all three
+scientific reasoning questions.
+
+Your responses should:
+
+- Demonstrate your thought process.
+- Use relevant scientific principles.
+- Distinguish observations from assumptions.
+- Explain the reasoning supporting your conclusions.
+- Identify uncertainties when appropriate.
+
+**The emphasis is on scientific reasoning, not simply
+identifying a correct answer.**
+
+# Part 2: Data Analysis and Visualization
+
+*Part 2 will be released separately.*
+
+In this portion of the laboratory, you will examine quantitative
+data associated with the physical behavior of LPG.
+
+You will create visualizations using a software program of
+your choice and use the resulting evidence to evaluate your
+initial predictions.
+
+Further instructions and the dataset will be provided
+when Part 2 is released.
+
+
+---
+
+© 2026 Yoni Rodriguez. All rights reserved.
+
+Central Washington University | SHM 377: Hazardous Materials Management

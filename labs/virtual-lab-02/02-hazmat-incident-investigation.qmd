@@ -8,6 +8,8 @@ format:
   html:
     toc: true
     toc-depth: 3
+    toc-location: right
+    smooth-scroll: true
     number-sections: false
     theme: cosmo
     embed-resources: true
@@ -26,6 +28,74 @@ execute:
   warning: false
   message: false
 ---
+
+```{=html}
+<style>
+/* =========================================================
+   SHM 377 Virtual Lab Styling | Matches Lecture 03
+   ========================================================= */
+body { color: #212529; }
+blockquote, blockquote strong {
+  color: #212529;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+}
+.text-center { color: #212529; }
+
+/* Scientific evidence callout */
+.evidence-callout {
+  background-color: #f2f3f5;
+  border-left: 3px solid #737980;
+  border-radius: 4px;
+  padding: 0.55rem 0.75rem;
+  margin: 0.5rem 0 0;
+  color: #212529;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+.evidence-callout h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: #343a40;
+}
+.evidence-callout p { margin: 0 0 0.45rem; }
+.evidence-callout p:last-child { margin-bottom: 0; }
+
+/* Responsive historical video */
+.waverly-video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.waverly-video-container video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .columns { display: block !important; }
+  .columns > .column {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .columns > .column:empty { display: none !important; }
+  img { max-width: 100%; height: auto; }
+  p, li, figcaption { overflow-wrap: anywhere; }
+}
+</style>
+```
 
 # Purpose
 
@@ -158,22 +228,7 @@ After completing your initial responses to the three questions, watch the follow
 
 ::: {.content-visible when-format="html"}
 
-<style>
-.waverly-video-container {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  margin: 1.5rem 0;
-  background: #000;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.waverly-video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-</style>
+
 
 <div class="waverly-video-container">
   <video id="waverly-video" controls preload="metadata" playsinline>

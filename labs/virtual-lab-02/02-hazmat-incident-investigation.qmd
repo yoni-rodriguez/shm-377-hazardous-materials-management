@@ -1,4 +1,3 @@
-
 ---
 title: "Virtual Lab 02"
 subtitle: "Scientific Reasoning and Hazardous Materials Investigation"
@@ -11,9 +10,9 @@ format:
     toc-depth: 3
     number-sections: false
     theme: cosmo
-    embed-resources: true
+    embed-resources: false
     self-contained-math: true
-
+    css: styles.css
   pdf:
     documentclass: article
     geometry:
@@ -31,17 +30,11 @@ execute:
 
 # Purpose
 
-The purpose of this laboratory is to develop your ability to apply
-scientific reasoning to a real-world hazardous materials incident.
+The purpose of this laboratory is to develop your ability to apply scientific reasoning to a real-world hazardous materials incident.
 
-Hazardous materials management requires more than identifying a
-chemical or memorizing its properties. Safety and health professionals
-must use available evidence, recognize uncertainty, anticipate how
-hazardous materials may behave, and make informed decisions to protect
-workers, emergency responders, and surrounding communities.
+Hazardous materials management requires more than identifying a chemical or memorizing its properties. Safety and health professionals must use available evidence, recognize uncertainty, anticipate how hazardous materials may behave, and make informed decisions to protect workers, emergency responders, and surrounding communities.
 
-In this laboratory, you will investigate a historical railroad
-incident involving liquefied petroleum gas (LPG).
+In this laboratory, you will investigate the February 1978 railroad derailment involving liquefied petroleum gas (LPG) in Waverly, Tennessee.
 
 You will practice answering three fundamental questions:
 
@@ -49,53 +42,31 @@ You will practice answering three fundamental questions:
 2. **What will or could happen?**
 3. **What can you change?**
 
-The objective is not simply to identify the correct answer. It is
-to demonstrate how you arrive at your conclusions using scientific
-reasoning.
+The objective is not simply to identify the correct answer. It is to demonstrate how you arrive at your conclusions using scientific reasoning.
 
 # Skills
 
 By completing this laboratory, you will practice the following skills:
 
-1. **Scientific observation:** Identify important facts,
-   environmental conditions, and changes in an incident.
-
-2. **Critical thinking:** Distinguish between observations,
-   assumptions, and conclusions.
-
-3. **Scientific reasoning:** Apply principles of chemistry and
-   physics to understand hazardous materials behavior.
-
-4. **Hazard anticipation:** Predict potential outcomes using
-   available evidence.
-
-5. **Problem-solving:** Identify actions that could prevent or
-   reduce the consequences of a hazardous materials incident.
-
-6. **Technical communication:** Explain your reasoning clearly
-   and support conclusions using scientific principles.
+1. **Scientific observation:** Identify important facts, environmental conditions, and changes in an incident.
+2. **Critical thinking:** Distinguish between observations, assumptions, and conclusions.
+3. **Scientific reasoning:** Apply principles of chemistry and physics to understand hazardous materials behavior.
+4. **Hazard anticipation:** Predict potential outcomes using available evidence.
+5. **Problem-solving:** Identify actions that could prevent or reduce the consequences of a hazardous materials incident.
+6. **Technical communication:** Explain your reasoning clearly and support conclusions using scientific principles.
 
 # Course Learning Outcomes
 
 Upon completion of this laboratory, you should be able to:
 
-1. Explain how physical and chemical properties influence the
-   behavior of hazardous materials.
+1. Explain how physical and chemical properties influence the behavior of hazardous materials.
+2. Apply scientific reasoning to investigate a hazardous materials incident.
+3. Identify conditions that may contribute to a hazardous materials release.
+4. Predict potential consequences of hazardous materials under changing environmental conditions.
+5. Recommend preventive or corrective actions based on available scientific evidence.
+6. Communicate technical conclusions using clear, evidence-based reasoning.
 
-2. Apply scientific reasoning to investigate a hazardous
-   materials incident.
-
-3. Identify conditions that may contribute to a hazardous
-   materials release.
-
-4. Predict potential consequences of hazardous materials under
-   changing environmental conditions.
-
-5. Recommend preventive or corrective actions based on
-   available scientific evidence.
-
-6. Communicate technical conclusions using clear,
-   evidence-based reasoning.
+*These are lab-specific learning outcomes. Alignment with the official course learning outcomes should be verified against the SHM 377 syllabus.*
 
 # Instructions
 
@@ -103,143 +74,106 @@ Virtual Lab 02 consists of two parts.
 
 ## Part 1: Scientific Reasoning
 
-You will review a historical railroad incident involving
-liquefied petroleum gas (LPG).
+You will review a historical railroad incident involving liquefied petroleum gas (LPG). Using the information provided, answer three questions designed to develop your scientific reasoning abilities.
 
-Using the information provided, you will answer three questions
-designed to develop your scientific reasoning abilities.
+Your responses should demonstrate how you think through the problem, not simply state what happened. You are encouraged to use your lecture materials and credible scientific resources.
 
-Your responses should demonstrate how you think through the
-problem, not simply state what happened.
-
-You are encouraged to use your lecture materials and credible
-scientific resources.
-
-You do not need to use RStudio, Excel, or any other data analysis
-software for Part 1.
+You do not need to use RStudio, Excel, or any other data analysis software for Part 1.
 
 ## Part 2: Data Analysis and Visualization
 
-In Part 2, you will receive a dataset related to the incident.
+In Part 2, you will receive a dataset related to the incident. You will use RStudio, Microsoft Excel, or another software program of your choice to create visualizations and interpret the data.
 
-You will use RStudio, Microsoft Excel, or another software program
-of your choice to create visualizations and interpret the data.
-
-You will then revisit your initial scientific reasoning and
-evaluate your conclusions using quantitative evidence.
+You will then revisit your initial scientific reasoning and evaluate your conclusions using quantitative evidence.
 
 **Part 2 instructions and the dataset will be provided separately.**
 
 # Part 1: Incident Investigation
 
-## Historical Scenario: February 22–24, 1978
+## Historical Scenario: Waverly, Tennessee, February 22–24, 1978
 
-On February 22, 1978, at approximately 10:30 PM, 24 freight cars
-derailed in a downtown area.
+On February 22, 1978, at approximately 10:30 PM, a Louisville and Nashville Railroad freight train derailed in the downtown corridor of **Waverly, Tennessee**. The course textbook describes 24 derailed freight cars; the National Transportation Safety Board (NTSB) investigation reports 23. This difference in reported counts does not change the central hazardous materials scenario.
 
-Weather conditions included light snow on the ground and
-temperatures in the mid-20s degrees Fahrenheit.
+Weather conditions included light snow on the ground and temperatures in the mid-20s degrees Fahrenheit. The freight train was traveling at the posted speed limit of 35 miles per hour.
 
-The freight train was traveling at the posted speed limit of
-35 miles per hour.
+The rear brakeman, positioned toward the front of the train, noticed an automatic emergency brake application. The train had separated, and a group of freight cars had derailed.
 
-The rear brakeman, positioned toward the front of the train,
-noticed an automatic emergency brake application. He observed
-that the train had separated and that cars 17 through 39 had
-derailed.
+Among the derailed freight cars were two tank cars containing liquefied petroleum gas (LPG):
 
-Among the derailed freight cars were two tank cars containing
-liquefied petroleum gas (LPG):
+- **UTLX-83013**
+- **UTLX-81467**
 
-- UTLX-83013
-- UTLX-81467
+Upon initial inspection, neither tank car displayed evidence of leakage, although both had sustained substantial damage.
 
-Upon initial inspection, neither tank car displayed evidence
-of leakage, although both had sustained substantial damage.
+It was decided that the tank cars would be repositioned so their contents could be transferred into highway tankers. Several freight cars obstructing access to the LPG tank cars were moved.
 
-It was decided that the tank cars would be repositioned so their
-contents could be transferred into highway tankers.
+A cable sling was attached to one end of an LPG tank car, with the opposite end used as a pivot point. A wooden support was placed beneath the end where the cable was attached. Other cars were repositioned using similar methods.
 
-Several freight cars obstructing access to the LPG tank cars
-were moved.
+The tank car relocations were completed by approximately 2:15 PM on February 23. Gas monitoring conducted during the recovery operations showed no indication of leakage.
 
-A cable sling was attached to one end of an LPG tank car, with
-the opposite end used as a pivot point. A wooden support was
-placed beneath the end where the cable was attached.
+Recovery crews continued removing damaged freight cars and wreckage until approximately 8:00 PM on February 23.
 
-The other cars were repositioned using similar methods.
+Because of the extent of its damage, the LPG tank car at the southern end of the incident was selected for unloading first. The second LPG tank car was scheduled for unloading the following day, February 24.
 
-The tank car relocations were completed by approximately
-2:15 PM on February 23.
+By approximately 1:00 PM on February 24, a highway tanker arrived to facilitate the transfer.
 
-Gas monitoring conducted during the recovery operations
-showed no indication of leakage.
+At approximately **2:53 PM on February 24**, the northern LPG tank car ruptured, releasing LPG into the surrounding environment. The released gas ignited shortly afterward from an undetermined ignition source.
 
-Recovery crews continued removing damaged freight cars and
-wreckage until approximately 8:00 PM on February 23.
+By the time of the rupture, outdoor temperatures had increased into the 50s degrees Fahrenheit, and skies were clear.
 
-Because of the extent of its damage, the LPG tank car at the
-southern end of the incident was selected for unloading first.
-
-The second LPG tank car was scheduled for unloading the
-following day, February 24.
-
-By approximately 1:00 PM on February 24, a highway tanker
-arrived to facilitate the transfer.
-
-At approximately 2:53 PM, the northern LPG tank car ruptured,
-releasing LPG into the surrounding environment.
-
-The released gas ignited shortly afterward from an
-undetermined ignition source.
-
-By the time of the rupture, outdoor temperatures had increased
-into the 50s degrees Fahrenheit, and skies were clear.
+**A note on historical evidence:** This scenario is adapted from the course textbook. The NTSB's investigation documents 23 derailed cars, whereas the textbook account reports 24. Differences between sources should be recognized rather than silently resolved. The incident narrative gives you observations and chronology, not a definitive explanation of the rupture mechanism. See the NTSB report in the References section for the full retrospective investigation.
 
 ## Scientific Reasoning Questions
 
-Using the information provided and the scientific principles
-introduced in this course, answer the following questions.
+Using the information provided and the scientific principles introduced in this course, answer the following questions.
 
 ### Question 1: What has happened?
 
-Identify the important observations and conditions associated
-with the incident.
+Identify the important observations and conditions associated with the incident.
 
-Explain which information you believe is relevant to
-understanding the situation.
+Explain which information you believe is relevant to understanding the situation.
 
-Distinguish between what is known and what you may need
-to investigate further.
+Distinguish between what is known and what you may need to investigate further.
 
 ### Question 2: What will or could happen?
 
-Using your understanding of chemistry, physics, and the
-behavior of matter, explain what you believe could happen
-as conditions change.
+Using your understanding of chemistry, physics, and the behavior of matter, explain what you believe could happen as conditions change.
 
-Develop a scientifically reasonable prediction based on
-the available evidence.
+Develop a scientifically reasonable prediction based on the available evidence.
 
 Explain how you arrived at your prediction.
 
 ### Question 3: What can you change?
 
-Imagine that you are the safety and health professional
-responsible for evaluating the incident.
+Imagine that you are the safety and health professional responsible for evaluating the incident.
 
-What actions would you recommend to reduce the likelihood
-or severity of a hazardous materials incident?
+What actions would you recommend to reduce the likelihood or severity of a hazardous materials incident?
 
 Explain the scientific reasoning behind your recommendations.
 
-Identify any additional information you would need before
-making a final decision.
+Identify any additional information you would need before making a final decision.
+
+## Video Evidence: Waverly, Tennessee (1978)
+
+After completing your initial responses to the three questions, watch the following video as an additional source of visual evidence. Consider which observations support your reasoning, which raise new questions, and whether you would revise any conclusions. **Do not assume that every image or claim in the video has been independently verified.**
+
+::: {.content-visible when-format="html"}
+
+<div class="waverly-video-container">
+  <video controls preload="metadata" playsinline>
+    <source src="waverly-tennessee-1978.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+*Video source: downloaded from Reddit; original footage
+attribution and provenance pending verification.*
+
+:::
 
 # Part 1: Submission Requirements
 
-Submit a document containing your responses to all three
-scientific reasoning questions.
+Submit a document containing your responses to all three scientific reasoning questions.
 
 Your responses should:
 
@@ -249,23 +183,25 @@ Your responses should:
 - Explain the reasoning supporting your conclusions.
 - Identify uncertainties when appropriate.
 
-**The emphasis is on scientific reasoning, not simply
-identifying a correct answer.**
+**The emphasis is on scientific reasoning, not simply identifying a correct answer.**
 
 # Part 2: Data Analysis and Visualization
 
 *Part 2 will be released separately.*
 
-In this portion of the laboratory, you will examine quantitative
-data associated with the physical behavior of LPG.
+In this portion of the laboratory, you will examine quantitative data associated with the physical behavior of LPG.
 
-You will create visualizations using a software program of
-your choice and use the resulting evidence to evaluate your
-initial predictions.
+You will create visualizations using a software program of your choice and use the resulting evidence to evaluate your initial predictions.
 
-Further instructions and the dataset will be provided
-when Part 2 is released.
+Any simulated or modeled data will be explicitly identified as such and will not be represented as historical measurements from the Waverly incident.
 
+Further instructions and the dataset will be provided when Part 2 is released.
+
+# References
+
+National Transportation Safety Board. *Railroad Accident Report: Louisville and Nashville Railroad Company, Freight Train Derailment and Rupture of Tank Car Containing Liquefied Petroleum Gas, Waverly, Tennessee, February 22, 1978.* [NTSB report (PDF)](https://rosap.ntl.bts.gov/view/dot/45828/dot_45828_DS1.pdf).
+
+Course textbook: Historical Waverly LPG incident narrative, as provided in the assignment materials. *(Add full textbook citation and page number.)*
 
 ---
 

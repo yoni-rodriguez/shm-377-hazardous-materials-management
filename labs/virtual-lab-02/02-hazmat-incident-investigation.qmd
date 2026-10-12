@@ -231,7 +231,11 @@ After completing your initial responses to the three questions, watch the follow
 
 
 <div class="waverly-video-container">
-  <video id="waverly-video" controls preload="metadata" playsinline>
+  <video controls preload="metadata" playsinline>
+    <source
+      src="waverly-tennessee-1978.mp4"
+      type="video/mp4"
+    >
     Your browser does not support HTML5 video.
   </video>
 </div>

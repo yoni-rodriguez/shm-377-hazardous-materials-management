@@ -228,34 +228,16 @@ After completing your initial responses to the three questions, watch the follow
 
 ::: {.content-visible when-format="html"}
 
-
-
 <div class="waverly-video-container">
   <video controls preload="metadata" playsinline>
     <source
-      src="waverly-tennessee-1978.mp4"
+      src="https://raw.githubusercontent.com/yonir/shm-377-hazardous-materials-management/main/labs/virtual-lab-02/waverly-tennessee-1978.mp4"
       type="video/mp4"
     >
     Your browser does not support HTML5 video.
   </video>
 </div>
 
-<script>
-// Assign at runtime so Quarto embeds styling, but not the large MP4.
-const video = document.getElementById('waverly-video');
-if (video) {
-  video.src = 'waverly-tennessee-' + '1978.mp4';
-}
-</script>
-
-*Video source: downloaded from Reddit; original footage
-attribution and provenance pending verification.*
-
-:::
-
-::: {.content-visible when-format="pdf"}
-
-**Video evidence:** The accompanying video is available in the HTML version of this laboratory.
 
 :::
 

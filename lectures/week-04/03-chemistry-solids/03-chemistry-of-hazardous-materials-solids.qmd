@@ -1,0 +1,1125 @@
+
+---
+format:
+  html:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    smooth-scroll: true
+    code-fold: true
+    embed-resources: true
+    self-contained-math: true
+    lightbox: auto
+  pdf:
+    toc: true
+    documentclass: scrartcl
+    geometry:
+      - margin=0.75in
+    fontsize: 11pt
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{=html}
+<style>
+/* =========================================================
+   SHM 377 Lecture Styling
+   ========================================================= */
+
+body {
+  color: #212529;
+}
+
+blockquote {
+  color: #212529;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+}
+
+blockquote strong {
+  color: #212529;
+}
+
+.text-center {
+  color: #212529;
+}
+
+/* =========================================================
+   Lecture Cover
+   ========================================================= */
+
+.cover-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cover-image p {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   Scientific Evidence Callout
+   ========================================================= */
+
+.evidence-callout {
+  background-color: #f2f3f5;
+  border-left: 4px solid #737980;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  color: #212529;
+}
+
+.evidence-callout h2 {
+  font-size: 1.15rem;
+  margin-top: 0;
+  color: #343a40;
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .columns {
+    display: block !important;
+  }
+
+  .columns > .column {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .columns > .column:empty {
+    display: none !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cover-image img {
+    height: auto;
+  }
+
+  p, li, figcaption {
+    overflow-wrap: anywhere;
+  }
+}
+
+
+
+/* Compact scientific evidence callout */
+
+.evidence-callout {
+  background-color: #f2f3f5;
+  border-left: 3px solid #737980;
+  border-radius: 4px;
+  padding: 0.55rem 0.75rem;
+  margin: 0.5rem 0 0;
+  color: #212529;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.evidence-callout h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: #343a40;
+}
+
+.evidence-callout p {
+  margin: 0 0 0.45rem;
+}
+
+.evidence-callout p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+</style>
+```
+
+
+::::::: {.columns style="align-items: flex-start;"}
+:::: {.column width="46%"}
+::: cover-image
+![Monkey Head Nebula. NASA/ESA Hubble Space Telescope. Source: [TIME (2014)](https://time.com/3644785/space-most-beautiful-photos-2014/).](NASA-monkey-head-nebula.jpg){fig-alt="NASA Hubble Space Telescope photograph of the Monkey Head Nebula, showing illuminated clouds of interstellar gas and dust surrounded by stars"}
+:::
+::::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="50%"}
+## SHM 377: Hazardous Materials Management
+
+### Chemistry of Hazardous Materials: Solids
+
+**Lecture 03 · Fall 2026**
+
+Yoni Rodriguez\
+Engineering Technologies, Safety, and Construction\
+Central Washington University\
+[Yoni.Rodriguez\@cwu.edu](mailto:Yoni.Rodriguez@cwu.edu)
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+# Introduction: From Matter to Solids
+
+In Lecture 02, we learned how to classify matter and distinguish between physical and chemical properties. We also discussed John Dalton and how scientists use observations to understand things they cannot directly see.
+
+In this lecture, we will focus on **solids** and explore how their physical and chemical properties influence their behavior and potential hazards.
+
+Our goal is not to become chemists, but to **think like chemists** when investigating hazardous materials.
+
+::: callout-note
+## Our reasoning framework
+
+**Observe → Explain → Predict → Decide**
+
+For any hazardous material, ask: **What has happened? What will or could happen? What can you change?**
+:::
+
+## Learning objectives
+
+By the end of this lecture, you should be able to:
+
+1.  Describe how the physical characteristics of solids affect their behavior.
+2.  Distinguish a bulk solid from a powder, dust, or airborne particulate.
+3.  Identify important physical and chemical hazards associated with solids.
+4.  Explain how temperature, mechanical disturbance, and contact with other substances can change a hazard scenario.
+5.  Identify evidence and information needed before recommending controls.
+
+
+# 1. What Is a Solid?
+
+A **solid** is a state of matter that ordinarily maintains its shape and volume under specified conditions. Its constituent particles are held in relatively fixed positions or structures, although they continue to move at the microscopic scale.
+
+The word *solid* describes a **physical state of matter**. It does not tell us about a substance's **chemical properties** or whether it is hazardous.
+
+Examples encountered in hazardous materials management include metal ingots, crystalline chemicals, fertilizer granules, contaminated soil, asbestos-containing materials, and powdered metals.
+
+| Form | What we can observe | Why it matters |
+|------------------------|------------------------|------------------------|
+| Bulk solid | Large piece or consolidated mass | Contact, handling, heat transfer, and mechanical damage |
+| Pellets | Relatively large, often uniformly shaped pieces of compressed or manufactured material | Spillage, handling, and possible fragmentation |
+| Granules | Smaller, discrete grains or particles, often irregular in shape | Spreading, spillage, and potential dust generation |
+| Powder | Many small, loose particles | Ease of dispersion, contact area, and potential inhalation |
+| Airborne dust or particles | Small solid particles suspended in air | Inhalation exposure, deposition, and, for some materials, fire or explosion |
+
+
+::: callout-important
+## The same material can present different hazards in different forms
+
+A solid block and a cloud of fine particles may have the same chemical composition but very different opportunities for exposure or reaction.
+:::
+
+# 2. What Can We Learn from Particle Size?
+
+## Dust Generation and Transport
+
+Activities such as cutting, sanding, crushing, pouring, sweeping, or moving materials can produce airborne particles.
+
+Once particles are airborne, their movement depends on factors including:
+
+- Particle size, shape, and density.
+- Air movement and ventilation.
+- How the particles were released.
+- How long the particles remain airborne or whether they become airborne again.
+
+::: {.callout-note}
+## Remember
+
+Just because we cannot see particles in the air does not mean they are not there.
+
+Likewise, seeing smoke or dust does not tell us exactly how much is present.
+
+**Scientists use instruments to measure airborne particles.**
+:::
+
+
+
+
+## Poll Everywhere: Can a Tree Become Hazardous?
+
+Imagine a tree growing in a forest.
+
+:::::: {.columns .poll-layout}
+::: {.column width="68%"}
+**Question 1: Under ordinary conditions, would you classify a living tree as a hazardous material?**
+
+- A. Yes
+- B. No
+- C. It depends on the circumstances
+
+Use the same Poll Everywhere response page throughout this activity.
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column .poll-qr width="28%"}
+![](poll-everywhere-response.jpg){fig-alt="QR code to join the SHM 377 Poll Everywhere presentation" width="250"}
+:::
+::::::
+
+### From a Tree to Wildfire Smoke
+
+Under ordinary conditions, we would not classify a living tree itself as a hazardous material.
+
+However, what happens when that tree catches fire?
+
+**Question 2: What happens to wood when it burns?**
+
+- A. It only changes its physical appearance.
+- B. It undergoes a chemical reaction that produces new substances.
+- C. It disappears without producing anything.
+- D. It changes directly from a solid into a gas without a chemical reaction.
+
+When wood burns, it undergoes a chemical reaction called **combustion**.
+
+Combustion changes the original material and produces new substances.
+
+Wildfire smoke is a mixture that can contain:
+
+- **Fine airborne particles**, including solid particles and liquid droplets.
+- **Gases**, including carbon monoxide.
+- **Volatile organic compounds (VOCs)**, which we will discuss in a later lecture.
+
+### Connecting Chemistry to Human Health
+
+**Question 3: How can wildfire smoke affect human health?**
+
+- A. Smoke is only hazardous when we can see it.
+- B. Smoke can enter the respiratory system and expose us to harmful particles and gases.
+- C. Smoke is only hazardous when someone touches burning wood.
+- D. Smoke cannot cause harm because wood is a natural material.
+
+
+::: {.callout-note}
+## How and Why Does Wildfire Smoke Affect Human Health?
+
+Wildfire smoke can present serious health hazards. The potential for harm depends on factors such as the amount of smoke in the air, the duration of exposure, and individual susceptibility.
+
+This raises two important questions:
+
+**HOW does wildfire smoke enter the human body?**
+
+**WHY can wildfire smoke cause harm?**
+
+To answer these questions, we first need to understand the size of particles in smoke and what happens when we breathe them in.
+:::
+
+
+
+---
+
+## Historical Context: When Air Pollution Becomes a Community Hazard
+
+::::::: {.columns style="align-items: flex-start;"}
+
+::: {.column width="49%"}
+
+### Donora, Pennsylvania: 1948
+
+![Donora, Pennsylvania, during the October 1948 smog episode. The photograph shows the town's business district obscured by industrial air pollution. Photo credit: Bettmann Archive / Getty Images.](1984-donora-pennsylvania.jpg){#fig-donora width="100%"}
+
+Between October 27 and October 31, 1948, Donora experienced one of the most serious air-pollution disasters in United States history.
+
+Nearby zinc and steel production facilities released industrial pollutants, including:
+
+- **Sulfur dioxide (SO₂)**
+- **Hydrogen fluoride (HF)**
+- **Particulate matter**
+
+A **temperature inversion** trapped polluted air near the ground, limiting normal atmospheric dispersion.
+
+The consequences were severe:
+
+- **20 deaths** attributed to the initial episode.
+- Additional deaths reported afterward.
+- **Thousands of residents became ill.**
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+
+### Spokane, Washington: 2017
+
+![Wildfire smoke affecting Spokane, Washington, during the 2017 wildfire season.](2017-spokane-wildfire-smoke.jpg){#fig-spokane-smoke width="100%"}
+
+During the summer of 2017, wildfire smoke affected communities throughout Eastern Washington, including Spokane.
+
+Unlike Donora's industrial pollution, Spokane experienced smoke transported from regional wildfires.
+
+Wildfire smoke contains a mixture of:
+
+- **Fine airborne particles**
+- **Gases, including carbon monoxide**
+- **Volatile organic compounds (VOCs)**
+
+On September 7, 2017, Spokane recorded an **Air Quality Index (AQI) of 256**, categorized as **Very Unhealthy**, according to the historical data presented in Yoni Rodriguez's undergraduate research presentation in 2019.
+
+The event demonstrated that smoke can affect communities located far from the original fires.
+
+:::
+
+:::::::
+
+### Comparing the Two Events
+
+| Characteristic | Donora (1948) | Spokane (2017) |
+|---|---|---|
+| **Pollution source** | Zinc and steel facilities | Regional wildfires |
+| **Environmental conditions** | Temperature inversion limited dispersion | Atmospheric winds transported smoke |
+| **Geographic impact** | Donora and the surrounding valley | Spokane and Eastern Washington |
+| **Health concerns** | Severe illness and deaths | Respiratory and cardiovascular health risks |
+| **Important lesson** | Pollutants can accumulate near their source | Pollutants can travel far from their source |
+
+
+### Understanding Temperature Inversions
+
+Under typical daytime atmospheric conditions, warmer air near the ground can rise and mix with cooler air above it. This vertical movement helps disperse airborne pollutants.
+
+A **temperature inversion** occurs when a layer of warmer air lies above cooler air near the ground.
+
+The warmer layer limits vertical mixing, allowing pollutants to accumulate in the cooler air below.
+
+![Comparison of normal atmospheric conditions and a temperature inversion. Under normal conditions, rising air supports vertical mixing. During an inversion, a warmer layer above cooler surface air limits vertical mixing and can trap pollutants near the ground. Image credit: NC State Extension. Source: [A Simple Science Experiment: Temperature Inversion](https://cotton.ces.ncsu.edu/news/a-simple-science-experiment-temperature-inversion/).](thermal-inversion.jpg){#fig-temperature-inversion width="90%" fig-align="center" lightbox=true}
+
+
+**Connecting the diagram to Donora (1948):**
+
+- **Pollution source:** Industrial facilities continuously released airborne contaminants.
+- **Atmospheric conditions:** A temperature inversion limited vertical mixing and dispersion.
+- **Geography:** The surrounding valley further contributed to the accumulation of polluted air.
+- **Exposure:** Residents inhaled elevated concentrations of pollutants over several days.
+
+**Important:** A temperature inversion does not create the pollutants. It changes how pollutants disperse and can increase their concentrations near the ground.
+
+::: {.callout-note}
+## Understanding Airborne Hazards
+
+Both events demonstrate that hazardous airborne contaminants can affect entire communities.
+
+When investigating an airborne hazard, we need to ask:
+
+1. **What is in the air?** Identify the pollutants.
+2. **How much is present?** Measure their concentrations.
+3. **How do pollutants move?** Consider wind, weather, and geography.
+4. **How can people be exposed?** Identify potential routes of exposure.
+
+:::
+
+---
+
+
+## What does particle size tell us about exposure?
+
+![Particle-size comparison source the U.S. Environmental Protection Agency (EPA).](particulate-matter.jpg){#fig-pm-size width="90%" fig-align="center"}
+
+**Particulate matter (PM)** consists of particles suspended in air. The presentation introduces particle-size categories:
+
+- **PM10:** particles with aerodynamic diameters of 10 micrometers (µm) or smaller.
+- **PM2.5:** fine particles with aerodynamic diameters of 2.5 µm or smaller.
+- **PM1:** particles with aerodynamic diameters of 1 µm or smaller. **PM1 is not synonymous with ultrafine particles**; ultrafine particles are generally defined as smaller than 0.1 µm.
+
+A **micrometer** is one-millionth of a meter. As the illustration shows, a human hair is typically tens of micrometers across, much wider than an individual PM2.5 particle. The size categories overlap: PM2.5 is included within PM10. **PM2.5 identifies a size fraction, not one specific chemical or toxic substance.**
+
+Small particles may remain suspended and travel with air currents. Their behavior depends on aerodynamic diameter, density, shape, humidity, and atmospheric conditions. Particle size also affects where inhaled particles may deposit within the respiratory tract.
+
+------------------------------------------------------------------------
+
+## How can inhaled particles affect the lungs?
+
+Li and colleagues (2003) investigated how exposure to particulate matter can affect cells involved in the lungs' immune response.
+
+The electron micrographs below show experimental macrophage-like cells exposed to different particle-size fractions. **Macrophages** are immune cells that help recognize and remove foreign material, including inhaled particles.
+
+
+
+::::::: {.columns style="align-items: flex-start;"}
+
+::: {.column width="43%"}
+
+### Understanding the Micrographs
+
+**🟩 Green: No PM exposure**
+
+- Reference cells without added particulate exposure.
+- Used to compare changes in cellular structures.
+
+**🟨 Yellow: PM10 exposure (coarse fraction)**
+
+- Cells exposed to a coarser particulate fraction.
+- The images show changes in cellular structures.
+
+**🟧 Orange: PM2.5 exposure (fine fraction)**
+
+- Cells exposed to a finer particulate fraction.
+- Particles and cellular changes are visible near mitochondria.
+
+**🟥 Red: PM1 exposure (smaller particles)**
+
+- Cells exposed to a smaller particulate fraction.
+- Changes in mitochondrial structures, including the **cristae**, are visible.
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="54%"}
+
+![Electron micrographs of experimental macrophage-like cells under different particulate exposure conditions. Source: Li et al. (2003); annotated by Yoni Rodriguez (2019).](pm2.4-effects-on-the-lung.jpg){#fig-pm-lung width="100%" lightbox=true}
+
+::: {.evidence-callout}
+## Interpreting the Evidence
+
+These images come from an **experimental cell study**, not lung tissue collected from people exposed to Washington wildfire smoke.
+
+They illustrate possible biological mechanisms of particulate toxicity.
+
+**Particle size matters, but chemical composition also influences toxicity.**
+
+:::
+
+:::
+
+:::::::
+
+
+### Why Do These Changes Matter?
+
+**Mitochondria** are structures inside cells that help produce energy.
+
+The folds inside mitochondria are called **cristae**. These folds are important for normal mitochondrial function.
+
+Certain particulate exposures can contribute to the production of **reactive oxygen species (ROS)**.
+
+ROS are chemically reactive molecules that can damage cellular structures when produced in excess. This process is called **oxidative stress**.
+
+The study helps illustrate how particulate exposure may contribute to cellular injury and inflammation.
+
+------------------------------------------------------------------------
+
+
+### How Do Particles Reach These Cells?
+
+**A simplified exposure pathway:**
+
+1. Airborne particles are **inhaled**.
+2. Depending on particle size and breathing conditions, some deposit in the airways or reach the **alveoli**, the small air sacs where oxygen enters the bloodstream.
+3. Particles can interact with lung cells and immune cells, including **alveolar macrophages**.
+4. Certain particle exposures can trigger **oxidative stress and inflammatory responses**.
+
+**Think like a chemist:** Why do we need to know both **particle size** and **chemical composition** before predicting toxicity?
+
+## Can inhaled particles affect the cardiovascular system?
+
+Miller and colleagues (2017), in *Inhaled Nanoparticles Accumulate at Sites of Vascular Disease*, investigated whether inhaled nanoparticles could move beyond the lungs and enter the bloodstream.
+
+The researchers used **inhaled gold nanoparticles as experimental tracers**, allowing them to investigate the movement of particles through the body by measuring gold in biological samples.
+
+### Introducing Biomonitoring
+
+**Biomonitoring** is the measurement of chemicals, their metabolites, or other exposure-related markers in biological samples, such as blood or urine.
+
+Biomonitoring can help scientists determine whether a substance has entered the body and investigate how its measured concentration changes over time.
+
+In this study, researchers collected blood samples at multiple time points following inhalation exposure.
+
+![Percentage of participants with detectable gold in blood at different time points following inhalation exposure. Source: Miller et al. (2017); reproduced in Rodriguez (2019).](pm2.5-effects-on-the-heart.jpg){#fig-pm-heart width="85%" fig-align="center" lightbox=true}
+
+### Why Does Sampling Time Matter?
+
+Examine the graph carefully.
+
+- **15 minutes:** Gold was detectable in the blood of some participants.
+- **30 minutes:** The graph shows a temporary decrease to 0% detection.
+- **Later measurements:** Gold was detected again in participants' blood.
+- **24 hours:** Gold was detectable in ~86%.
+
+**Does the 30-minute result mean that the gold nanoparticles had completely disappeared from the body?**
+
+**No.**
+
+
+::: {.evidence-callout}
+## Interpreting the Evidence
+
+The researchers were measuring extremely small quantities of gold. Their analytical method had two important thresholds:
+
+- **Limit of Detection (LOD):** The smallest amount of a substance that an analytical method can reliably distinguish from background. In this study, approximately **0.01 ng/g of blood**.
+- **Limit of Quantification (LOQ):** The smallest amount of a substance that an analytical method can reliably measure quantitatively. In this study, approximately **0.03 ng/g of blood**.
+
+**A measurement below the detection limit does not necessarily mean that the substance is absent.**
+
+The researchers explained that nanoparticles may gradually move from the lungs into circulation while physiological processes distribute or remove them from the blood.
+
+Consequently, the amount detectable in a blood sample may change over time.
+
+The graph shows the **percentage of participants with detectable gold**, not the gold concentration in each participant's blood. It cannot establish the precise mechanism responsible for changes in detection.
+
+**Key takeaway:** A single biological sample may not adequately characterize exposure or the movement of a substance through the body. Biomonitoring results must be interpreted alongside sampling time, analytical detection limits, and biological processes.
+:::
+
+
+
+
+### What Does This Tell Us About Cardiovascular Health?
+
+Miller and colleagues (2017) provided evidence that **some inhaled nanoparticles can translocate from the lungs into systemic circulation**.
+
+Their research also investigated the accumulation of inhaled nanoparticles at sites of vascular disease.
+
+
+Inhaled particulate pollution can also affect the cardiovascular system through **inflammation originating in the lungs, oxidative stress, and physiological signaling**, even when particles do not directly enter the bloodstream.
+
+**Think like a chemist:** If you collected only one blood sample at 30 minutes, how might your interpretation differ from a study that collected samples over 24 hours?
+
+
+# 3. What Makes a Solid Hazardous?
+
+The **physical state alone does not determine the hazard**. We must consider the substance's identity, chemical properties, particle characteristics, amount, and conditions.
+
+
+
+## Toxic or harmful particulates
+
+Some solid particles can enter the body by **inhalation**, while other exposure routes may include ingestion or contact with skin or eyes.
+
+Examples worth investigating include:
+
+::::::: {.columns style="align-items: flex-start;"}
+
+::: {.column width="32%"}
+
+![](respirable-crystalline-silica.jpg){width="100%" height="160px" fig-align="center" lightbox=true}
+
+**Respirable crystalline silica**
+
+Generated during some cutting or grinding of silica-containing materials.
+
+Inhalation of respirable crystalline silica can damage the lungs and cause diseases such as **silicosis**.
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="32%"}
+
+![](lead-containing-dust.jpg){width="100%" height="160px" fig-align="center" lightbox=true}
+
+**Lead-containing dust**
+
+May be produced when lead-containing coatings or materials are disturbed.
+
+Exposure can cause **systemic toxicity**, affecting multiple organs and body systems.
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="32%"}
+
+![](asbestos.jpg){width="100%" height="160px" fig-align="center" lightbox=true}
+
+**Asbestos fibers**
+
+Can be released when certain asbestos-containing materials are disturbed.
+
+Inhalation presents serious long-term health risks, including **asbestosis, lung cancer, and mesothelioma**.
+
+:::
+
+:::::::
+
+**Think like a chemist:** These materials can all produce airborne hazards, but their **chemical composition, particle size, shape, and biological behavior** differ.
+
+Do not assume that all dusts have the same toxicity, or that the absence of visible dust means exposure is absent.
+
+## Combustible dust
+
+Certain finely divided combustible solids can burn rapidly when dispersed in air. Under appropriate conditions, a dust cloud can create a **flash fire or explosion hazard**.
+
+Examples include some organic dusts, such as flour or wood dust, and certain metal powders. Whether a specific dust is explosible requires substance-specific evaluation.
+
+A useful screening framework is the **dust explosion pentagon**:
+
+1. **Combustible dust (fuel)**
+2. **Oxygen**
+3. **Ignition source**
+4. **Dispersion of dust in air**
+5. **Confinement or sufficient congestion for damaging pressure development**
+
+![The dust explosion pentagon illustrating the five conditions associated with combustible dust explosions: combustible dust, oxygen, ignition source, dispersion, and confinement.](dust-explosion-pentagon.jpg){#fig-dust-explosion-pentagon width="55%" fig-align="center" lightbox=true}
+
+Removing or controlling one or more necessary conditions can reduce the hazard.
+
+### Combustible Dust: Video Example
+
+The following video provides an opportunity to examine how combustible dust hazards can develop.
+
+{{< video https://www.youtube.com/watch?v=Jg7mLSG-Yws width="640" height="360" >}}
+
+**Think like a chemist:** As you watch, consider which conditions of the dust explosion pentagon are present.
+
+- What is the potential **fuel**?
+- How might the dust become **dispersed in air**?
+- What could provide an **ignition source**?
+- How might the surrounding environment influence the consequences?
+
+**Safety reminder:** Never create a dust cloud to test whether it burns.
+
+**Video:** [Watch on YouTube](https://youtu.be/Jg7mLSG-Yws)
+
+
+
+## Reactive solids
+
+Some solids may react dangerously with **water, air, oxidizers, acids, or other incompatible materials**. These reactions may produce heat, fire, or hazardous gases.
+
+However, not all solids or metals react in the same way.
+
+### Potassium: A Water-Reactive Metal
+
+**Potassium (K)** is an alkali metal with an atomic number of 19.
+
+In its elemental form, potassium is a soft, silvery-white solid that reacts readily with moisture and oxygen.
+
+Potassium metal is especially hazardous because it can react violently with water, generating heat, corrosive potassium hydroxide, and flammable hydrogen gas.
+
+The reaction can be represented by the following balanced chemical equation:
+
+$$
+2K(s) + 2H_2O(l) \rightarrow 2KOH(aq) + H_2(g)
+$$
+
+**What does this reaction tell us?**
+
+- **K:** Potassium metal is the reactive solid.
+- **H₂O:** Water is a reactant, not a safe extinguishing agent for a potassium metal fire.
+- **KOH:** Potassium hydroxide is a highly corrosive product.
+- **H₂:** Hydrogen is a flammable gas that may ignite if sufficient heat is generated.
+
+The reaction releases considerable heat, which can ignite the hydrogen and potassium metal.
+
+### Potassium Reactivity: Video Example
+
+The following video illustrates the behavior of potassium under reactive conditions.
+
+{{< video https://www.youtube.com/watch?v=oqMN3y8k9So width="640" height="360" >}}
+
+
+**Video:** [Watch on YouTube](https://youtu.be/oqMN3y8k9So)
+
+### Why Does Chemical Compatibility Matter?
+
+Potassium demonstrates why emergency responders must understand the **chemical properties and incompatibilities** of a hazardous material before selecting a response method.
+
+Potassium metal can:
+
+- **React violently with water**, generating heat and flammable hydrogen.
+- **Ignite in air**, particularly under certain surface and environmental conditions.
+- **React with oxidizers and other incompatible substances**, potentially causing fires or violent reactions.
+- **Cause severe chemical burns** through the formation of corrosive potassium hydroxide when it contacts moisture.
+
+**Important:** Water and carbon dioxide extinguishers are inappropriate for potassium metal fires. Specialized extinguishing agents suitable for combustible metals are required, and response decisions must follow the substance-specific Safety Data Sheet and established emergency procedures.
+
+
+---
+
+## Poll Everywhere: Understanding Oxidation and Reduction
+
+Before introducing oxidation and reduction reactions, let's assess our familiarity with these concepts.
+
+**This is not a graded quiz.** The purpose is to understand your previous chemistry experience and identify concepts we should spend more time discussing.
+
+:::::: {.columns style="align-items: flex-start;"}
+
+::: {.column width="68%"}
+
+### Question 1: Familiarity with REDOX
+
+**Before today, how familiar were you with the term REDOX reaction?**
+
+- A. I have never heard the term.
+- B. I have heard it but cannot explain it.
+- C. I recognize oxidation and reduction, but not REDOX.
+- D. I understand REDOX and can explain it.
+- E. I have applied these concepts in chemistry or work.
+
+### Question 2: Chemical Equation Confidence
+
+**How confident are you in interpreting a chemical equation, such as Fe + O₂ → Fe₂O₃?**
+
+- A. Not confident at all
+- B. Slightly confident
+- C. Moderately confident
+- D. Confident
+- E. Very confident
+
+### Question 3: Oxidation
+
+**In chemistry, what does oxidation mean?**
+
+- A. A substance gains electrons.
+- B. A substance loses electrons.
+- C. A substance always catches fire.
+- D. A substance changes from a solid to a gas.
+- E. I'm not sure.
+
+### Question 4: Reduction
+
+**In chemistry, what does reduction mean?**
+
+- A. A substance loses electrons.
+- B. A substance becomes physically smaller.
+- C. A substance gains electrons.
+- D. A substance loses heat.
+- E. I'm not sure.
+
+### Question 5: Rust Formation
+
+**When exposed to oxygen and moisture, why does unprotected iron develop rust?**
+
+- A. Iron undergoes a chemical reaction that forms new substances.
+- B. Iron only changes color without reacting.
+- C. Iron melts when exposed to air.
+- D. Water removes the iron's atoms without a chemical reaction.
+- E. I'm not sure.
+
+### Question 6: Hazardous Materials Management
+
+**Why is understanding oxidation and reduction useful in hazardous materials management?**
+
+- A. It helps explain corrosion, combustion, and oxidizer hazards.
+- B. It tells us the exact toxicity of every chemical.
+- C. It eliminates the need for Safety Data Sheets.
+- D. It only applies to laboratory experiments.
+- E. I'm not sure.
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="28%"}
+
+### Join the Survey
+
+![](poll-everywhere-response.jpg){fig-alt="QR code for students to join the SHM 377 Poll Everywhere survey" width="250"}
+
+**Scan the QR code to participate.**
+
+Your responses will help guide our discussion of oxidation and reduction.
+
+:::
+
+::::::
+
+::: {.callout-note}
+## Connecting Chemistry to Construction
+
+Many construction materials contain iron or steel.
+
+Over time, these materials may develop rust when exposed to oxygen and moisture.
+
+**Consider:** Why does steel corrode, and how might a protective zinc coating help prevent corrosion?
+
+We will use these examples to explore oxidation, reduction, and their applications to hazardous materials management.
+:::
+
+---
+
+
+
+## Oxidizers and unstable materials
+
+Some solid materials can **intensify combustion, undergo decomposition, or react dangerously with incompatible substances**.
+
+To understand these hazards, we first need to understand **oxidation and reduction**.
+
+### Oxidation and Reduction
+
+An **oxidation-reduction reaction**, also called a **redox reaction**, involves the transfer of electrons between substances.
+
+Two processes occur together:
+
+- **Oxidation:** A substance loses electrons.
+- **Reduction:** A substance gains electrons.
+
+A useful way to remember these processes is:
+
+**OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons).**
+
+In a redox reaction, the substances involved have different roles:
+
+- **Oxidizing agent (oxidant):** Accepts electrons from another substance, causing that substance to become oxidized. The oxidizing agent is itself reduced.
+- **Reducing agent (reductant):** Donates electrons to another substance, causing that substance to become reduced. The reducing agent is itself oxidized.
+
+
+**The oxidizing agent gains electrons, while the reducing agent loses electrons.**
+
+### Example 1: Rusting of Iron
+
+Rusting is a familiar example of a relatively slow oxidation reaction.
+
+When iron is exposed to oxygen and moisture, chemical reactions gradually produce iron oxides and hydrated iron oxide compounds.
+
+A simplified reaction is:
+
+$$
+4\overset{0}{Fe}(s) + 3\overset{0}{O}_2(g)
+\rightarrow
+2\overset{+3}{Fe}_2\overset{-2}{O}_3(s)
+$$
+
+The numbers above the elements indicate their **oxidation states**, which help us track electron transfer during a chemical reaction.
+
+During this reaction:
+
+- **Iron (Fe):** Its oxidation state increases from **0 to +3**. Iron loses electrons and becomes oxidized.
+- **Oxygen (O):** Its oxidation state decreases from **0 to −2**. Oxygen gains electrons and becomes reduced.
+- Iron acts as the **reducing agent**.
+- Oxygen acts as the **oxidizing agent**.
+
+Although iron is the material being oxidized, **oxygen is the oxidizing agent because it accepts electrons from iron**.
+
+### Example 2: Combustion of Methane
+
+Oxidation does not always occur slowly.
+
+**Combustion** is a rapid, heat-releasing chemical reaction that commonly involves a fuel reacting with oxygen.
+
+For example, methane (CH₄), the principal component of natural gas, reacts with oxygen:
+
+$$
+\overset{-4}{C}H_4(g)
++
+2\overset{0}{O}_2(g)
+\rightarrow
+\overset{+4}{C}\overset{-2}{O}_2(g)
++
+2H_2\overset{-2}{O}(g)
+$$
+
+In this reaction:
+
+- **Methane is the fuel** and acts as the reducing agent.
+- **Oxygen is the oxidizing agent**.
+- **Carbon:** Its oxidation state increases from **−4 to +4**, meaning it is oxidized.
+- **Oxygen:** Its oxidation state decreases from **0 to −2**, meaning it is reduced.
+- The reaction releases heat.
+
+Both rusting iron and burning methane involve oxidation-reduction reactions.
+
+The major difference is their **reaction rate and energy release**.
+
+
+| Rusting iron | Burning methane |
+|---|---|
+| Relatively slow oxidation | Rapid oxidation |
+| Gradual formation of corrosion products | Rapid formation of combustion products |
+| Heat is generally released slowly | Heat is released rapidly |
+| Oxygen acts as the oxidizing agent | Oxygen acts as the oxidizing agent |
+
+**Important:** Not every oxidation-reduction reaction produces a fire, but combustion is a common example of a rapid redox reaction.
+
+### Oxidizers in Hazardous Materials Management
+
+In ordinary combustion, oxygen from the surrounding air commonly acts as the oxidizing agent.
+
+However, **oxygen gas is not the only substance capable of acting as an oxidizer**.
+
+Some solid chemicals can also cause or intensify combustion.
+
+Examples include:
+
+- **Potassium permanganate (KMnO₄)**
+- **Ammonium nitrate (NH₄NO₃)**
+- **Potassium chlorate (KClO₃)**
+
+These substances have different chemical properties and hazards, but each can act as an oxidizer under appropriate conditions.
+
+**An oxidizer does not necessarily need to burn itself to make another material burn more intensely.**
+
+
+
+### Example: Ammonium Nitrate
+
+**Ammonium nitrate (NH₄NO₃)** is a white crystalline solid commonly used in agricultural fertilizers and certain industrial applications.
+
+It is classified as an **oxidizing solid** because it can support or intensify combustion involving other materials.
+
+Unlike an ordinary combustible material, ammonium nitrate does not need to act as the fuel to contribute to a dangerous fire.
+
+**What makes ammonium nitrate hazardous?**
+
+- **Oxidizing properties:** It can support or intensify combustion involving other materials.
+- **Chemical incompatibility:** Contamination with combustible materials or other incompatible substances can increase the potential for dangerous reactions.
+- **Thermal decomposition:** When heated, ammonium nitrate can decompose and release hazardous gases.
+- **Explosion potential:** Under certain conditions involving severe heating, contamination, confinement, or other contributing factors, ammonium nitrate can undergo violent decomposition or explosion.
+
+**Important distinction:** Ammonium nitrate is an oxidizer, not a conventional fuel. However, fires, contamination, and unfavorable storage conditions can create severe decomposition and explosion hazards.
+
+#### Ammonium Nitrate: Video Example
+
+The following video illustrates the hazards associated with ammonium nitrate.
+
+{{< video https://www.youtube.com/watch?v=pdDuHxwD5R4 width="640" height="360" >}}
+
+The important chemical principle is that **oxidizing materials can contribute to dangerous reactions even when they are not themselves conventional fuels**.
+
+#### OSHA Regulations: Storage of Ammonium Nitrate
+
+Some important OSHA requirements include:
+
+- **Temperature:** Ammonium nitrate must not be accepted for storage when its temperature exceeds **130°F (54°C)**.
+- **Storage clearance:** Applicable storage arrangements must maintain at least **36 inches of clearance** below the roof or supporting structural members.
+- **Ventilation:** Storage buildings must have adequate ventilation or provisions for ventilation during a fire.
+- **Chemical compatibility:** Ammonium nitrate must be separated from specified combustible materials and incompatible substances.
+- **Contamination prevention:** Storage areas must be maintained to prevent contamination with materials that could increase fire or explosion hazards.
+- **Storage management:** Piles and bins must be arranged to meet applicable requirements for access, spacing, and material handling.
+
+These requirements illustrate how **chemical properties influence workplace safety regulations**.
+
+For hazardous materials managers, identifying a chemical as an oxidizer is only the first step. Safe management also requires understanding its incompatibilities, storage conditions, and applicable regulatory requirements.
+
+**Regulatory reference:** [OSHA 29 CFR 1910.109(i): Storage of Ammonium Nitrate](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.109)
+
+**Key takeaway:** Ammonium nitrate demonstrates why understanding oxidation, chemical compatibility, and thermal stability is essential for preventing serious incidents involving hazardous materials.
+
+
+
+
+
+### Unstable Materials
+
+Some solids may also undergo hazardous reactions when exposed to **heat, friction, shock, moisture, or incompatible substances**.
+
+These hazards are substance-specific. Not every oxidizer is shock-sensitive, and not every unstable material is an oxidizer.
+
+**Key takeaway:** Understanding oxidation and reduction helps us explain why some materials burn, why others intensify combustion, and why chemical compatibility is essential for hazardous materials management.
+
+
+
+
+# 4. Temperature, Physical Change, and Chemical Change
+
+Recall Lecture 02:
+
+- A **physical change** changes a material's form or state without changing its chemical identity.
+- A **chemical change** produces one or more different substances.
+
+## Heating a solid
+
+When temperature changes, several different processes may become relevant:
+
+| Process | Type | Hazard management question |
+|------------------------|------------------------|------------------------|
+| Thermal expansion | Physical | Could expansion damage equipment, seals, or packaging? |
+| Melting | Physical | Could a previously contained solid begin to flow or spread? |
+| Sublimation (for some solids) | Physical | Could a solid produce vapor without first becoming a liquid? |
+| Thermal decomposition | Chemical | Could heating produce hazardous gases or other substances? |
+| Combustion (for combustible solids) | Chemical | Could heat and ignition produce fire and harmful combustion products? |
+
+**Melting point** is a physical property, but it does not by itself tell us whether a material will burn, decompose, or release hazardous vapors.
+
+
+
+## From a solid to a gas: why phase changes matter
+
+A phase change does not necessarily change chemical identity, but it can substantially change **mobility, dispersion, and potential exposure**.
+
+We will build on this principle when studying **liquids, gases, vapor pressure, and pressurized containers** in subsequent lectures.
+
+
+
+# Key Takeaways
+
+1. **A solid is a state of matter, not a hazard classification.** A material's chemical identity, physical form, and environmental conditions determine its potential hazards.
+
+2. **Particle size influences exposure.** Cutting, grinding, burning, and other processes can generate airborne particles. Smaller particles may remain suspended in air, travel with air currents, and deposit in different regions of the respiratory system.
+
+3. **Airborne particles can affect the respiratory and cardiovascular systems.** Depending on their size and chemical composition, particles may contribute to cellular injury, oxidative stress, inflammation, and other adverse health effects.
+
+4. **Biomonitoring helps investigate internal exposure.** Measurements of chemicals or exposure markers in biological samples must be interpreted alongside sampling time, analytical detection limits, and biological processes.
+
+5. **Combustible dust can create fire and explosion hazards.** The dust explosion pentagon identifies five important conditions: combustible dust, oxygen, an ignition source, dispersion, and confinement.
+
+6. **Chemical compatibility is essential when managing reactive solids.** Potassium metal demonstrates how contact with water can generate heat, corrosive substances, and flammable hydrogen gas.
+
+7. **Oxidation and reduction involve electron transfer.** Oxidation involves the loss of electrons, while reduction involves the gain of electrons. Oxidizing agents accept electrons, and reducing agents donate electrons.
+
+8. **Oxidizers can intensify combustion without acting as conventional fuels.** Ammonium nitrate demonstrates why chemical compatibility, temperature, contamination prevention, and applicable OSHA storage requirements are important.
+
+9. **Temperature can cause physical or chemical changes.** Melting and sublimation change a material's physical state, while thermal decomposition and combustion produce different substances.
+
+10. **Hazardous materials management requires evidence-based decisions.** Identifying the material, understanding its properties, reviewing applicable regulations and safety information, and evaluating exposure conditions are essential for selecting appropriate controls.
+
+# Key Terms
+
+| Term | Working definition |
+|---|---|
+| **Solid** | State of matter that ordinarily maintains its shape and volume under specified conditions. |
+| **Particle size** | Characteristic dimension of a particle that influences its movement, suspension, and potential deposition in the respiratory system. |
+| **Particulate matter (PM)** | Solid particles and liquid droplets suspended in air. |
+| **PM10** | Particles with aerodynamic diameters of 10 micrometers (µm) or smaller. |
+| **PM2.5** | Fine particles with aerodynamic diameters of 2.5 µm or smaller. |
+| **PM1** | Particles with aerodynamic diameters of 1 µm or smaller. |
+| **Aerosol** | Suspension of solid particles or liquid droplets in a gas. |
+| **Macrophage** | Immune cell that helps recognize and remove foreign material, including inhaled particles. |
+| **Oxidative stress** | Cellular condition in which excessive reactive oxygen species contribute to damage to biological structures. |
+| **Biomonitoring** | Measurement of chemicals, metabolites, or exposure-related markers in biological samples such as blood or urine. |
+| **Limit of Detection (LOD)** | Smallest amount of a substance that an analytical method can reliably distinguish from background. |
+| **Limit of Quantification (LOQ)** | Smallest amount of a substance that an analytical method can reliably measure quantitatively. |
+| **Combustible dust** | Finely divided combustible solid material that can create fire or explosion hazards when dispersed in air under appropriate conditions. |
+| **Dust explosion pentagon** | Five conditions associated with combustible dust explosions: fuel, oxygen, ignition source, dispersion, and confinement. |
+| **Reactive solid** | Solid material capable of undergoing hazardous chemical reactions under certain conditions, including contact with incompatible substances. |
+| **Chemical incompatibility** | Potential for hazardous reactions when certain substances come into contact. |
+| **Oxidation** | Chemical process involving the loss of electrons and an increase in oxidation state. |
+| **Reduction** | Chemical process involving the gain of electrons and a decrease in oxidation state. |
+| **Redox reaction** | Chemical reaction involving oxidation and reduction. |
+| **Oxidizing agent (oxidant)** | Substance that accepts electrons from another substance, causing that substance to become oxidized. |
+| **Reducing agent (reductant)** | Substance that donates electrons to another substance, causing that substance to become reduced. |
+| **Oxidation state** | Number used to account for the distribution of electrons in a substance and track changes during redox reactions. |
+| **Combustion** | Rapid, heat-releasing chemical reaction that commonly involves a fuel reacting with an oxidizer. |
+| **Thermal decomposition** | Chemical breakdown of a substance caused by heating. |
+| **Melting** | Physical transition from a solid to a liquid. |
+| **Sublimation** | Physical transition directly from a solid to a gas. |
+| **Physical change** | Change in a material's form or state without changing its chemical identity. |
+| **Chemical change** | Change that produces one or more different substances. |
+
+
+
+
+# Copyright & Use
+
+**SHM 377: Hazardous Materials Management**\
+© 2026 Yoni Rodriguez
+
+Except where otherwise noted, original course materials are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+Third-party materials remain subject to their respective copyright and licensing terms.

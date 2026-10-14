@@ -8,6 +8,7 @@ format:
     code-fold: true
     embed-resources: true
     self-contained-math: true
+    html-math-method: katex
     lightbox: auto
   pdf:
     toc: true
@@ -147,6 +148,30 @@ blockquote strong {
 
 
 
+
+
+/* =========================================================
+   Chemical equations: responsive KaTeX display
+   Keep equations readable on narrow mobile screens.
+   ========================================================= */
+.katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.katex-display > .katex {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .katex-display > .katex {
+    font-size: 0.9em;
+  }
+}
 
 </style>
 ```
@@ -833,7 +858,6 @@ This is consistent with the **law of conservation of mass**, established experim
 Chemical reactions can change what substances are present, but they do not make ordinary matter disappear.
 :::
 
-
 ### The Law of Conservation of Mass: Two Examples
 
 The **law of conservation of mass** states that matter is neither created nor destroyed during an ordinary chemical reaction.
@@ -843,9 +867,9 @@ Although the substances involved may change, the total mass of a closed system r
 ::: {.callout-note appearance="minimal"}
 ## Think About Two Observations You May Have Made
 
-1. **Burning wood:** After a bonfire, there is less mass left in the fire pit?
+1.  **Burning wood:** After a bonfire, there is less mass left in the fire pit?
 
-2. **Rusting iron:** An iron beam can gain mass as it rusts. Where did that additional mass come from?
+2.  **Rusting iron:** An iron beam can gain mass as it rusts. Where did that additional mass come from?
 :::
 
 The key is to account for **all matter entering or leaving the system**.
@@ -854,23 +878,19 @@ If we carry out each reaction in a closed chamber and measure the mass of the cl
 
 If we open the chamber and are in ambient conditions, like the things that happen on this planet and in our atmosphere, then we can account for what our eyes can only observe.
 
-::::::: {.columns style="align-items: flex-start;"}
-
+:::::: {.columns style="align-items: flex-start;"}
 ::: {.column width="49%"}
-
 ### Example 1: Burning Wood
 
 In an **open system**, gaseous products escape into the atmosphere. If we weigh only the remaining ash, its mass is less than the original pile of wood.
 
 In a **closed system**, the gaseous products remain inside the chamber. The total mass of the chamber and its contents remains unchanged, even though the starting substances inside have changed.
-
 :::
 
 ::: {.column width="2%"}
 :::
 
 ::: {.column width="49%"}
-
 ### Example 2: Rusting Iron
 
 When iron is exposed to oxygen and water, chemical reactions can produce rust.
@@ -878,14 +898,12 @@ When iron is exposed to oxygen and water, chemical reactions can produce rust.
 In an **open system**, the gases consumed when a beam rusts are not included in the original mass.
 
 In a **closed system**, all the gases inside the chamber are measured.
-
 :::
+::::::
 
-:::::::
+![Conceptual illustration of two chemical reactions in closed environmental chambers. Illustration generated with AI for SHM 377, 2026.](chamber-examples.jpg){#fig-conservation-mass width="100%" fig-align="center" lightbox="true"}
 
-![Conceptual illustration of two chemical reactions in closed environmental chambers. Illustration generated with AI for SHM 377, 2026.](chamber-examples.jpg){#fig-conservation-mass width="100%" fig-align="center" lightbox=true}
-
-::: {.callout-important}
+::: callout-important
 ## Open Systems vs. Closed Systems
 
 - In an **open system**, matter is not contained. Measuring only the remaining solid can make mass appear to have been lost or gained.
@@ -902,14 +920,7 @@ Recall Dalton's atomic theory: **atoms are not created or destroyed during ordin
 **Our next question:** If atoms are conserved during chemical reactions, how do we represent that conservation when writing and **balancing chemical equations**?
 :::
 
-
-
-
-
 ------------------------------------------------------------------------
-
-
-
 
 ### How Do We Know a Chemical Reaction Has Occurred?
 
@@ -931,17 +942,15 @@ Some common observations include:
 - **Formation of a gas:** Bubbles or gases are produced.
 - **Absorption or release of heat:** The temperature of the surroundings changes.
 
-::: {.callout-important}
+::: callout-important
 ## Describing Chemical Reactions
 
-Describing chemical reactions only in words is askward and time-consuming. 
+Describing chemical reactions only in words is askward and time-consuming.
 
 That is why, chemist use a chemical equation.
 
 A **chemical equation** *is a symbolic representation of a chemical reaction.*
-
 :::
-
 
 ### Classes of Chemical Reactions
 
@@ -952,29 +961,29 @@ Although individual reactions may appear complicated, many can be organized into
 #### Four Common Reaction Classes
 
 | Reaction class | General pattern | What happens? |
-|:---|:---:|:---|
+|:---------------------|:--------------------------:|:---------------------|
 | **Decomposition** | $AB \rightarrow A + B$ | One compound breaks down into simpler substances. |
 | **Combination (Synthesis)** | $A + B \rightarrow AB$ | Two substances combine to form one compound. |
 | **Single Displacement** | $A + BC \rightarrow AC + B$ | One element replaces another element in a compound. |
 | **Double Displacement** | $AB + CD \rightarrow AD + CB$ | Two compounds exchange components to form two different compounds. |
 
-: Four common classes of chemical reactions, adapted conceptually from Table 5.1 in the provided chemistry textbook. The letters represent hypothetical substances or components, not specific chemicals. {#tbl-reaction-classes}
+: Four common classes of chemical reactions, adapted conceptually from Table 5.1 in the provided chemistry textbook. The letters represent hypothetical substances or components, not specific chemicals.
 
-::: {.callout-note}
+::: callout-note
 ## Reading the Patterns
 
 In these simplified equations:
 
 - **Letters** represent elements or components of compounds.
 - The **plus sign (+)** separates substances.
-- The **arrow ($\rightarrow$)** separates reactants from products and can be read as "produces" or "yields."
+- The **arrow (**$\rightarrow$) separates reactants from products and can be read as "produces" or "yields."
 
 These patterns help us recognize how substances are rearranged during chemical reactions.
 
 They do not tell us whether a reaction will occur under particular conditions.
 :::
 
-::: {.callout-important}
+::: callout-important
 ## Connecting Reaction Classes to Dalton
 
 Recall that Dalton proposed that atoms are rearranged during chemical reactions.
@@ -1007,7 +1016,7 @@ When reading a chemical equation:
 - **Reactants** are written on the left side of the arrow.
 - **Products** are written on the right side of the arrow.
 - A **plus sign (+)** separates multiple substances.
-- An **arrow ($\rightarrow$)** indicates the direction in which the reaction is written.
+- An **arrow (**$\rightarrow$) indicates the direction in which the reaction is written.
 
 The symbols and formulas allow chemists to communicate chemical reactions without writing a lengthy verbal description.
 
@@ -1015,17 +1024,15 @@ The symbols and formulas allow chemists to communicate chemical reactions withou
 
 Two numbers are especially important when interpreting chemical equations.
 
-
-
 **Subscripts** indicate how many atoms of an element are represented in a chemical formula.
 
 For example:
 
-::: {.content-visible when-format="html"}
-<div style="text-align: center; font-family: Georgia, serif; font-size: 2rem; margin: 1.5rem 0;">
-  H<sub style="color: #2563eb; font-weight: bold;">2</sub>O
-</div>
+:::: {.content-visible when-format="html"}
+::: {style="text-align: center; font-family: Georgia, serif; font-size: 2rem; margin: 1.5rem 0;"}
+H<sub style="color: #2563eb; font-weight: bold;">2</sub>O
 :::
+::::
 
 ::: {.content-visible when-format="pdf"}
 $$
@@ -1039,11 +1046,11 @@ The subscript [**2**]{style="color: #2563eb;"} indicates that the formula contai
 
 For example:
 
-::: {.content-visible when-format="html"}
-<div style="text-align: center; font-family: Georgia, serif; font-size: 2rem; margin: 1.5rem 0;">
-  <span style="color: #ea580c; font-weight: bold;">2</span>H<sub>2</sub>O
-</div>
+:::: {.content-visible when-format="html"}
+::: {style="text-align: center; font-family: Georgia, serif; font-size: 2rem; margin: 1.5rem 0;"}
+[2]{style="color: #ea580c; font-weight: bold;"}H<sub>2</sub>O
 :::
+::::
 
 ::: {.content-visible when-format="pdf"}
 $$
@@ -1058,9 +1065,7 @@ Together, those two molecules contain:
 - 4 hydrogen atoms
 - 2 oxygen atoms
 
-
-
-::: {.callout-warning}
+::: callout-warning
 ## Coefficients vs. Subscripts
 
 When balancing chemical equations, we change **coefficients**, not subscripts.
@@ -1078,9 +1083,7 @@ Therefore, a chemical equation must show the **same number of atoms of each elem
 
 A balanced equation represents the conservation of atoms during a chemical reaction.
 
-
-
-::: {.callout-note}
+::: callout-note
 ## What Is a Diatomic?
 
 A **diatomic element** is a specific type of molecule made up of **two of the same atoms bonded together**.
@@ -1089,15 +1092,15 @@ Some elements naturally exist as diatomic molecules rather than as individual at
 
 There are **seven commonly recognized diatomic elements**:
 
-| Chemical formula | Element |
-|:---:|:---|
-| H₂ | Hydrogen |
-| N₂ | Nitrogen |
-| F₂ | Fluorine |
-| O₂ | Oxygen |
-| I₂ | Iodine |
-| Cl₂ | Chlorine |
-| Br₂ | Bromine |
+| Chemical formula | Element  |
+|:----------------:|:---------|
+|        H₂        | Hydrogen |
+|        N₂        | Nitrogen |
+|        F₂        | Fluorine |
+|        O₂        | Oxygen   |
+|        I₂        | Iodine   |
+|       Cl₂        | Chlorine |
+|       Br₂        | Bromine  |
 
 One way to remember these seven elements is the phrase:
 
@@ -1105,13 +1108,10 @@ One way to remember these seven elements is the phrase:
 
 Each word begins with the chemical symbol of a diatomic element.
 
-
 Notice that each chemical formula contains the subscript **2**, indicating that the molecule contains two atoms of that element.
 
 In our next example, we will use two of these diatomic elements, **hydrogen (H₂)** and **oxygen (O₂)**, to practice balancing a chemical equation.
 :::
-
-
 
 #### A Simple Example
 
@@ -1123,10 +1123,10 @@ $$
 
 Let's count the atoms on each side.
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Hydrogen (H) | 2 | 2 |
-| Oxygen (O) | 2 | 1 |
+| Element      | Reactants | Products |
+|:-------------|----------:|---------:|
+| Hydrogen (H) |         2 |        2 |
+| Oxygen (O)   |         2 |        1 |
 
 The hydrogen atoms are balanced, but the oxygen atoms are not.
 
@@ -1138,10 +1138,10 @@ $$
 
 Now count again.
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Hydrogen (H) | 2 | 4 |
-| Oxygen (O) | 2 | 2 |
+| Element      | Reactants | Products |
+|:-------------|----------:|---------:|
+| Hydrogen (H) |         2 |        4 |
+| Oxygen (O)   |         2 |        2 |
 
 Oxygen is now balanced, but hydrogen is not.
 
@@ -1153,21 +1153,21 @@ $$
 
 Our final count is:
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Hydrogen (H) | 4 | 4 |
-| Oxygen (O) | 2 | 2 |
+| Element      | Reactants | Products |
+|:-------------|----------:|---------:|
+| Hydrogen (H) |         4 |        4 |
+| Oxygen (O)   |         2 |        2 |
 
 The equation is now balanced.
 
-::: {.callout-tip}
+::: callout-tip
 ## A Simple Approach to Balancing Equations
 
-1. Identify the reactants and products.
-2. Count the atoms of each element on both sides.
-3. Adjust the coefficients to balance the atom counts.
-4. Never change the subscripts.
-5. Count the atoms again to verify that the equation is balanced.
+1.  Identify the reactants and products.
+2.  Count the atoms of each element on both sides.
+3.  Adjust the coefficients to balance the atom counts.
+4.  Never change the subscripts.
+5.  Count the atoms again to verify that the equation is balanced.
 
 **Remember:** Balancing equations is not about changing the substances. It is about accounting for the atoms already present.
 :::
@@ -1177,13 +1177,12 @@ The equation is now balanced.
 We have developed three important ways to think about chemical reactions.
 
 | Question | Chemistry concept |
-|:---|:---|
+|:-----------------------------------|:-----------------------------------|
 | How do we know something may be reacting? | Observe changes and evaluate evidence. |
 | What kind of reaction might be occurring? | Recognize patterns of chemical reactions. |
 | How do we represent the reaction? | Write and balance chemical equations. |
 
-
-::: {.callout-note}
+::: callout-note
 ## Connecting Chemistry to Hazardous Materials Management
 
 In hazardous materials management, recognizing **element names, chemical symbols, and how substances interact** is essential for communicating and interpreting information about hazardous materials.
@@ -1199,8 +1198,6 @@ Professionals working with hazardous materials are expected to have a basic unde
 
 ------------------------------------------------------------------------
 
-
-
 ### Introducing Oxidation Numbers
 
 We have learned how to write and balance chemical equations by accounting for the atoms on each side of a reaction.
@@ -1215,14 +1212,14 @@ When we analyze oxidation and reduction, we will show oxidation numbers **above 
 
 #### Rules for Assigning Oxidation Numbers
 
-| Rule | Oxidation number | Example |
-|:---|:---:|:---|
-| An element in its elemental form | 0 | H₂ or O₂ |
-| Group 1 metals | +1 | LiH |
-| Group 2 metals | +2 | CaO |
-| Hydrogen | Usually +1 | H₂O |
-| Oxygen | Usually −2 | H₂O |
-| Group 17 halogens | Usually −1 | NaCl |
+| Rule                             | Oxidation number | Example  |
+|:---------------------------------|:----------------:|:---------|
+| An element in its elemental form |        0         | H₂ or O₂ |
+| Group 1 metals                   |        +1        | LiH      |
+| Group 2 metals                   |        +2        | CaO      |
+| Hydrogen                         |    Usually +1    | H₂O      |
+| Oxygen                           |    Usually −2    | H₂O      |
+| Group 17 halogens                |    Usually −1    | NaCl     |
 
 These are useful starting rules. Some elements have exceptions depending on the substances with which they are combined.
 
@@ -1255,7 +1252,7 @@ $$
 
 Each oxygen atom has an oxidation number of **−1**.
 
-::: {.callout-important}
+::: callout-important
 ## Oxidation Numbers Must Add Up
 
 The sum of the oxidation numbers must equal the overall charge of the chemical species.
@@ -1314,7 +1311,7 @@ Therefore, in the carbonate ion:
 - Each oxygen has an oxidation number of **−2**.
 - The sum of the oxidation numbers equals **−2**, matching the charge of the ion.
 
-::: {.callout-tip}
+::: callout-tip
 ## Think Like a Chemist
 
 We did not need to memorize the oxidation number of carbon in carbonate.
@@ -1328,7 +1325,7 @@ The periodic table helps us recognize patterns in oxidation numbers across group
 
 The following reference brings together the common oxidation numbers, selected exceptions, and the method we used to solve for carbon in the carbonate ion.
 
-![Periodic table showing element groups, common oxidation numbers, selected exceptions, and a worked carbonate ion example.](periodic-table-of-elements.jpg){#fig-periodic-oxidation width="100%" fig-align="center" lightbox=true}
+![Periodic table showing element groups, common oxidation numbers, selected exceptions, and a worked carbonate ion example.](periodic-table-of-elements.jpg){#fig-periodic-oxidation width="100%" fig-align="center" lightbox="true"}
 
 ### Understanding REDOX Reactions
 
@@ -1393,13 +1390,12 @@ $$
 
 The oxidation numbers add to zero because magnesium oxide is a neutral compound.
 
-
 #### Step 3: Count the Atoms
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Magnesium | 1 | 1 |
-| Oxygen | 2 | 1 |
+| Element   | Reactants | Products |
+|:----------|----------:|---------:|
+| Magnesium |         1 |        1 |
+| Oxygen    |         2 |        1 |
 
 Magnesium is balanced, but oxygen is not.
 
@@ -1413,10 +1409,10 @@ $$
 
 Count the atoms again.
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Magnesium | 1 | 2 |
-| Oxygen | 2 | 2 |
+| Element   | Reactants | Products |
+|:----------|----------:|---------:|
+| Magnesium |         1 |        2 |
+| Oxygen    |         2 |        2 |
 
 Oxygen is now balanced, but magnesium is not.
 
@@ -1432,19 +1428,19 @@ $$
 
 **First, count the atoms.**
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Magnesium | 2 | 2 |
-| Oxygen | 2 | 2 |
+| Element   | Reactants | Products |
+|:----------|----------:|---------:|
+| Magnesium |         2 |        2 |
+| Oxygen    |         2 |        2 |
 
 The number of atoms is equal on both sides.
 
 **Next, check the oxidation numbers.**
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Magnesium | 0 | +2 |
-| Oxygen | 0 | −2 |
+| Element   | Reactants | Products |
+|:----------|----------:|---------:|
+| Magnesium |         0 |       +2 |
+| Oxygen    |         0 |       −2 |
 
 In each MgO unit, the oxidation numbers add to zero: $(+2)+(-2)=0$.
 
@@ -1480,10 +1476,10 @@ $$
 2\overset{+2}{Mg}\overset{-2}{O}
 $$
 
-| Element | Reactants | Products |
-|:---|---:|---:|
-| Magnesium (Mg) | 0 | +2 |
-| Oxygen (O) | 0 | −2 |
+| Element        | Reactants | Products |
+|:---------------|----------:|---------:|
+| Magnesium (Mg) |         0 |       +2 |
+| Oxygen (O)     |         0 |       −2 |
 
 **What do you notice?**
 
@@ -1532,7 +1528,7 @@ Two common memory aids are:
 - **LEO:** Loss of Electrons is Oxidation
 - **GER:** Gain of Electrons is Reduction
 
-::: {.callout-tip}
+::: callout-tip
 ## Think About the Charge
 
 Another way to remember oxidation and reduction is to think about electrons and their negative charge.
@@ -1552,8 +1548,6 @@ Another way to remember oxidation and reduction is to think about electrons and 
 Remember: Electrons carry a negative charge.
 :::
 
-
-
 ### Returning to Iron: Oxidation and Rusting
 
 Now let's apply the same reasoning to the iron reaction we introduced earlier.
@@ -1567,9 +1561,9 @@ $$
 $$
 
 | Element | Reactants | Products | What happened? |
-|:---|---:|---:|:---|
-| Iron | 0 | +3 | Oxidation |
-| Oxygen | 0 | −2 | Reduction |
+|:--------|----------:|---------:|:---------------|
+| Iron    |         0 |       +3 | Oxidation      |
+| Oxygen  |         0 |       −2 | Reduction      |
 
 Each iron atom loses 3 electrons.
 
@@ -1630,13 +1624,12 @@ $$
 2\overset{+1}{Na}\overset{-1}{Cl}
 $$
 
-| Element | Before | After | What happened? |
-|:---|---:|---:|:---|
-| Sodium | 0 | +1 | Oxidation |
-| Chlorine | 0 | −1 | Reduction |
+| Element  | Before | After | What happened? |
+|:---------|-------:|------:|:---------------|
+| Sodium   |      0 |    +1 | Oxidation      |
+| Chlorine |      0 |    −1 | Reduction      |
 
 **Sodium is oxidized. Chlorine is reduced.**
-
 
 #### Example 2: A Reaction That Is Not REDOX
 
@@ -1650,18 +1643,18 @@ $$
 \overset{+1}{Ag}\overset{-1}{Cl}
 $$
 
-| Element | Before | After |
-|:---|---:|---:|
-| Sodium | +1 | +1 |
-| Chlorine | −1 | −1 |
-| Silver | +1 | +1 |
-| Fluorine | −1 | −1 |
+| Element  | Before | After |
+|:---------|-------:|------:|
+| Sodium   |     +1 |    +1 |
+| Chlorine |     −1 |    −1 |
+| Silver   |     +1 |    +1 |
+| Fluorine |     −1 |    −1 |
 
 None of the oxidation numbers change.
 
 Therefore, **this is not a REDOX reaction**.
 
-::: {.callout-important}
+::: callout-important
 ## Not Every Chemical Reaction Is REDOX
 
 A chemical reaction can occur without oxidation or reduction.
@@ -1673,10 +1666,13 @@ To identify a REDOX reaction, compare the oxidation numbers of the elements befo
 - If no oxidation numbers change, the reaction is not REDOX.
 :::
 
-
 #### Application: Preventing Rust with Zinc
 
-![Rusting steel beams illustrating the effects of oxidation on structural materials.](rust-beams.jpg){#fig-rust-beams width="100%" fig-align="center" lightbox=true}
+
+![Rusting steel beams illustrating the effects of oxidation on structural materials.](rust-beams.jpg){#fig-rust-beams width="100%" fig-align="center" lightbox="true"}
+
+<small>**Image source:** [Binic Abrasive, *Professional Way to Remove Rust from Steel Beams*](https://binictools.com/professional-way-to-remove-rust-from-steel-beams/). Original photographer and image location unverified.</small>
+
 
 We have learned that iron undergoes oxidation when it reacts with oxygen, which can lead to rusting.
 
@@ -1685,7 +1681,6 @@ This is a simplified explanation. In reality, rusting involves more complex chem
 However, we can still apply our understanding of oxidation and reduction to prevent iron from rusting.
 
 One common method is to coat iron or steel with **zinc**, a process called **galvanization**.
-
 
 ##### How Does Zinc Protect Iron?
 
@@ -1731,8 +1726,7 @@ Even when the zinc coating is scratched, the surrounding zinc can continue prote
 
 This is called **sacrificial protection** because zinc is gradually consumed while helping protect the iron from rusting.
 
-
-::: {.callout-important}
+::: callout-important
 ## Connecting Chemistry to Hazardous Materials Management
 
 Why does this matter for hazardous materials management?
@@ -1777,7 +1771,7 @@ Examples include:
 
 These substances have different chemical properties and hazards, but each can act as an oxidizer under appropriate conditions.
 
-::: {.callout-important}
+::: callout-important
 ## Connecting REDOX Chemistry to Hazardous Materials
 
 Recall what we learned about oxidation and reduction:
@@ -1799,13 +1793,11 @@ It is classified as an **oxidizing solid** because it can support or intensify c
 
 Unlike an ordinary combustible material, ammonium nitrate does not need to act as the fuel to contribute to a dangerous fire.
 
-
 The following video illustrates the hazards associated with ammonium nitrate.
 
 As you watch, consider how the chemistry we have learned helps explain why an oxidizing material can contribute to a dangerous incident.
 
 {{< video https://www.youtube.com/watch?v=pdDuHxwD5R4 width="640" height="360" >}}
-
 
 ### OSHA Regulations: Storage of Ammonium Nitrate
 
@@ -1859,31 +1851,29 @@ When temperature changes, several different processes may become relevant:
 
 **Melting point** is a physical property, but it does not by itself tell us whether a material will burn, decompose, or release hazardous vapors.
 
-
-
 # Key Takeaways
 
-1. **A solid is a state of matter, not a hazard classification.** A material's chemical identity, physical form, and environmental conditions determine its potential hazards.
+1.  **A solid is a state of matter, not a hazard classification.** A material's chemical identity, physical form, and environmental conditions determine its potential hazards.
 
-2. **Particle size influences exposure.** Cutting, grinding, burning, and other processes can generate airborne particles. Particle size and chemical composition influence how particles move through the air, where they deposit in the respiratory system, and their potential health effects.
+2.  **Particle size influences exposure.** Cutting, grinding, burning, and other processes can generate airborne particles. Particle size and chemical composition influence how particles move through the air, where they deposit in the respiratory system, and their potential health effects.
 
-3. **Airborne particles can affect the respiratory and cardiovascular systems.** Certain particulate exposures may contribute to cellular injury, oxidative stress, inflammation, and other adverse health effects. Biomonitoring can help investigate internal exposure, but results must be interpreted alongside sampling time, detection limits, and biological processes.
+3.  **Airborne particles can affect the respiratory and cardiovascular systems.** Certain particulate exposures may contribute to cellular injury, oxidative stress, inflammation, and other adverse health effects. Biomonitoring can help investigate internal exposure, but results must be interpreted alongside sampling time, detection limits, and biological processes.
 
-4. **Combustible dust can create fire and explosion hazards.** The dust explosion pentagon identifies five important conditions: combustible dust, oxygen, an ignition source, dispersion, and confinement.
+4.  **Combustible dust can create fire and explosion hazards.** The dust explosion pentagon identifies five important conditions: combustible dust, oxygen, an ignition source, dispersion, and confinement.
 
-5. **Chemical compatibility is essential when managing reactive solids.** Potassium metal demonstrates how contact with water can produce heat, corrosive potassium hydroxide, and flammable hydrogen gas.
+5.  **Chemical compatibility is essential when managing reactive solids.** Potassium metal demonstrates how contact with water can produce heat, corrosive potassium hydroxide, and flammable hydrogen gas.
 
-6. **Chemical equations help us understand chemical reactions.** Reactants are converted into products as atoms are rearranged. The law of conservation of mass explains why chemical equations must be balanced. We balance equations by changing coefficients, not subscripts.
+6.  **Chemical equations help us understand chemical reactions.** Reactants are converted into products as atoms are rearranged. The law of conservation of mass explains why chemical equations must be balanced. We balance equations by changing coefficients, not subscripts.
 
-7. **Oxidation numbers help us identify REDOX reactions.** Oxidation numbers allow us to track changes during chemical reactions. An increase in oxidation number indicates oxidation, while a decrease indicates reduction. Not every chemical reaction is a REDOX reaction.
+7.  **Oxidation numbers help us identify REDOX reactions.** Oxidation numbers allow us to track changes during chemical reactions. An increase in oxidation number indicates oxidation, while a decrease indicates reduction. Not every chemical reaction is a REDOX reaction.
 
-8. **Oxidation and reduction involve changes in electrons.** Oxidation involves the loss of electrons, while reduction involves the gain of electrons. These processes occur together in REDOX reactions. Zinc demonstrates how this chemistry can be applied to protect iron and steel from rusting through galvanization and sacrificial protection.
+8.  **Oxidation and reduction involve changes in electrons.** Oxidation involves the loss of electrons, while reduction involves the gain of electrons. These processes occur together in REDOX reactions. Zinc demonstrates how this chemistry can be applied to protect iron and steel from rusting through galvanization and sacrificial protection.
 
-9. **Oxidizers can intensify combustion without acting as conventional fuels.** Ammonium nitrate demonstrates why understanding oxidizing properties, chemical incompatibility, temperature, contamination prevention, and applicable OSHA storage requirements is important for hazardous materials management.
+9.  **Oxidizers can intensify combustion without acting as conventional fuels.** Ammonium nitrate demonstrates why understanding oxidizing properties, chemical incompatibility, temperature, contamination prevention, and applicable OSHA storage requirements is important for hazardous materials management.
 
 10. **Hazardous materials management requires understanding how materials behave.** Temperature can cause physical changes, such as melting and sublimation, or chemical changes, such as decomposition and combustion. Identifying chemical properties, evaluating exposure conditions, and reviewing safety information and regulations help us make informed decisions.
 
-::: {.callout-important}
+::: callout-important
 ## Think Like a Chemist
 
 Throughout this lecture, we have practiced using observations, chemical principles, and evidence to understand how materials behave.
@@ -1898,7 +1888,7 @@ However, understanding chemistry helps us recognize potential hazards, explain w
 # Key Terms
 
 | Term | Working definition |
-|:---|:---|
+|:-----------------------------------|:-----------------------------------|
 | **Solid** | State of matter that ordinarily maintains its shape and volume under specified conditions. |
 | **Particle size** | Characteristic dimension of a particle that influences its movement, suspension, and potential deposition in the respiratory system. |
 | **Particulate matter (PM)** | Solid particles and liquid droplets suspended in air. |
@@ -1941,7 +1931,7 @@ However, understanding chemistry helps us recognize potential hazards, explain w
 
 # Copyright & Use
 
-**SHM 377: Hazardous Materials Management**  
+**SHM 377: Hazardous Materials Management**\
 © 2026 Yoni Rodriguez
 
 Except where otherwise noted, original course materials are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).

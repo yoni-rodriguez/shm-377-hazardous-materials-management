@@ -1,4 +1,3 @@
-
 ---
 format:
   html:
@@ -152,7 +151,6 @@ blockquote strong {
 </style>
 ```
 
-
 ::::::: {.columns style="align-items: flex-start;"}
 :::: {.column width="46%"}
 ::: cover-image
@@ -205,7 +203,6 @@ By the end of this lecture, you should be able to:
 4.  Explain how temperature, mechanical disturbance, and contact with other substances can change a hazard scenario.
 5.  Identify evidence and information needed before recommending controls.
 
-
 # 1. What Is a Solid?
 
 A **solid** is a state of matter that ordinarily maintains its shape and volume under specified conditions. Its constituent particles are held in relatively fixed positions or structures, although they continue to move at the microscopic scale.
@@ -221,7 +218,6 @@ Examples encountered in hazardous materials management include metal ingots, cry
 | Granules | Smaller, discrete grains or particles, often irregular in shape | Spreading, spillage, and potential dust generation |
 | Powder | Many small, loose particles | Ease of dispersion, contact area, and potential inhalation |
 | Airborne dust or particles | Small solid particles suspended in air | Inhalation exposure, deposition, and, for some materials, fire or explosion |
-
 
 ::: callout-important
 ## The same material can present different hazards in different forms
@@ -242,7 +238,7 @@ Once particles are airborne, their movement depends on factors including:
 - How the particles were released.
 - How long the particles remain airborne or whether they become airborne again.
 
-::: {.callout-note}
+::: callout-note
 ## Remember
 
 Just because we cannot see particles in the air does not mean they are not there.
@@ -251,9 +247,6 @@ Likewise, seeing smoke or dust does not tell us exactly how much is present.
 
 **Scientists use instruments to measure airborne particles.**
 :::
-
-
-
 
 ## Poll Everywhere: Can a Tree Become Hazardous?
 
@@ -310,8 +303,7 @@ Wildfire smoke is a mixture that can contain:
 - C. Smoke is only hazardous when someone touches burning wood.
 - D. Smoke cannot cause harm because wood is a natural material.
 
-
-::: {.callout-note}
+::: callout-note
 ## How and Why Does Wildfire Smoke Affect Human Health?
 
 Wildfire smoke can present serious health hazards. The potential for harm depends on factors such as the amount of smoke in the air, the duration of exposure, and individual susceptibility.
@@ -325,16 +317,12 @@ This raises two important questions:
 To answer these questions, we first need to understand the size of particles in smoke and what happens when we breathe them in.
 :::
 
-
-
----
+------------------------------------------------------------------------
 
 ## Historical Context: When Air Pollution Becomes a Community Hazard
 
-::::::: {.columns style="align-items: flex-start;"}
-
+:::::: {.columns style="align-items: flex-start;"}
 ::: {.column width="49%"}
-
 ### Donora, Pennsylvania: 1948
 
 ![Donora, Pennsylvania, during the October 1948 smog episode. The photograph shows the town's business district obscured by industrial air pollution. Photo credit: Bettmann Archive / Getty Images.](1984-donora-pennsylvania.jpg){#fig-donora width="100%"}
@@ -354,14 +342,12 @@ The consequences were severe:
 - **20 deaths** attributed to the initial episode.
 - Additional deaths reported afterward.
 - **Thousands of residents became ill.**
-
 :::
 
 ::: {.column width="2%"}
 :::
 
 ::: {.column width="49%"}
-
 ### Spokane, Washington: 2017
 
 ![Wildfire smoke affecting Spokane, Washington, during the 2017 wildfire season.](2017-spokane-wildfire-smoke.jpg){#fig-spokane-smoke width="100%"}
@@ -379,21 +365,18 @@ Wildfire smoke contains a mixture of:
 On September 7, 2017, Spokane recorded an **Air Quality Index (AQI) of 256**, categorized as **Very Unhealthy**, according to the historical data presented in Yoni Rodriguez's undergraduate research presentation in 2019.
 
 The event demonstrated that smoke can affect communities located far from the original fires.
-
 :::
-
-:::::::
+::::::
 
 ### Comparing the Two Events
 
 | Characteristic | Donora (1948) | Spokane (2017) |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | **Pollution source** | Zinc and steel facilities | Regional wildfires |
 | **Environmental conditions** | Temperature inversion limited dispersion | Atmospheric winds transported smoke |
 | **Geographic impact** | Donora and the surrounding valley | Spokane and Eastern Washington |
 | **Health concerns** | Severe illness and deaths | Respiratory and cardiovascular health risks |
 | **Important lesson** | Pollutants can accumulate near their source | Pollutants can travel far from their source |
-
 
 ### Understanding Temperature Inversions
 
@@ -403,8 +386,7 @@ A **temperature inversion** occurs when a layer of warmer air lies above cooler 
 
 The warmer layer limits vertical mixing, allowing pollutants to accumulate in the cooler air below.
 
-![Comparison of normal atmospheric conditions and a temperature inversion. Under normal conditions, rising air supports vertical mixing. During an inversion, a warmer layer above cooler surface air limits vertical mixing and can trap pollutants near the ground. Image credit: NC State Extension. Source: [A Simple Science Experiment: Temperature Inversion](https://cotton.ces.ncsu.edu/news/a-simple-science-experiment-temperature-inversion/).](thermal-inversion.jpg){#fig-temperature-inversion width="90%" fig-align="center" lightbox=true}
-
+![Comparison of normal atmospheric conditions and a temperature inversion. Under normal conditions, rising air supports vertical mixing. During an inversion, a warmer layer above cooler surface air limits vertical mixing and can trap pollutants near the ground. Image credit: NC State Extension. Source: [A Simple Science Experiment: Temperature Inversion](https://cotton.ces.ncsu.edu/news/a-simple-science-experiment-temperature-inversion/).](thermal-inversion.jpg){#fig-temperature-inversion width="90%" fig-align="center" lightbox="true"}
 
 **Connecting the diagram to Donora (1948):**
 
@@ -415,22 +397,20 @@ The warmer layer limits vertical mixing, allowing pollutants to accumulate in th
 
 **Important:** A temperature inversion does not create the pollutants. It changes how pollutants disperse and can increase their concentrations near the ground.
 
-::: {.callout-note}
+::: callout-note
 ## Understanding Airborne Hazards
 
 Both events demonstrate that hazardous airborne contaminants can affect entire communities.
 
 When investigating an airborne hazard, we need to ask:
 
-1. **What is in the air?** Identify the pollutants.
-2. **How much is present?** Measure their concentrations.
-3. **How do pollutants move?** Consider wind, weather, and geography.
-4. **How can people be exposed?** Identify potential routes of exposure.
-
+1.  **What is in the air?** Identify the pollutants.
+2.  **How much is present?** Measure their concentrations.
+3.  **How do pollutants move?** Consider wind, weather, and geography.
+4.  **How can people be exposed?** Identify potential routes of exposure.
 :::
 
----
-
+------------------------------------------------------------------------
 
 ## What does particle size tell us about exposure?
 
@@ -454,12 +434,8 @@ Li and colleagues (2003) investigated how exposure to particulate matter can aff
 
 The electron micrographs below show experimental macrophage-like cells exposed to different particle-size fractions. **Macrophages** are immune cells that help recognize and remove foreign material, including inhaled particles.
 
-
-
 ::::::: {.columns style="align-items: flex-start;"}
-
 ::: {.column width="43%"}
-
 ### Understanding the Micrographs
 
 **🟩 Green: No PM exposure**
@@ -481,17 +457,15 @@ The electron micrographs below show experimental macrophage-like cells exposed t
 
 - Cells exposed to a smaller particulate fraction.
 - Changes in mitochondrial structures, including the **cristae**, are visible.
-
 :::
 
 ::: {.column width="3%"}
 :::
 
-::: {.column width="54%"}
+:::: {.column width="54%"}
+![Electron micrographs of experimental macrophage-like cells under different particulate exposure conditions. Source: Li et al. (2003); annotated by Yoni Rodriguez (2019).](pm2.4-effects-on-the-lung.jpg){#fig-pm-lung width="100%" lightbox="true"}
 
-![Electron micrographs of experimental macrophage-like cells under different particulate exposure conditions. Source: Li et al. (2003); annotated by Yoni Rodriguez (2019).](pm2.4-effects-on-the-lung.jpg){#fig-pm-lung width="100%" lightbox=true}
-
-::: {.evidence-callout}
+::: evidence-callout
 ## Interpreting the Evidence
 
 These images come from an **experimental cell study**, not lung tissue collected from people exposed to Washington wildfire smoke.
@@ -499,13 +473,9 @@ These images come from an **experimental cell study**, not lung tissue collected
 They illustrate possible biological mechanisms of particulate toxicity.
 
 **Particle size matters, but chemical composition also influences toxicity.**
-
 :::
-
-:::
-
+::::
 :::::::
-
 
 ### Why Do These Changes Matter?
 
@@ -521,15 +491,14 @@ The study helps illustrate how particulate exposure may contribute to cellular i
 
 ------------------------------------------------------------------------
 
-
 ### How Do Particles Reach These Cells?
 
 **A simplified exposure pathway:**
 
-1. Airborne particles are **inhaled**.
-2. Depending on particle size and breathing conditions, some deposit in the airways or reach the **alveoli**, the small air sacs where oxygen enters the bloodstream.
-3. Particles can interact with lung cells and immune cells, including **alveolar macrophages**.
-4. Certain particle exposures can trigger **oxidative stress and inflammatory responses**.
+1.  Airborne particles are **inhaled**.
+2.  Depending on particle size and breathing conditions, some deposit in the airways or reach the **alveoli**, the small air sacs where oxygen enters the bloodstream.
+3.  Particles can interact with lung cells and immune cells, including **alveolar macrophages**.
+4.  Certain particle exposures can trigger **oxidative stress and inflammatory responses**.
 
 **Think like a chemist:** Why do we need to know both **particle size** and **chemical composition** before predicting toxicity?
 
@@ -547,7 +516,7 @@ Biomonitoring can help scientists determine whether a substance has entered the 
 
 In this study, researchers collected blood samples at multiple time points following inhalation exposure.
 
-![Percentage of participants with detectable gold in blood at different time points following inhalation exposure. Source: Miller et al. (2017); reproduced in Rodriguez (2019).](pm2.5-effects-on-the-heart.jpg){#fig-pm-heart width="85%" fig-align="center" lightbox=true}
+![Percentage of participants with detectable gold in blood at different time points following inhalation exposure. Source: Miller et al. (2017); reproduced in Rodriguez (2019).](pm2.5-effects-on-the-heart.jpg){#fig-pm-heart width="85%" fig-align="center" lightbox="true"}
 
 ### Why Does Sampling Time Matter?
 
@@ -556,14 +525,13 @@ Examine the graph carefully.
 - **15 minutes:** Gold was detectable in the blood of some participants.
 - **30 minutes:** The graph shows a temporary decrease to 0% detection.
 - **Later measurements:** Gold was detected again in participants' blood.
-- **24 hours:** Gold was detectable in ~86%.
+- **24 hours:** Gold was detectable in \~86%.
 
 **Does the 30-minute result mean that the gold nanoparticles had completely disappeared from the body?**
 
 **No.**
 
-
-::: {.evidence-callout}
+::: evidence-callout
 ## Interpreting the Evidence
 
 The researchers were measuring extremely small quantities of gold. Their analytical method had two important thresholds:
@@ -582,26 +550,19 @@ The graph shows the **percentage of participants with detectable gold**, not the
 **Key takeaway:** A single biological sample may not adequately characterize exposure or the movement of a substance through the body. Biomonitoring results must be interpreted alongside sampling time, analytical detection limits, and biological processes.
 :::
 
-
-
-
 ### What Does This Tell Us About Cardiovascular Health?
 
 Miller and colleagues (2017) provided evidence that **some inhaled nanoparticles can translocate from the lungs into systemic circulation**.
 
 Their research also investigated the accumulation of inhaled nanoparticles at sites of vascular disease.
 
-
 Inhaled particulate pollution can also affect the cardiovascular system through **inflammation originating in the lungs, oxidative stress, and physiological signaling**, even when particles do not directly enter the bloodstream.
 
 **Think like a chemist:** If you collected only one blood sample at 30 minutes, how might your interpretation differ from a study that collected samples over 24 hours?
 
-
 # 3. What Makes a Solid Hazardous?
 
 The **physical state alone does not determine the hazard**. We must consider the substance's identity, chemical properties, particle characteristics, amount, and conditions.
-
-
 
 ## Toxic or harmful particulates
 
@@ -609,51 +570,43 @@ Some solid particles can enter the body by **inhalation**, while other exposure 
 
 Examples worth investigating include:
 
-::::::: {.columns style="align-items: flex-start;"}
-
+:::::::: {.columns style="align-items: flex-start;"}
 ::: {.column width="32%"}
-
-![](respirable-crystalline-silica.jpg){width="100%" height="160px" fig-align="center" lightbox=true}
+![](respirable-crystalline-silica.jpg){width="100%" height="160px" fig-align="center" lightbox="true"}
 
 **Respirable crystalline silica**
 
 Generated during some cutting or grinding of silica-containing materials.
 
 Inhalation of respirable crystalline silica can damage the lungs and cause diseases such as **silicosis**.
-
 :::
 
 ::: {.column width="2%"}
 :::
 
 ::: {.column width="32%"}
-
-![](lead-containing-dust.jpg){width="100%" height="160px" fig-align="center" lightbox=true}
+![](lead-containing-dust.jpg){width="100%" height="160px" fig-align="center" lightbox="true"}
 
 **Lead-containing dust**
 
 May be produced when lead-containing coatings or materials are disturbed.
 
 Exposure can cause **systemic toxicity**, affecting multiple organs and body systems.
-
 :::
 
 ::: {.column width="2%"}
 :::
 
 ::: {.column width="32%"}
-
-![](asbestos.jpg){width="100%" height="160px" fig-align="center" lightbox=true}
+![](asbestos.jpg){width="100%" height="160px" fig-align="center" lightbox="true"}
 
 **Asbestos fibers**
 
 Can be released when certain asbestos-containing materials are disturbed.
 
 Inhalation presents serious long-term health risks, including **asbestosis, lung cancer, and mesothelioma**.
-
 :::
-
-:::::::
+::::::::
 
 **Think like a chemist:** These materials can all produce airborne hazards, but their **chemical composition, particle size, shape, and biological behavior** differ.
 
@@ -667,13 +620,13 @@ Examples include some organic dusts, such as flour or wood dust, and certain met
 
 A useful screening framework is the **dust explosion pentagon**:
 
-1. **Combustible dust (fuel)**
-2. **Oxygen**
-3. **Ignition source**
-4. **Dispersion of dust in air**
-5. **Confinement or sufficient congestion for damaging pressure development**
+1.  **Combustible dust (fuel)**
+2.  **Oxygen**
+3.  **Ignition source**
+4.  **Dispersion of dust in air**
+5.  **Confinement or sufficient congestion for damaging pressure development**
 
-![The dust explosion pentagon illustrating the five conditions associated with combustible dust explosions: combustible dust, oxygen, ignition source, dispersion, and confinement.](dust-explosion-pentagon.jpg){#fig-dust-explosion-pentagon width="55%" fig-align="center" lightbox=true}
+![The dust explosion pentagon illustrating the five conditions associated with combustible dust explosions: combustible dust, oxygen, ignition source, dispersion, and confinement.](dust-explosion-pentagon.jpg){#fig-dust-explosion-pentagon width="55%" fig-align="center" lightbox="true"}
 
 Removing or controlling one or more necessary conditions can reduce the hazard.
 
@@ -693,8 +646,6 @@ The following video provides an opportunity to examine how combustible dust haza
 **Safety reminder:** Never create a dust cloud to test whether it burns.
 
 **Video:** [Watch on YouTube](https://youtu.be/Jg7mLSG-Yws)
-
-
 
 ## Reactive solids
 
@@ -731,7 +682,6 @@ The following video illustrates the behavior of potassium under reactive conditi
 
 {{< video https://www.youtube.com/watch?v=oqMN3y8k9So width="640" height="360" >}}
 
-
 **Video:** [Watch on YouTube](https://youtu.be/oqMN3y8k9So)
 
 ### Why Does Chemical Compatibility Matter?
@@ -747,8 +697,7 @@ Potassium metal can:
 
 **Important:** Water and carbon dioxide extinguishers are inappropriate for potassium metal fires. Specialized extinguishing agents suitable for combustible metals are required, and response decisions must follow the substance-specific Safety Data Sheet and established emergency procedures.
 
-
----
+------------------------------------------------------------------------
 
 ## Poll Everywhere: Understanding Oxidation and Reduction
 
@@ -757,9 +706,7 @@ Before introducing oxidation and reduction reactions, let's assess our familiari
 **This is not a graded quiz.** The purpose is to understand your previous chemistry experience and identify concepts we should spend more time discussing.
 
 :::::: {.columns style="align-items: flex-start;"}
-
 ::: {.column width="68%"}
-
 ### Question 1: Familiarity with REDOX
 
 **Before today, how familiar were you with the term REDOX reaction?**
@@ -772,7 +719,11 @@ Before introducing oxidation and reduction reactions, let's assess our familiari
 
 ### Question 2: Chemical Equation Confidence
 
-**How confident are you in interpreting a chemical equation, such as Fe + O₂ → Fe₂O₃?**
+**How confident are you in interpreting a balanced chemical equation, such as the formation of iron(III) oxide shown below?**
+
+$$
+4Fe + 3O_2 \rightarrow 2Fe_2O_3
+$$
 
 - A. Not confident at all
 - B. Slightly confident
@@ -819,14 +770,12 @@ Before introducing oxidation and reduction reactions, let's assess our familiari
 - C. It eliminates the need for Safety Data Sheets.
 - D. It only applies to laboratory experiments.
 - E. I'm not sure.
-
 :::
 
 ::: {.column width="4%"}
 :::
 
 ::: {.column width="28%"}
-
 ### Join the Survey
 
 ![](poll-everywhere-response.jpg){fig-alt="QR code for students to join the SHM 377 Poll Everywhere survey" width="250"}
@@ -834,122 +783,987 @@ Before introducing oxidation and reduction reactions, let's assess our familiari
 **Scan the QR code to participate.**
 
 Your responses will help guide our discussion of oxidation and reduction.
-
 :::
-
 ::::::
 
-::: {.callout-note}
+::: callout-note
 ## Connecting Chemistry to Construction
 
 Many construction materials contain iron or steel.
 
 Over time, these materials may develop rust when exposed to oxygen and moisture.
 
-**Consider:** Why does steel corrode, and how might a protective zinc coating help prevent corrosion?
+**Consider:** Why does metals corrode, and how might a protective zinc coating help prevent corrosion?
 
 We will use these examples to explore oxidation, reduction, and their applications to hazardous materials management.
 :::
 
----
-
-
+------------------------------------------------------------------------
 
 ## Oxidizers and unstable materials
 
 Some solid materials can **intensify combustion, undergo decomposition, or react dangerously with incompatible substances**.
 
-To understand these hazards, we first need to understand **oxidation and reduction**.
+To understand these hazards, we first need to understand **oxidation and reduction**. We will begin with the chemistry foundations needed to interpret these reactions.
 
-### Oxidation and Reduction
+### Chemistry Foundations: What Is a Chemical Reaction?
 
-An **oxidation-reduction reaction**, also called a **redox reaction**, involves the transfer of electrons between substances.
+Before we study REDOX reactions, we need to understand what a **chemical reaction** is and how scientists describe one.
 
-Two processes occur together:
+A **chemical reaction** is a process in which one substance or set of substances is converted into different substances.
 
-- **Oxidation:** A substance loses electrons.
-- **Reduction:** A substance gains electrons.
+- **Reactants** are the starting substances.
+- **Products** are the substances formed by the reaction.
 
-A useful way to remember these processes is:
-
-**OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons).**
-
-In a redox reaction, the substances involved have different roles:
-
-- **Oxidizing agent (oxidant):** Accepts electrons from another substance, causing that substance to become oxidized. The oxidizing agent is itself reduced.
-- **Reducing agent (reductant):** Donates electrons to another substance, causing that substance to become reduced. The reducing agent is itself oxidized.
-
-
-**The oxidizing agent gains electrons, while the reducing agent loses electrons.**
-
-### Example 1: Rusting of Iron
-
-Rusting is a familiar example of a relatively slow oxidation reaction.
-
-When iron is exposed to oxygen and moisture, chemical reactions gradually produce iron oxides and hydrated iron oxide compounds.
-
-A simplified reaction is:
+The atoms in the products are **rearranged into different combinations** compared with the reactants. Chemical bonds may break and new bonds may form.
 
 $$
-4\overset{0}{Fe}(s) + 3\overset{0}{O}_2(g)
-\rightarrow
-2\overset{+3}{Fe}_2\overset{-2}{O}_3(s)
+\underbrace{\text{Reactants}}_{\text{Starting substances}}
+\longrightarrow
+\underbrace{\text{Products}}_{\text{New substances}}
 $$
 
-The numbers above the elements indicate their **oxidation states**, which help us track electron transfer during a chemical reaction.
+::: callout-note
+## Connecting Back to John Dalton and Antoine Lavoisier
 
-During this reaction:
+Dalton's atomic theory included the idea that **atoms are not created or destroyed during ordinary chemical reactions**. Instead, atoms are rearranged.
 
-- **Iron (Fe):** Its oxidation state increases from **0 to +3**. Iron loses electrons and becomes oxidized.
-- **Oxygen (O):** Its oxidation state decreases from **0 to −2**. Oxygen gains electrons and becomes reduced.
-- Iron acts as the **reducing agent**.
-- Oxygen acts as the **oxidizing agent**.
+This is consistent with the **law of conservation of mass**, established experimentally through the work of Antoine Lavoisier and others: **the total mass of a closed system remains constant during a chemical reaction**.
 
-Although iron is the material being oxidized, **oxygen is the oxidizing agent because it accepts electrons from iron**.
+Chemical reactions can change what substances are present, but they do not make ordinary matter disappear.
+:::
 
-### Example 2: Combustion of Methane
 
-Oxidation does not always occur slowly.
+### The Law of Conservation of Mass: Two Examples
 
-**Combustion** is a rapid, heat-releasing chemical reaction that commonly involves a fuel reacting with oxygen.
+The **law of conservation of mass** states that matter is neither created nor destroyed during an ordinary chemical reaction.
 
-For example, methane (CH₄), the principal component of natural gas, reacts with oxygen:
+Although the substances involved may change, the total mass of a closed system remains constant.
+
+::: {.callout-note appearance="minimal"}
+## Think About Two Observations You May Have Made
+
+1. **Burning wood:** After a bonfire, there is less mass left in the fire pit?
+
+2. **Rusting iron:** An iron beam can gain mass as it rusts. Where did that additional mass come from?
+:::
+
+The key is to account for **all matter entering or leaving the system**.
+
+If we carry out each reaction in a closed chamber and measure the mass of the closed chamber and its contents before and after the change, the mass does not change.
+
+If we open the chamber and are in ambient conditions, like the things that happen on this planet and in our atmosphere, then we can account for what our eyes can only observe.
+
+::::::: {.columns style="align-items: flex-start;"}
+
+::: {.column width="49%"}
+
+### Example 1: Burning Wood
+
+In an **open system**, gaseous products escape into the atmosphere. If we weigh only the remaining ash, its mass is less than the original pile of wood.
+
+In a **closed system**, the gaseous products remain inside the chamber. The total mass of the chamber and its contents remains unchanged, even though the starting substances inside have changed.
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+
+### Example 2: Rusting Iron
+
+When iron is exposed to oxygen and water, chemical reactions can produce rust.
+
+In an **open system**, the gases consumed when a beam rusts are not included in the original mass.
+
+In a **closed system**, all the gases inside the chamber are measured.
+
+:::
+
+:::::::
+
+![Conceptual illustration of two chemical reactions in closed environmental chambers. Illustration generated with AI for SHM 377, 2026.](chamber-examples.jpg){#fig-conservation-mass width="100%" fig-align="center" lightbox=true}
+
+::: {.callout-important}
+## Open Systems vs. Closed Systems
+
+- In an **open system**, matter is not contained. Measuring only the remaining solid can make mass appear to have been lost or gained.
+- In a **closed system**, matter is contained. The total mass remains the same, even if a chemical reaction occurs inside.
+
+**Think like a chemist:** Before interpreting a change in mass, ask: *What exactly was weighed? Was the system open or closed?*
+:::
+
+::: callout-note
+## From Conservation of Mass to Chemical Equations
+
+Recall Dalton's atomic theory: **atoms are not created or destroyed during ordinary chemical reactions**. They are rearranged into a new combination.
+
+**Our next question:** If atoms are conserved during chemical reactions, how do we represent that conservation when writing and **balancing chemical equations**?
+:::
+
+
+
+
+
+------------------------------------------------------------------------
+
+
+
+
+### How Do We Know a Chemical Reaction Has Occurred?
+
+We have established that a chemical reaction involves the rearrangement of atoms to form new substances.
+
+But how do we know when a chemical reaction has occurred?
+
+As scientists, we begin by making **observations**.
+
+In many chemical reactions, we can observe changes in the physical properties of the substances involved.
+
+#### Observable Evidence of a Chemical Reaction
+
+Some common observations include:
+
+- **Change in color:** A substance develops a different color.
+- **Production of light:** Light is emitted during a reaction.
+- **Formation of a solid:** A new solid forms, sometimes as a precipitate.
+- **Formation of a gas:** Bubbles or gases are produced.
+- **Absorption or release of heat:** The temperature of the surroundings changes.
+
+::: {.callout-important}
+## Describing Chemical Reactions
+
+Describing chemical reactions only in words is askward and time-consuming. 
+
+That is why, chemist use a chemical equation.
+
+A **chemical equation** *is a symbolic representation of a chemical reaction.*
+
+:::
+
+
+### Classes of Chemical Reactions
+
+Chemical reactions can involve different combinations of elements and compounds.
+
+Although individual reactions may appear complicated, many can be organized into a few recognizable patterns.
+
+#### Four Common Reaction Classes
+
+| Reaction class | General pattern | What happens? |
+|:---|:---:|:---|
+| **Decomposition** | $AB \rightarrow A + B$ | One compound breaks down into simpler substances. |
+| **Combination (Synthesis)** | $A + B \rightarrow AB$ | Two substances combine to form one compound. |
+| **Single Displacement** | $A + BC \rightarrow AC + B$ | One element replaces another element in a compound. |
+| **Double Displacement** | $AB + CD \rightarrow AD + CB$ | Two compounds exchange components to form two different compounds. |
+
+: Four common classes of chemical reactions, adapted conceptually from Table 5.1 in the provided chemistry textbook. The letters represent hypothetical substances or components, not specific chemicals. {#tbl-reaction-classes}
+
+::: {.callout-note}
+## Reading the Patterns
+
+In these simplified equations:
+
+- **Letters** represent elements or components of compounds.
+- The **plus sign (+)** separates substances.
+- The **arrow ($\rightarrow$)** separates reactants from products and can be read as "produces" or "yields."
+
+These patterns help us recognize how substances are rearranged during chemical reactions.
+
+They do not tell us whether a reaction will occur under particular conditions.
+:::
+
+::: {.callout-important}
+## Connecting Reaction Classes to Dalton
+
+Recall that Dalton proposed that atoms are rearranged during chemical reactions.
+
+Notice that in each of the four reaction patterns, the same letters appear before and after the arrow.
+
+**The arrangement changes, but the components are conserved.**
+
+This is the conceptual foundation for writing and balancing chemical equations.
+:::
+
+### Writing Chemical Equations
+
+We have used words to describe chemical reactions.
+
+Chemists also use **chemical equations** to represent reactions using chemical symbols and formulas.
+
+A chemical equation identifies the reactants and products and represents the transformation from one set of substances to another.
 
 $$
-\overset{-4}{C}H_4(g)
+\underbrace{A + B}_{\text{Reactants}}
+\longrightarrow
+\underbrace{AB}_{\text{Product}}
+$$
+
+#### Reading a Chemical Equation
+
+When reading a chemical equation:
+
+- **Reactants** are written on the left side of the arrow.
+- **Products** are written on the right side of the arrow.
+- A **plus sign (+)** separates multiple substances.
+- An **arrow ($\rightarrow$)** indicates the direction in which the reaction is written.
+
+The symbols and formulas allow chemists to communicate chemical reactions without writing a lengthy verbal description.
+
+#### Chemical Formulas: Subscripts and Coefficients
+
+Two numbers are especially important when interpreting chemical equations.
+
+
+
+**Subscripts** indicate how many atoms of an element are represented in a chemical formula.
+
+For example:
+
+::: {.content-visible when-format="html"}
+<div style="text-align: center; font-family: Georgia, serif; font-size: 2rem; margin: 1.5rem 0;">
+  H<sub style="color: #2563eb; font-weight: bold;">2</sub>O
+</div>
+:::
+
+::: {.content-visible when-format="pdf"}
+$$
+H_2O
+$$
+:::
+
+The subscript [**2**]{style="color: #2563eb;"} indicates that the formula contains two hydrogen atoms.
+
+**Coefficients** indicate how many molecules or formula units of a substance are represented.
+
+For example:
+
+::: {.content-visible when-format="html"}
+<div style="text-align: center; font-family: Georgia, serif; font-size: 2rem; margin: 1.5rem 0;">
+  <span style="color: #ea580c; font-weight: bold;">2</span>H<sub>2</sub>O
+</div>
+:::
+
+::: {.content-visible when-format="pdf"}
+$$
+2H_2O
+$$
+:::
+
+The coefficient [**2**]{style="color: #ea580c;"} means there are two water molecules represented.
+
+Together, those two molecules contain:
+
+- 4 hydrogen atoms
+- 2 oxygen atoms
+
+
+
+::: {.callout-warning}
+## Coefficients vs. Subscripts
+
+When balancing chemical equations, we change **coefficients**, not subscripts.
+
+Changing a subscript changes the chemical formula and therefore the identity of the substance being represented.
+:::
+
+### Why Must Chemical Equations Be Balanced?
+
+Recall the law of conservation of mass.
+
+Atoms are not created or destroyed during ordinary chemical reactions.
+
+Therefore, a chemical equation must show the **same number of atoms of each element on both sides of the arrow**.
+
+A balanced equation represents the conservation of atoms during a chemical reaction.
+
+
+
+::: {.callout-note}
+## What Is a Diatomic?
+
+A **diatomic element** is a specific type of molecule made up of **two of the same atoms bonded together**.
+
+Some elements naturally exist as diatomic molecules rather than as individual atoms.
+
+There are **seven commonly recognized diatomic elements**:
+
+| Chemical formula | Element |
+|:---:|:---|
+| H₂ | Hydrogen |
+| N₂ | Nitrogen |
+| F₂ | Fluorine |
+| O₂ | Oxygen |
+| I₂ | Iodine |
+| Cl₂ | Chlorine |
+| Br₂ | Bromine |
+
+One way to remember these seven elements is the phrase:
+
+**Have No Fear Of Ice Cold Beer**
+
+Each word begins with the chemical symbol of a diatomic element.
+
+
+Notice that each chemical formula contains the subscript **2**, indicating that the molecule contains two atoms of that element.
+
+In our next example, we will use two of these diatomic elements, **hydrogen (H₂)** and **oxygen (O₂)**, to practice balancing a chemical equation.
+:::
+
+
+
+#### A Simple Example
+
+Consider the following equation:
+
+$$
+H_2 + O_2 \rightarrow H_2O
+$$
+
+Let's count the atoms on each side.
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Hydrogen (H) | 2 | 2 |
+| Oxygen (O) | 2 | 1 |
+
+The hydrogen atoms are balanced, but the oxygen atoms are not.
+
+We can begin balancing the equation by changing the coefficient in front of water:
+
+$$
+H_2 + O_2 \rightarrow 2H_2O
+$$
+
+Now count again.
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Hydrogen (H) | 2 | 4 |
+| Oxygen (O) | 2 | 2 |
+
+Oxygen is now balanced, but hydrogen is not.
+
+We can balance the hydrogen atoms by changing the coefficient in front of hydrogen:
+
+$$
+\boxed{2H_2 + O_2 \rightarrow 2H_2O}
+$$
+
+Our final count is:
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Hydrogen (H) | 4 | 4 |
+| Oxygen (O) | 2 | 2 |
+
+The equation is now balanced.
+
+::: {.callout-tip}
+## A Simple Approach to Balancing Equations
+
+1. Identify the reactants and products.
+2. Count the atoms of each element on both sides.
+3. Adjust the coefficients to balance the atom counts.
+4. Never change the subscripts.
+5. Count the atoms again to verify that the equation is balanced.
+
+**Remember:** Balancing equations is not about changing the substances. It is about accounting for the atoms already present.
+:::
+
+### Bringing the Concepts Together
+
+We have developed three important ways to think about chemical reactions.
+
+| Question | Chemistry concept |
+|:---|:---|
+| How do we know something may be reacting? | Observe changes and evaluate evidence. |
+| What kind of reaction might be occurring? | Recognize patterns of chemical reactions. |
+| How do we represent the reaction? | Write and balance chemical equations. |
+
+
+::: {.callout-note}
+## Connecting Chemistry to Hazardous Materials Management
+
+In hazardous materials management, recognizing **element names, chemical symbols, and how substances interact** is essential for communicating and interpreting information about hazardous materials.
+
+Think about it: Will every Safety Data Sheet (SDS), chemical label, or technical document spell out every element's name or explain how substances interact?
+
+**Not necessarily.**
+
+Professionals working with hazardous materials are expected to have a basic understanding of chemistry so they can recognize chemical information, interpret potential hazards, and make informed decisions.
+
+**Think like a chemist:** You do not need to become a chemist, but you do need to understand enough chemistry to recognize hazards and ask the right questions.
+:::
+
+------------------------------------------------------------------------
+
+
+
+### Introducing Oxidation Numbers
+
+We have learned how to write and balance chemical equations by accounting for the atoms on each side of a reaction.
+
+However, balancing an equation does not tell us everything about what happens during a chemical reaction.
+
+To understand **oxidation and reduction (REDOX)**, we need to introduce another concept: **oxidation numbers**.
+
+An **oxidation number** is a number assigned to an atom using a set of rules that helps us track changes in electrons during a chemical reaction.
+
+When we analyze oxidation and reduction, we will show oxidation numbers **above the element symbols**. Coefficients and subscripts retain their usual meanings.
+
+#### Rules for Assigning Oxidation Numbers
+
+| Rule | Oxidation number | Example |
+|:---|:---:|:---|
+| An element in its elemental form | 0 | H₂ or O₂ |
+| Group 1 metals | +1 | LiH |
+| Group 2 metals | +2 | CaO |
+| Hydrogen | Usually +1 | H₂O |
+| Oxygen | Usually −2 | H₂O |
+| Group 17 halogens | Usually −1 | NaCl |
+
+These are useful starting rules. Some elements have exceptions depending on the substances with which they are combined.
+
+#### Important Exceptions
+
+**Hydrogen**
+
+Hydrogen usually has an oxidation number of **+1** in compounds.
+
+However, when hydrogen forms a metal hydride, its oxidation number is **−1**.
+
+For example, in lithium hydride:
+
+$$
+\overset{+1}{Li}\overset{-1}{H}
+$$
+
+- Lithium (Li): +1
+- Hydrogen (H): −1
+
+**Oxygen**
+
+Oxygen usually has an oxidation number of **−2** in compounds.
+
+However, in a peroxide, such as:
+
+$$
+\overset{+1}{H}_2\overset{-1}{O}_2
+$$
+
+Each oxygen atom has an oxidation number of **−1**.
+
+::: {.callout-important}
+## Oxidation Numbers Must Add Up
+
+The sum of the oxidation numbers must equal the overall charge of the chemical species.
+
+- In a **neutral compound**, the sum equals **0**.
+- In a **polyatomic ion**, the sum equals the **charge of the ion**.
+
+We can use this rule to determine an oxidation number that we do not already know.
+:::
+
+#### Worked Example: The Carbonate Ion
+
+Consider the carbonate ion:
+
+$$
+CO_3^{2-}
+$$
+
+We want to determine the oxidation number of **carbon (C)**.
+
+**Step 1: Identify what we already know.**
+
+Oxygen normally has an oxidation number of −2.
+
+There are three oxygen atoms in the carbonate ion.
+
+Therefore:
+
+$$
+3(-2)=-6
+$$
+
+**Step 2: Account for the overall charge.**
+
+The carbonate ion has an overall charge of −2.
+
+Let $x$ represent the oxidation number of carbon.
+
+$$
+x+3(-2)=-2
+$$
+
+**Step 3: Solve for carbon.**
+
+$$
+x-6=-2
+$$
+
+$$
+\boxed{x=+4}
+$$
+
+Therefore, in the carbonate ion:
+
+- Carbon has an oxidation number of **+4**.
+- Each oxygen has an oxidation number of **−2**.
+- The sum of the oxidation numbers equals **−2**, matching the charge of the ion.
+
+::: {.callout-tip}
+## Think Like a Chemist
+
+We did not need to memorize the oxidation number of carbon in carbonate.
+
+Instead, we used the oxidation numbers we already knew and the overall charge of the ion to **deduce the unknown value**.
+:::
+
+### Periodic Table: Oxidation Number Reference
+
+The periodic table helps us recognize patterns in oxidation numbers across groups of elements.
+
+The following reference brings together the common oxidation numbers, selected exceptions, and the method we used to solve for carbon in the carbonate ion.
+
+![Periodic table showing element groups, common oxidation numbers, selected exceptions, and a worked carbonate ion example.](periodic-table-of-elements.jpg){#fig-periodic-oxidation width="100%" fig-align="center" lightbox=true}
+
+### Understanding REDOX Reactions
+
+#### The Original Definition of Oxidation
+
+Historically, **oxidation** was described as the addition of oxygen to a substance.
+
+Consider two examples:
+
+**Example 1: Magnesium Reacting with Oxygen**
+
+$$
+2Mg + O_2 \rightarrow 2MgO
+$$
+
+Oxygen combines with magnesium to form magnesium oxide.
+
+We say that **magnesium is being oxidized**, or that magnesium is undergoing oxidation.
+
+**Example 2: Iron Reacting with Oxygen**
+
+$$
+4Fe + 3O_2 \rightarrow 2Fe_2O_3
+$$
+
+Oxygen combines with iron to form iron(III) oxide.
+
+We say that **iron is being oxidized**, or that iron is undergoing oxidation.
+
+This reaction illustrates the oxidation of iron associated with rust formation. Actual rusting also involves water.
+
+Both examples reflect the original definition of oxidation: **adding oxygen**.
+
+### Let's Practice: Balancing the Magnesium Reaction
+
+We have learned how to assign oxidation numbers and how to balance chemical equations by counting atoms. Let's use both skills together.
+
+#### Step 1: Start with the Chemical Equation
+
+Magnesium reacts with diatomic oxygen to form magnesium oxide.
+
+$$
+Mg + O_2 \rightarrow MgO
+$$
+
+#### Step 2: Assign Oxidation Numbers
+
+Before changing any coefficients, identify the oxidation numbers of the elements.
+
+- Magnesium (Mg) and oxygen (O₂) are in their **elemental forms**, so each has an oxidation number of **0** on the reactant side.
+- In magnesium oxide (MgO), magnesium has an oxidation number of **+2** and oxygen has an oxidation number of **−2**.
+
+$$
+\overset{0}{Mg} + \overset{0}{O}_2 \rightarrow \overset{+2}{Mg}\overset{-2}{O}
+$$
+
+**Check the oxidation numbers in MgO:**
+
+$$
+(+2)+(-2)=0
+$$
+
+The oxidation numbers add to zero because magnesium oxide is a neutral compound.
+
+
+#### Step 3: Count the Atoms
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Magnesium | 1 | 1 |
+| Oxygen | 2 | 1 |
+
+Magnesium is balanced, but oxygen is not.
+
+#### Step 4: Balance Oxygen
+
+Place a coefficient of 2 in front of MgO.
+
+$$
+\overset{0}{Mg} + \overset{0}{O}_2 \rightarrow 2\overset{+2}{Mg}\overset{-2}{O}
+$$
+
+Count the atoms again.
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Magnesium | 1 | 2 |
+| Oxygen | 2 | 2 |
+
+Oxygen is now balanced, but magnesium is not.
+
+#### Step 5: Balance Magnesium
+
+Place a coefficient of 2 in front of Mg.
+
+$$
+\boxed{2\overset{0}{Mg} + \overset{0}{O}_2 \rightarrow 2\overset{+2}{Mg}\overset{-2}{O}}
+$$
+
+#### Step 6: Verify the Atoms and Oxidation Numbers
+
+**First, count the atoms.**
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Magnesium | 2 | 2 |
+| Oxygen | 2 | 2 |
+
+The number of atoms is equal on both sides.
+
+**Next, check the oxidation numbers.**
+
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Magnesium | 0 | +2 |
+| Oxygen | 0 | −2 |
+
+In each MgO unit, the oxidation numbers add to zero: $(+2)+(-2)=0$.
+
+The coefficients have balanced the atoms, but **they do not change the oxidation numbers**. The changes from 0 to +2 and from 0 to −2 are what we will examine next.
+
+**What do these changes tell us about the electrons?**
+
+### The Modern Definition: What Happens to Electrons?
+
+Scientists later recognized that oxidation involves changes in electrons, not simply the addition of oxygen.
+
+Let's return to our balanced magnesium reaction.
+
+$$
+2\overset{0}{Mg} + \overset{0}{O}_2 \rightarrow 2\overset{+2}{Mg}\overset{-2}{O}
+$$
+
+#### Assigning Oxidation Numbers
+
+Recall our rules:
+
+- Elements in their elemental form have an oxidation number of **0**.
+- Magnesium is a Group 2 metal and has an oxidation number of **+2** in MgO.
+- Oxygen normally has an oxidation number of **−2** in compounds.
+
+We can show the oxidation numbers directly above each element in the chemical equation.
+
+$$
+2\overset{0}{Mg}
 +
-2\overset{0}{O}_2(g)
+\overset{0}{O}_2
 \rightarrow
-\overset{+4}{C}\overset{-2}{O}_2(g)
-+
-2H_2\overset{-2}{O}(g)
+2\overset{+2}{Mg}\overset{-2}{O}
 $$
 
-In this reaction:
+| Element | Reactants | Products |
+|:---|---:|---:|
+| Magnesium (Mg) | 0 | +2 |
+| Oxygen (O) | 0 | −2 |
 
-- **Methane is the fuel** and acts as the reducing agent.
-- **Oxygen is the oxidizing agent**.
-- **Carbon:** Its oxidation state increases from **−4 to +4**, meaning it is oxidized.
-- **Oxygen:** Its oxidation state decreases from **0 to −2**, meaning it is reduced.
-- The reaction releases heat.
+**What do you notice?**
 
-Both rusting iron and burning methane involve oxidation-reduction reactions.
+Magnesium changes from 0 to +2.
 
-The major difference is their **reaction rate and energy release**.
+Oxygen changes from 0 to −2.
+
+#### Identifying Oxidation and Reduction
+
+**Magnesium:**
+
+Magnesium loses two electrons.
+
+$$
+\overset{0}{Mg} \rightarrow Mg^{2+} + 2e^-
+$$
+
+Its oxidation number increases from 0 to +2.
+
+Therefore, **magnesium is oxidized**.
+
+**Oxygen:**
+
+Oxygen gains two electrons.
+
+Its oxidation number decreases from 0 to −2.
+
+Therefore, **oxygen is reduced**.
+
+This gives us the modern definitions:
+
+- **Oxidation:** Loss of electrons.
+- **Reduction:** Gain of electrons.
+
+#### How Can We Remember Oxidation and Reduction?
+
+Two common memory aids are:
+
+**OIL RIG**
+
+- **OIL:** Oxidation Is Loss
+- **RIG:** Reduction Is Gain
+
+**LEO goes GER**
+
+- **LEO:** Loss of Electrons is Oxidation
+- **GER:** Gain of Electrons is Reduction
+
+::: {.callout-tip}
+## Think About the Charge
+
+Another way to remember oxidation and reduction is to think about electrons and their negative charge.
+
+**When an atom gains electrons:**
+
+- It gains negative charge.
+- Its charge becomes more negative.
+- It undergoes **reduction**.
+
+**When an atom loses electrons:**
+
+- It loses negative charge.
+- Its charge becomes more positive.
+- It undergoes **oxidation**.
+
+Remember: Electrons carry a negative charge.
+:::
 
 
-| Rusting iron | Burning methane |
-|---|---|
-| Relatively slow oxidation | Rapid oxidation |
-| Gradual formation of corrosion products | Rapid formation of combustion products |
-| Heat is generally released slowly | Heat is released rapidly |
-| Oxygen acts as the oxidizing agent | Oxygen acts as the oxidizing agent |
 
-**Important:** Not every oxidation-reduction reaction produces a fire, but combustion is a common example of a rapid redox reaction.
+### Returning to Iron: Oxidation and Rusting
 
-### Oxidizers in Hazardous Materials Management
+Now let's apply the same reasoning to the iron reaction we introduced earlier.
 
-In ordinary combustion, oxygen from the surrounding air commonly acts as the oxidizing agent.
+$$
+4\overset{0}{Fe}
++
+3\overset{0}{O}_2
+\rightarrow
+2\overset{+3}{Fe}_2\overset{-2}{O}_3
+$$
+
+| Element | Reactants | Products | What happened? |
+|:---|---:|---:|:---|
+| Iron | 0 | +3 | Oxidation |
+| Oxygen | 0 | −2 | Reduction |
+
+Each iron atom loses 3 electrons.
+
+Each oxygen atom gains 2 electrons.
+
+**Verify the electrons:**
+
+Four iron atoms each lose 3 electrons:
+
+$$
+4(3)=12\text{ electrons lost}
+$$
+
+Six oxygen atoms each gain 2 electrons:
+
+$$
+6(2)=12\text{ electrons gained}
+$$
+
+Therefore:
+
+$$
+\boxed{12\text{ electrons lost}=12\text{ electrons gained}}
+$$
+
+**Iron is oxidized, and oxygen is reduced.**
+
+### What Is a REDOX Reaction?
+
+A **REDOX reaction** is a chemical reaction in which oxidation and reduction both occur.
+
+The name combines:
+
+- **RED:** Reduction
+- **OX:** Oxidation
+
+When one substance loses electrons, another substance gains electrons.
+
+**Does a REDOX reaction need to involve oxygen?**
+
+**No.**
+
+Although oxidation was originally associated with oxygen, REDOX reactions do not require oxygen.
+
+A reaction is classified as REDOX when oxidation and reduction occur.
+
+### Identifying Oxidation and Reduction: Additional Examples
+
+The following examples are adapted from the Khan Academy video *Simple Redox Reactions*.
+
+#### Example 1: Sodium and Chlorine
+
+$$
+2\overset{0}{Na}
++
+\overset{0}{Cl}_2
+\rightarrow
+2\overset{+1}{Na}\overset{-1}{Cl}
+$$
+
+| Element | Before | After | What happened? |
+|:---|---:|---:|:---|
+| Sodium | 0 | +1 | Oxidation |
+| Chlorine | 0 | −1 | Reduction |
+
+**Sodium is oxidized. Chlorine is reduced.**
+
+
+#### Example 2: A Reaction That Is Not REDOX
+
+$$
+\overset{+1}{Na}\overset{-1}{Cl}
++
+\overset{+1}{Ag}\overset{-1}{F}
+\rightarrow
+\overset{+1}{Na}\overset{-1}{F}
++
+\overset{+1}{Ag}\overset{-1}{Cl}
+$$
+
+| Element | Before | After |
+|:---|---:|---:|
+| Sodium | +1 | +1 |
+| Chlorine | −1 | −1 |
+| Silver | +1 | +1 |
+| Fluorine | −1 | −1 |
+
+None of the oxidation numbers change.
+
+Therefore, **this is not a REDOX reaction**.
+
+::: {.callout-important}
+## Not Every Chemical Reaction Is REDOX
+
+A chemical reaction can occur without oxidation or reduction.
+
+To identify a REDOX reaction, compare the oxidation numbers of the elements before and after the reaction.
+
+- An **increase** in oxidation number indicates oxidation.
+- A **decrease** in oxidation number indicates reduction.
+- If no oxidation numbers change, the reaction is not REDOX.
+:::
+
+
+#### Application: Preventing Rust with Zinc
+
+![Rusting steel beams illustrating the effects of oxidation on structural materials.](rust-beams.jpg){#fig-rust-beams width="100%" fig-align="center" lightbox=true}
+
+We have learned that iron undergoes oxidation when it reacts with oxygen, which can lead to rusting.
+
+This is a simplified explanation. In reality, rusting involves more complex chemical reactions that can be better understood through electrochemistry.
+
+However, we can still apply our understanding of oxidation and reduction to prevent iron from rusting.
+
+One common method is to coat iron or steel with **zinc**, a process called **galvanization**.
+
+
+##### How Does Zinc Protect Iron?
+
+Consider an iron nail coated with zinc.
+
+Zinc provides two forms of protection.
+
+**1. Zinc Acts as a Protective Barrier**
+
+The zinc coating creates a barrier between the iron and its surrounding environment.
+
+This prevents oxygen and moisture (H₂O) from reaching the iron, helping prevent rusting.
+
+But what happens if the zinc coating becomes scratched and some of the iron is exposed?
+
+**2. Zinc Oxidizes Before Iron**
+
+Zinc is more reactive than iron.
+
+This means zinc more readily loses electrons and undergoes oxidation.
+
+When zinc loses electrons:
+
+$$
+\overset{0}{Zn}
+\rightarrow
+Zn^{2+}+2e^-
+$$
+
+Zinc's oxidation number increases from **0 to +2**.
+
+Iron can also undergo oxidation:
+
+$$
+\overset{0}{Fe}
+\rightarrow
+Fe^{2+}+2e^-
+$$
+
+However, zinc is more readily oxidized than iron.
+
+Even when the zinc coating is scratched, the surrounding zinc can continue protecting the exposed iron by undergoing oxidation instead.
+
+This is called **sacrificial protection** because zinc is gradually consumed while helping protect the iron from rusting.
+
+
+::: {.callout-important}
+## Connecting Chemistry to Hazardous Materials Management
+
+Why does this matter for hazardous materials management?
+
+Iron and steel are commonly used in equipment such as:
+
+- Storage tanks
+- Pipelines
+- Structural supports
+- Containers used to store hazardous materials
+
+Rusting can weaken these materials and increase the risk of equipment failure.
+
+By understanding oxidation and reduction, we can explain why zinc coatings help protect iron and steel.
+:::
+
+### Application 2: Oxidizers in Hazardous Materials Management
+
+We have spent time learning how chemical reactions work, how to balance chemical equations, and how to identify oxidation and reduction.
+
+We then applied this knowledge to understand how zinc can help prevent iron from rusting.
+
+But what happens when we encounter chemicals that can cause other materials to burn more intensely?
+
+This brings us back to **hazardous materials management**.
+
+#### What Is an Oxidizer?
+
+In ordinary combustion, oxygen from the surrounding air commonly acts as an **oxidizing agent**.
+
+An **oxidizing agent** is a substance that causes another substance to undergo oxidation while the oxidizing agent itself undergoes reduction.
 
 However, **oxygen gas is not the only substance capable of acting as an oxidizer**.
 
@@ -963,9 +1777,19 @@ Examples include:
 
 These substances have different chemical properties and hazards, but each can act as an oxidizer under appropriate conditions.
 
-**An oxidizer does not necessarily need to burn itself to make another material burn more intensely.**
+::: {.callout-important}
+## Connecting REDOX Chemistry to Hazardous Materials
 
+Recall what we learned about oxidation and reduction:
 
+- **Oxidation:** Loss of electrons.
+- **Reduction:** Gain of electrons.
+- **Oxidizing agent:** Causes another substance to undergo oxidation.
+
+An oxidizer does not necessarily need to burn itself to make another material burn more intensely.
+
+This is why understanding REDOX reactions helps us recognize the hazards associated with oxidizing materials.
+:::
 
 ### Example: Ammonium Nitrate
 
@@ -975,26 +1799,21 @@ It is classified as an **oxidizing solid** because it can support or intensify c
 
 Unlike an ordinary combustible material, ammonium nitrate does not need to act as the fuel to contribute to a dangerous fire.
 
-**What makes ammonium nitrate hazardous?**
-
-- **Oxidizing properties:** It can support or intensify combustion involving other materials.
-- **Chemical incompatibility:** Contamination with combustible materials or other incompatible substances can increase the potential for dangerous reactions.
-- **Thermal decomposition:** When heated, ammonium nitrate can decompose and release hazardous gases.
-- **Explosion potential:** Under certain conditions involving severe heating, contamination, confinement, or other contributing factors, ammonium nitrate can undergo violent decomposition or explosion.
-
-**Important distinction:** Ammonium nitrate is an oxidizer, not a conventional fuel. However, fires, contamination, and unfavorable storage conditions can create severe decomposition and explosion hazards.
-
-#### Ammonium Nitrate: Video Example
 
 The following video illustrates the hazards associated with ammonium nitrate.
 
+As you watch, consider how the chemistry we have learned helps explain why an oxidizing material can contribute to a dangerous incident.
+
 {{< video https://www.youtube.com/watch?v=pdDuHxwD5R4 width="640" height="360" >}}
 
-The important chemical principle is that **oxidizing materials can contribute to dangerous reactions even when they are not themselves conventional fuels**.
 
-#### OSHA Regulations: Storage of Ammonium Nitrate
+### OSHA Regulations: Storage of Ammonium Nitrate
 
-Some important OSHA requirements include:
+Now that we understand why ammonium nitrate can be hazardous, let's consider how this knowledge is applied to workplace safety.
+
+OSHA establishes requirements for the storage of ammonium nitrate under **29 CFR 1910.109(i)**.
+
+Some important requirements include:
 
 - **Temperature:** Ammonium nitrate must not be accepted for storage when its temperature exceeds **130°F (54°C)**.
 - **Storage clearance:** Applicable storage arrangements must maintain at least **36 inches of clearance** below the roof or supporting structural members.
@@ -1005,26 +1824,19 @@ Some important OSHA requirements include:
 
 These requirements illustrate how **chemical properties influence workplace safety regulations**.
 
-For hazardous materials managers, identifying a chemical as an oxidizer is only the first step. Safe management also requires understanding its incompatibilities, storage conditions, and applicable regulatory requirements.
-
 **Regulatory reference:** [OSHA 29 CFR 1910.109(i): Storage of Ammonium Nitrate](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.109)
-
-**Key takeaway:** Ammonium nitrate demonstrates why understanding oxidation, chemical compatibility, and thermal stability is essential for preventing serious incidents involving hazardous materials.
-
-
-
-
 
 ### Unstable Materials
 
 Some solids may also undergo hazardous reactions when exposed to **heat, friction, shock, moisture, or incompatible substances**.
 
-These hazards are substance-specific. Not every oxidizer is shock-sensitive, and not every unstable material is an oxidizer.
+These hazards are substance-specific.
+
+Not every oxidizer is shock-sensitive, and not every unstable material is an oxidizer.
+
+Understanding the chemical properties of a material helps us recognize the conditions under which it may become hazardous.
 
 **Key takeaway:** Understanding oxidation and reduction helps us explain why some materials burn, why others intensify combustion, and why chemical compatibility is essential for hazardous materials management.
-
-
-
 
 # 4. Temperature, Physical Change, and Chemical Change
 
@@ -1049,40 +1861,44 @@ When temperature changes, several different processes may become relevant:
 
 
 
-## From a solid to a gas: why phase changes matter
-
-A phase change does not necessarily change chemical identity, but it can substantially change **mobility, dispersion, and potential exposure**.
-
-We will build on this principle when studying **liquids, gases, vapor pressure, and pressurized containers** in subsequent lectures.
-
-
-
 # Key Takeaways
 
 1. **A solid is a state of matter, not a hazard classification.** A material's chemical identity, physical form, and environmental conditions determine its potential hazards.
 
-2. **Particle size influences exposure.** Cutting, grinding, burning, and other processes can generate airborne particles. Smaller particles may remain suspended in air, travel with air currents, and deposit in different regions of the respiratory system.
+2. **Particle size influences exposure.** Cutting, grinding, burning, and other processes can generate airborne particles. Particle size and chemical composition influence how particles move through the air, where they deposit in the respiratory system, and their potential health effects.
 
-3. **Airborne particles can affect the respiratory and cardiovascular systems.** Depending on their size and chemical composition, particles may contribute to cellular injury, oxidative stress, inflammation, and other adverse health effects.
+3. **Airborne particles can affect the respiratory and cardiovascular systems.** Certain particulate exposures may contribute to cellular injury, oxidative stress, inflammation, and other adverse health effects. Biomonitoring can help investigate internal exposure, but results must be interpreted alongside sampling time, detection limits, and biological processes.
 
-4. **Biomonitoring helps investigate internal exposure.** Measurements of chemicals or exposure markers in biological samples must be interpreted alongside sampling time, analytical detection limits, and biological processes.
+4. **Combustible dust can create fire and explosion hazards.** The dust explosion pentagon identifies five important conditions: combustible dust, oxygen, an ignition source, dispersion, and confinement.
 
-5. **Combustible dust can create fire and explosion hazards.** The dust explosion pentagon identifies five important conditions: combustible dust, oxygen, an ignition source, dispersion, and confinement.
+5. **Chemical compatibility is essential when managing reactive solids.** Potassium metal demonstrates how contact with water can produce heat, corrosive potassium hydroxide, and flammable hydrogen gas.
 
-6. **Chemical compatibility is essential when managing reactive solids.** Potassium metal demonstrates how contact with water can generate heat, corrosive substances, and flammable hydrogen gas.
+6. **Chemical equations help us understand chemical reactions.** Reactants are converted into products as atoms are rearranged. The law of conservation of mass explains why chemical equations must be balanced. We balance equations by changing coefficients, not subscripts.
 
-7. **Oxidation and reduction involve electron transfer.** Oxidation involves the loss of electrons, while reduction involves the gain of electrons. Oxidizing agents accept electrons, and reducing agents donate electrons.
+7. **Oxidation numbers help us identify REDOX reactions.** Oxidation numbers allow us to track changes during chemical reactions. An increase in oxidation number indicates oxidation, while a decrease indicates reduction. Not every chemical reaction is a REDOX reaction.
 
-8. **Oxidizers can intensify combustion without acting as conventional fuels.** Ammonium nitrate demonstrates why chemical compatibility, temperature, contamination prevention, and applicable OSHA storage requirements are important.
+8. **Oxidation and reduction involve changes in electrons.** Oxidation involves the loss of electrons, while reduction involves the gain of electrons. These processes occur together in REDOX reactions. Zinc demonstrates how this chemistry can be applied to protect iron and steel from rusting through galvanization and sacrificial protection.
 
-9. **Temperature can cause physical or chemical changes.** Melting and sublimation change a material's physical state, while thermal decomposition and combustion produce different substances.
+9. **Oxidizers can intensify combustion without acting as conventional fuels.** Ammonium nitrate demonstrates why understanding oxidizing properties, chemical incompatibility, temperature, contamination prevention, and applicable OSHA storage requirements is important for hazardous materials management.
 
-10. **Hazardous materials management requires evidence-based decisions.** Identifying the material, understanding its properties, reviewing applicable regulations and safety information, and evaluating exposure conditions are essential for selecting appropriate controls.
+10. **Hazardous materials management requires understanding how materials behave.** Temperature can cause physical changes, such as melting and sublimation, or chemical changes, such as decomposition and combustion. Identifying chemical properties, evaluating exposure conditions, and reviewing safety information and regulations help us make informed decisions.
+
+::: {.callout-important}
+## Think Like a Chemist
+
+Throughout this lecture, we have practiced using observations, chemical principles, and evidence to understand how materials behave.
+
+**Observe → Explain → Predict → Decide**
+
+We do not need to become chemists to manage hazardous materials.
+
+However, understanding chemistry helps us recognize potential hazards, explain why they occur, and make informed decisions about how to prevent harmful outcomes.
+:::
 
 # Key Terms
 
 | Term | Working definition |
-|---|---|
+|:---|:---|
 | **Solid** | State of matter that ordinarily maintains its shape and volume under specified conditions. |
 | **Particle size** | Characteristic dimension of a particle that influences its movement, suspension, and potential deposition in the respiratory system. |
 | **Particulate matter (PM)** | Solid particles and liquid droplets suspended in air. |
@@ -1099,12 +1915,23 @@ We will build on this principle when studying **liquids, gases, vapor pressure, 
 | **Dust explosion pentagon** | Five conditions associated with combustible dust explosions: fuel, oxygen, ignition source, dispersion, and confinement. |
 | **Reactive solid** | Solid material capable of undergoing hazardous chemical reactions under certain conditions, including contact with incompatible substances. |
 | **Chemical incompatibility** | Potential for hazardous reactions when certain substances come into contact. |
-| **Oxidation** | Chemical process involving the loss of electrons and an increase in oxidation state. |
-| **Reduction** | Chemical process involving the gain of electrons and a decrease in oxidation state. |
-| **Redox reaction** | Chemical reaction involving oxidation and reduction. |
-| **Oxidizing agent (oxidant)** | Substance that accepts electrons from another substance, causing that substance to become oxidized. |
-| **Reducing agent (reductant)** | Substance that donates electrons to another substance, causing that substance to become reduced. |
-| **Oxidation state** | Number used to account for the distribution of electrons in a substance and track changes during redox reactions. |
+| **Chemical reaction** | Process in which one or more substances are converted into different substances through the rearrangement of atoms. |
+| **Reactant** | Starting substance in a chemical reaction. |
+| **Product** | Substance formed during a chemical reaction. |
+| **Law of conservation of mass** | Principle that the total mass of a closed system remains constant during an ordinary chemical reaction. |
+| **Chemical equation** | Symbolic representation of a chemical reaction using chemical formulas and symbols. |
+| **Coefficient** | Number placed before a chemical formula to indicate the relative number of molecules or formula units. |
+| **Subscript** | Number in a chemical formula indicating the number of atoms of an element represented. |
+| **Diatomic molecule** | Molecule consisting of two atoms. |
+| **Oxidation number** | Number assigned to an atom using a set of rules to help track changes in electrons during chemical reactions. |
+| **Oxidation** | Chemical process involving the loss of electrons and an increase in oxidation number. |
+| **Reduction** | Chemical process involving the gain of electrons and a decrease in oxidation number. |
+| **REDOX reaction** | Chemical reaction in which oxidation and reduction both occur. |
+| **Oxidizing agent (oxidant)** | Substance that causes another substance to undergo oxidation while itself undergoing reduction. |
+| **Reducing agent (reductant)** | Substance that causes another substance to undergo reduction while itself undergoing oxidation. |
+| **Galvanization** | Process of applying a protective zinc coating to iron or steel to help prevent rusting. |
+| **Sacrificial protection** | Protection of a metal by another metal that more readily undergoes oxidation. |
+| **Oxidizer** | Substance capable of causing or intensifying the combustion of another material, generally by providing an oxidizing environment. |
 | **Combustion** | Rapid, heat-releasing chemical reaction that commonly involves a fuel reacting with an oxidizer. |
 | **Thermal decomposition** | Chemical breakdown of a substance caused by heating. |
 | **Melting** | Physical transition from a solid to a liquid. |
@@ -1112,12 +1939,9 @@ We will build on this principle when studying **liquids, gases, vapor pressure, 
 | **Physical change** | Change in a material's form or state without changing its chemical identity. |
 | **Chemical change** | Change that produces one or more different substances. |
 
-
-
-
 # Copyright & Use
 
-**SHM 377: Hazardous Materials Management**\
+**SHM 377: Hazardous Materials Management**  
 © 2026 Yoni Rodriguez
 
 Except where otherwise noted, original course materials are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).

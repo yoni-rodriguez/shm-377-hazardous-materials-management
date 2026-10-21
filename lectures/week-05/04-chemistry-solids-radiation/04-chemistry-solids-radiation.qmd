@@ -1,0 +1,378 @@
+---
+title: "Chemistry of Hazardous Materials: Solids & Radiation"
+subtitle: "SHM 377 | Hazardous Materials Management | Lecture 04"
+format:
+  html:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    smooth-scroll: true
+    code-fold: true
+    embed-resources: true
+    self-contained-math: true
+    html-math-method: katex
+    lightbox: auto
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{=html}
+<style>
+/* SHM 377 Lecture 04: adapted from Lecture 03 */
+body { color: #212529; }
+blockquote { color: #212529; font-size: inherit; font-style: normal; }
+.callout { margin: 1.25rem 0; }
+.evidence-callout { background: #f2f3f5; border-left: 4px solid #737980; border-radius: 4px; padding: 0.8rem 1rem; margin: 1.25rem 0; }
+.evidence-callout h2 { font-size: 1.05rem; margin-top: 0; }
+.table-responsive { overflow-x: auto; }
+.katex-display { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; }
+@media (max-width: 768px) { img { max-width: 100%; height: auto; } p, li, figcaption { overflow-wrap: anywhere; } .katex-display > .katex { font-size: 0.9em; } }
+</style>
+```
+
+# Introduction: From Solids to Radiation
+
+In Lecture 03, we examined how the physical form of a solid can change the hazards associated with that material. A solid object may present a different exposure problem than the same material dispersed into small airborne particles. We also considered how chemical reactions can change materials and create new hazards.
+
+We now extend that reasoning. **How do the properties of a material help us anticipate what it will do, where it will travel, and how it may affect people?** Some solids can burn or explode when dispersed as dust. Others contain unstable atoms that release ionizing radiation as they decay. These hazards require different ways of thinking about exposure.
+
+::: callout-note
+## Our reasoning framework
+
+We are not trying to memorize every hazardous substance. We are learning to **think like chemists**: identify what we can observe or measure, use that evidence to reason about material behavior, and explain the implications for hazardous-materials management.
+:::
+
+## Learning objectives
+
+By the end of this lecture, students should be able to:
+
+1.  Distinguish physical properties from chemical properties and explain why both matter during an incident.
+2.  Describe how solid materials can create hazards through contact, ingestion, or airborne dust.
+3.  Explain how physical state, temperature, and related properties influence material behavior.
+4.  Distinguish radioactivity from radiation and explain the meaning of radioactive decay.
+5.  Compare alpha, beta, gamma, and neutron radiation in terms of exposure concerns and penetration.
+6.  Distinguish radiation exposure, radioactive contamination, activity, and instrument count rate.
+7.  Interpret radiation dose rate and use half-life to reason about changes in radioactive activity over time.
+
+# 1. Describing Hazardous Materials
+
+## Physical properties versus chemical properties
+
+A **chemical property** describes a material's tendency to undergo chemical change. Reactivity, flammability, and heat released during combustion are examples. These properties help us anticipate what may happen when a substance reacts with another material or encounters an ignition source.
+
+A **physical property** describes characteristics we can observe or measure without changing the chemical identity of the substance. Examples include physical state, vapor pressure, specific gravity, boiling point, solubility, and viscosity.
+
+These categories answer different questions. A chemical property helps us ask, *What could this material become or do during a reaction?* A physical property helps us ask, *How might this material behave in its container or after release?*
+
+## The vocabulary of chemical behavior
+
+Before moving into radiation, recall several terms from our earlier lectures:
+
+| Term | Meaning in this lecture |
+|:-----------------------------------|:-----------------------------------|
+| **Atom** | Basic building block of an element. |
+| **Element** | Pure substance identified by the kind of atoms it contains. |
+| **Compound** | Substance formed by chemically bonded atoms of different elements. |
+| **Mixture** | Two or more substances physically combined while retaining their chemical identities. |
+| **Solution** | Homogeneous mixture with dissolved material distributed through a solvent. |
+| **Ion** | Atom or group of atoms carrying a net electrical charge. |
+| **Chemical change** | Process that produces substances with different chemical identities. |
+| **Endothermic process** | Process that absorbs heat from its surroundings. |
+| **Exothermic process** | Process that releases heat to its surroundings. |
+
+::: callout-note
+## Connect to Lecture 03
+
+A change in physical form is not necessarily a chemical reaction. Melting changes a solid into a liquid; combustion produces different substances. Why would that distinction matter when deciding how to manage an incident?
+:::
+
+# 2. What Makes a Solid Hazardous?
+
+## Normal physical state and routes of exposure
+
+The textbook describes a material's **normal physical state** as its form—solid, liquid, or gas—at approximately 68–77 °F (20–25 °C).
+
+Solids commonly present contact or ingestion hazards. But that generalization has important exceptions. A finely divided solid may become airborne, creating an inhalation hazard. A combustible dust dispersed in air may also create an explosion hazard under suitable conditions.
+
+Examples of combustible dusts identified in the textbook include:
+
+- Agricultural products such as flour and grain.
+- Metals such as aluminum, magnesium, and titanium.
+- Coal and sulfur dust.
+
+A material's chemical identity matters, but so does **the size and distribution of its particles**. A bulk material and a cloud of fine particles can behave very differently.
+
+## A second exception: radioactive solids
+
+Some solid materials contain radioactive atoms. Their hazard cannot be evaluated from visible shape, particle size, or chemical reactivity alone. Radioactive atoms can release ionizing radiation during decay, even when the material appears unchanged.
+
+The textbook identifies naturally occurring radioactive elements such as uranium, radium, and polonium, as well as radon, a radioactive gas.
+
+::: callout-important
+## A question for the class
+
+Imagine two sealed containers holding solid materials. Both look ordinary from the outside. One contains combustible dust; the other contains a radioactive source. **What different kinds of information would we need before deciding how to approach each container?**
+:::
+
+# 3. Physical Properties That Influence Hazard Behavior
+
+The following properties are introduced in the textbook's discussion of chemical and physical characteristics. We will use them to connect the behavior of solids to other hazardous-material forms.
+
+## Temperature and changes of state
+
+**Temperature** affects both the hazards presented by a material and the options available to manage it. Some materials change physical state as temperature changes.
+
+- **Melting point:** temperature at which a solid becomes a liquid under specified pressure.
+- **Boiling point:** temperature at which a liquid's vapor pressure equals the surrounding pressure.
+- **Sublimation:** transition from solid directly to gas, without passing through the liquid state.
+
+The textbook identifies dry ice and naphthalene as examples of materials that sublime. The rate of sublimation can increase as temperature increases.
+
+A solid can therefore produce a vapor hazard without first forming a visible pool of liquid.
+
+## Vapor pressure and volatility
+
+**Vapor pressure** is the pressure exerted by vapor in equilibrium with its liquid or solid at a given temperature. In general, increasing temperature increases vapor pressure.
+
+**Volatility** describes how readily a substance enters the vapor phase. A material with a higher vapor pressure at the same temperature generally has a greater tendency to evaporate.
+
+The textbook contrasts rapidly evaporating isopropyl alcohol with less volatile motor oil. These examples help illustrate why materials released under similar conditions do not necessarily produce the same vapor hazard.
+
+## Specific gravity, solubility, and viscosity
+
+**Specific gravity** compares a material's density with the density of a reference substance, typically water for liquids and solids. Materials with specific gravity below 1 tend to float on water if they do not mix with it; materials above 1 tend to sink.
+
+**Solubility** describes how much of a substance can dissolve in a specified medium. **Miscibility** describes whether liquids mix to form a single homogeneous phase in the proportions being considered.
+
+**Viscosity** describes resistance to flow. A low-viscosity liquid can spread readily, while a more viscous liquid resists flow.
+
+::: callout-note
+## Predicting behavior from properties
+
+Suppose a released substance is less dense than water and does not mix with it. Where would you expect the substance to accumulate? How might your prediction change if the material were miscible with water instead?
+:::
+
+# 4. What Is Radioactivity?
+
+## Unstable atoms and radioactive decay
+
+Everything we have discussed in this course begins with atoms. Most of the chemical reactions in our previous lectures involved the rearrangement of electrons and chemical bonds. **Radioactive decay is different:** it involves a change in an unstable atomic nucleus.
+
+A **radioactive material** contains atoms with unstable nuclei. As those nuclei transform, they emit radiation. This process is called **radioactive decay**.
+
+**Radiation** is energy emitted or transmitted as particles or electromagnetic waves. **Radioactivity** refers specifically to spontaneous nuclear transformations of unstable atoms.
+
+Radioactive materials occur naturally and are also used in industrial, medical, and research settings. The textbook mentions uranium, radium, radon, and polonium as examples of naturally occurring radioactive materials.
+
+## Ionizing versus nonionizing radiation
+
+Radiation can be divided into two broad categories:
+
+| Category | Distinguishing characteristic | Examples from the textbook |
+|:-----------------------|:-----------------------|:-----------------------|
+| **Nonionizing** | Does not carry enough energy per photon or particle to remove an electron from an atom through direct ionization. | Radio waves, microwaves, infrared radiation, visible light. |
+| **Ionizing** | Can remove electrons from atoms and create ions. | Alpha particles, beta particles, gamma rays, neutrons, and X-rays. |
+
+The ability to ionize matter matters because ionization can damage biological molecules and cells.
+
+::: callout-note
+## A distinction worth remembering
+
+A substance can be chemically hazardous without being radioactive. A radioactive substance can also present chemical hazards. We must consider the hazards independently rather than assuming that one description tells us everything about the material.
+:::
+
+# 5. Four Types of Ionizing Radiation
+
+## Alpha particles
+
+**Alpha particles** are relatively large particles emitted from certain unstable nuclei. They have limited penetration and can be stopped by a sheet of paper or the outer dead layer of skin.
+
+This limited penetration does **not** mean that alpha-emitting materials are harmless. The textbook emphasizes that alpha radiation is especially concerning when radioactive material enters the body through inhalation or ingestion.
+
+## Beta particles
+
+**Beta particles** are high-speed electrons or positrons emitted during nuclear decay. They generally penetrate farther than alpha particles and can create both external and internal exposure concerns.
+
+The textbook identifies materials such as plastic, glass, and thin metal shielding as possible barriers, depending on the radiation energy.
+
+## Gamma rays
+
+**Gamma rays** are high-energy electromagnetic radiation emitted during nuclear transitions. Their ability to penetrate materials makes them an important external exposure concern. The degree of penetration depends on photon energy and shielding material.
+
+## Neutron radiation
+
+**Neutron radiation** consists of free neutrons. Neutrons can penetrate matter and produce secondary interactions; they are a whole-body exposure concern in settings where neutron radiation is present.
+
+## Comparing the radiation types
+
+| Radiation | Nature | Primary point for students to remember |
+|:-----------------------|:-----------------------|:-----------------------|
+| **Alpha (α)** | Particle made of two protons and two neutrons | Limited external penetration; important internal hazard. |
+| **Beta (β)** | Electron or positron | Can pose both internal and external hazards. |
+| **Gamma (γ)** | Electromagnetic radiation | Highly penetrating external exposure hazard. |
+| **Neutron** | Uncharged nuclear particle | Penetrating radiation requiring specialized assessment and shielding. |
+
+::: callout-important
+## Think about the exposure pathway
+
+Why might an alpha-emitting material be of relatively limited concern when securely contained, but much more concerning if dispersed into breathable dust? Connect your answer to our discussion of particle size in Lecture 03.
+:::
+
+# 6. Radiation Exposure and Measurement
+
+## Exposure is not the same as contamination
+
+**Radiation exposure** occurs when radiation reaches a person or object. **Radioactive contamination** occurs when radioactive material is deposited on or inside a person, object, or environment.
+
+A person can be exposed to radiation without becoming contaminated. Contamination, however, can continue to create exposure concerns until it is removed or the radioactive material decays.
+
+## Radiation quantities and units
+
+The textbook introduces several measurement concepts:
+
+| Quantity | Unit or instrument reading | What it describes |
+|:-----------------------|:-----------------------|:-----------------------|
+| **Exposure** | Roentgen (R) | Historical unit for ionization produced in air by X-rays or gamma rays. |
+| **Absorbed dose** | Rad | Energy deposited per unit mass of material. |
+| **Dose equivalent** | Rem | Absorbed dose adjusted to account for the biological effectiveness of radiation. |
+| **Radioactive activity** | Becquerel (Bq), curie (Ci) | Number of nuclear transformations per unit time. |
+| **Instrument count rate** | Counts per minute (CPM), counts per second (CPS) | Number of detection events registered by an instrument. |
+
+A detector's count rate is **not automatically a dose rate**. Interpretation depends on the type and energy of radiation, the detector, and its calibration.
+
+## Dose rate and time
+
+The textbook compares dose rate to a vehicle's speed and accumulated dose to distance traveled. A higher rate or longer duration increases the total accumulated dose.
+
+For a constant dose rate:
+
+**Accumulated dose = dose rate × time**
+
+For example, if a radiation field is measured at **50 mR per hour**, then an exposure lasting **30 minutes (0.5 hour)** corresponds to:
+
+**50 mR/hour × 0.5 hour = 25 mR**
+
+This is a simplified exposure calculation using the same example as the textbook. Actual dose assessment depends on the quantity measured, radiation type, geometry, and instrument calibration.
+
+## Background radiation and detection
+
+The textbook notes that background radiation varies with location, elevation, terrain, and building characteristics. Instruments must distinguish normal background readings from readings that may indicate a radioactive source or contamination.
+
+Instrument performance depends on factors such as radiation type and energy, detector size, construction, and detecting medium.
+
+::: callout-note
+## Interpret the measurement
+
+If two instruments display different count rates near the same source, does that necessarily mean one is defective? What information about the instruments would you need before drawing a conclusion?
+:::
+
+# 7. Radioactive Decay and Half-Life
+
+## What does half-life mean?
+
+**Half-life** is the time required for the activity of a radioactive sample to fall to one-half of its initial value through radioactive decay.
+
+Different radionuclides decay at different rates. The textbook gives examples ranging from very short-lived radionuclides to materials with half-lives lasting many years.
+
+The key idea is that decay occurs by a repeated fraction, **not by subtracting the same amount every time**.
+
+## Following radioactive activity over time
+
+The textbook presents an example of a source with an initial reading of 100 units and a half-life of 24 hours. Assuming a fixed measurement setup and a reading proportional to source activity, the pattern is:
+
+| Elapsed time | Half-lives elapsed | Remaining fraction | Reading (same units as initial) |
+|:-----------------|-----------------:|-----------------:|-----------------:|
+| Start | 0 | 100% | 100 |
+| 24 hours | 1 | 50% | 50 |
+| 48 hours | 2 | 25% | 25 |
+| 72 hours | 3 | 12.5% | 12.5 |
+| 96 hours | 4 | 6.25% | 6.25 |
+| 120 hours | 5 | 3.125% | 3.125 |
+| 144 hours | 6 | 1.5625% | 1.5625 |
+| 168 hours | 7 | 0.78125% | 0.78125 |
+
+After seven half-lives, less than 1% of the original activity remains. After ten half-lives, approximately 0.1% remains.
+
+For reference, the general relationship is:
+
+**Remaining activity = initial activity × (1/2)\^(elapsed time ÷ half-life)**
+
+This relationship describes radioactive decay; it does not account for changes in detector position, shielding, background radiation, or contamination movement.
+
+## Why does half-life matter during an incident?
+
+The textbook discusses how half-life can inform decisions about contaminated equipment and the recovery phase of a radiological incident. For some short-lived radionuclides, securely isolating material while it decays may be a consideration. For longer-lived radionuclides, contamination can remain a concern for extended periods.
+
+The textbook also cites Chernobyl (1986) and Fukushima Daiichi (2011) as examples of incidents with long-term recovery implications.
+
+::: callout-important
+## Reason through the evidence
+
+Two radioactive materials have identical measured activity today. One has a half-life of one day; the other has a half-life of many years. **Will their activities change at the same rate over the next week?** Explain your answer using the concept of half-life.
+:::
+
+# 8. Connecting Solids and Radiation
+
+Return to our starting question: **What makes a material hazardous?**
+
+A solid's physical form can affect whether it is likely to remain in place, be handled directly, or become suspended in air. Its chemical properties can indicate whether it might burn or react with other substances. If it contains unstable nuclei, it can also emit ionizing radiation.
+
+These are not competing explanations. They are different pieces of evidence that help us understand the same material.
+
+Consider a radioactive solid that breaks into fine dust. The material's nuclear properties determine the radiation it emits, while its particle size influences whether it can be dispersed and inhaled. To understand the hazard, we need both perspectives.
+
+::: callout-note
+## Our reasoning framework revisited
+
+Like John Dalton, we cannot directly see every atomic-scale process involved in a hazardous-material incident. We use observable behavior, measurements, and scientific models to infer what is happening and make defensible decisions.
+:::
+
+# Review Questions
+
+1.  How does a physical property differ from a chemical property? Give one example of each from this lecture.
+2.  Why might a bulk solid and the same substance as fine airborne dust present different hazards?
+3.  What is the difference between radioactive decay and an ordinary chemical reaction?
+4.  Why is alpha radiation particularly concerning when alpha-emitting material enters the body?
+5.  Explain the difference between radiation exposure and radioactive contamination.
+6.  What is the difference between a detector's count rate and a radiation dose rate?
+7.  A source has a half-life of 24 hours. What fraction of its original activity remains after 72 hours?
+8.  Why is half-life useful information when considering the recovery phase of a radiological incident?
+
+# Key Terms
+
+| Term | Working definition |
+|:-----------------------------------|:-----------------------------------|
+| **Physical property** | Observable or measurable characteristic that does not require a change in chemical identity. |
+| **Chemical property** | Characteristic describing a substance's tendency to undergo chemical change. |
+| **Sublimation** | Direct transition from solid to gas. |
+| **Vapor pressure** | Pressure exerted by vapor in equilibrium with a substance at a specified temperature. |
+| **Specific gravity** | Density relative to a reference material, commonly water for liquids and solids. |
+| **Solubility** | Amount of substance that can dissolve in a specified medium. |
+| **Viscosity** | Resistance of a fluid to flow. |
+| **Radioactive material** | Material containing unstable atomic nuclei that undergo radioactive decay. |
+| **Radioactivity** | Spontaneous transformation of unstable atomic nuclei. |
+| **Ionizing radiation** | Radiation capable of producing ions by removing electrons from atoms. |
+| **Alpha particle** | Nuclear particle containing two protons and two neutrons. |
+| **Beta particle** | Electron or positron emitted during nuclear decay. |
+| **Gamma ray** | High-energy electromagnetic radiation associated with nuclear transitions. |
+| **Neutron radiation** | Radiation consisting of free neutrons. |
+| **Exposure** | Irradiation of a person or object by radiation. |
+| **Radioactive contamination** | Unwanted radioactive material on or inside a person, object, or environment. |
+| **Absorbed dose** | Radiation energy deposited per unit mass. |
+| **Dose rate** | Dose or exposure quantity accumulated per unit time. |
+| **Activity** | Rate of radioactive nuclear transformations. |
+| **Half-life** | Time required for radioactive activity to decrease by one-half. |
+
+# Source and Copyright & Use
+
+**Course reference:** *Hazardous Materials: Managing the Incident*, textbook excerpts supplied for Lecture 04, including the sections on chemical and physical properties, physical states, radioactive materials, radiation measurement, and half-life. Textbook figures and tables are not reproduced here.
+
+**SHM 377: Hazardous Materials Management**\
+© 2026 Yoni Rodriguez
+
+Except where otherwise noted, original course materials are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+Third-party materials remain subject to their respective copyright and licensing terms.

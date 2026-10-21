@@ -1668,11 +1668,9 @@ To identify a REDOX reaction, compare the oxidation numbers of the elements befo
 
 #### Application: Preventing Rust with Zinc
 
-
 ![Rusting steel beams illustrating the effects of oxidation on structural materials.](rust-beams.jpg){#fig-rust-beams width="100%" fig-align="center" lightbox="true"}
 
 <small>**Image source:** [Binic Abrasive, *Professional Way to Remove Rust from Steel Beams*](https://binictools.com/professional-way-to-remove-rust-from-steel-beams/). Original photographer and image location unverified.</small>
-
 
 We have learned that iron undergoes oxidation when it reacts with oxygen, which can lead to rusting.
 

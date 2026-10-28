@@ -1,0 +1,1583 @@
+---
+title: "SHM 377 | SHM-471 Practice Problem"
+subtitle: "Sorbent Tube Sampling, Airborne Concentrations, and the Ideal Gas Law"
+author: "Professor Rodriguez"
+date: "2026-10-27"
+format:
+  html:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    smooth-scroll: true
+    embed-resources: true
+    self-contained-math: true
+    html-math-method: katex
+  pdf:
+    toc: true
+    geometry:
+      - margin=0.75in
+    fontsize: 11pt
+editor: source
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+```{=html}
+<style>
+/* =========================================================
+   SHM 377 | Practice Problem Styling
+   Professor Rodriguez
+   ========================================================= */
+
+body {
+  color: #212529;
+  line-height: 1.7;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+  color: #212529;
+  font-weight: 650;
+}
+
+h1 {
+  margin-top: 2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+h2 {
+  margin-top: 1.8rem;
+}
+
+h3 {
+  margin-top: 1.4rem;
+}
+
+/* Paragraphs and lists */
+
+p, li {
+  line-height: 1.7;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+thead th {
+  background-color: #f1f3f5;
+  color: #212529;
+  font-weight: 650;
+}
+
+th, td {
+  padding: 0.65rem;
+  border: 1px solid #dee2e6;
+}
+
+/* Callouts */
+
+.callout {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.callout-body {
+  color: #212529;
+}
+
+.callout-body p,
+.callout-body li {
+  color: #212529;
+}
+
+/* Mathematical equations */
+
+.math.display,
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+  margin: 1.2rem 0;
+}
+
+.katex {
+  font-size: 1.05em;
+}
+
+/* Mobile devices */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Copyright footer */
+
+.course-copyright {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+  color: #6c757d;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.course-copyright p {
+  margin-bottom: 0.4rem;
+}
+
+/* Print formatting */
+
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  .callout,
+  table {
+    break-inside: avoid;
+  }
+
+  .course-copyright {
+    color: #444;
+  }
+}
+</style>
+```
+
+
+
+# Step 1. Identify the Known Variables and Understand the Question
+
+Before attempting any calculations, we must first identify the information provided in the problem and determine what we are being asked to calculate.
+
+## A. What Information Does the Problem Give Us?
+
+From the problem statement, we know:
+
+- **Chemical:** Toluene
+- **Chemical formula:** C₇H₈
+- **Molecular weight (MW):** 92.14 g/mol
+- **Sampling method:** Charcoal sorbent tube
+- **Pre-sampling flow rate:** 0.0500 L/min
+- **Post-sampling flow rate:** 0.0490 L/min
+- **Sampling duration:** 240 min
+- **Laboratory-reported mass:** 1.15 mg (front + back)
+
+*Note: The chemical formula is supplementary information. The remaining values are provided directly in the problem.*
+
+These are our known quantities.
+
+We should identify the units associated with each measurement because they will help us determine which equations to use.
+
+## B. What Is the Question Asking Us to Calculate?
+
+The problem asks us to determine four things:
+
+1. **Check the sampling pump flow.**
+   - Determine the percentage change between the pre-sampling and post-sampling flow rates.
+   - Determine whether the change is acceptable.
+
+2. **Calculate the total volume of air sampled.**
+   - Determine how many liters of air passed through the charcoal sorbent tube during the sampling period.
+
+3. **Calculate the airborne mass concentration.**
+   - Express the collected mass of toluene per cubic meter of sampled air (mg/m³).
+
+4. **Convert the airborne concentration into ppm.**
+   - Express the concentration of toluene as parts per million by volume (ppmv).
+
+## C. Assign Variables to the Known Quantities
+
+In mathematics and science, we use symbols to represent physical quantities.
+
+Before using an equation, we must understand what each variable represents.
+
+| Variable | Meaning | Value | Units |
+|---|---|---|---|
+| $Q_{\mathrm{pre}}$ | Pre-sampling flow rate | 0.0500 | L/min |
+| $Q_{\mathrm{post}}$ | Post-sampling flow rate | 0.0490 | L/min |
+| $t$ | Sampling duration (time) | 240 | min |
+| $m$ | Mass of toluene collected | 1.15 | mg |
+| $MW$ | Molecular weight of toluene | 92.14 | g/mol |
+
+**What does Q represent?**
+
+The symbol $Q$ represents the **volumetric flow rate**, or the volume of air passing through the sampling pump per unit of time.
+
+In this problem, flow is measured in liters per minute (L/min).
+
+The subscripts identify when the flow was measured:
+
+- $Q_{\mathrm{pre}}$: Flow rate before sampling.
+- $Q_{\mathrm{post}}$: Flow rate after sampling.
+
+**What does t represent?**
+
+The symbol $t$ represents **time**.
+
+In this problem, it represents the total sampling duration of 240 minutes.
+
+**What does m represent?**
+
+The symbol $m$ represents **mass**.
+
+Here, it represents the mass of toluene collected on the charcoal sorbent tube and measured by the laboratory.
+
+## D. Identify the Unknown Variables
+
+We can now assign symbols to the quantities we need to calculate.
+
+| Variable | Meaning | Desired Units |
+|---|---|---|
+| $\%\Delta Q$ | Percentage change in sampling flow | % |
+| $Q_{\mathrm{avg}}$ | Average sampling flow rate | L/min |
+| $V$ | Total sampled air volume | L |
+| $C_{\mathrm{mass}}$ | Airborne mass concentration | mg/m³ |
+| $C_{\mathrm{ppmv}}$ | Airborne volumetric concentration | ppmv |
+
+Notice that we use two different symbols for concentration.
+
+$C_{\mathrm{mass}}$ represents concentration expressed as mass per volume.
+
+$C_{\mathrm{ppmv}}$ represents concentration expressed as parts per million by volume.
+
+This distinction helps us avoid confusing two different ways of expressing airborne concentration.
+
+::: {.callout-tip}
+## Teaching Note: Understanding the Problem Before Solving It
+
+When approaching any calculation, begin by asking yourself:
+
+1. What information has been provided?
+2. What am I being asked to calculate?
+3. What units are associated with the known and unknown variables?
+4. What equations or physical relationships connect the known variables to the unknown variables?
+
+Do not immediately begin substituting numbers into equations.
+
+First, make sure you understand the problem and what each measurement represents.
+
+**Every variable in an equation should represent a physical quantity that we can identify and explain.**
+
+This approach will help you organize your calculations, identify missing information, and reduce errors when working through more complicated problems.
+:::
+
+---
+
+# Step 2. Check the Pump Flow
+
+Before calculating the sampled air volume, we must determine whether the pump maintained an acceptable flow rate.
+
+## A. Calculate the Percentage Change
+
+We begin by calculating how much the pump's flow rate changed between the beginning and end of sampling.
+
+The variables are:
+
+- $Q_{\mathrm{pre}}$: Pre-sampling flow rate (L/min).
+- $Q_{\mathrm{post}}$: Post-sampling flow rate (L/min).
+- $\Delta Q$: Change in flow rate (L/min).
+- $\%\Delta Q$: Percentage change in flow (%).
+
+The Greek letter $\Delta$ (delta) means **change in a quantity**.
+
+For example:
+
+$$
+\Delta Q=Q_{\mathrm{post}}-Q_{\mathrm{pre}}
+$$
+
+To express this change as a percentage of the initial flow rate:
+
+$$
+\%\Delta Q =
+\frac{Q_{\mathrm{post}}-Q_{\mathrm{pre}}}
+{Q_{\mathrm{pre}}}
+\times 100
+$$
+
+Substituting the measured values:
+
+$$
+\%\Delta Q =
+\frac{0.0490-0.0500}
+{0.0500}
+\times 100
+$$
+
+$$
+\%\Delta Q =
+\frac{-0.0010}{0.0500}
+\times 100
+$$
+
+$$
+\boxed{\%\Delta Q=-2.0\%}
+$$
+
+**Interpretation:**
+
+The negative sign indicates that the flow rate decreased during the sampling period.
+
+The magnitude of the change is 2.0%.
+
+The answer key identifies this flow change as acceptable.
+
+## B. Why Are We Checking the Pump Flow?
+
+::: {.callout-tip}
+## Teaching Note: Quality Assurance and Quality Control
+
+We do not calculate the percentage change in flow simply to complete a mathematical exercise.
+
+We calculate it as part of our **quality assurance and quality control (QA/QC)** procedures.
+
+The sampling pump determines how much air passes through the sorbent tube during the sampling period.
+
+If the pump's flow rate changes significantly, our estimate of the total sampled air volume may become less reliable.
+
+### Why Not Simply Say the Two Flow Rates Are Close?
+
+Because the numerical difference alone does not tell us how large the change is relative to the original flow rate.
+
+Consider two hypothetical sampling pumps:
+
+| Pump | Initial Flow (L/min) | Final Flow (L/min) | Percentage Change |
+|---|---:|---:|---:|
+| Pump A | 0.050 | 0.049 | -2% |
+| Pump B | 0.010 | 0.009 | -10% |
+
+Both pumps decreased by 0.001 L/min, but their relative changes are different.
+
+By calculating the percentage change, we can compare the pump's performance against an established acceptance criterion.
+
+For example, if a sampling method specifies an allowable flow change of ±5%:
+
+- A 2% change would meet that criterion.
+- A 10% change would exceed that criterion.
+
+The ±5% value is an illustrative example. Actual acceptance criteria must be determined from the applicable sampling method or quality assurance plan.
+
+**Remember:** Measuring flow before and after sampling does not guarantee that the flow remained constant throughout the entire sampling period.
+
+The goal is not simply to calculate a concentration. It is to collect a representative and reliable sample that can support an informed occupational health decision.
+:::
+
+## C. Calculate the Average Flow Rate
+
+We now calculate the average of the pre-sampling and post-sampling flow measurements.
+
+We use the following variables:
+
+- $Q_{\mathrm{avg}}$: Average volumetric flow rate (L/min).
+- $Q_{\mathrm{pre}}$: Pre-sampling flow rate (L/min).
+- $Q_{\mathrm{post}}$: Post-sampling flow rate (L/min).
+
+The equation is:
+
+$$
+Q_{\mathrm{avg}} =
+\frac{Q_{\mathrm{pre}}+Q_{\mathrm{post}}}{2}
+$$
+
+Substituting:
+
+$$
+Q_{\mathrm{avg}} =
+\frac{
+0.0500\ \mathrm{L/min}
++
+0.0490\ \mathrm{L/min}
+}{2}
+$$
+
+$$
+\boxed{
+Q_{\mathrm{avg}}=0.0495\ \mathrm{L/min}
+}
+$$
+
+This is the average sampling flow rate we will use to estimate the total volume of air collected.
+
+---
+
+# Step 3. Calculate the Sampled Air Volume
+
+We now know the average flow rate and sampling duration.
+
+Before introducing the equation, let's identify our variables.
+
+## A. Define the Variables
+
+- $V$: Total volume of air sampled (L).
+- $Q_{\mathrm{avg}}$: Average volumetric flow rate (L/min).
+- $t$: Total sampling duration (min).
+
+The physical relationship is:
+
+$$
+\mathrm{Volume}=\mathrm{Flow\ Rate}\times\mathrm{Time}
+$$
+
+We can express this relationship using our assigned variables:
+
+$$
+\boxed{V=Q_{\mathrm{avg}}\times t}
+$$
+
+## B. Substitute the Known Values
+
+From Step 2:
+
+$$
+Q_{\mathrm{avg}}=0.0495\ \mathrm{L/min}
+$$
+
+From the original problem:
+
+$$
+t=240\ \mathrm{min}
+$$
+
+Substituting:
+
+$$
+V=
+\left(
+0.0495\ \frac{\mathrm{L}}{\mathrm{min}}
+\right)
+\left(
+240\ \mathrm{min}
+\right)
+$$
+
+## C. Apply Dimensional Analysis
+
+Notice how the units cancel:
+
+$$
+V=
+0.0495
+\frac{\mathrm{L}}{\cancel{\mathrm{min}}}
+\times
+240\cancel{\mathrm{min}}
+$$
+
+We are left with liters:
+
+$$
+V=0.0495\times240\ \mathrm{L}
+$$
+
+Therefore:
+
+$$
+\boxed{V=11.88\ \mathrm{L}}
+$$
+
+::: {.callout-tip}
+## Teaching Note: Why Does Dimensional Analysis Matter?
+
+We started with a flow rate in liters per minute.
+
+Multiplying by the sampling duration cancels minutes, leaving liters.
+
+This tells us that approximately 11.88 liters of air passed through the sorbent tube during the sampling period, assuming the average of the two measured flow rates reasonably represents the flow throughout sampling.
+
+Dimensional analysis helps us verify that our equation produces the physical quantity we intended to calculate.
+
+**If the units do not make sense, we should revisit the equation before accepting the numerical answer.**
+:::
+
+---
+
+# Step 4. Convert Collected Mass to Airborne Concentration
+
+We have calculated the total volume of air that passed through the charcoal sorbent tube during the sampling period.
+
+The laboratory also reported the mass of toluene collected on the sorbent tube.
+
+We can now use these two quantities to calculate the airborne mass concentration of toluene.
+
+Before introducing the equation, let's identify our variables.
+
+## A. Define the Variables
+
+- $C_{\mathrm{mass}}$: Airborne mass concentration of toluene (mg/m³).
+- $m$: Mass of toluene collected on the sorbent tube (mg).
+- $V$: Total volume of air sampled (L).
+
+**What does concentration mean?**
+
+Concentration describes the amount of a substance present within a given volume.
+
+In this problem, we want to determine how much toluene was present in the air sampled by the charcoal sorbent tube.
+
+The laboratory tells us how much toluene was collected, but that mass alone does not tell us the airborne concentration.
+
+To determine concentration, we must also know the volume of air from which the toluene was collected.
+
+The physical relationship is:
+
+$$
+\mathrm{Concentration} =
+\frac{\mathrm{Mass}}{\mathrm{Volume}}
+$$
+
+We can express this relationship using our assigned variables:
+
+$$
+\boxed{C_{\mathrm{mass}} = \frac{m}{V}}
+$$
+
+::: {.callout-note}
+## Connection to Chemistry and Physics: Density vs. Mass Concentration
+
+You may recognize this mathematical relationship from chemistry and physics, where **density** is also defined as mass divided by volume.
+
+Density is commonly represented by the Greek letter $\rho$ (rho):
+
+$$
+\rho = \frac{m}{V}
+$$
+
+Although density and mass concentration share the same mathematical form, they describe different physical quantities.
+
+- **Density:** The mass of a material divided by the volume of that material.
+- **Airborne mass concentration:** The mass of a particular contaminant divided by the volume of air containing that contaminant.
+
+In our problem, we are not calculating the density of pure toluene or the density of air.
+
+We are calculating the mass of **toluene collected from a known volume of sampled air**.
+
+Therefore, we will refer to our result as the **airborne mass concentration** of toluene and represent it using $C_{\mathrm{mass}}$.
+
+**Remember:** Two equations can have the same mathematical form while describing different physical quantities.
+:::
+
+## B. Substitute the Known Values
+
+From the original problem:
+
+$$
+m = 1.15\ \mathrm{mg}
+$$
+
+From Step 3:
+
+$$
+V = 11.88\ \mathrm{L}
+$$
+
+Substituting:
+
+$$
+C_{\mathrm{mass}} =
+\frac{1.15\ \mathrm{mg}}
+{11.88\ \mathrm{L}}
+$$
+
+Therefore:
+
+$$
+\boxed{C_{\mathrm{mass}} = 0.096801\ \mathrm{mg/L}}
+$$
+
+Notice that our concentration is currently expressed in milligrams per liter (mg/L).
+
+However, the original problem asks us to express the airborne mass concentration in milligrams per cubic meter (mg/m³).
+
+We must therefore convert our volume units.
+
+## C. Convert Liters to Cubic Meters
+
+Before performing the conversion, recall the relationship between liters and cubic meters:
+
+$$
+1\ \mathrm{m^3} = 1000\ \mathrm{L}
+$$
+
+This means that one cubic meter contains 1,000 liters.
+
+We can use this relationship to construct a conversion factor:
+
+$$
+\frac{1000\ \mathrm{L}}{1\ \mathrm{m^3}}
+$$
+
+**Why do we arrange the conversion factor this way?**
+
+Our original concentration contains liters in the denominator.
+
+To eliminate liters, we must place liters in the numerator of our conversion factor.
+
+This allows the units to cancel, leaving milligrams per cubic meter.
+
+## D. Apply Dimensional Analysis
+
+Starting with our mass concentration:
+
+$$
+C_{\mathrm{mass}} =
+\frac{1.15\ \mathrm{mg}}
+{11.88\ \mathrm{L}}
+$$
+
+Multiply by our conversion factor:
+
+$$
+C_{\mathrm{mass}} =
+\left(
+\frac{1.15\ \mathrm{mg}}
+{11.88\ \mathrm{L}}
+\right)
+\left(
+\frac{1000\ \mathrm{L}}
+{1\ \mathrm{m^3}}
+\right)
+$$
+
+Notice how liters cancel:
+
+$$
+C_{\mathrm{mass}} =
+\left(
+\frac{1.15\ \mathrm{mg}}
+{11.88\ \cancel{\mathrm{L}}}
+\right)
+\left(
+\frac{1000\ \cancel{\mathrm{L}}}
+{1\ \mathrm{m^3}}
+\right)
+$$
+
+We are left with milligrams per cubic meter:
+
+$$
+C_{\mathrm{mass}} =
+\frac{1.15 \times 1000}{11.88}
+\ \mathrm{mg/m^3}
+$$
+
+Therefore:
+
+$$
+C_{\mathrm{mass}} = 96.8013\ \mathrm{mg/m^3}
+$$
+
+Rounded to three significant figures:
+
+$$
+\boxed{C_{\mathrm{mass}} = 96.8\ \mathrm{mg/m^3}}
+$$
+
+## E. Interpret Our Result
+
+We have calculated an airborne mass concentration of:
+
+$$
+\boxed{96.8\ \mathrm{mg/m^3}}
+$$
+
+**What does this value mean?**
+
+Our result indicates that the sampled air contained an estimated 96.8 milligrams of toluene per cubic meter of air.
+
+This is a mass concentration because we are expressing the mass of a chemical relative to the volume of air sampled.
+
+Notice that the laboratory did not directly measure 96.8 mg/m³.
+
+The laboratory measured the mass of toluene collected on the sorbent tube.
+
+We calculated the airborne concentration by dividing that mass by the estimated volume of sampled air.
+
+::: {.callout-tip}
+## Teaching Note: Why Does Sampled Air Volume Matter?
+
+Consider two air samples that each contain 1.15 mg of toluene.
+
+Would they necessarily represent the same airborne concentration?
+
+Not necessarily.
+
+Imagine that:
+
+- Sample A collected 1.15 mg of toluene from 11.88 L of air.
+- Sample B collected 1.15 mg of toluene from 100 L of air.
+
+Both samples contain the same mass of toluene, but the masses were collected from different volumes of air.
+
+**Sample A:**
+
+$$
+C_{\mathrm{mass}} =
+\frac{1.15\ \mathrm{mg}}{11.88\ \mathrm{L}}
+\times
+\frac{1000\ \mathrm{L}}{1\ \mathrm{m^3}}
+$$
+
+$$
+\boxed{C_{\mathrm{mass}} = 96.8\ \mathrm{mg/m^3}}
+$$
+
+**Sample B:**
+
+$$
+C_{\mathrm{mass}} =
+\frac{1.15\ \mathrm{mg}}{100\ \mathrm{L}}
+\times
+\frac{1000\ \mathrm{L}}{1\ \mathrm{m^3}}
+$$
+
+$$
+\boxed{C_{\mathrm{mass}} = 11.5\ \mathrm{mg/m^3}}
+$$
+
+Although both samples collected the same mass of toluene, Sample A represents a higher airborne concentration because the mass was collected from a smaller volume of air.
+
+This illustrates why the laboratory-reported mass alone is insufficient to determine airborne exposure concentration.
+
+**Remember:** Concentration describes the amount of a substance relative to the volume in which it is present.
+:::
+
+## F. Check Our Work
+
+Before moving on, we should verify that our calculation makes physical and mathematical sense.
+
+We started with:
+
+- Mass of toluene: 1.15 mg
+- Sampled air volume: 11.88 L
+
+We divided mass by volume:
+
+$$
+\frac{\mathrm{mg}}{\mathrm{L}}
+$$
+
+We then converted liters to cubic meters:
+
+$$
+\frac{\mathrm{mg}}{\mathrm{L}}
+\times
+\frac{\mathrm{L}}{\mathrm{m^3}}
+=
+\frac{\mathrm{mg}}{\mathrm{m^3}}
+$$
+
+Our final units match the units requested in the original problem.
+
+::: {.callout-important}
+## Checkpoint: Comparison With the SHM 471 Answer Key
+
+At this point, our handwritten calculation and the SHM 471 answer key agree.
+
+We have determined:
+
+| Quantity | Calculated Value | Units |
+|---|---:|---|
+| Percentage change in flow | -2.0 | % |
+| Average sampling flow rate | 0.0495 | L/min |
+| Total sampled air volume | 11.88 | L |
+| Airborne mass concentration | 96.8 | mg/m³ |
+
+**Our calculations agree with the answer key through the determination of airborne mass concentration.**
+
+The difference between our handwritten approach and the answer key occurs during the next step, when we convert the mass concentration (mg/m³) into a volumetric concentration (ppmv).
+
+This conversion requires us to consider the molecular weight of toluene and the temperature and pressure assumptions used in the ideal gas law.
+:::
+---
+
+# Step 5. Convert Airborne Mass Concentration (mg/m³) to ppmv Using the Ideal Gas Law
+
+We have calculated the airborne mass concentration of toluene.
+
+Our next objective is to express this concentration in parts per million by volume (ppmv).
+
+Before introducing another equation, we need to understand what we are converting and why temperature and pressure matter.
+
+## A. Understand What We Are Calculating
+
+In Step 4, we determined:
+
+$$
+C_{\mathrm{mass}} = 96.8\ \mathrm{mg/m^3}
+$$
+
+This tells us the mass of toluene present per cubic meter of sampled air.
+
+However, the original problem also asks us to express the concentration in parts per million (ppm).
+
+**What does ppmv mean?**
+
+Parts per million by volume (ppmv) describes the volume of a gaseous contaminant relative to the total volume of the gas mixture.
+
+For example, a concentration of 25 ppmv means approximately 25 volume units of contaminant for every 1,000,000 equal volume units of air.
+
+Mathematically:
+
+$$
+\mathrm{ppmv} =
+\frac{\mathrm{Volume\ of\ Contaminant}}
+{\mathrm{Total\ Volume\ of\ Gas\ Mixture}}
+\times 10^6
+$$
+
+For an ideal gas mixture, the volume fraction is equivalent to the mole fraction.
+
+Therefore, ppmv can also be expressed as:
+
+$$
+\mathrm{ppmv} =
+\frac{\mathrm{Moles\ of\ Contaminant}}
+{\mathrm{Total\ Moles\ of\ Gas\ Mixture}}
+\times 10^6
+$$
+
+**Why can't we directly convert mg/m³ into ppmv using only a metric conversion factor?**
+
+Because mg/m³ describes mass per volume, whereas ppmv describes the proportion of contaminant molecules in a gas mixture.
+
+We must account for the molecular weight of the contaminant and the relationship between gas volume, temperature, and pressure.
+
+This is where the ideal gas law becomes useful.
+
+## B. Introduce the Ideal Gas Law
+
+The ideal gas law describes the relationship between pressure, volume, temperature, and the amount of gas present.
+
+The equation is:
+
+$$
+\boxed{PV=nRT}
+$$
+
+Before using the equation, let's define each variable.
+
+| Variable | Meaning | Units Used in Our Calculation |
+|---|---|---|
+| $P$ | Absolute pressure of the gas | mmHg |
+| $V$ | Volume occupied by the gas | L |
+| $n$ | Amount of gas | mol |
+| $R$ | Ideal gas constant | L·mmHg/(mol·K) |
+| $T$ | Absolute temperature | K |
+
+**What does P represent?**
+
+The symbol $P$ represents the absolute pressure of the gas.
+
+In our calculations, we will assume:
+
+$$
+P = 760\ \mathrm{mmHg}
+$$
+
+This corresponds to approximately one standard atmosphere of pressure.
+
+**What does V represent?**
+
+The symbol $V$ represents the volume occupied by a gas.
+
+In the ideal gas law, volume is related to the amount of gas, temperature, and pressure.
+
+**What does n represent?**
+
+The symbol $n$ represents the amount of gas, expressed in moles.
+
+A mole is a unit used to describe the amount of a substance.
+
+**What does R represent?**
+
+The symbol $R$ represents the ideal gas constant.
+
+Its numerical value depends on the units selected for pressure and volume.
+
+Because we are using liters and millimeters of mercury, we will use:
+
+$$
+R \approx 62.36\
+\frac{\mathrm{L\cdot mmHg}}
+{\mathrm{mol\cdot K}}
+$$
+
+**What does T represent?**
+
+The symbol $T$ represents absolute temperature, expressed in Kelvin (K).
+
+The ideal gas law requires absolute temperature rather than degrees Celsius.
+
+We convert Celsius to Kelvin using:
+
+$$
+\boxed{T(K)=T(^\circ C)+273.15}
+$$
+
+::: {.callout-tip}
+## Teaching Note: Why Do Temperature and Pressure Matter?
+
+Gas volume depends on temperature and pressure.
+
+At a fixed pressure, increasing the temperature causes a given amount of ideal gas to occupy a larger volume.
+
+At a fixed temperature, increasing the pressure causes that same amount of gas to occupy a smaller volume.
+
+Therefore, the volume occupied by one mole of gas is not always the same.
+
+This matters because converting between mg/m³ and ppmv requires a relationship between the mass of a chemical and the volume occupied by that chemical as a gas.
+
+**Remember:** Temperature and pressure are physical conditions that influence gas volume, not simply additional numbers to substitute into an equation.
+:::
+
+## C. Define the Variables for Our Concentration Conversion
+
+We now have the information needed to relate airborne mass concentration to ppmv.
+
+The variables are:
+
+| Variable | Meaning | Value or Units |
+|---|---|---|
+| $C_{\mathrm{mass}}$ | Airborne mass concentration of toluene | 96.8 mg/m³ |
+| $C_{\mathrm{ppmv}}$ | Airborne volumetric concentration | ?, ppmv |
+| $MW$ | Molecular weight of toluene | 92.14 g/mol |
+| $R$ | Ideal gas constant | 62.36 L·mmHg/(mol·K) |
+| $T$ | Absolute temperature | K |
+| $P$ | Absolute pressure | mmHg |
+
+Notice that the original problem provides the molecular weight but does not specify the temperature or pressure of the sampled air.
+
+This is important because the ppmv conversion depends on the temperature and pressure assumptions we use.
+
+## D. Develop the Conversion Relationship
+
+Rather than immediately using a memorized conversion equation, let's examine how the ideal gas law connects airborne mass concentration to ppmv.
+
+We need to connect three concepts:
+
+1. **Mass concentration:** How much toluene is present per volume of air (mg/m³).
+2. **Molecular weight:** How much one mole of toluene weighs (g/mol).
+3. **Molar volume:** How much volume one mole of an ideal gas occupies at a specified temperature and pressure (L/mol).
+
+### Derive Molar Volume From the Ideal Gas Law
+
+Recall the ideal gas law:
+
+$$
+PV=nRT
+$$
+
+Rearrange the equation to solve for volume:
+
+$$
+V=\frac{nRT}{P}
+$$
+
+Divide both sides by the number of moles ($n$):
+
+$$
+\boxed{\frac{V}{n}=\frac{RT}{P}}
+$$
+
+The expression $V/n$ represents **molar volume**, or the volume occupied by one mole of an ideal gas at a specified temperature and pressure.
+
+This relationship is important because it allows us to determine the volume occupied by a known number of moles of gas.
+
+### Connect Molar Volume to Molecular Weight
+
+We now have two relationships:
+
+- **Molecular weight ($MW$)** allows us to convert the mass of toluene into moles.
+- **Molar volume ($RT/P$)** allows us to relate those moles to a gas volume.
+
+By combining these relationships, we can convert our airborne mass concentration into ppmv.
+
+The resulting conversion equation is:
+
+$$
+\boxed{
+C_{\mathrm{ppmv}} =
+C_{\mathrm{mass}}
+\left(
+\frac{RT}{P(MW)}
+\right)
+}
+$$
+
+Notice how we have separated the equation into two parts:
+
+**Part 1: Our calculated airborne mass concentration**
+
+$$
+C_{\mathrm{mass}}
+$$
+
+**Part 2: The conversion factor derived from the ideal gas law and molecular weight**
+
+$$
+\left(
+\frac{RT}{P(MW)}
+\right)
+$$
+
+We multiply our airborne mass concentration by this conversion factor to obtain the numerical concentration in ppmv, using the specified units.
+
+### Define the Variables and Units
+
+Before substituting values, let's identify what each variable represents.
+
+| Variable | Meaning | Units |
+|---|---|---|
+| $C_{\mathrm{mass}}$ | Airborne mass concentration of toluene | mg/m³ |
+| $C_{\mathrm{ppmv}}$ | Airborne volumetric concentration of toluene | ppmv |
+| $R$ | Ideal gas constant | L·mmHg/(mol·K) |
+| $T$ | Absolute temperature | K |
+| $P$ | Absolute pressure | mmHg |
+| $MW$ | Molecular weight of toluene | g/mol |
+
+For this equation, we must use the units shown in the table.
+
+The numerical result will be expressed in ppmv.
+
+::: {.callout-note}
+## Mathematical Note: Equivalent Expressions
+
+We can write our conversion equation in two mathematically equivalent ways.
+
+**Multiplying by a fraction:**
+
+$$
+C_{\mathrm{ppmv}} =
+C_{\mathrm{mass}}
+\left(
+\frac{RT}{P(MW)}
+\right)
+$$
+
+**Combining everything into one fraction:**
+
+$$
+C_{\mathrm{ppmv}} =
+\frac{C_{\mathrm{mass}}RT}{P(MW)}
+$$
+
+Both expressions produce the same numerical result.
+
+For this problem, we will use the first expression because it separates our calculated airborne mass concentration from the conversion factor.
+
+This is also the format we used when working through the problem in class.
+:::
+
+::: {.callout-tip}
+## Teaching Note: Understanding the Conversion
+
+The conversion equation is not an arbitrary formula.
+
+It combines relationships we already understand:
+
+1. Mass concentration tells us how much toluene is present per volume of air.
+2. Molecular weight allows us to convert the mass of toluene into moles.
+3. The ideal gas law relates moles of gas to volume at a specified temperature and pressure.
+4. Parts per million expresses the resulting gas volume fraction on a scale of one million.
+
+The unit conversions between milligrams and grams, liters and cubic meters, and volume fraction and ppmv cancel numerically when we use the units specified above.
+
+**Remember:** The temperature and pressure assumptions must be identified before performing the conversion.
+
+Our next step is to substitute the known values and compare the results obtained using different reference temperatures.
+:::
+
+---
+
+## E. Our Handwritten Approach: 0°C
+
+In our handwritten calculation, we used a reference temperature of 0°C.
+
+First, convert the temperature to Kelvin:
+
+$$
+T=0+273.15
+$$
+
+$$
+\boxed{T=273.15\ \mathrm{K}}
+$$
+
+We also assumed:
+
+$$
+P=760\ \mathrm{mmHg}
+$$
+
+Our handwritten calculation used the approximate gas constant:
+
+$$
+R=62.4\
+\frac{\mathrm{L\cdot mmHg}}
+{\mathrm{mol\cdot K}}
+$$
+
+The remaining known values are:
+
+$$
+C_{\mathrm{mass}}=96.801\ \mathrm{mg/m^3}
+$$
+
+$$
+MW=92.14\ \mathrm{g/mol}
+$$
+
+### Substitute the Known Values
+
+Our conversion equation is:
+
+$$
+C_{\mathrm{ppmv}}=
+\frac{C_{\mathrm{mass}}RT}{P(MW)}
+$$
+
+Substituting:
+
+$$
+C_{\mathrm{ppmv}}=
+\frac{
+(96.801)(62.4)(273.15)
+}{
+(760)(92.14)
+}
+$$
+
+We can also write this as:
+
+$$
+C_{\mathrm{ppmv}}=
+96.801
+\left[
+\frac{
+(62.4)(273.15)
+}{
+(760)(92.14)
+}
+\right]
+$$
+
+### Perform the Calculation
+
+Calculate the numerator inside the brackets:
+
+$$
+62.4\times273.15=17044.56
+$$
+
+Calculate the denominator:
+
+$$
+760\times92.14=70026.4
+$$
+
+Therefore:
+
+$$
+C_{\mathrm{ppmv}}=
+96.801
+\left(
+\frac{17044.56}{70026.4}
+\right)
+$$
+
+Our result is:
+
+$$
+\boxed{
+C_{\mathrm{ppmv}}\approx23.56\ \mathrm{ppmv}
+}
+$$
+
+This reproduces our handwritten result.
+
+::: {.callout-note}
+## What Did We Assume?
+
+Our handwritten calculation used:
+
+- Temperature: 0°C (273.15 K).
+- Pressure: 760 mmHg.
+- Ideal gas behavior.
+
+The calculation is mathematically consistent with these assumptions.
+
+However, the original problem did not explicitly specify the sampling temperature or pressure.
+
+Therefore, **23.56 ppmv is the result obtained when converting the reported mass concentration using our assumed reference conditions**.
+
+It should not automatically be interpreted as the actual atmospheric conditions during sampling.
+:::
+
+---
+
+## F. SHM 471 Answer Key Approach: 25°C
+
+The SHM 471 answer key uses a different reference temperature.
+
+Instead of 0°C, it uses 25°C.
+
+First, convert Celsius to Kelvin:
+
+$$
+T=25+273.15
+$$
+
+$$
+\boxed{T=298.15\ \mathrm{K}}
+$$
+
+The assumed pressure remains:
+
+$$
+P=760\ \mathrm{mmHg}
+$$
+
+### Calculate the Molar Volume
+
+Recall our rearranged ideal gas law:
+
+$$
+\frac{V}{n}=\frac{RT}{P}
+$$
+
+Using:
+
+$$
+R=62.36\
+\frac{\mathrm{L\cdot mmHg}}
+{\mathrm{mol\cdot K}}
+$$
+
+We substitute:
+
+$$
+\frac{V}{n}=
+\frac{
+(62.36)(298.15)
+}{
+760
+}
+$$
+
+Therefore:
+
+$$
+\boxed{
+\frac{V}{n}\approx24.45\ \mathrm{L/mol}
+}
+$$
+
+This means that one mole of an ideal gas occupies approximately 24.45 liters at 25°C and 760 mmHg.
+
+**This is where the commonly used 24.45 conversion factor comes from.**
+
+It is not an arbitrary number.
+
+It is the molar volume calculated from the ideal gas law under specified reference conditions.
+
+### Apply the Answer Key Conversion
+
+The SHM 471 answer key uses:
+
+$$
+\boxed{
+C_{\mathrm{ppmv}}=
+\frac{C_{\mathrm{mass}}\times24.45}{MW}
+}
+$$
+
+Where:
+
+- $C_{\mathrm{ppmv}}$: Airborne volumetric concentration (ppmv).
+- $C_{\mathrm{mass}}$: Airborne mass concentration (mg/m³).
+- $24.45$: Numerical value of the molar volume in L/mol at 25°C and 760 mmHg.
+- $MW$: Molecular weight of toluene (g/mol).
+
+Substituting:
+
+$$
+C_{\mathrm{ppmv}}=
+\frac{
+96.801\times24.45
+}{
+92.14
+}
+$$
+
+Therefore:
+
+$$
+\boxed{
+C_{\mathrm{ppmv}}\approx25.7\ \mathrm{ppmv}
+}
+$$
+
+### Verify Using the Ideal Gas Law
+
+We can reproduce the answer key result using our original ideal gas law approach.
+
+Recall:
+
+$$
+C_{\mathrm{ppmv}}=
+\frac{C_{\mathrm{mass}}RT}{P(MW)}
+$$
+
+Substituting:
+
+$$
+C_{\mathrm{ppmv}}=
+96.801
+\left[
+\frac{
+(62.36)(298.15)
+}{
+(760)(92.14)
+}
+\right]
+$$
+
+Therefore:
+
+$$
+\boxed{
+C_{\mathrm{ppmv}}\approx25.7\ \mathrm{ppmv}
+}
+$$
+
+Both methods agree when we use the same temperature and pressure assumptions.
+
+::: {.callout-tip}
+## Teaching Note: Why Is the Answer Key Using 24.45?
+
+The value 24.45 represents the approximate molar volume of an ideal gas at 25°C and 760 mmHg.
+
+It is derived from:
+
+$$
+\frac{V}{n}=\frac{RT}{P}
+$$
+
+The answer key uses this value to simplify the conversion between mg/m³ and ppmv.
+
+Our handwritten approach uses the ideal gas law directly.
+
+**These are not fundamentally different physical relationships.**
+
+The answer key simply substitutes a molar volume that has already been calculated for a specific temperature and pressure.
+
+If we change the assumed temperature or pressure, the appropriate molar volume also changes.
+
+Therefore, we should understand where 24.45 comes from rather than assuming it applies under every sampling condition.
+:::
+
+---
+
+## G. Compare Our Results
+
+We have now calculated the airborne concentration using two different reference temperatures.
+
+| Approach | Temperature | Pressure | Calculated Concentration |
+|---|---|---|---|
+| Our handwritten approach | 0°C | 760 mmHg | 23.56 ppmv |
+| SHM 471 answer key | 25°C | 760 mmHg | 25.7 ppmv |
+
+The results differ because the molar volume used in the conversion depends on temperature and pressure.
+
+The original problem does not specify these conditions.
+
+Therefore, the conversion to ppmv requires an assumption that should be stated.
+
+::: {.callout-important}
+## Checkpoint: Understanding the Difference
+
+Our calculations agree with the SHM 471 answer key through the determination of airborne mass concentration:
+
+$$
+\boxed{C_{\mathrm{mass}}=96.8\ \mathrm{mg/m^3}}
+$$
+
+When converting this numerical mass concentration to ppmv:
+
+- At 0°C and 760 mmHg, we obtain approximately 23.56 ppmv.
+- At 25°C and 760 mmHg, we obtain approximately 25.7 ppmv.
+
+**The difference comes from the reference conditions used in the conversion, not from an error in the dimensional analysis.**
+
+These calculations hold the numerical mass concentration fixed while applying different temperature assumptions.
+
+They do not describe physically heating the same air sample from 0°C to 25°C.
+
+If the same gas mixture were heated at constant pressure without changing its composition, both its volume and mass concentration would change, while its ppmv would remain the same.
+
+The important lesson is to identify the temperature and pressure assumptions before converting between mass concentration and ppmv.
+:::
+
+# Step 5. Where Do the Two Methods Differ?
+
+| Parameter | Our Handwritten Work | Answer Key |
+|---|---:|---:|
+| Average flow | 0.0495 L/min | 0.0495 L/min |
+| Sampled volume | 11.88 L | 11.88 L |
+| Mass concentration | 96.8 mg/m³ | 96.8 mg/m³ |
+| Assumed temperature | 0°C | 25°C |
+| Assumed pressure | 760 mmHg | 760 mmHg |
+| Concentration | 23.56 ppm | 25.7 ppm |
+
+## Difference Between the Results
+
+$$
+\Delta C=25.7-23.56
+$$
+
+$$
+\boxed{\Delta C=2.14\ \mathrm{ppm}}
+$$
+
+The percentage difference relative to the answer key is:
+
+$$
+\%\mathrm{Difference}=
+\frac{25.7-23.56}{25.7}\times100
+$$
+
+$$
+\boxed{\%\mathrm{Difference}\approx8.3\%}
+$$
+
+::: {.callout-important}
+## Main Teaching Takeaway
+
+Our calculations did not differ because of the sorbent tube sampling procedure, sampled volume, or mass concentration.
+
+They differed because we used different assumed temperatures when converting the same numerical mass concentration into ppm.
+
+The ideal gas law explains this relationship.
+
+At constant pressure:
+
+$$
+V\propto T
+$$
+
+As the reference temperature increases, the molar volume increases.
+
+For a fixed numerical value of mg/m³, this produces a larger calculated ppm value.
+
+**Important:** If we were physically adjusting the same collected gas sample to a different temperature, its volume and mass concentration would also change. The two ppm results above should not be interpreted as a real gas mixture changing its mole fraction merely because it was heated.
+:::
+
+# Connection to SHM 377: Hazardous Materials Management
+
+The practice problem we just worked through comes from **SHM 471** and provides an opportunity to connect industrial hygiene exposure calculations to concepts we will explore in **SHM 377: Hazardous Materials Management**.
+
+In this example, we used the ideal gas law to convert the airborne mass concentration of toluene from mg/m³ to ppmv.
+
+This required us to consider:
+
+1. **Molecular weight:** The relationship between the mass of a chemical and the number of moles present.
+2. **Temperature:** How temperature influences the volume occupied by a gas.
+3. **Pressure:** How pressure influences the volume occupied by a gas.
+4. **Molar volume:** The relationship between the number of moles and the volume occupied by a gas at specified conditions.
+
+## Looking Ahead: Chemistry of Gases and Vapors
+
+When we begin our section on **gases and vapors** in SHM 377, we will revisit the ideal gas law:
+
+$$
+\boxed{PV=nRT}
+$$
+
+We will examine how temperature, pressure, volume, and the amount of gas are related and why these relationships matter when working with hazardous materials.
+
+Understanding these concepts will help us interpret how gases behave under different conditions and how that behavior can influence exposure and hazardous materials management.
+
+::: {.callout-tip}
+## Teaching Note: Connecting Industrial Hygiene to Hazardous Materials Management
+
+Although this problem originated in SHM 471, the underlying chemistry and physics are relevant to SHM 377.
+
+The same ideal gas law that helps us convert airborne concentrations also helps us understand the physical behavior of gases.
+
+**The goal is not simply to memorize an equation. It is to understand the physical relationships represented by that equation and recognize when they are useful.**
+
+We will build on these concepts when we study gases and vapors later in the course.
+:::
+
+# Final Summary
+
+For SHM 471 Practice Question 20:
+
+$$
+\boxed{Q_{\mathrm{avg}}=0.0495\ \mathrm{L/min}}
+$$
+
+$$
+\boxed{V=11.88\ \mathrm{L}}
+$$
+
+$$
+\boxed{C=96.8\ \mathrm{mg/m^3}}
+$$
+
+Using 0°C and 760 mmHg:
+
+$$
+\boxed{C\approx23.56\ \mathrm{ppmv}}
+$$
+
+Using 25°C and 760 mmHg:
+
+$$
+\boxed{C\approx25.7\ \mathrm{ppmv}}
+$$
+
+The SHM 471 answer key uses the second assumption.
+
+The key lesson is to understand the assumptions behind a conversion formula rather than memorizing the formula without knowing where it comes from.
+
+
+
+---
+
+::: {.course-copyright}
+© 2026 Professor Rodriguez. All rights reserved.
+
+**Central Washington University | SHM 377: Hazardous Materials Management**
+
+Prepared for educational use in SHM 377. This instructional example references a practice problem originating from SHM 471. Original problem material remains attributable to its respective author or rights holder.
+:::

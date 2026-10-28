@@ -72,7 +72,7 @@ These categories answer different questions. A chemical property helps us ask, *
 Before moving into radiation, recall several terms from our earlier lectures:
 
 | Term | Meaning in this lecture |
-|:-----------------------------------|:-----------------------------------|
+|:---|:---|
 | **Atom** | Basic building block of an element. |
 | **Element** | Pure substance identified by the kind of atoms it contains. |
 | **Compound** | Substance formed by chemically bonded atoms of different elements. |
@@ -172,7 +172,7 @@ Radioactive materials occur naturally and are also used in industrial, medical, 
 Radiation can be divided into two broad categories:
 
 | Category | Distinguishing characteristic | Examples from the textbook |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | **Nonionizing** | Does not carry enough energy per photon or particle to remove an electron from an atom through direct ionization. | Radio waves, microwaves, infrared radiation, visible light. |
 | **Ionizing** | Can remove electrons from atoms and create ions. | Alpha particles, beta particles, gamma rays, neutrons, and X-rays. |
 
@@ -209,7 +209,7 @@ The textbook identifies materials such as plastic, glass, and thin metal shieldi
 ## Comparing the radiation types
 
 | Radiation | Nature | Primary point for students to remember |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | **Alpha (α)** | Particle made of two protons and two neutrons | Limited external penetration; important internal hazard. |
 | **Beta (β)** | Electron or positron | Can pose both internal and external hazards. |
 | **Gamma (γ)** | Electromagnetic radiation | Highly penetrating external exposure hazard. |
@@ -234,7 +234,7 @@ A person can be exposed to radiation without becoming contaminated. Contaminatio
 The textbook introduces several measurement concepts:
 
 | Quantity | Unit or instrument reading | What it describes |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | **Exposure** | Roentgen (R) | Historical unit for ionization produced in air by X-rays or gamma rays. |
 | **Absorbed dose** | Rad | Energy deposited per unit mass of material. |
 | **Dose equivalent** | Rem | Absorbed dose adjusted to account for the biological effectiveness of radiation. |
@@ -284,7 +284,7 @@ The key idea is that decay occurs by a repeated fraction, **not by subtracting t
 The textbook presents an example of a source with an initial reading of 100 units and a half-life of 24 hours. Assuming a fixed measurement setup and a reading proportional to source activity, the pattern is:
 
 | Elapsed time | Half-lives elapsed | Remaining fraction | Reading (same units as initial) |
-|:-----------------|-----------------:|-----------------:|-----------------:|
+|:---|---:|---:|---:|
 | Start | 0 | 100% | 100 |
 | 24 hours | 1 | 50% | 50 |
 | 48 hours | 2 | 25% | 25 |
@@ -344,7 +344,7 @@ Like John Dalton, we cannot directly see every atomic-scale process involved in 
 # Key Terms
 
 | Term | Working definition |
-|:-----------------------------------|:-----------------------------------|
+|:---|:---|
 | **Physical property** | Observable or measurable characteristic that does not require a change in chemical identity. |
 | **Chemical property** | Characteristic describing a substance's tendency to undergo chemical change. |
 | **Sublimation** | Direct transition from solid to gas. |
